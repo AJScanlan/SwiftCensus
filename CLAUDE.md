@@ -56,10 +56,14 @@ or a format-string→regex matcher.** SPEC §5.2's strategy is a documented
 contingency, live only if ROADMAP gate G0 fails. Every record stores the rendered
 message alongside the ID as the fallback.
 
-**A2 — `strict-complete` is the only frequency source.** Under `-swift-version 6`
-these diagnostics are errors, the frontend halts, and downstream diagnostics are
-never emitted. `swift6`-mode counts are censored, not measured. They are tagged
-`censored: true` and excluded from all ranking.
+**A2 — AMENDED by ADR 0002. The primary mode is `strict-complete-v5`:
+`-strict-concurrency=complete` with `-swift-version 5` FORCED for every package,
+regardless of what it declares.** A package declaring `swift-tools-version: 6.x` is
+already in Swift 6 mode, so declared-mode measurement is censored exactly for modern
+packages — a bias correlated with migration status. Measured: 4 diagnostics under
+tools-version 5.10, 1 under 6.0, 4 again with `-swift-version 5` forced.
+`strict-complete-declared` is retained for SPI comparability only and is never a
+frequency source. `swift6` as a separate mode is deleted.
 
 **A3 — Corpus is stratified on evidence** (`S-emit` / `S-control` / `S-anchor` /
 `S-byproduct`), not on package prestige. SPEC's T0+T1 is the 83–97%-clean stratum
@@ -102,6 +106,7 @@ change after you publish.
 ```bash
 swift build --force-resolved-versions \
   -Xswiftc -strict-concurrency=complete \
+  -Xswiftc -swift-version -Xswiftc 5 \
   -Xswiftc -debug-diagnostic-names \
   -Xswiftc -print-diagnostic-groups \
   -Xswiftc -no-color-diagnostics \
@@ -136,6 +141,8 @@ diagnostic printed twice under the `swift` style.
 - **F3** Building the corpus executes third-party plugins and macros unprompted.
   Containerise Linux strata; keep macOS strata off any machine with signing keys.
 - **F4** Clean build tree per `(package, toolchain, mode)` cell. No incremental reuse.
+  **But share a per-toolchain `-module-cache-path` across cells** — SDK modules derive
+  from toolchain+SDK, never package sources, and rebuilding them costs minutes per cell.
 - **F5/F6** Decided: test targets out (A11); macOS canonical, Linux published
   alongside (A12). Record both in the run manifest. Never decided per-package.
 - **F7** Record the fully resolved frontend invocation, toolchain string, Xcode

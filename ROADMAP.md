@@ -68,7 +68,7 @@ both the identifier and the verbatim rendered message.** If a future toolchain d
 or renames the flag, the `.def` matcher described in SPEC §5.2 remains the documented
 contingency. It is not built now. It is not deleted from the SPEC either.
 
-### A2 — `strict-complete` is the only frequency source; `swift6` is demoted
+### A2 — `strict-complete` is the only frequency source; `swift6` is demoted — **AMENDED by ADR 0002**
 
 **Amends:** §4.2 (mode), §5.3 (`by_toolchain`), §8 M1.
 
@@ -92,9 +92,20 @@ as a **severity overlay** — run on a small subset to answer "which IDs are err
 rather than warnings under Swift 6" — and its records are tagged `censored: true` and
 excluded from all ranking.
 
-**M0 must also test** whether `-Xswiftc -Xfrontend -Xswiftc -show-diagnostics-after-fatal`
-and a build-system-level continue-after-errors option recover any of the lost
-diagnostics. If they do, revisit. Do not assume they do.
+**Resolved 2026-09-06 — see `docs/decisions/0002-language-mode-censoring.md`.**
+`-show-diagnostics-after-fatal` recovers nothing, and no `--continue-building-after-errors`
+option exists on `swift build`.
+
+**More importantly, ADR 0002 found this amendment incomplete.** "Under the package's
+declared language mode" (SPEC §4.2) means a package declaring `swift-tools-version: 6.x`
+*is* in Swift 6 mode — so A2's censoring applies to the very mode A2 nominated as safe.
+Measured on identical source: 4 diagnostics under `tools-version: 5.10`, **1** under
+`tools-version: 6.0`, and 4 again with `-swift-version 5` forced.
+
+The primary mode is therefore **`strict-complete-v5`** — `-strict-concurrency=complete`
+with `-swift-version 5` forced for every package regardless of declaration.
+`strict-complete-declared` is retained for SPI comparability but is not a frequency
+source. `swift6` as a separate mode is deleted.
 
 ### A3 — The corpus is stratified on evidence, not selected on prestige
 
@@ -592,6 +603,7 @@ comparison in the census silently becomes invalid.
    ```bash
    swift build --force-resolved-versions \
      -Xswiftc -strict-concurrency=complete \
+     -Xswiftc -swift-version -Xswiftc 5 \
      -Xswiftc -debug-diagnostic-names \
      -Xswiftc -print-diagnostic-groups \
      -Xswiftc -no-color-diagnostics \
