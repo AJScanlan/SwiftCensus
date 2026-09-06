@@ -65,7 +65,9 @@ never emitted. `swift6`-mode counts are censored, not measured. They are tagged
 `S-byproduct`), not on package prestige. SPEC's T0+T1 is the 83–97%-clean stratum
 and would have produced a near-empty census.
 
-**A4 — stderr capture (route 3) is final unless `.dia` is shown to carry the ID.**
+**A4 — SUPERSEDED by ADR 0001. Capture is route 2: serialized `.dia`.** `.dia` carries
+the identifier and gives structured `level`, `location`, `category` and `categoryURL`.
+Parser is `TSCUtility.SerializedDiagnostics` (public API). stderr is fallback only.
 
 **A5 — Coverage classification is mechanical:** `documented` / `grouped-undocumented`
 / `ungrouped`, joined against `docs.swift.org/compiler/index/index.json` (79
@@ -111,10 +113,18 @@ SwiftPM's default build system is `swiftbuild`; `native` (llbuild) is deprecated
 
 ## Parser must handle
 
-ANSI colour codes (injected even with `-diagnostic-style=llvm`); OSC-8 hyperlinks
-wrapping group names; duplicate emission (once per frontend job, twice under the
-`swift` style). Deduplicate on
+Read `.dia` via `TSCUtility.SerializedDiagnostics`. Enumerate them from
+`.build/out/Intermediates.noindex/**/Objects-normal/<arch>/*.dia` — one per frontend
+job, so the **same diagnostic appears in several files**. Deduplicate on
 `(diagnostic_id, relative_path, line, col, severity)`.
+
+The identifier is a `[snake_case]` suffix on `text`; strip it into its own field.
+Note-to-parent linkage is positional, not a field — notes follow their parent in
+emission order.
+
+Only if falling back to stderr: strip ANSI colour codes (injected even under
+`-diagnostic-style=llvm`) and OSC-8 hyperlinks wrapping group names, and expect each
+diagnostic printed twice under the `swift` style.
 
 ## Footgun checklist (ROADMAP §7)
 

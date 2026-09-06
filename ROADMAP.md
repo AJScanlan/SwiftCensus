@@ -147,7 +147,7 @@ be stated, and it is precisely what `S-control` exists to bound.
 
 Manifest fields per SPEC §5.1, plus `stratum` and `spi_error_count_at_selection`.
 
-### A4 — Capture route 3 is the answer, not the stepping stone
+### A4 — Capture route 3 is the answer, not the stepping stone — **SUPERSEDED by ADR 0001**
 
 **Amends:** §4.3 (recommendation and route descriptions), §8 M0 exit.
 
@@ -174,9 +174,11 @@ Also amended:
      prints each twice. Deduplicate on
      `(diagnostic_id, relative_path, line, col, severity)`.
 
-**M0 still decides:** whether `.dia` preserves the identifier. If yes, route 2 becomes
-a hardening option for M1+. If no, route 3 is final and routes 1 and 2 are deleted
-from the SPEC rather than deferred.
+**Resolved 2026-09-06 — see `docs/decisions/0001-capture-route.md`.** `.dia` preserves
+the identifier, and `TSCUtility.SerializedDiagnostics` is public API. **Route 2 is the
+capture route.** The ANSI/OSC-8/double-emission handling above applies only to the
+stderr fallback, which is retained for build configurations emitting no `.dia`. Route 1
+(`.xcresult`) is deleted, not deferred.
 
 ### A5 — The residual denominator is largely computable
 
