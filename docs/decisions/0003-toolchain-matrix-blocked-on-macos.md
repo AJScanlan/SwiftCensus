@@ -1,6 +1,6 @@
 # ADR 0003 — The toolchain matrix cannot run on macOS with one Xcode
 
-**Status:** open — requires a decision
+**Status:** option A adopted for M1 by ADR 0004 (Docker is now installed); the macOS-column question moves to ADR 0004 §1. Open items below still stand.
 **Date:** 2026-09-06
 **Milestone:** M0 (gate G0)
 **Affects:** ROADMAP A6, A12; SPEC §4.2
