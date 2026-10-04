@@ -1,0 +1,102 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 5,
+    "fixIts" : 0,
+    "group" : "ActorIsolatedCall",
+    "groupURL" : "https:\/\/docs.swift.org\/compiler\/documentation\/diagnostics\/actor-isolated-call",
+    "id" : "actor_isolated_call_decl",
+    "line" : 4,
+    "path" : ".build\/checkouts\/Dep\/Sources\/Dep\/Dep.swift",
+    "severity" : "error",
+    "text" : "call to main actor-isolated global function 'depMain()' in a synchronous nonisolated context"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 1,
+    "parent" : 0,
+    "path" : ".build\/checkouts\/Dep\/Sources\/Dep\/Dep.swift",
+    "severity" : "note",
+    "text" : "calls to global function 'depMain()' from outside of its actor context are implicitly asynchronous"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 6,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 3,
+    "parent" : 0,
+    "path" : ".build\/checkouts\/Dep\/Sources\/Dep\/Dep.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make global function 'depBad()' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "group" : "ActorIsolatedCall",
+    "groupURL" : "https:\/\/docs.swift.org\/compiler\/documentation\/diagnostics\/actor-isolated-call",
+    "id" : "actor_isolated_call_decl",
+    "line" : 8,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "error",
+    "text" : "call to main actor-isolated global function 'onMain()' in a synchronous nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 5,
+    "parent" : 3,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "note",
+    "text" : "calls to global function 'onMain()' from outside of its actor context are implicitly asynchronous"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 7,
+    "parent" : 3,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make global function 'bad()' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 9,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated var 'counter' can not be mutated from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "note_consider_method_for_isolated_property_mutation",
+    "line" : 9,
+    "parent" : 6,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "note",
+    "text" : "consider declaring an isolated method on 'MainActor' to perform the mutation"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "actor_mutable_state",
+    "line" : 3,
+    "parent" : 6,
+    "path" : "Sources\/Probe\/Probe.swift",
+    "severity" : "note",
+    "text" : "mutation of this var is only permitted within the actor"
+  }
+]
