@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CioAnalytics",
+        "repositoryURL": "https://github.com/customerio/cdp-analytics-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "9c2cd6f840ca2df72e9be6597420f1b45f3c8e46",
+          "version": "1.7.3+cio.1"
+        }
+      },
+      {
+        "package": "Jist",
+        "repositoryURL": "https://github.com/customerio/jist.git",
+        "state": {
+          "branch": null,
+          "revision": "111adb1944f06fdaa26a7f7dc5cb612a1d9c556a",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "JSONSafeEncoding",
+        "repositoryURL": "https://github.com/segmentio/jsonsafeencoding-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "af6a8b360984085e36c6341b21ecb35c12f47ebd",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "Sovran",
+        "repositoryURL": "https://github.com/segmentio/sovran-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "24867f3e4ac62027db9827112135e6531b6f4051",
+          "version": "1.1.2"
+        }
+      },
+      {
+        "package": "LDSwiftEventSource",
+        "repositoryURL": "https://github.com/LaunchDarkly/swift-eventsource.git",
+        "state": {
+          "branch": null,
+          "revision": "57051701c58a93603ffa2051f8e9cf0c8cff7814",
+          "version": "3.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

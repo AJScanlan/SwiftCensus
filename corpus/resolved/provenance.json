@@ -1,0 +1,247 @@
+{
+  "AJScanlan/LedgerKit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T12:49:23Z",
+    "sha256" : "09180e82526c1513a28997aae90eb779eae941fd8e8b963d57fad6af48e3e490",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AvdLee/Diagnostics" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T12:49:37Z",
+    "sha256" : "57caa1dd52313a2b9f9799b413c8a78bd993d868932e3e1e0783921e900a220e",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Recouse/EventSource" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:49:49Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "RuiNelson/SwiftSMB" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T12:49:53Z",
+    "sha256" : "619b0a1963073edbcfe5fcb74a71b1b2cd66786f0e03681d10b5c5d729bbf693",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "William-Weng/WWExpandableCell" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:49:55Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "adamtheturtle/CoderPadMCP" : {
+    "pin_count" : 13,
+    "resolved_at" : "2026-10-04T12:50:04Z",
+    "sha256" : "aa6e4e3b827ee63e811c668e1739adb755f51e6dfc284ad808e06e82edbe186f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "apple/swift-collections" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:48:35Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "apple/swift-nio" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-04T12:48:39Z",
+    "sha256" : "1ca2cb0b90d1c9d8375dcd6bea01c28115e21640d737d473f2276d84e98b1b70",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "csanfilippo/swift-sgp4" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-04T12:50:09Z",
+    "sha256" : "780ae26478d7ce3ce42069400a830f1e6e7376cd6ea08df709d2d3b1fd4ac41d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "customerio/customerio-ios" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-04T12:50:14Z",
+    "sha256" : "5824a2ae335ae11dcdced29a5eae8b92686547dd680a44658fc2add873304b25",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "dream-horizon-org/pulse-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:50:23Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "gabriel/swiftui-snapshot-testing" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-04T12:50:30Z",
+    "sha256" : "f7c6aafc567af834ad36a5342fd26f0881d7c808ae25146c496addb4e06ddfa9",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "getsentry/sentry-apple-swiftybeaver" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-04T12:51:18Z",
+    "sha256" : "8bebe58bef556b0490a2ae01a403fbe0460b9fc91912e5ff8c2fb9a6d98ec9d0",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-beyondcorp-clientgateways-v1" : {
+    "pin_count" : 32,
+    "resolved_at" : "2026-10-04T12:51:54Z",
+    "sha256" : "0a7ce7f49801c874ef6eadefab0f92581d02bf3861e430c6778c2726a34ef69f",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-dataproc-v1" : {
+    "pin_count" : 31,
+    "resolved_at" : "2026-10-04T12:52:28Z",
+    "sha256" : "c0f950d9a6a752c8d1f93d4af92cc0c4ab05d737fd09d3f378a3499537dc6c74",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "groue/GRDB.swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:49:34Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "hotngui/ShapelyParentalGate" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:52:29Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "hummingbird-project/hummingbird-fluent" : {
+    "pin_count" : 30,
+    "resolved_at" : "2026-10-04T12:53:02Z",
+    "sha256" : "27b3a816b7b8c03af4077e7006087160c4193011a32b9615636b007e3737b011",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "jgvanwyk/SwiftFileSystemEvents" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:53:04Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "kevinnz/SSTV-MEL" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T13:00:52Z",
+    "sha256" : "402f2f5f6fe24ec09912a170823e8ab65c8ace1855c409fc0ba0e14590c07a89",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "noppoman/hexavilleframework" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-04T12:53:14Z",
+    "sha256" : "b9f62454df266d3f63d75d89a4dcdb01528060d91cc3b6eb3fa157352144d3ad",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "openTdataCH/oev-icons-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:53:25Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "perrystreetsoftware/Harmonize" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-04T12:53:32Z",
+    "sha256" : "6cc01c988de85f3f13617ce03f8cc21633fc33f8165db68790778fe10e317206",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "pointfreeco/swift-case-paths" : {
+    "pin_count" : 7,
+    "resolved_at" : "2026-10-04T12:53:42Z",
+    "sha256" : "b317b3cfb6a0274930370cd875b6b6ddce281f3b8bd45e6f91b9e67b460d13b8",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "pointfreeco/swift-concurrency-extras" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T12:48:42Z",
+    "sha256" : "3f696d3e787328140c94a3bea84a78269f68d8693c0151c84d73a6377881c7ce",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "pointfreeco/swift-parsing" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-04T12:53:49Z",
+    "sha256" : "b22552bb9d3a547eedde161454ba68884b98b55c237f260ebf886f37eb616836",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "rafaelfrancisco-dev/Screws" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-04T12:53:55Z",
+    "sha256" : "d42d9a1fd7b82e6669f380d1b5e41b88139deb055150369dc0b31140afc458fa",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "sanzaru/SimpleToast" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:53:57Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swift-compositions/swift-css" : {
+    "pin_count" : 139,
+    "resolved_at" : "2026-10-04T12:56:24Z",
+    "sha256" : "57fdd4e9d2fc68537bf23a050c2420cb8a1d5cdd54d4d5754c4faeb6f492a342",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swift-microservices/swift-persistence-postgres" : {
+    "pin_count" : 15,
+    "resolved_at" : "2026-10-04T12:56:39Z",
+    "sha256" : "b4a2826a6e39548ee8e4127cd626b829c18958056e89df16b8d5e632a7b6101e",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "thebbapp/swift-package-bb-app-auth-provider-plaintext" : {
+    "pin_count" : 22,
+    "resolved_at" : "2026-10-04T12:56:46Z",
+    "sha256" : "787206dfbd8006f349946e880bec7ce5ce1e86f585f2ed29b9e545598e7e69f1",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "tqtuan1201/TTBaseUIKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:56:49Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "vapor/vapor" : {
+    "pin_count" : 28,
+    "resolved_at" : "2026-10-04T12:49:06Z",
+    "sha256" : "654fe5c248fe40feeb19d48081e55990222f4361f6ed1199a4c717acb9eb591e",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "vospennikov/ClusterMap" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-04T12:56:51Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "zendesk/sdk_guide_kit_ios" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-04T12:56:58Z",
+    "sha256" : "aad62f9a5693d98d317031d8f443d2d447202e18952573e9a99e384691bd7af7",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  }
+}

@@ -55,6 +55,7 @@ packages:
   - linux-spm
   selection: seed=20261004 draw-position=24 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 86db5f7c89d35911e44d16be9eeadddc40653b34
+  skip_reason: 'unresolvable: dependency https://github.com/Lancelotbronner/swift-bits cannot be cloned (credentials required or repo removed)'
   stratum: S-control
   url: https://github.com/Lancelotbronner/swift-opentdd-grf
 - id: Recouse/EventSource

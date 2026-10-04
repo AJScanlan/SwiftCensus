@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "sdk_core_utilities_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/sdk_core_utilities_ios",
+      "state" : {
+        "revision" : "96b1e9c71fe1ffe784341e810da7573c78f852a9",
+        "version" : "8.2.0"
+      }
+    },
+    {
+      "identity" : "sdk_http_client_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/sdk_http_client_ios",
+      "state" : {
+        "revision" : "d68ed71651444bb1ecbccaf24af76a9ac4008ed8",
+        "version" : "0.22.0"
+      }
+    },
+    {
+      "identity" : "sdk_logger_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/sdk_logger_ios",
+      "state" : {
+        "revision" : "f31290d725f729c02b5e468ecf73ab8100fb35da",
+        "version" : "0.12.0"
+      }
+    },
+    {
+      "identity" : "sdk_storage_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zendesk/sdk_storage_ios",
+      "state" : {
+        "revision" : "dfd683643d11af5a459d0de7a65de6e91b0b9c77",
+        "version" : "1.7.0"
+      }
+    }
+  ],
+  "version" : 2
+}

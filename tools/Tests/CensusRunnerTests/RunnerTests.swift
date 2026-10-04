@@ -12,6 +12,10 @@ import Testing
         #expect(OutcomeClassifier.classify(exitCode: 0, timedOut: false, log: "") == .built)
     }
 
+    @Test func sigkillIsInfraNotAPackageFailure() {
+        #expect(OutcomeClassifier.classify(exitCode: 137, timedOut: false, log: "") == .infraError)
+    }
+
     @Test func timeoutWinsOverEverything() {
         #expect(OutcomeClassifier.classify(exitCode: 0, timedOut: true, log: "") == .timeout)
     }

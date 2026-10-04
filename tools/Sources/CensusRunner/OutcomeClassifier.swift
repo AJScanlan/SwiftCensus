@@ -7,6 +7,9 @@ public enum OutcomeClassifier {
     public static func classify(exitCode: Int32, timedOut: Bool, log: String) -> CellOutcome {
         if timedOut { return .timeout }
         if exitCode == 0 { return .built }
+        // 137 = SIGKILL, which in a memory-limited container is the OOM killer: the instrument ran out
+        // of memory, the package did not fail. Recorded as infra so it is re-run with a larger limit.
+        if exitCode == 137 { return .infraError }
         let lower = log.lowercased()
         if lower.contains("is using swift tools version") && lower.contains("but the installed version is") {
             return .unsupportedToolsVersion

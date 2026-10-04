@@ -25,7 +25,11 @@ public struct SourceCache: Sendable {
         try await Shell.check("git", ["remote", "add", "origin", package.url], currentDirectory: dir)
         try await Shell.check("git", ["fetch", "-q", "--depth", "1", "origin", package.sha],
                               currentDirectory: dir, timeout: 600)
-        try await Shell.check("git", ["checkout", "-q", "FETCH_HEAD"], currentDirectory: dir)
+        // Sources are Swift; LFS-tracked assets are irrelevant to compilation and the host need not
+        // have git-lfs installed, so the smudge filter is disabled rather than required.
+        try await Shell.check("git", ["-c", "filter.lfs.smudge=", "-c", "filter.lfs.process=",
+                                      "-c", "filter.lfs.required=false", "checkout", "-q", "FETCH_HEAD"],
+                              currentDirectory: dir)
         let head = try await Shell.check("git", ["rev-parse", "HEAD"], currentDirectory: dir)
             .stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
         guard head == package.sha else {
