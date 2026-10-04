@@ -66,9 +66,7 @@ public enum DiagParse {
                     }
                 } else if let parent = currentParent {
                     guard noteKeysByParent[parent, default: []].insert(record.key).inserted else { continue }
-                    var note = record
-                    note.parent = parent
-                    out.append(note)
+                    out.append(adopt(record, parent: out[parent], parentIndex: parent))
                 } else if orphanKeys.insert(record.key).inserted {
                     out.append(record)
                 }
@@ -79,9 +77,21 @@ public enum DiagParse {
             records: reorderNotesAfterParents(out), diaFilesFound: diaFiles.count, unreadable: unreadable)
     }
 
+    /// A note with no source location (the compiler emits some, e.g. `nonsendable_function_type`)
+    /// would classify as `external` and silently drop out of the primary distribution even though its
+    /// parent is primary. It inherits the parent's attribution; its `path` stays `<unknown>`.
+    static func adopt(_ note: DiagnosticRecord, parent: DiagnosticRecord, parentIndex: Int) -> DiagnosticRecord {
+        var note = note
+        note.parent = parentIndex
+        if note.path == unknownPath { note.attribution = parent.attribution }
+        return note
+    }
+
+    static let unknownPath = "<unknown>"
+
     private static func makeRecord(_ d: SerializedDiagnostics.Diagnostic, packageRoot: String) -> DiagnosticRecord {
         let split = MessageSuffix.split(d.text)
-        let rawPath = d.location?.filename ?? "<unknown>"
+        let rawPath = d.location?.filename ?? unknownPath
         let (attribution, path) = d.location == nil
             ? (Attribution.external, rawPath)
             : PathAttribution.classify(path: rawPath, root: packageRoot)

@@ -32,15 +32,23 @@ let package = Package(
                 .product(name: "SwiftSyntax", package: "swift-syntax"),
             ]
         ),
+        .target(
+            name: "CensusRunner",
+            dependencies: [
+                "CensusCore", "DiagParse", "SuppressionScan",
+                .product(name: "Yams", package: "Yams"),
+            ]
+        ),
         .executableTarget(
             name: "census",
             dependencies: [
-                "CensusCore", "DiagParse", "SuppressionScan",
+                "CensusCore", "CensusRunner", "SuppressionScan",
                 .product(name: "Yams", package: "Yams"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]
         ),
         .testTarget(name: "CensusCoreTests", dependencies: ["CensusCore"]),
+        .testTarget(name: "CensusRunnerTests", dependencies: ["CensusRunner"]),
         .testTarget(name: "DiagParseTests", dependencies: ["DiagParse"], resources: [.copy("Fixtures")]),
         .testTarget(name: "SuppressionScanTests", dependencies: ["SuppressionScan"]),
     ]

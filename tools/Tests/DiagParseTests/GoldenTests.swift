@@ -100,3 +100,25 @@ private func encode(_ records: [DiagnosticRecord]) throws -> Data {
         #expect(r.group == group)
     }
 }
+
+@Suite struct LocationlessNoteTests {
+    func record(path: String, attribution: Attribution, severity: Severity) -> DiagnosticRecord {
+        DiagnosticRecord(id: "x", text: "t", severity: severity, group: nil, groupURL: nil, path: path,
+                         line: 0, col: 0, fixIts: 0, attribution: attribution, parent: nil)
+    }
+
+    @Test func locationlessNoteInheritsItsParentsAttribution() {
+        let parent = record(path: "Sources/A/a.swift", attribution: .primary, severity: .warning)
+        let note = record(path: "<unknown>", attribution: .external, severity: .note)
+        let adopted = DiagParse.adopt(note, parent: parent, parentIndex: 7)
+        #expect(adopted.attribution == .primary)
+        #expect(adopted.parent == 7)
+        #expect(adopted.path == "<unknown>")
+    }
+
+    @Test func locatedNoteKeepsItsOwnAttribution() {
+        let parent = record(path: "Sources/A/a.swift", attribution: .primary, severity: .warning)
+        let note = record(path: ".build/checkouts/d/d.swift", attribution: .transitive, severity: .note)
+        #expect(DiagParse.adopt(note, parent: parent, parentIndex: 0).attribution == .transitive)
+    }
+}

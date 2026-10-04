@@ -57,3 +57,43 @@ import Testing
         #expect(!e.difference(w).isEmpty)
     }
 }
+
+@Suite struct CorpusManifestTests {
+    func pkg(_ id: String = "a/a", sha: String = String(repeating: "a", count: 40), url: String = "https://github.com/a/a",
+             platforms: [Platform] = [.linuxSPM], skip: String? = nil) -> CorpusPackage {
+        CorpusPackage(id: id, url: url, sha: sha, stratum: .emit, platforms: platforms, selection: "t", skipReason: skip)
+    }
+
+    @Test func pinnedManifestIsValid() {
+        #expect(CorpusManifest(packages: [pkg()]).validate().isEmpty)
+    }
+
+    /// P7: "latest", branch names, tags and abbreviated SHAs are all forbidden.
+    @Test(arguments: ["latest", "main", "6.1.0", "abc1234", String(repeating: "A", count: 40), String(repeating: "g", count: 40)])
+    func nonSHAPinsAreRejected(sha: String) {
+        #expect(!CorpusManifest(packages: [pkg(sha: sha)]).validate().isEmpty)
+    }
+
+    @Test func duplicateIdsHttpAndEmptyPlatformsAreReported() {
+        let m = CorpusManifest(packages: [pkg(), pkg(), pkg("b/b", url: "http://x"), pkg("c/c", platforms: [])])
+        #expect(m.validate().count == 3)
+        #expect(CorpusManifest(packages: [pkg(platforms: [], skip: "needs Apple SDK")]).validate().isEmpty)
+    }
+
+    @Test func slugIsFilesystemSafe() {
+        #expect(pkg("pointfreeco/swift-dependencies").slug == "pointfreeco__swift-dependencies")
+    }
+}
+
+@Suite struct DiagnosticTallyTests {
+    @Test func tallySeparatesNotesFromDiagnosticsAndNonPrimary() {
+        func r(_ a: Attribution, _ s: Severity) -> DiagnosticRecord {
+            DiagnosticRecord(id: "x", text: "", severity: s, group: nil, groupURL: nil, path: "p", line: 1, col: 1,
+                             fixIts: 0, attribution: a, parent: nil)
+        }
+        let t = DiagnosticTally(records: [r(.primary, .error), r(.primary, .warning), r(.primary, .note), r(.primary, .note),
+                                          r(.transitive, .error), r(.external, .warning)])
+        #expect(t.primaryErrors == 1 && t.primaryWarnings == 1 && t.primaryNotes == 2)
+        #expect(t.transitive == 1 && t.external == 1)
+    }
+}
