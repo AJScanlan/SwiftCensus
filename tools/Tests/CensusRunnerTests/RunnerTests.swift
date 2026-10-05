@@ -16,6 +16,13 @@ import Testing
         #expect(OutcomeClassifier.classify(exitCode: 137, timedOut: false, log: "") == .infraError)
     }
 
+    @Test func truncatedDiaInvalidatesOnlyCellsThatClaimDiagnostics() {
+        #expect(OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: .built))
+        #expect(OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: .buildFailed))
+        #expect(!OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: .timeout))
+        #expect(!OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: .unsupportedToolsVersion))
+    }
+
     @Test func timeoutWinsOverEverything() {
         #expect(OutcomeClassifier.classify(exitCode: 0, timedOut: true, log: "") == .timeout)
     }
@@ -63,6 +70,8 @@ import Testing
         #expect(args.contains("-strict-concurrency=complete"))
         #expect(args.contains("-debug-diagnostic-names"))
         #expect(!args.contains("--build-tests"))
+        // Pre-6.2 native builds emit no .dia unless asked; without it a cell silently reports zero.
+        #expect(args.contains("-serialize-diagnostics"))
     }
 
     @Test func declaredModeDoesNotForceSwiftVersion() {

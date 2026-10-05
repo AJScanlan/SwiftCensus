@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "attr_renamed_warning",
+    "line" : 58,
+    "path" : "Sources/ConcurrencyExtrasTestSupport/TaskLocalTrait.swift",
+    "severity" : "warning",
+    "text" : "'@concurrent' has been renamed to '@Sendable'"
+  }
+]

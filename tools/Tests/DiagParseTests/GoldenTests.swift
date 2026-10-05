@@ -68,9 +68,20 @@ private func encode(_ records: [DiagnosticRecord]) throws -> Data {
         #expect(NormalisedMultiset(records: result.records).keys.allSatisfy { $0.path.hasPrefix("Sources/") })
     }
 
+    /// A build that aborts after one failed job leaves sibling `.dia` files empty. That is normal and
+    /// must neither crash, nor count as corrupt, nor vanish silently.
+    @Test func emptyDiaFilesAreCountedNotTreatedAsCorrupt() throws {
+        let empty = FileManager.default.temporaryDirectory.appendingPathComponent("empty-\(UUID()).dia")
+        try Data().write(to: empty)
+        defer { try? FileManager.default.removeItem(at: empty) }
+        let result = DiagParse.parse(diaFiles: [empty], packageRoot: fixtureRoot)
+        #expect(result.emptyDiaFiles == 1 && result.unreadable.isEmpty && result.records.isEmpty)
+        #expect(result.diaFilesFound == 1)
+    }
+
     /// TSC traps on inputs of 4 bytes or fewer instead of throwing; one empty file must not
     /// take down a whole run.
-    @Test(arguments: [0, 4, 5, 100])
+    @Test(arguments: [1, 4, 5, 100])
     func unreadableFilesAreReportedNotDropped(truncatedTo length: Int) throws {
         let source = try Data(contentsOf: tree.appendingPathComponent("Probe.dia"))
         let bad = FileManager.default.temporaryDirectory.appendingPathComponent("bad-\(UUID()).dia")

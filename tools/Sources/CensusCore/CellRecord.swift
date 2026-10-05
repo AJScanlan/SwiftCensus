@@ -82,6 +82,7 @@ public struct CellRecord: Codable, Equatable, Sendable {
     public var testTargetsBuilt = false
     public var diaFilesFound = 0
     public var diaFilesUnreadable = 0
+    public var diaFilesEmpty = 0
     public var tally = DiagnosticTally()
     public var note: String?
 
@@ -114,6 +115,7 @@ public struct CellRecord: Codable, Equatable, Sendable {
         case image, imageID = "image_id", resolvedFileSHA256 = "resolved_file_sha256"
         case testTargetsBuilt = "test_targets_built"
         case diaFilesFound = "dia_files_found", diaFilesUnreadable = "dia_files_unreadable"
+        case diaFilesEmpty = "dia_files_empty"
         case tally, note
     }
 }

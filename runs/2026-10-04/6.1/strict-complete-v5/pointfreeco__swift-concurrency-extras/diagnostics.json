@@ -1,0 +1,75 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 100,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_sendable_conformance",
+    "line" : 8,
+    "parent" : 0,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 100,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_sendable_conformance",
+    "line" : 8,
+    "parent" : 2,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 107,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_sendable_conformance",
+    "line" : 8,
+    "parent" : 4,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "attr_renamed_warning",
+    "line" : 58,
+    "path" : "Sources/ConcurrencyExtrasTestSupport/TaskLocalTrait.swift",
+    "severity" : "warning",
+    "text" : "'@concurrent' has been renamed to '@Sendable'"
+  }
+]

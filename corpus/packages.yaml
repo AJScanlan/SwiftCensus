@@ -31,15 +31,15 @@ packages:
   url: https://github.com/vapor/vapor
 - id: AJScanlan/LedgerKit
   platforms:
-  - linux-spm
-  selection: 'root of the byproduct graph: the code the instrument is pointed at; main HEAD on 2026-10-04'
+  - macos-spm
+  selection: 'root of the byproduct graph: the code the instrument is pointed at; main HEAD on 2026-10-04; Linux: imports FoundationModels, an Apple-only framework (A12: macOS-only, blocked on F3 machine)'
   sha: fa91db071714c0e6c69a3f0727001514f7d09312
   stratum: S-byproduct
   url: https://github.com/AJScanlan/LedgerKit
 - id: groue/GRDB.swift
   platforms:
-  - linux-spm
-  selection: 'LedgerKit''s only dependency: revision pinned in LedgerKit/Package.resolved (v7.11.1)'
+  - macos-spm
+  selection: 'LedgerKit''s only dependency: revision pinned in LedgerKit/Package.resolved (v7.11.1); Linux: needs system libsqlite3 headers, absent from the Linux toolchain image (A12: macOS-only, blocked on F3 machine)'
   sha: b83108d10f42680d78f23fe4d4d80fc88dab3212
   stratum: S-byproduct
   url: https://github.com/groue/GRDB.swift

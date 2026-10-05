@@ -125,8 +125,15 @@ public struct CellRunner: Sendable {
             diagnostics = parsed.records
             record.diaFilesFound = parsed.diaFilesFound
             record.diaFilesUnreadable = parsed.unreadable.count
+            record.diaFilesEmpty = parsed.emptyDiaFiles
             if !parsed.unreadable.isEmpty {
                 record.note = "unreadable .dia: " + parsed.unreadable.map(\.path).joined(separator: ", ")
+                // A non-empty .dia that will not parse is corrupt output, so the diagnostic set is incomplete
+                // and the cell is not a measurement. (Empty .dia files are normal and not counted here.)
+                if OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: record.outcome) {
+                    record.outcome = .infraError
+                    record.note = "corrupt .dia (non-empty but unparseable); the diagnostic set is incomplete; " + (record.note ?? "")
+                }
             }
         }
         record.tally = DiagnosticTally(records: diagnostics)

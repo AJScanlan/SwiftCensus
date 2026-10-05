@@ -12,6 +12,10 @@ public struct ParseResult: Sendable {
     /// Deduplicated records in first-seen order. Notes follow their parent; `parent` indexes this array.
     public var records: [DiagnosticRecord]
     public var diaFilesFound: Int
+    /// Zero-byte `.dia` files. A build system that aborts after one job fails leaves the sibling jobs'
+    /// `.dia` files empty: the job never ran, so there are no diagnostics to lose. Counted, not an error.
+    public var emptyDiaFiles: Int
+    /// Non-empty files that could not be parsed: genuinely corrupt or truncated output.
     public var unreadable: [UnreadableDia]
 }
 
@@ -39,11 +43,13 @@ public enum DiagParse {
         var noteKeysByParent: [Int: Set<DiagnosticKey>] = [:]
         var orphanKeys: Set<DiagnosticKey> = []
         var unreadable: [UnreadableDia] = []
+        var empty = 0
 
         for url in diaFiles {
             let diagnostics: [SerializedDiagnostics.Diagnostic]
             do {
                 let data = try Data(contentsOf: url)
+                if data.isEmpty { empty += 1; continue }
                 // TSC's bitstream reader traps (precondition) rather than throws on <= 4 bytes,
                 // which would kill the whole run on one empty or truncated file.
                 guard data.count > minimumDiaBytes else { throw UnreadableDiaError.tooShort(data.count) }
@@ -74,7 +80,8 @@ public enum DiagParse {
         }
         // Notes were appended after later parents may have been; restore "notes follow parent".
         return ParseResult(
-            records: reorderNotesAfterParents(out), diaFilesFound: diaFiles.count, unreadable: unreadable)
+            records: reorderNotesAfterParents(out), diaFilesFound: diaFiles.count, emptyDiaFiles: empty,
+            unreadable: unreadable)
     }
 
     /// A note with no source location (the compiler emits some, e.g. `nonsendable_function_type`)

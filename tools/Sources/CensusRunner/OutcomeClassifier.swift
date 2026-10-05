@@ -21,6 +21,12 @@ public enum OutcomeClassifier {
         return .buildFailed
     }
 
+    /// A cell that produced diagnostics (`built`/`build_failed`) but also left unreadable `.dia` files
+    /// has an incomplete diagnostic set and must not be reported as a result.
+    public static func truncatedDiaInvalidatesCell(outcome: CellOutcome) -> Bool {
+        outcome == .built || outcome == .buildFailed
+    }
+
     static let resolutionFailureMarkers = [
         "dependencies could not be resolved",
         "failed to clone",

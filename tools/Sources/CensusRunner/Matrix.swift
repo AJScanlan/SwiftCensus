@@ -23,7 +23,7 @@ public struct Toolchain: Equatable, Sendable {
 
 public enum BuildInvocation {
     /// CLAUDE.md's canonical invocation, plus non-semantic additions: `-v` so the resolved frontend
-    /// command lines are in the log (F7), a shared per-toolchain module cache (F4), and a shared
+    /// command lines are in the log (F7), a shared per-toolchain module cache (F4), `-serialize-diagnostics` (see below), and a shared
     /// SwiftPM dependency-mirror cache. None of these change which diagnostics are emitted.
     ///
     /// `strict-complete-declared` omits the forced `-swift-version 5` (ADR 0002) and is used only
@@ -42,6 +42,11 @@ public enum BuildInvocation {
             "-Xswiftc", "-no-color-diagnostics",
             "-Xswiftc", "-diagnostic-style=llvm",
             "-Xswiftc", "-module-cache-path", "-Xswiftc", "/modcache",
+            // Linux SwiftPM before 6.2 uses the native build system, which does not serialize
+            // diagnostics on its own: without this flag a 6.1 cell has no .dia and silently reports
+            // zero diagnostics (observed: 15 of 18 diagnostic-capable 6.1 cells). Later toolchains
+            // already serialize and are unaffected.
+            "-Xswiftc", "-serialize-diagnostics",
         ]
         return args
     }
