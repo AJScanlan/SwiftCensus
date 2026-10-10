@@ -113,21 +113,45 @@ struct Resolve: AsyncParsableCommand {
     @Option(name: .long, parsing: .upToNextOption, help: "Only these package ids.") var package: [String] = []
     @Flag(name: .long, help: "Re-resolve packages that already have a vendored file.") var force = false
     @Flag(name: .long, help: "Record genuine dependency-resolution failures in failures.json and exit 0: the screen's unresolvable candidates are data. Infrastructure errors (docker, timeout, source fetch) are never recorded and still stop the command with a non-zero exit.") var allowFailures = false
+    @Option(name: .long, help: "Record this package id as unresolvable by operator decision, without resolving anything (for a source fetch that fails identically every time). Requires --reason.") var recordUnresolvable: String?
+    @Option(name: .long, help: "Why --record-unresolvable applies; stored as \"operator: <reason>\".") var reason: String?
+
+    func validate() throws {
+        if (recordUnresolvable == nil) != (reason == nil) {
+            throw ValidationError("--record-unresolvable and --reason must be given together")
+        }
+    }
 
     func run() async throws {
         let paths = corpus.paths
         let manifest = try paths.loadManifest()
+        let provenanceURL = paths.resolved.appendingPathComponent("provenance.json")
+        let failuresURL = paths.resolved.appendingPathComponent("failures.json")
+        if let id = recordUnresolvable, let reason {
+            guard let p = manifest.packages.first(where: { $0.id == id }) else {
+                throw ValidationError("\(id) is not in the manifest \(corpus.manifest)")
+            }
+            let provenance = try loadJSON([String: ResolvedProvenance].self, from: provenanceURL, default: [:])
+            if provenance[id] != nil && FileManager.default.fileExists(
+                atPath: paths.resolved.appendingPathComponent("\(p.slug).resolved").path) {
+                throw ValidationError("\(id) already has a vendored Package.resolved; refusing to mark it unresolvable")
+            }
+            var failed = try loadJSON([String: String].self, from: failuresURL, default: [:])
+            failed[id] = Resolver.operatorFailurePrefix + reason
+            try FileManager.default.createDirectory(at: paths.resolved, withIntermediateDirectories: true)
+            try RunStore(root: paths.resolved).write(failed, to: failuresURL)
+            print("recorded \(id) unresolvable: \(failed[id]!)")
+            return
+        }
         guard let tc = Toolchain.named(toolchain) else { throw ValidationError("unknown toolchain \(toolchain)") }
         try FileManager.default.createDirectory(at: paths.scratch, withIntermediateDirectories: true)
         let resolver = Resolver(sources: paths.sources, resolvedDirectory: paths.resolved, scratch: paths.scratch, toolchain: tc)
         let store = RunStore(root: paths.resolved)
 
-        let provenanceURL = paths.resolved.appendingPathComponent("provenance.json")
-        let failuresURL = paths.resolved.appendingPathComponent("failures.json")
         var provenance = try loadJSON([String: ResolvedProvenance].self, from: provenanceURL, default: [:])
         var failed = try loadJSON([String: String].self, from: failuresURL, default: [:])
         let selected = manifest.packages.filter { $0.skipReason == nil && (package.isEmpty || package.contains($0.id)) }
-        let pending = Resolver.pending(selected, resolvedDirectory: paths.resolved, provenance: provenance, force: force)
+        let pending = Resolver.pending(selected, resolvedDirectory: paths.resolved, provenance: provenance, failures: failed, force: force)
         print("\(pending.count) to resolve (\(selected.count - pending.count) already vendored)")
         var failures = 0
         for p in pending {

@@ -20,9 +20,23 @@ import Testing
         try Data("{}".utf8).write(to: dir.appendingPathComponent("o__fileonly.resolved"))
         let all = [pkg("o/done"), pkg("o/fileonly"), pkg("o/provonly"), pkg("o/new")]
         let provenance = ["o/done": prov, "o/provonly": prov]
-        let pending = Resolver.pending(all, resolvedDirectory: dir, provenance: provenance, force: false)
+        let pending = Resolver.pending(all, resolvedDirectory: dir, provenance: provenance, failures: [:], force: false)
         #expect(pending.map(\.id) == ["o/fileonly", "o/provonly", "o/new"])
-        #expect(Resolver.pending(all, resolvedDirectory: dir, provenance: provenance, force: true).count == 4)
+        #expect(Resolver.pending(all, resolvedDirectory: dir, provenance: provenance, failures: [:], force: true).count == 4)
+    }
+
+    /// An operator-recorded unresolvable (a persistent fetch failure) is a decision, not a transient failure: it is
+    /// never retried. A tool-recorded failure stays pending so the driver's second attempt retries it. `--force`
+    /// still re-resolves everything.
+    @Test func operatorRecordedFailuresAreNotRetried() throws {
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent("resolver-\(UUID())")
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let all = [pkg("o/op"), pkg("o/tool"), pkg("o/new")]
+        let failures = ["o/op": "operator: private submodule", "o/tool": "o/tool: dependency resolution failed:\nx"]
+        let pending = Resolver.pending(all, resolvedDirectory: dir, provenance: [:], failures: failures, force: false)
+        #expect(pending.map(\.id) == ["o/tool", "o/new"])
+        #expect(Resolver.pending(all, resolvedDirectory: dir, provenance: [:], failures: failures, force: true).count == 3)
     }
 }
 

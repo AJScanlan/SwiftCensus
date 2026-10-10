@@ -37,11 +37,17 @@ public struct Resolver: Sendable {
     /// G3: resume-safe. A package is done when its vendored file exists *and* provenance records it. Anything else
     /// (never tried, failed, or interrupted between the two writes) is pending. `force` re-resolves everything,
     /// which for the corpus is a documented operation with a fresh baseline run, never a drive-by.
+    /// A failure recorded by `--record-unresolvable` starts with this prefix. It is an operator decision about a
+    /// persistent fetch failure, so it is never retried; failures the tool recorded itself stay pending.
+    public static let operatorFailurePrefix = "operator: "
+
     public static func pending(_ packages: [CorpusPackage], resolvedDirectory: URL,
-                               provenance: [String: ResolvedProvenance], force: Bool) -> [CorpusPackage] {
+                               provenance: [String: ResolvedProvenance], failures: [String: String],
+                               force: Bool) -> [CorpusPackage] {
         guard !force else { return packages }
         return packages.filter { p in
-            provenance[p.id] == nil
+            if failures[p.id]?.hasPrefix(operatorFailurePrefix) == true { return false }
+            return provenance[p.id] == nil
                 || !FileManager.default.fileExists(atPath: resolvedDirectory.appendingPathComponent("\(p.slug).resolved").path)
         }
     }
