@@ -16,11 +16,14 @@ public enum CellOutcome: String, Codable, Sendable {
     case infraError = "infra_error"
 }
 
-/// The two measurement modes (ADR 0002). `v5` is the only frequency source.
+/// The measurement modes (ADR 0002). `v5` is the only frequency source.
 public enum Mode: String, Codable, Sendable, CaseIterable {
     case strictCompleteV5 = "strict-complete-v5"
     /// SPI-comparable; retained for comparability and never a frequency source.
     case strictCompleteDeclared = "strict-complete-declared"
+    /// ADR 0007's screen baseline: `-strict-concurrency=minimal` with `-swift-version 5` forced. Never a corpus mode
+    /// and never a frequency source; it exists only to be subtracted from `strict-complete-v5`.
+    case minimalV5 = "minimal-v5"
 }
 
 public struct DiagnosticTally: Codable, Equatable, Sendable {

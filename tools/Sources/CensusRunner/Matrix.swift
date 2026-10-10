@@ -31,15 +31,16 @@ public enum BuildInvocation {
     /// SwiftPM dependency-mirror cache. None of these change which diagnostics are emitted.
     ///
     /// `strict-complete-declared` omits the forced `-swift-version 5` (ADR 0002) and is used only
-    /// for SPI comparability on `S-anchor`.
+    /// for SPI comparability on `S-anchor`. `minimal-v5` differs from `strict-complete-v5` only in the
+    /// checking level (ADR 0007).
     public static func swiftBuildArguments(
         mode: Mode, cachePath: String = "/swiftpm-cache", moduleCachePath: String = "/modcache"
     ) -> [String] {
         var args = [
             "swift", "build", "-v", "--force-resolved-versions", "--cache-path", cachePath,
-            "-Xswiftc", "-strict-concurrency=complete",
+            "-Xswiftc", "-strict-concurrency=\(mode == .minimalV5 ? "minimal" : "complete")",
         ]
-        if mode == .strictCompleteV5 {
+        if mode != .strictCompleteDeclared {
             args += ["-Xswiftc", "-swift-version", "-Xswiftc", "5"]
         }
         args += [

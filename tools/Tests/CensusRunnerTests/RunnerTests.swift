@@ -70,6 +70,14 @@ import Testing
         #expect(OutcomeClassifier.frontendInvocationSample(in: manifestLine) == nil)
     }
 
+    /// A minimal-v5 compile must count as "compile started": otherwise its F7 sample is nil and a failure
+    /// mentioning "out-of-date" is misfiled as a resolve failure.
+    @Test func minimalModeCompileLineIsRecognised() {
+        let minimal = compileLine.replacingOccurrences(of: "=complete", with: "=minimal")
+        #expect(OutcomeClassifier.frontendInvocationSample(in: "\(manifestLine)\n\(minimal)\n") == minimal)
+        #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: "\(minimal)\nerror: something is out-of-date") == .buildFailed)
+    }
+
     @Test func parsesTripleAndVersion() {
         let text = "Swift version 6.3.3 (swift-6.3.3-RELEASE)\nTarget: aarch64-unknown-linux-gnu\naarch64\n"
         #expect(OutcomeClassifier.targetTriple(inVersionOutput: text) == "aarch64-unknown-linux-gnu")
@@ -94,6 +102,22 @@ import Testing
         let args = BuildInvocation.swiftBuildArguments(mode: .strictCompleteDeclared)
         #expect(!args.contains("-swift-version"))
         #expect(args.contains("-strict-concurrency=complete"))
+    }
+
+    @Test func minimalModeIsMinimalAndStillForcesSwiftVersionFive() {
+        let args = BuildInvocation.swiftBuildArguments(mode: .minimalV5)
+        #expect(args.contains("-strict-concurrency=minimal"))
+        #expect(!args.contains { $0.contains("complete") })
+        let i = args.firstIndex(of: "-swift-version")
+        #expect(i != nil && args[i! + 2] == "5")
+        #expect(args.contains("-debug-diagnostic-names") && args.contains("-serialize-diagnostics"))
+    }
+
+    /// The differential (ADR 0007) is only meaningful if the two builds differ in nothing but the checking level.
+    @Test func minimalDiffersFromV5OnlyInTheConcurrencyLevel() {
+        let v5 = BuildInvocation.swiftBuildArguments(mode: .strictCompleteV5)
+        let minimal = BuildInvocation.swiftBuildArguments(mode: .minimalV5)
+        #expect(minimal == v5.map { $0 == "-strict-concurrency=complete" ? "-strict-concurrency=minimal" : $0 })
     }
 
     @Test func onlyAnchorsGetTheDeclaredOverlay() {
