@@ -34,6 +34,12 @@ struct CorpusOptions: ParsableArguments {
     var paths: Paths { Paths(corpus: URL(fileURLWithPath: manifest), resolved: URL(fileURLWithPath: resolved)) }
 }
 
+/// Missing means empty; present but undecodable is an error, never a silent reset (a reset would re-resolve pinned graphs).
+func loadJSON<T: Decodable>(_ type: T.Type, from url: URL, default empty: T) throws -> T {
+    guard FileManager.default.fileExists(atPath: url.path) else { return empty }
+    return try JSONDecoder().decode(T.self, from: Data(contentsOf: url))
+}
+
 struct Validate: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Validate corpus/packages.yaml (P7: pinned SHAs).")
 
@@ -68,8 +74,8 @@ struct Resolve: AsyncParsableCommand {
 
         let provenanceURL = paths.resolved.appendingPathComponent("provenance.json")
         let failuresURL = paths.resolved.appendingPathComponent("failures.json")
-        var provenance = (try? JSONDecoder().decode([String: ResolvedProvenance].self, from: Data(contentsOf: provenanceURL))) ?? [:]
-        var failed = (try? JSONDecoder().decode([String: String].self, from: Data(contentsOf: failuresURL))) ?? [:]
+        var provenance = try loadJSON([String: ResolvedProvenance].self, from: provenanceURL, default: [:])
+        var failed = try loadJSON([String: String].self, from: failuresURL, default: [:])
         let selected = manifest.packages.filter { $0.skipReason == nil && (package.isEmpty || package.contains($0.id)) }
         let pending = Resolver.pending(selected, resolvedDirectory: paths.resolved, provenance: provenance, force: force)
         print("\(pending.count) to resolve (\(selected.count - pending.count) already vendored)")
@@ -200,9 +206,12 @@ struct Scan: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "SuppressionScan over every corpus checkout (A10). Compiles nothing.")
 
     @OptionGroup var corpus: CorpusOptions
-    @Option(name: .long, help: "Output file.") var output = "corpus/suppression.json"
+    @Option(name: .long, help: "Output file (default corpus/suppression.json, only with the default --manifest).") var output: String?
 
     func run() async throws {
+        guard let output = output ?? (corpus.manifest == "corpus/packages.yaml" ? "corpus/suppression.json" : nil) else {
+            throw ValidationError("--output is required with a non-default --manifest")
+        }
         let paths = corpus.paths
         let manifest = try paths.loadManifest()
         var results: [String: PackageScan] = [:]
