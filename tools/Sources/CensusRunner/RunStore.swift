@@ -37,6 +37,11 @@ public struct RunStore: Sendable {
         public var toolchain: String
         public var mode: Mode
         public var packageId: String
+        public init(toolchain: String, mode: Mode, packageId: String) {
+            self.toolchain = toolchain
+            self.mode = mode
+            self.packageId = packageId
+        }
         public var description: String { "\(toolchain)/\(mode.rawValue)/\(packageId)" }
         public static func < (a: Self, b: Self) -> Bool { a.description < b.description }
     }
