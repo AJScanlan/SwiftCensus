@@ -30,6 +30,8 @@ public struct MacCellRunner: Sendable, CellExecuting {
 
     public func run(package: CorpusPackage, toolchain: Toolchain, mode: Mode, imageID _: String?) async -> CellRecord {
         let started = Date()
+        let clock = SuspendingClock()
+        let start = clock.now
         let arguments = BuildInvocation.swiftBuildArguments(
             mode: mode, cachePath: GuestVM.swiftPMCache, moduleCachePath: GuestVM.moduleCache)
         var record = CellRecord(
@@ -48,7 +50,7 @@ public struct MacCellRunner: Sendable, CellExecuting {
         }
         // Never leave a cell's tree behind: it would count against the guest's disk and could leak into the next cell.
         _ = try? await vm.shell("rm -rf \(GuestVM.packageRoot) \(GuestVM.outDirectory)")
-        record.durationSeconds = (Date().timeIntervalSince(started) * 10).rounded() / 10
+        record.durationSeconds = Elapsed.seconds(start.duration(to: clock.now))
         try? store.write(record, to: cellDir.appendingPathComponent("cell.json"))
         return record
     }

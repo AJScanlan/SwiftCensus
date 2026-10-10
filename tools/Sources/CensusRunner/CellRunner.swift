@@ -40,6 +40,8 @@ public struct CellRunner: Sendable, CellExecuting {
 
     public func run(package: CorpusPackage, toolchain: Toolchain, mode: Mode, imageID: String?) async -> CellRecord {
         let started = Date()
+        let clock = SuspendingClock()
+        let start = clock.now
         let arguments = BuildInvocation.swiftBuildArguments(mode: mode)
         var record = CellRecord(
             packageId: package.id, sha: package.sha, stratum: package.stratum, toolchain: toolchain.name,
@@ -58,7 +60,7 @@ public struct CellRunner: Sendable, CellExecuting {
             record.note = "\(error)"
         }
         _ = try? await Shell.run("docker", ["rm", "-f", name])
-        record.durationSeconds = (Date().timeIntervalSince(started) * 10).rounded() / 10
+        record.durationSeconds = Elapsed.seconds(start.duration(to: clock.now))
         try? store.write(record, to: cellDir.appendingPathComponent("cell.json"))
         return record
     }
