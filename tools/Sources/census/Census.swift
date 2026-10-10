@@ -1,6 +1,7 @@
 import ArgumentParser
 import CensusCore
 import CensusRunner
+import DiagParse
 import Foundation
 import SuppressionScan
 import Yams
@@ -9,7 +10,7 @@ import Yams
 struct Census: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "swift-diagnostic-census instrument.",
-        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self])
+        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self])
 }
 
 /// Everything resolves relative to the repository root (the current directory).
@@ -184,5 +185,25 @@ struct Compare: AsyncParsableCommand {
         }
         print(report.isSetIdentical ? "SET-IDENTICAL" : "NOT SET-IDENTICAL")
         if !report.isSetIdentical { throw ExitCode.failure }
+    }
+}
+
+struct Parse: AsyncParsableCommand {
+    static let configuration = CommandConfiguration(
+        abstract: "Parse a tarball of .dia files into diagnostics.json and print the tally. Used by non-Docker runners.")
+
+    @Argument(help: "dia.tar.gz produced by the build.") var tarball: String
+    @Option(name: .long, help: "Package root as the compiler saw it, e.g. /Users/aj.guest/census/yams.") var root: String
+    @Option(name: .long, help: "Where to write diagnostics.json.") var output: String?
+
+    func run() async throws {
+        let scratch = FileManager.default.temporaryDirectory.appendingPathComponent("census-parse-\(UUID())")
+        try FileManager.default.createDirectory(at: scratch, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: scratch) }
+        try await Shell.check("tar", ["-xzf", tarball, "-C", scratch.path])
+        let parsed = DiagParse.parse(diaFiles: DiagParse.enumerateDia(under: scratch), packageRoot: root)
+        let tally = DiagnosticTally(records: parsed.records)
+        print("dia files \(parsed.diaFilesFound) (empty \(parsed.emptyDiaFiles), unreadable \(parsed.unreadable.count)); \(tally)")
+        if let output { try RunStore(root: URL(fileURLWithPath: ".")).write(parsed.records, to: URL(fileURLWithPath: output)) }
     }
 }

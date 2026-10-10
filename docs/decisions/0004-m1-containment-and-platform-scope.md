@@ -4,6 +4,7 @@
 working under a standing "complete M1" goal and should be confirmed or reversed by the owner.
 **Date:** 2026-10-04
 **Milestone:** M1
+**Amended by:** ADR 0006 (macOS VM: §1 and §2 no longer hold once a macOS run exists)
 **Resolves:** ROADMAP F3 ("recorded in an ADR before M1"); ADR 0003 (open)
 **Affects:** ROADMAP A3, A6, A12; ADR 0002
 

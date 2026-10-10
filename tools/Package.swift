@@ -42,7 +42,7 @@ let package = Package(
         .executableTarget(
             name: "census",
             dependencies: [
-                "CensusCore", "CensusRunner", "SuppressionScan",
+                "CensusCore", "CensusRunner", "DiagParse", "SuppressionScan",
                 .product(name: "Yams", package: "Yams"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]
