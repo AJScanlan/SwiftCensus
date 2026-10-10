@@ -14,7 +14,7 @@
 
 Screen a seeded uniform draw on macOS. Count what strict concurrency checking adds over Swift 5 mode's defaults. Define `S-emit` as a tertile sample of the candidates whose count is above zero.
 
-**Consequence: the screen measures the same quantity the census later reports.** On the screened toolchain and platform, an `S-emit` package's matrix count equals its screen count by construction. `S-emit` frequencies are therefore conditioned on "emits > 0". They are never an ecosystem estimate and are always reported separately from `S-control`.
+**Consequence: membership is defined by the same build the census later measures.** On the screened toolchain and platform, an `S-emit` package's `strict-complete-v5` primary count is at least its `screen_count` (it also includes diagnostics already present under `minimal`), and is non-zero by construction. `S-emit` frequencies are therefore conditioned on "emits > 0". They are never an ecosystem estimate and are always reported separately from `S-control`.
 
 ### Pre-registration
 
@@ -22,12 +22,12 @@ Screen a seeded uniform draw on macOS. Count what strict concurrency checking ad
 |---|---|
 | Frame (D2) | `SwiftPackageIndex/PackageList` @ `4dc1035a98457e87f4d2c5649a33cd43ee6b80e8`, the commit `S-control` was drawn from |
 | Order (D3) | Seed `20261004`. The same SplitMix64 Fisher–Yates over the sorted `owner/repo` ids as `S-control`. Every id in `corpus/packages.yaml` (all strata, skipped entries included) is a consumed position and is skipped |
-| Count (D4) | **300** eligible candidates, fixed in advance. No stopping early |
+| Count (D4) | **300** eligible candidates, fixed in advance. No stopping early. Candidates that fail to resolve are recorded `unresolvable` and are not replaced |
 | Extension (D5) | If fewer than **45** stable emitters remain after the 300: **one** extension of +150, continuing the same order after the last drawn position. Then proceed with whatever exists |
 | Eligibility | GitHub repository; not archived or disabled; pushed within 365 days of the draw date; default-branch HEAD pinned to a 40-character SHA at draw time |
 | Platform and toolchain (D7) | `macos-spm`, Xcode 27.0's Swift, in a fresh clone of the `census-macos` guest per batch of 50 |
 | Modes | `strict-complete-v5` (`-strict-concurrency=complete`, `-swift-version 5` forced) and `minimal-v5` (identical but `-strict-concurrency=minimal`) |
-| Count (D1) | `primaryKeys(cell)` = multiset of `(id ?? "text:"+text, path, line, col)` over records with attribution `primary` and severity ≠ `note`. `screen_count = |primaryKeys(complete) − primaryKeys(minimal)|` (multiset difference, left minus right) |
+| Screen count (D1) | `primaryKeys(cell)` = multiset of `(id ?? "text:"+text, path, line, col)` over records with attribution `primary` and severity ≠ `note`. `screen_count = size(primaryKeys(complete) − primaryKeys(minimal))` (multiset difference, left minus right) |
 | Severity | **Not** in the count key, unlike the A7 key: a diagnostic that is a warning under one mode and an error under the other was not added by strict checking |
 | `built` requirement | The complete cell must be `built`. If it has ≥1 primary non-note diagnostic, the minimal cell must also be `built`. A complete cell with 0 such diagnostics has count 0 and no minimal build (early exit) |
 | Status | `emitter` (count > 0); `clean` (0 diagnostics, or count 0); `not_screenable` (complete is `build_failed`, `unsupported_tools_version`, `resolve_failed` or `timeout`); `minimal_failed`; `unresolvable` (`census resolve` failed); `infra_error` (after one retry); `unstable` (below) |
@@ -69,7 +69,7 @@ If SPI's export arrives later, `S-emit` is **not** re-drawn. The export becomes 
 ## Consequences
 
 - The screen yields a second product: the **emit rate in a uniform sample**, with its denominator. Every candidate's outcome is committed, not just the emitters'.
-- `Mode.allCases` now includes `minimal-v5`, so future `run.json` files list it (G10). Committed runs are untouched.
+- `Mode.allCases` now includes `minimal-v5`, so future `run.json` files list it (spec §6, G10). Committed runs are untouched.
 
 ## Results
 
