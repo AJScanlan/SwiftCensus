@@ -80,6 +80,9 @@ public struct CellRecord: Codable, Equatable, Sendable {
     public var imageID: String?
     public var resolvedFileSHA256: String?
     public var testTargetsBuilt = false
+    /// macOS cells only (F7): the guest OS build and the Xcode build that produced the measurement.
+    public var osBuild: String?
+    public var xcodeBuild: String?
     public var diaFilesFound = 0
     public var diaFilesUnreadable = 0
     public var diaFilesEmpty = 0
@@ -114,6 +117,7 @@ public struct CellRecord: Codable, Equatable, Sendable {
         case toolchainVersion = "toolchain_version", targetTriple = "target_triple"
         case image, imageID = "image_id", resolvedFileSHA256 = "resolved_file_sha256"
         case testTargetsBuilt = "test_targets_built"
+        case osBuild = "os_build", xcodeBuild = "xcode_build"
         case diaFilesFound = "dia_files_found", diaFilesUnreadable = "dia_files_unreadable"
         case diaFilesEmpty = "dia_files_empty"
         case tally, note

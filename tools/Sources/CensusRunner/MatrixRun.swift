@@ -2,13 +2,22 @@ import CensusCore
 import CryptoKit
 import Foundation
 
+/// What `MatrixRun` needs from a platform runner. One implementation per platform (Docker for Linux,
+/// a Lima guest for macOS); the schema, parser and comparison are shared.
+public protocol CellExecuting: Sendable {
+    var store: RunStore { get }
+    func run(package: CorpusPackage, toolchain: Toolchain, mode: Mode, imageID: String?) async -> CellRecord
+}
+
 public struct MatrixSelection: Sendable {
+    public var platform: Platform
     public var toolchains: [Toolchain]
     public var packageIds: Set<String>?
     public var strata: Set<Stratum>?
     public var modes: Set<Mode>?
-    public init(toolchains: [Toolchain] = Toolchain.matrix, packageIds: Set<String>? = nil,
-                strata: Set<Stratum>? = nil, modes: Set<Mode>? = nil) {
+    public init(platform: Platform = .linuxSPM, toolchains: [Toolchain] = Toolchain.matrix,
+                packageIds: Set<String>? = nil, strata: Set<Stratum>? = nil, modes: Set<Mode>? = nil) {
+        self.platform = platform
         self.toolchains = toolchains
         self.packageIds = packageIds
         self.strata = strata
@@ -28,7 +37,7 @@ public enum MatrixRun {
         var cells: [PlannedCell] = []
         for toolchain in selection.toolchains {
             for package in manifest.packages {
-                guard package.skipReason == nil, package.platforms.contains(.linuxSPM) else { continue }
+                guard package.skipReason == nil, package.platforms.contains(selection.platform) else { continue }
                 if let ids = selection.packageIds, !ids.contains(package.id) { continue }
                 if let strata = selection.strata, !strata.contains(package.stratum) { continue }
                 for mode in BuildInvocation.modes(for: package.stratum) {
@@ -49,7 +58,8 @@ public enum MatrixRun {
     /// Executes the plan with bounded parallelism. Existing cells are skipped unless `force`, which
     /// makes an interrupted run resumable.
     public static func execute(
-        cells: [PlannedCell], runner: CellRunner, jobs: Int, force: Bool,
+        cells: [PlannedCell], runner: any CellExecuting, jobs: Int, force: Bool,
+        imageID resolveImageID: @escaping @Sendable (String) async -> String? = { await MatrixRun.imageID($0) },
         progress: @escaping @Sendable (String) -> Void
     ) async {
         let pending = cells.filter {
@@ -57,7 +67,7 @@ public enum MatrixRun {
         }
         progress("\(pending.count) cells to run (\(cells.count - pending.count) already present)")
         var imageIDs: [String: String?] = [:]
-        for t in Set(pending.map(\.toolchain.image)) { imageIDs[t] = await imageID(t) }
+        for t in Set(pending.map(\.toolchain.image)) { imageIDs[t] = await resolveImageID(t) }
 
         let counter = Counter()
         await withTaskGroup(of: Void.self) { group in

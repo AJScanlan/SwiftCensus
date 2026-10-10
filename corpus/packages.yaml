@@ -3,6 +3,7 @@ packages:
 - id: apple/swift-collections
   platforms:
   - linux-spm
+  - macos-spm
   selection: 'named anchor (A3): comparability to SPI, drift canary; tag 1.7.1 on 2026-10-04'
   sha: 98ef3c98609a1e31b7e157b5b619579001a789d6
   stratum: S-anchor
@@ -10,6 +11,7 @@ packages:
 - id: apple/swift-nio
   platforms:
   - linux-spm
+  - macos-spm
   selection: 'named anchor (A3): comparability to SPI, drift canary; tag 2.103.0 on 2026-10-04'
   sha: 21de5f08c1a166a6dd293d0e587ad977bf8dac5d
   stratum: S-anchor
@@ -17,6 +19,7 @@ packages:
 - id: pointfreeco/swift-concurrency-extras
   platforms:
   - linux-spm
+  - macos-spm
   selection: 'named anchor (A3): the Point-Free package, chosen as the concurrency-focused one with the smallest graph; tag
     1.4.1 on 2026-10-04'
   sha: 5fa253428866f2360c3754e88537f700ed2656b5
@@ -25,6 +28,7 @@ packages:
 - id: vapor/vapor
   platforms:
   - linux-spm
+  - macos-spm
   selection: 'named anchor (A3): the Vapor core; tag 4.122.2 on 2026-10-04'
   sha: 33e61d0a02a9ddc9f025f8398a0dc24774f6cbe1
   stratum: S-anchor
@@ -46,6 +50,7 @@ packages:
 - id: AvdLee/Diagnostics
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=50 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: e3b6ffc95ab07ac3cb31e99103fc64cfb13efaeb
   stratum: S-control
@@ -53,6 +58,7 @@ packages:
 - id: Lancelotbronner/swift-opentdd-grf
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=24 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 86db5f7c89d35911e44d16be9eeadddc40653b34
   skip_reason: 'unresolvable: dependency https://github.com/Lancelotbronner/swift-bits cannot be cloned (credentials required or repo removed)'
@@ -61,6 +67,7 @@ packages:
 - id: Recouse/EventSource
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=52 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 2fc19773dac78904c6770712ae9e780cf049bff1
   stratum: S-control
@@ -68,6 +75,7 @@ packages:
 - id: RuiNelson/SwiftSMB
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=7 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 7697b3a3265d1fdc19767e7d2e08f140f1785cbc
   stratum: S-control
@@ -75,6 +83,7 @@ packages:
 - id: William-Weng/WWExpandableCell
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=56 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: ddb1a0d01df3d23ab8c727e5700442cccc69b868
   stratum: S-control
@@ -82,6 +91,7 @@ packages:
 - id: adamtheturtle/CoderPadMCP
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=49 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: dba5b3586f0a6a4d29e2d9a57a25df3ed570ccde
   stratum: S-control
@@ -89,6 +99,7 @@ packages:
 - id: csanfilippo/swift-sgp4
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=65 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 29f78371df5dbdb7367bc3d6949d107d73298470
   stratum: S-control
@@ -96,6 +107,7 @@ packages:
 - id: customerio/customerio-ios
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=60 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: e6590003c7dee46c919de2e84373f0bca0205605
   stratum: S-control
@@ -103,6 +115,7 @@ packages:
 - id: dream-horizon-org/pulse-ios
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=20 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: ef3a21490f2591dee44d59c1b7461b34fa48bae6
   stratum: S-control
@@ -110,6 +123,7 @@ packages:
 - id: gabriel/swiftui-snapshot-testing
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=42 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 0847754a845be8685719e9db8e921558f174961d
   stratum: S-control
@@ -117,6 +131,7 @@ packages:
 - id: getsentry/sentry-apple-swiftybeaver
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=28 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 7e973bc17c9010df9aea9c89eb9dd63275717977
   stratum: S-control
@@ -124,6 +139,7 @@ packages:
 - id: googleapis/swift-google-cloud-beyondcorp-clientgateways-v1
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=9 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: f44ba25a7939df16b03f18296cd06253cc4feafd
   stratum: S-control
@@ -131,6 +147,7 @@ packages:
 - id: googleapis/swift-google-cloud-dataproc-v1
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=30 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 283454d287233941057a4974f838762b978dbea5
   stratum: S-control
@@ -138,6 +155,7 @@ packages:
 - id: hotngui/ShapelyParentalGate
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=27 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: b7a070a2c68dfe2c2dd30df1b339f8dfc82560a6
   stratum: S-control
@@ -145,6 +163,7 @@ packages:
 - id: hummingbird-project/hummingbird-fluent
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=51 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: c933cf8f7f8b0a29eaeda351aa3729e175531ca9
   stratum: S-control
@@ -152,6 +171,7 @@ packages:
 - id: jgvanwyk/SwiftFileSystemEvents
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=62 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-04
   sha: a8fb750c7d41c7ad169b037a1111b9d316c0e590
   stratum: S-control
@@ -159,6 +179,7 @@ packages:
 - id: kevinnz/SSTV-MEL
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=64 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 6c3910f3455b4cf70ebda2b5adff9e6b2de86c95
   stratum: S-control
@@ -166,6 +187,7 @@ packages:
 - id: noppoman/hexavilleframework
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=32 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-04
   sha: dfa23fdcba5796f7b1bbdff0369a9cdec7006059
   stratum: S-control
@@ -173,6 +195,7 @@ packages:
 - id: openTdataCH/oev-icons-swift
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=16 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: d78098350b0cd6fc41e8c8cb3aa87b1739c86540
   stratum: S-control
@@ -180,6 +203,7 @@ packages:
 - id: perrystreetsoftware/Harmonize
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=13 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 41923397b3034b375dd1486139448eb1bc38ff22
   stratum: S-control
@@ -187,6 +211,7 @@ packages:
 - id: pointfreeco/swift-case-paths
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=34 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 57160303c3954432637a536d503d4c50f42bcaf6
   stratum: S-control
@@ -194,6 +219,7 @@ packages:
 - id: pointfreeco/swift-parsing
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=26 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: d3ca6f0f049606124d0f6a414e7fdb7b77f45452
   stratum: S-control
@@ -201,6 +227,7 @@ packages:
 - id: rafaelfrancisco-dev/Screws
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=3 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: afed31498c46d79b106c5f3643aca96ee357389b
   stratum: S-control
@@ -208,6 +235,7 @@ packages:
 - id: sanzaru/SimpleToast
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=59 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-04
   sha: df5a3af345b162af9f37e6588fc23212a885033d
   stratum: S-control
@@ -215,6 +243,7 @@ packages:
 - id: swift-compositions/swift-css
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=25 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: fe364b206a2f9190c0961c7f87d9b6dc2e161d10
   stratum: S-control
@@ -222,6 +251,7 @@ packages:
 - id: swift-microservices/swift-persistence-postgres
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=6 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 6991d69fbfcadee658939cd1c06c33d9710de286
   stratum: S-control
@@ -229,6 +259,7 @@ packages:
 - id: thebbapp/swift-package-bb-app-auth-provider-plaintext
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=22 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: a2ee8cc10acc37c22bab918fa54d7587ea75899f
   stratum: S-control
@@ -236,6 +267,7 @@ packages:
 - id: tqtuan1201/TTBaseUIKit
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=2 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-04
   sha: 8cd532e3d7eb9f4c11c4208e6edeb5094cfc0d40
   stratum: S-control
@@ -243,6 +275,7 @@ packages:
 - id: vospennikov/ClusterMap
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=0 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: b4b18c203d862d60e1ec5dd4a8fcab444dc01fcd
   stratum: S-control
@@ -250,6 +283,7 @@ packages:
 - id: zendesk/sdk_guide_kit_ios
   platforms:
   - linux-spm
+  - macos-spm
   selection: seed=20261004 draw-position=18 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 486e229d2d9def7ff0cf62e79492fabb3842249f
   stratum: S-control

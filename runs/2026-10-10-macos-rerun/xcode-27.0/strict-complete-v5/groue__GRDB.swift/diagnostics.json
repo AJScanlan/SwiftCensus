@@ -1,0 +1,156 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 243,
+    "path" : "GRDB/Record/EncodableRecord.swift",
+    "severity" : "warning",
+    "text" : "type 'Any' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 269,
+    "path" : "GRDB/Record/FetchableRecord.swift",
+    "severity" : "warning",
+    "text" : "type 'Any' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 196,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "warning",
+    "text" : "capture of 'onError' with non-Sendable type '@MainActor (any Error) -> Void' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 196,
+    "parent" : 2,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 201,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "warning",
+    "text" : "capture of 'onChange' with non-Sendable type '@MainActor (Reducer.Value) -> Void' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 201,
+    "parent" : 4,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "SendingRisksDataRace",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race",
+    "id" : "regionbasedisolation_named_send_yields_race",
+    "line" : 196,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "warning",
+    "text" : "sending 'onError' risks causing data races; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "regionbasedisolation_named_isolated_closure_yields_race",
+    "line" : 196,
+    "parent" : 6,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "note",
+    "text" : "'onError' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against code in the current isolation context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "SendingRisksDataRace",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race",
+    "id" : "regionbasedisolation_named_send_yields_race",
+    "line" : 201,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "warning",
+    "text" : "sending 'onChange' risks causing data races; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "regionbasedisolation_named_isolated_closure_yields_race",
+    "line" : 201,
+    "parent" : 8,
+    "path" : "GRDB/ValueObservation/ValueObservation.swift",
+    "severity" : "note",
+    "text" : "'onChange' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against code in the current isolation context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "passing_noattrfunc_to_attrfunc",
+    "line" : 120,
+    "path" : "GRDB/ValueObservation/ValueObservationScheduler.swift",
+    "severity" : "warning",
+    "text" : "passing non-Sendable parameter 'action' to function expecting a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "id" : "noescape_parameter",
+    "line" : 119,
+    "parent" : 10,
+    "path" : "GRDB/ValueObservation/ValueObservationScheduler.swift",
+    "severity" : "note",
+    "text" : "parameter 'action' is implicitly non-Sendable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "passing_noattrfunc_to_attrfunc",
+    "line" : 236,
+    "path" : "GRDB/ValueObservation/ValueObservationScheduler.swift",
+    "severity" : "warning",
+    "text" : "passing non-Sendable parameter 'action' to function expecting a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "id" : "noescape_parameter",
+    "line" : 235,
+    "parent" : 12,
+    "path" : "GRDB/ValueObservation/ValueObservationScheduler.swift",
+    "severity" : "note",
+    "text" : "parameter 'action' is implicitly non-Sendable"
+  }
+]

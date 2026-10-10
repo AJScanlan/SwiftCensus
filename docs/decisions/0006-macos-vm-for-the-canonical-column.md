@@ -1,6 +1,6 @@
 # ADR 0006 — A macOS VM for the canonical column; Linux keeps the cross-toolchain axis
 
-**Status:** two-platform design **accepted by the owner (2026-10-10)**. Lima spike **succeeded** (see "Spike results"); the macOS cell runner is not built yet.
+**Status:** two-platform design **accepted by the owner (2026-10-10)**. Lima spike **succeeded**; the macOS cell runner is **built**, and a macOS run plus re-run is committed and set-identical (see "Implementation results"). Egress firewall added at the owner's request.
 **Date:** 2026-10-10
 **Milestone:** M1
 **Amends:** ADR 0004 §1–§2 (macOS cells "do not run in M1"; M1 "measures linux-spm only"); ADR 0003 (option B discouraged, option A adopted for Linux)
@@ -99,6 +99,65 @@ network, but it is the remaining exposure); behaviour with a package that builds
 on macOS; behaviour across many cells in one clone (disk growth); Apple's licence terms for
 macOS guests; whether Lima's "experimental" label shows up as flakiness over a full run.
 
+## Egress firewall (owner request, 2026-10-10)
+
+The owner accepts LAN reachability on security grounds but prefers it blocked if it could affect results.
+It can: results should not depend on where the machine sits. Measured on a clone before the policy, the
+guest reached the LAN router (ports 80/443, ping) and ports on the host's own LAN address (e.g. 5000).
+
+`tools/vm/pf.census.conf`, installed in the golden guest as a LaunchDaemon (`com.census.pf`), blocks
+**new** TCP connections (SYN only), and all UDP and ICMP, to the host's NAT address (192.168.5.1) and to
+every private range (10/8, 172.16/12, 192.168/16, 169.254/16, 100.64/10), except the Lima NAT subnet
+192.168.5.0/24 (gateway and DNS are 192.168.5.2). The internet is untouched. Verified: LAN, router (incl.
+ping), host services, `10.x` and `172.16.x` unreachable; `github.com` 200, `download.swift.org` 302.
+
+Two things went wrong on the way, both worth keeping:
+
+- **Blocking every packet to 192.168.5.1 hangs the instance.** pf loads after Lima's SSH ControlMaster is
+  already connected; the connection's replies have no pf state and were dropped. Blocking only SYNs fixes it.
+- **A race.** The daemon loads after SSH is up, so an early test wrongly reported the LAN open.
+  `GuestVM.create()` now waits for the rules and checks behaviour (the NAT host must not answer ping) and
+  refuses to build otherwise.
+
+This is **not a security boundary**: the guest user can read `~/password` and `sudo`. It protects result
+integrity, which is what was asked. It assumes the Lima NAT subnet does not collide with the owner's LAN
+(here 192.168.68.0/24).
+
+## Implementation results (2026-10-10)
+
+`census run --platform macos` clones the golden guest, waits for SSH and the firewall, builds each cell in a
+fresh directory, copies results out, and deletes the clone. It shares `CellIngest`, the parser and the
+classifier with the Linux runner. macOS has **one** toolchain column, `xcode-27.0`, and a macOS run never
+shares a run id with a Linux run (F6). All 36 corpus entries now list `macos-spm`.
+
+| Run | Cells | Outcomes | A7 |
+|---|---|---|---|
+| `2026-10-10-macos` | 39 | 33 built, 6 build_failed | — |
+| `2026-10-10-macos-rerun` | 39 | identical | **SET-IDENTICAL** over 39 cells |
+
+- **Coverage.** `S-control` built 20 of 29 on macOS against 12 of 29 on Linux 6.4, and 8 of the 20 emit
+  (Linux: 4 of 12). Every `S-anchor` and `S-byproduct` cell built.
+- **`S-byproduct`.** LedgerKit: 0 diagnostics. GRDB built as its own root: 8 primary warnings. LedgerKit's own
+  build shows 0 *transitive* because SwiftPM suppresses warnings in dependencies, so a root's
+  `transitive` bucket only ever holds errors, and a dependency's diagnostics are measured by building it as a root.
+- **F6 confirmed.** Of 16 packages that built on both macOS and Linux 6.4, 3 differ in warning count
+  (swift-nio 206 vs 205, SwiftSMB 26 vs 0, SSTV-MEL 1 vs 4): different source compiles per platform.
+- **Declared mode.** For `swift-concurrency-extras` (tools-version 6), `strict-complete-declared` reports
+  0 warnings against 3 under `strict-complete-v5`: ADR 0002's censoring, reproduced on macOS.
+
+**Memory.** The host has 16 GiB. The guest is 10 GiB / 8 CPUs; with Docker Desktop's 7.75 GiB VM also running,
+swap reached 4 of 5 GB and first boots of clones stalled at "boot scripts must have finished". Docker Desktop
+must be **quit during a macOS run**. The two platforms run one after the other.
+
+**Classifier fix found on macOS.** `unable to resolve module dependency: 'UIKit'` matched the loose
+`unable to resolve` marker, so three iOS-only packages were filed as `resolve_failed`. The marker was removed
+and `census reclassify` added: it re-derives outcomes from the committed `build.log.gz` without a rebuild
+(the reason raw logs are committed). Dry-run over both Linux runs: 0 changes. Both macOS runs: 3 cells fixed.
+
+**Still unverified.** Behaviour over many more cells in one clone (disk growth); a package that builds a plugin
+or macro on macOS; Apple's licence terms for macOS guests; whether Lima's "experimental" label shows as
+flakiness over a larger run. The golden image is stopped; the restore image remains cached (26.6 GB).
+
 ## Tool choice
 
 **Lima, as trialled.** Chosen because it is installed, its macOS guests use `vz` (the only supported type),
@@ -137,8 +196,8 @@ instance (an APFS copy) is the fallback for per-run restore.
 - **Multiple Xcodes for a macOS matrix.** Rejected in ADR 0003: the SDK would vary with the toolchain
   and a diagnostic change could not be attributed to the compiler.
 
-## Decision still needed
+## Decisions still open
 
-1. Build the macOS cell runner (an `ssh`-driven sibling of `CellRunner`), then a macOS run and re-run?
-2. Delete the cached IPSW (26.6 GB) to reclaim disk, or keep it so the guest can be recreated?
-3. Is a NAT guest with LAN reachability acceptable, or should the guest be firewalled from the LAN?
+1. The cached restore image (26.6 GB): the owner said to leave it unless space is needed.
+2. Whether `S-emit` is selected from SPI data or by a macOS self-screen (ADR 0004 §4); the macOS runner makes
+   the screen cheaper and unbiased against Apple-framework packages.

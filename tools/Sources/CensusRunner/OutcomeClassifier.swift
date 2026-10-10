@@ -27,6 +27,9 @@ public enum OutcomeClassifier {
         outcome == .built || outcome == .buildFailed
     }
 
+    /// Markers of a SwiftPM dependency-resolution failure. Deliberately specific: "unable to resolve
+    /// module dependency: 'UIKit'" is a *compile* failure (an iOS-only package on macOS) and an earlier,
+    /// looser "unable to resolve" marker misfiled three such cells as resolve failures.
     static let resolutionFailureMarkers = [
         "dependencies could not be resolved",
         "failed to clone",
@@ -34,7 +37,6 @@ public enum OutcomeClassifier {
         "failed to resolve",
         "resolved file is required",
         "out-of-date",
-        "unable to resolve",
         "invalid manifest",
         "failed to retrieve manifest",
     ]
@@ -64,7 +66,29 @@ public enum OutcomeClassifier {
         return nil
     }
 
+    /// The remainder of the first line starting with `prefix` (`sw_vers`'s `BuildVersion:`,
+    /// `xcodebuild -version`'s `Build version`). Nil on Linux, where neither is present.
+    public static func value(forPrefix prefix: String, inVersionOutput text: String) -> String? {
+        for line in text.split(separator: "\n") where line.hasPrefix(prefix) {
+            return line.dropFirst(prefix.count).trimmingCharacters(in: .whitespaces)
+        }
+        return nil
+    }
+
     public static func toolchainVersion(inVersionOutput text: String) -> String? {
         text.split(separator: "\n").first.map { String($0) }
+    }
+}
+
+extension OutcomeClassifier {
+    /// Re-derives a committed cell's outcome from its stored raw log and exit code, without rebuilding.
+    /// Timeouts and infra errors are kept: they cannot be recovered from the log alone.
+    public static func reclassify(_ record: CellRecord, log: String) -> CellOutcome {
+        switch record.outcome {
+        case .timeout, .infraError: return record.outcome
+        default:
+            guard let exit = record.exitCode else { return record.outcome }
+            return classify(exitCode: Int32(exit), timedOut: false, log: log)
+        }
     }
 }

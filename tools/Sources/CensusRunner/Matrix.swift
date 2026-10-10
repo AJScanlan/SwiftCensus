@@ -18,6 +18,10 @@ public struct Toolchain: Equatable, Sendable {
         Toolchain(name: "nightly", image: "swiftlang/swift:nightly-main-jammy"),
     ]
 
+    /// The macOS column (ADR 0006): the Swift that ships in Xcode 27, inside the Lima guest. One column,
+    /// because on macOS the toolchain and SDK are coupled (ADR 0003) and a macOS matrix would confound them.
+    public static let macOSXcode = Toolchain(name: "xcode-27.0", image: "lima:census-macos")
+
     public static func named(_ name: String) -> Toolchain? { matrix.first { $0.name == name } }
 }
 
@@ -28,9 +32,11 @@ public enum BuildInvocation {
     ///
     /// `strict-complete-declared` omits the forced `-swift-version 5` (ADR 0002) and is used only
     /// for SPI comparability on `S-anchor`.
-    public static func swiftBuildArguments(mode: Mode) -> [String] {
+    public static func swiftBuildArguments(
+        mode: Mode, cachePath: String = "/swiftpm-cache", moduleCachePath: String = "/modcache"
+    ) -> [String] {
         var args = [
-            "swift", "build", "-v", "--force-resolved-versions", "--cache-path", "/swiftpm-cache",
+            "swift", "build", "-v", "--force-resolved-versions", "--cache-path", cachePath,
             "-Xswiftc", "-strict-concurrency=complete",
         ]
         if mode == .strictCompleteV5 {
@@ -41,7 +47,7 @@ public enum BuildInvocation {
             "-Xswiftc", "-print-diagnostic-groups",
             "-Xswiftc", "-no-color-diagnostics",
             "-Xswiftc", "-diagnostic-style=llvm",
-            "-Xswiftc", "-module-cache-path", "-Xswiftc", "/modcache",
+            "-Xswiftc", "-module-cache-path", "-Xswiftc", moduleCachePath,
             // Linux SwiftPM before 6.2 uses the native build system, which does not serialize
             // diagnostics on its own: without this flag a 6.1 cell has no .dia and silently reports
             // zero diagnostics (observed: 15 of 18 diagnostic-capable 6.1 cells). Later toolchains

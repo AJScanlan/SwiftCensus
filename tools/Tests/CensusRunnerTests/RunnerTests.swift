@@ -44,6 +44,22 @@ import Testing
         #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: log) == .buildFailed)
     }
 
+    /// An iOS-only package on macOS: the dependency scan cannot find UIKit. Not a SwiftPM resolution failure.
+    @Test func missingModuleDuringDependencyScanIsBuildFailedNotResolveFailed() {
+        let log = "error: /pkg/Sources/A/A.swift:9:8 unable to resolve module dependency: 'UIKit' [dependency_scan_module_not_found]\nerror: Build failed"
+        #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: log) == .buildFailed)
+    }
+
+    @Test func reclassifyKeepsOutcomesThatTheLogCannotRecover() {
+        var r = CellRecord(packageId: "a/a", sha: "", stratum: .control, toolchain: "6.3", mode: .strictCompleteV5,
+                           platform: .linuxSPM, outcome: .timeout, exitCode: nil, startedAt: "", durationSeconds: 0,
+                           invocation: [], image: "")
+        #expect(OutcomeClassifier.reclassify(r, log: "error: boom") == .timeout)
+        r.outcome = .resolveFailed
+        r.exitCode = 1
+        #expect(OutcomeClassifier.reclassify(r, log: "unable to resolve module dependency: 'UIKit'") == .buildFailed)
+    }
+
     @Test func plainCompileFailureIsBuildFailed() {
         #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: "\(compileLine)\nerror: boom") == .buildFailed)
     }
@@ -165,5 +181,46 @@ import Testing
         let a = run(cell("p", outcome: .unsupportedToolsVersion, []))
         let r = RunComparison.compare(a, a)
         #expect(r.isSetIdentical && r.noDiagnosticCells == 1 && r.identical == 0)
+    }
+}
+
+@Suite struct MacRunnerTests {
+    @Test func macScriptUsesGuestPathsAndAlwaysExitsZero() {
+        let args = BuildInvocation.swiftBuildArguments(mode: .strictCompleteV5, cachePath: GuestVM.swiftPMCache,
+                                                       moduleCachePath: GuestVM.moduleCache)
+        let s = MacCellRunner.script(arguments: args)
+        #expect(s.contains("cd \(GuestVM.packageRoot)"))
+        #expect(s.contains("xcodebuild -version"))
+        #expect(s.contains(GuestVM.swiftPMCache) && s.contains(GuestVM.moduleCache))
+        #expect(!s.contains("'/swiftpm-cache'") && !s.contains("'/modcache'"))
+        #expect(s.hasSuffix("exit 0"))
+    }
+
+    @Test func linuxDefaultsAreUnchanged() {
+        let args = BuildInvocation.swiftBuildArguments(mode: .strictCompleteV5)
+        #expect(args.contains("/swiftpm-cache") && args.contains("/modcache"))
+    }
+
+    @Test func planFiltersByPlatform() {
+        func pkg(_ id: String, _ p: [Platform]) -> CorpusPackage {
+            CorpusPackage(id: id, url: "https://github.com/\(id)", sha: String(repeating: "a", count: 40),
+                          stratum: .control, platforms: p, selection: "t")
+        }
+        let m = CorpusManifest(packages: [pkg("a/linux", [.linuxSPM]), pkg("b/mac", [.macosSPM]), pkg("c/both", [.linuxSPM, .macosSPM])])
+        let mac = MatrixRun.plan(manifest: m, selection: MatrixSelection(platform: .macosSPM, toolchains: [Toolchain.macOSXcode]))
+        #expect(mac.map(\.package.id) == ["b/mac", "c/both"])
+        let linux = MatrixRun.plan(manifest: m, selection: MatrixSelection(platform: .linuxSPM, toolchains: [Toolchain.matrix[0]]))
+        #expect(linux.map(\.package.id) == ["a/linux", "c/both"])
+    }
+
+    @Test func guestInstanceNamesAreLimaSafe() {
+        #expect(GuestVM(runId: "2026-10-10_macOS rerun").instance == "census-run-2026-10-10-macos-rerun")
+    }
+
+    @Test func parsesMacVersionLines() {
+        let env = "Apple Swift version 6.4\nTarget: arm64-apple-macosx27.0.0\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434\nXcode 27.0\nBuild version 27A266a\narm64"
+        #expect(OutcomeClassifier.value(forPrefix: "BuildVersion:", inVersionOutput: env) == "26A434")
+        #expect(OutcomeClassifier.value(forPrefix: "Build version", inVersionOutput: env) == "27A266a")
+        #expect(OutcomeClassifier.value(forPrefix: "BuildVersion:", inVersionOutput: "Swift version 6.3") == nil)
     }
 }

@@ -20,7 +20,7 @@ public let containerPackageRoot = "/pkg"
 /// Runs one `(package, toolchain, mode)` cell in a fresh container (F3: Linux is always
 /// containerised; F4: clean tree, no incremental reuse) and writes its record. Never throws:
 /// a cell that cannot run is recorded as `infra_error`, so no cell is a silent gap.
-public struct CellRunner: Sendable {
+public struct CellRunner: Sendable, CellExecuting {
     public var sources: SourceCache
     public var resolvedDirectory: URL
     public var store: RunStore
@@ -104,51 +104,9 @@ public struct CellRunner: Sendable {
         if start.timedOut { _ = try? await Shell.run("docker", ["kill", name]) }
         try await Shell.check("docker", ["cp", "\(name):/out/.", raw.path])
 
-        let log = (try? String(contentsOf: raw.appendingPathComponent("build.log"), encoding: .utf8)) ?? ""
-        let exit = (try? String(contentsOf: raw.appendingPathComponent("exit-code"), encoding: .utf8))
-            .flatMap { Int32($0.trimmingCharacters(in: .whitespacesAndNewlines)) }
-        let env = (try? String(contentsOf: raw.appendingPathComponent("env.txt"), encoding: .utf8)) ?? ""
-
-        record.exitCode = exit.map(Int.init)
-        record.outcome = OutcomeClassifier.classify(exitCode: exit ?? -1, timedOut: start.timedOut, log: log)
-        record.frontendInvocationSample = OutcomeClassifier.frontendInvocationSample(in: log)
-        record.toolchainVersion = OutcomeClassifier.toolchainVersion(inVersionOutput: env)
-        record.targetTriple = OutcomeClassifier.targetTriple(inVersionOutput: env)
-
-        // Parse whatever diagnostics exist, whatever the outcome: a failed build is still data.
-        let diaTar = raw.appendingPathComponent("dia.tar.gz")
-        var diagnostics: [DiagnosticRecord] = []
-        if fm.fileExists(atPath: diaTar.path) {
-            try await Shell.check("tar", ["-xzf", diaTar.path, "-C", extracted.path])
-            let files = DiagParse.enumerateDia(under: extracted)
-            let parsed = DiagParse.parse(diaFiles: files, packageRoot: containerPackageRoot)
-            diagnostics = parsed.records
-            record.diaFilesFound = parsed.diaFilesFound
-            record.diaFilesUnreadable = parsed.unreadable.count
-            record.diaFilesEmpty = parsed.emptyDiaFiles
-            if !parsed.unreadable.isEmpty {
-                record.note = "unreadable .dia: " + parsed.unreadable.map(\.path).joined(separator: ", ")
-                // A non-empty .dia that will not parse is corrupt output, so the diagnostic set is incomplete
-                // and the cell is not a measurement. (Empty .dia files are normal and not counted here.)
-                if OutcomeClassifier.truncatedDiaInvalidatesCell(outcome: record.outcome) {
-                    record.outcome = .infraError
-                    record.note = "corrupt .dia (non-empty but unparseable); the diagnostic set is incomplete; " + (record.note ?? "")
-                }
-            }
-        }
-        record.tally = DiagnosticTally(records: diagnostics)
-
-        try fm.createDirectory(at: cellDir, withIntermediateDirectories: true)
-        try store.write(diagnostics, to: cellDir.appendingPathComponent("diagnostics.json"))
-        // `-n` omits the timestamp and name from the gzip header so identical logs gzip identically.
-        let gz = cellDir.appendingPathComponent("build.log.gz")
-        try await Shell.check("/bin/sh", [
-            "-c", "gzip -n -9 -c \(Self.quote(raw.appendingPathComponent("build.log").path)) > \(Self.quote(gz.path))",
-        ])
-        if fm.fileExists(atPath: diaTar.path) {
-            try? fm.removeItem(at: cellDir.appendingPathComponent("dia.tar.gz"))
-            try fm.copyItem(at: diaTar, to: cellDir.appendingPathComponent("dia.tar.gz"))
-        }
+        try await CellIngest.ingest(
+            raw: raw, extracted: extracted, cellDir: cellDir, timedOut: start.timedOut,
+            packageRoot: containerPackageRoot, store: store, record: &record)
     }
 
     func containerName(package: CorpusPackage, toolchain: Toolchain, mode: Mode) -> String {

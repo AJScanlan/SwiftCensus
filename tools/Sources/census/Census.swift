@@ -10,7 +10,7 @@ import Yams
 struct Census: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "swift-diagnostic-census instrument.",
-        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self])
+        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self, Reclassify.self])
 }
 
 /// Everything resolves relative to the repository root (the current directory).
@@ -76,6 +76,7 @@ struct Run: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Run the matrix (Linux, containerised) and commit raw output under runs/<run-id>/.")
 
     @Option(name: .long, help: "Run identifier; the directory name under runs/.") var runId: String
+    @Option(name: .long, help: "linux (Docker, five toolchains) or macos (Lima guest, Xcode 27). Platforms never share a run id (F6).") var platform = "linux"
     @Option(name: .long, parsing: .upToNextOption, help: "Toolchains (default: all of 6.1 6.2 6.3 6.4 nightly).") var toolchain: [String] = []
     @Option(name: .long, parsing: .upToNextOption, help: "Only these package ids.") var package: [String] = []
     @Option(name: .long, parsing: .upToNextOption, help: "Only these strata, e.g. S-anchor.") var stratum: [String] = []
@@ -93,23 +94,31 @@ struct Run: AsyncParsableCommand {
             issues.forEach { print("invalid: \($0)") }
             throw ExitCode.failure
         }
-        let toolchains = try (toolchain.isEmpty ? Toolchain.matrix.map(\.name) : toolchain).map { name -> Toolchain in
-            guard let t = Toolchain.named(name) else { throw ValidationError("unknown toolchain \(name)") }
-            return t
+        guard let target = ["linux": Platform.linuxSPM, "macos": .macosSPM][platform] else {
+            throw ValidationError("--platform must be linux or macos")
+        }
+        let toolchains: [Toolchain]
+        if target == .macosSPM {
+            guard toolchain.isEmpty else { throw ValidationError("macOS has one toolchain column; omit --toolchain") }
+            toolchains = [Toolchain.macOSXcode]
+        } else {
+            toolchains = try (toolchain.isEmpty ? Toolchain.matrix.map(\.name) : toolchain).map { name -> Toolchain in
+                guard let t = Toolchain.named(name) else { throw ValidationError("unknown toolchain \(name)") }
+                return t
+            }
         }
         let strata = try Set(stratum.map { s -> Stratum in
             guard let v = Stratum(rawValue: s) else { throw ValidationError("unknown stratum \(s)") }
             return v
         })
         let selection = MatrixSelection(
-            toolchains: toolchains, packageIds: package.isEmpty ? nil : Set(package),
+            platform: target, toolchains: toolchains, packageIds: package.isEmpty ? nil : Set(package),
             strata: strata.isEmpty ? nil : strata)
 
         let runDir = paths.runDirectory(runId)
         try FileManager.default.createDirectory(at: runDir, withIntermediateDirectories: true)
         try FileManager.default.createDirectory(at: paths.scratch, withIntermediateDirectories: true)
         let store = RunStore(root: runDir)
-        try await writeRunManifest(paths: paths, store: store, toolchains: toolchains)
 
         let cells = MatrixRun.plan(manifest: manifest, selection: selection)
         // Fetch all sources up front, sequentially: two cells of one package must not race a clone.
@@ -119,13 +128,36 @@ struct Run: AsyncParsableCommand {
                 try await paths.sources.ensure(pkg)
             }
         }
+
+        if target == .macosSPM {
+            let vm = GuestVM(runId: runId)
+            print("cloning \(GuestVM.goldenName) -> \(vm.instance)")
+            try await vm.create()
+            let guestInfo = await vm.describe()
+            print("guest:\n\(guestInfo)")
+            do {
+                try await writeRunManifest(paths: paths, store: store, toolchains: toolchains, platform: target, hostPlatform: "macOS guest (Lima/vz): " + guestInfo.replacingOccurrences(of: "\n", with: "; "))
+                let runner = MacCellRunner(
+                    vm: vm, sources: paths.sources, resolvedDirectory: paths.resolved, store: store,
+                    scratch: paths.scratch, timeout: TimeInterval(timeoutMinutes * 60), imageID: GuestVM.restoreImageDigest())
+                await MatrixRun.execute(cells: cells, runner: runner, jobs: 1, force: force, imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
+            } catch {
+                await vm.destroy()
+                throw error
+            }
+            await vm.destroy()
+            return
+        }
+
+        try await writeRunManifest(paths: paths, store: store, toolchains: toolchains, platform: target,
+                                   hostPlatform: "\(ProcessInfo.processInfo.operatingSystemVersionString) (container runtime)")
         let runner = CellRunner(
             sources: paths.sources, resolvedDirectory: paths.resolved, store: store, scratch: paths.scratch,
             limits: CellLimits(cpus: cpus, memoryGB: memoryGb, timeout: TimeInterval(timeoutMinutes * 60)), runId: runId)
         await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force) { print($0); fflush(stdout) }
     }
 
-    private func writeRunManifest(paths: Paths, store: RunStore, toolchains: [Toolchain]) async throws {
+    private func writeRunManifest(paths: Paths, store: RunStore, toolchains: [Toolchain], platform: Platform, hostPlatform: String) async throws {
         let url = store.root.appendingPathComponent("run.json")
         guard !FileManager.default.fileExists(atPath: url.path) else { return }
         let commit = try? await Shell.run("git", ["rev-parse", "HEAD"]).stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -136,9 +168,9 @@ struct Run: AsyncParsableCommand {
             runId: runId, startedAt: ISO8601DateFormatter().string(from: Date()), toolsGitCommit: commit,
             toolsGitDirty: dirty.map { !$0.isEmpty },
             corpusManifestSHA256: try MatrixRun.sha256Hex(of: paths.corpus),
-            hostPlatform: "\(ProcessInfo.processInfo.operatingSystemVersionString) (container runtime)",
-            dockerServerVersion: docker, toolchains: Dictionary(uniqueKeysWithValues: toolchains.map { ($0.name, $0.image) }),
-            modes: Mode.allCases, platform: .linuxSPM)
+            hostPlatform: hostPlatform,
+            dockerServerVersion: platform == .linuxSPM ? docker : nil, toolchains: Dictionary(uniqueKeysWithValues: toolchains.map { ($0.name, $0.image) }),
+            modes: Mode.allCases, platform: platform)
         try store.write(manifest, to: url)
     }
 }
@@ -205,5 +237,34 @@ struct Parse: AsyncParsableCommand {
         let tally = DiagnosticTally(records: parsed.records)
         print("dia files \(parsed.diaFilesFound) (empty \(parsed.emptyDiaFiles), unreadable \(parsed.unreadable.count)); \(tally)")
         if let output { try RunStore(root: URL(fileURLWithPath: ".")).write(parsed.records, to: URL(fileURLWithPath: output)) }
+    }
+}
+
+struct Reclassify: AsyncParsableCommand {
+    static let configuration = CommandConfiguration(
+        abstract: "Re-derive each committed cell's outcome from its raw build.log.gz (no rebuild).",
+        discussion: "Dry run unless --write. The raw bytes are committed so a classifier fix never needs a re-run.")
+
+    @Argument(help: "Run directory, e.g. runs/2026-10-10-macos.") var run: String
+    @Flag(name: .long, help: "Rewrite cell.json where the outcome changed.") var write = false
+
+    func run() async throws {
+        let store = RunStore(root: URL(fileURLWithPath: run))
+        var changed = 0, total = 0
+        for (key, cell) in try store.loadCells().sorted(by: { $0.key < $1.key }) {
+            total += 1
+            let gz = cell.directory.appendingPathComponent("build.log.gz")
+            let log = try await Shell.check("gzip", ["-dc", gz.path]).stdoutString
+            let new = OutcomeClassifier.reclassify(cell.record, log: log)
+            guard new != cell.record.outcome else { continue }
+            changed += 1
+            print("\(key): \(cell.record.outcome.rawValue) -> \(new.rawValue)")
+            if write {
+                var r = cell.record
+                r.outcome = new
+                try store.write(r, to: cell.directory.appendingPathComponent("cell.json"))
+            }
+        }
+        print("\(changed) of \(total) cells \(write ? "rewritten" : "would change")")
     }
 }
