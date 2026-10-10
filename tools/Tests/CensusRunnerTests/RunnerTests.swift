@@ -122,7 +122,7 @@ import Testing
 
     @Test func onlyAnchorsGetTheDeclaredOverlay() {
         #expect(BuildInvocation.modes(for: .anchor) == [.strictCompleteV5, .strictCompleteDeclared])
-        for s in [Stratum.emit, .control, .byproduct] { #expect(BuildInvocation.modes(for: s) == [.strictCompleteV5]) }
+        for s in [Stratum.emit, .control, .byproduct, .screen] { #expect(BuildInvocation.modes(for: s) == [.strictCompleteV5]) }
     }
 }
 

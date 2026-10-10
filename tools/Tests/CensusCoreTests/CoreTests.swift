@@ -97,3 +97,28 @@ import Testing
         #expect(t.transitive == 1 && t.external == 1)
     }
 }
+
+@Suite struct CorpusPackageCodingTests {
+    let sha = String(repeating: "a", count: 40)
+
+    @Test func entriesWrittenBeforeTheScreenStillDecode() throws {
+        let json = #"{"id":"a/a","url":"https://github.com/a/a","sha":"\#(sha)","stratum":"S-control","platforms":["linux-spm"],"selection":"t","spi_error_count_at_selection":3}"#
+        let p = try JSONDecoder().decode(CorpusPackage.self, from: Data(json.utf8))
+        #expect(p.screenId == nil && p.screenCountAtSelection == nil && p.spiErrorCountAtSelection == 3)
+    }
+
+    /// The screen count has its own field: `spi_error_count_at_selection` is never reused for it (ADR 0007).
+    @Test func screenFieldsRoundTripUnderSnakeCaseKeys() throws {
+        let p = CorpusPackage(id: "a/a", url: "https://github.com/a/a", sha: sha, stratum: .emit, platforms: [.linuxSPM, .macosSPM],
+                              selection: "t", screenId: "screen-2026-10-10", screenCountAtSelection: 7)
+        let data = try JSONEncoder().encode(p)
+        let text = String(decoding: data, as: UTF8.self)
+        #expect(text.contains("\"screen_id\"") && text.contains("\"screen_count_at_selection\""))
+        #expect(!text.contains("spi_error_count_at_selection"))
+        #expect(try JSONDecoder().decode(CorpusPackage.self, from: data) == p)
+    }
+
+    @Test func screenIsAStratum() {
+        #expect(Stratum(rawValue: "screen") == .screen)
+    }
+}

@@ -6,6 +6,9 @@ public enum Stratum: String, Codable, Sendable, CaseIterable {
     case control = "S-control"
     case anchor = "S-anchor"
     case byproduct = "S-byproduct"
+    /// ADR 0007: a screen candidate, kept in `screens/<id>/candidates.yaml`. Not a corpus stratum: labelling
+    /// non-members `S-emit` would survive into `census validate` as a lie.
+    case screen
 }
 
 public enum Platform: String, Codable, Sendable {
@@ -25,16 +28,23 @@ public struct CorpusPackage: Codable, Equatable, Sendable {
     public var selection: String
     /// The count the selection signal reported at selection time. Nil where the stratum has no such signal.
     public var spiErrorCountAtSelection: Int?
+    /// ADR 0007: the screen this entry was selected from, and its `screen_count` then. Separate from the SPI field
+    /// on purpose: the two signals measure different things and must never be mixed.
+    public var screenId: String?
+    public var screenCountAtSelection: Int?
     public var skipReason: String?
 
     enum CodingKeys: String, CodingKey {
         case id, url, sha, stratum, platforms, selection
         case spiErrorCountAtSelection = "spi_error_count_at_selection"
+        case screenId = "screen_id"
+        case screenCountAtSelection = "screen_count_at_selection"
         case skipReason = "skip_reason"
     }
 
     public init(id: String, url: String, sha: String, stratum: Stratum, platforms: [Platform],
-                selection: String, spiErrorCountAtSelection: Int? = nil, skipReason: String? = nil) {
+                selection: String, spiErrorCountAtSelection: Int? = nil, screenId: String? = nil,
+                screenCountAtSelection: Int? = nil, skipReason: String? = nil) {
         self.id = id
         self.url = url
         self.sha = sha
@@ -42,6 +52,8 @@ public struct CorpusPackage: Codable, Equatable, Sendable {
         self.platforms = platforms
         self.selection = selection
         self.spiErrorCountAtSelection = spiErrorCountAtSelection
+        self.screenId = screenId
+        self.screenCountAtSelection = screenCountAtSelection
         self.skipReason = skipReason
     }
 
