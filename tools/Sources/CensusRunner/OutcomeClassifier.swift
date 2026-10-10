@@ -44,10 +44,13 @@ public enum OutcomeClassifier {
     /// The first compile command in the verbose build log that carries the census flags: the
     /// resolved frontend invocation (F7). The manifest compile precedes it and lacks the flags, so
     /// "first `-module-name` line" would record the wrong command. Keyed on `-strict-concurrency=`,
-    /// not `=complete`, so `minimal-v5` cells (ADR 0007) are recognised too.
+    /// not `=complete`, so `minimal-v5` cells (ADR 0007) are recognised too. Both `-strict-concurrency=`
+    /// and `-strict-concurrency\=` are accepted: Swift Build (macOS SwiftPM) logs the compile line with
+    /// `=` backslash-escaped, and matching only the plain form left every macOS sample nil.
     public static func frontendInvocationSample(in log: String) -> String? {
         for line in log.split(separator: "\n", omittingEmptySubsequences: true) {
-            guard line.contains(" -module-name "), line.contains("-strict-concurrency=") else { continue }
+            guard line.contains(" -module-name "),
+                  line.contains("-strict-concurrency=") || line.contains("-strict-concurrency\\=") else { continue }
             if line.contains("swiftc") || line.contains("swift-frontend") || line.contains("swift-driver") {
                 return String(line.prefix(4000))
             }

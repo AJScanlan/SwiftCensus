@@ -78,6 +78,23 @@ import Testing
         #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: "\(minimal)\nerror: something is out-of-date") == .buildFailed)
     }
 
+    /// macOS SwiftPM (Swift Build) logs the compile line with `=` escaped as `\=`. Without recognising it
+    /// the F7 sample is nil on every macOS cell and a build failure is misfiled as a resolve failure.
+    let escapedMacLine = "    builtin-SwiftDriver -- /Applications/Xcode-27.0.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name IDKit -Onone @/Users/aj.guest/pkg/.build/out/Intermediates.noindex/IDKit.build/Debug/IDKit-t.build/Objects-normal/arm64/IDKit.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -strict-concurrency\\=complete -swift-version 5 -debug-diagnostic-names"
+
+    @Test func swiftBuildEscapedEqualsIsRecognised() {
+        for escaped in [escapedMacLine, escapedMacLine.replacingOccurrences(of: "=complete", with: "=minimal")] {
+            #expect(escaped.contains("strict-concurrency\\="))
+            #expect(OutcomeClassifier.frontendInvocationSample(in: "\(manifestLine)\n\(escaped)\n") == escaped)
+        }
+        #expect(OutcomeClassifier.frontendInvocationSample(in: manifestLine) == nil)
+    }
+
+    @Test func swiftBuildEscapedCompileLineMakesMarkerFailureBuildFailed() {
+        let log = "\(escapedMacLine)\nerror: something is out-of-date"
+        #expect(OutcomeClassifier.classify(exitCode: 1, timedOut: false, log: log) == .buildFailed)
+    }
+
     @Test func parsesTripleAndVersion() {
         let text = "Swift version 6.3.3 (swift-6.3.3-RELEASE)\nTarget: aarch64-unknown-linux-gnu\naarch64\n"
         #expect(OutcomeClassifier.targetTriple(inVersionOutput: text) == "aarch64-unknown-linux-gnu")
