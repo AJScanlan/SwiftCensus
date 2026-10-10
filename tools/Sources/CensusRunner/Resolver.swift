@@ -118,7 +118,7 @@ public struct Resolver: Sendable {
             data = Data(Self.emptyResolved.utf8)
             provenanceSource = "none"
         }
-        try data.write(to: destination)
+        try data.write(to: destination, options: .atomic)
         let pins = ((try? JSONSerialization.jsonObject(with: data)) as? [String: Any])
             .flatMap { ($0["pins"] as? [Any])?.count ?? (($0["object"] as? [String: Any])?["pins"] as? [Any])?.count } ?? 0
         return ResolvedProvenance(

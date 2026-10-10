@@ -248,3 +248,18 @@ import Testing
         #expect(OutcomeClassifier.value(forPrefix: "BuildVersion:", inVersionOutput: "Swift version 6.3") == nil)
     }
 }
+
+@Suite struct RunStoreWriteTests {
+    /// cell.json is the completion marker, so a write must replace the file whole (temp file + rename) and leave no debris.
+    @Test func overwritesInPlaceAndLeavesNoTempFiles() throws {
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent("runstore-\(UUID())")
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let url = dir.appendingPathComponent("a/cell.json")
+        let store = RunStore(root: dir)
+        try store.write(["k": "first value that is long"], to: url)
+        try store.write(["k": "2nd"], to: url)
+        let decoded = try JSONDecoder().decode([String: String].self, from: Data(contentsOf: url))
+        #expect(decoded == ["k": "2nd"])
+        #expect(try FileManager.default.contentsOfDirectory(atPath: url.deletingLastPathComponent().path) == ["cell.json"])
+    }
+}

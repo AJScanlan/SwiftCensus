@@ -326,7 +326,7 @@ public enum Screen {
             writes.append((target, bytes))
             destinationProvenance[p.id] = provenance
         }
-        for (url, bytes) in writes { try bytes.write(to: url) }
+        for (url, bytes) in writes { try bytes.write(to: url, options: .atomic) }
         try RunStore(root: destination).write(destinationProvenance, to: destinationProvenanceURL)
     }
 }

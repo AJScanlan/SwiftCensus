@@ -24,7 +24,7 @@ public struct RunStore: Sendable {
 
     public func write<T: Encodable>(_ value: T, to url: URL) throws {
         try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
-        try (Self.encoder().encode(value) + Data("\n".utf8)).write(to: url)
+        try (Self.encoder().encode(value) + Data("\n".utf8)).write(to: url, options: .atomic)
     }
 
     public struct LoadedCell: Sendable {
