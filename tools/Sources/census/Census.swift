@@ -55,12 +55,18 @@ func writeRunManifest(runId: String, paths: Paths, store: RunStore, toolchains: 
 }
 
 /// One fresh clone of the golden guest for the duration of `body`, always destroyed afterwards (ADR 0006:
-/// isolation is per run). `GuestVM.create()` deletes any stale clone of the same name first.
+/// isolation is per run). `GuestVM.create()` deletes any stale clone of the same name first. A failure to bring the
+/// guest up is thrown as `GuestBootError`; anything thrown by `body` is rethrown unchanged.
 func withMacGuest(runId: String, paths: Paths, store: RunStore, timeoutMinutes: Int,
                   _ body: (MacCellRunner) async throws -> Void) async throws {
     let vm = GuestVM(runId: runId)
     print("cloning \(GuestVM.goldenName) -> \(vm.instance)")
-    try await vm.create()
+    do {
+        try await vm.create()
+    } catch {
+        await vm.destroy()  // a half-booted clone must not keep holding the guest's RAM
+        throw GuestBootError(error)
+    }
     let guestInfo = await vm.describe()
     print("guest:\n\(guestInfo)")
     do {

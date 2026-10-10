@@ -120,13 +120,13 @@ batch_loop() {
     rc=$?
     if (( rc == 3 )) && [[ ! -f "$STATE/$prefix-$n.retried" ]]; then
       touch "$STATE/$prefix-$n.retried"
-      log "infra_error cells in $prefix $n; retrying them once"
+      log "infra_error cells or guest boot failure in $prefix $n; retrying once"
       # shellcheck disable=SC2086
       run_census screen batch "$ID" "$n" --root "$ROOT" $flag --retry-infra
       rc=$?
     fi
     set -e
-    (( rc == 0 )) || stop "$prefix $n exited $rc (3 = infra_error after one retry); see $LOG. If the cause is fixed, delete $STATE/$prefix-$n.retried as well as STOPPED to allow one more retry"
+    (( rc == 0 )) || stop "$prefix $n exited $rc (3 = infra_error cells or guest boot failure, after one retry); see $LOG. If the cause is fixed, delete $STATE/$prefix-$n.retried as well as STOPPED to allow one more retry"
     mark_done "$prefix-$n"
   done
 }

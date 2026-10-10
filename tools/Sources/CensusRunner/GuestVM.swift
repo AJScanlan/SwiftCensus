@@ -101,3 +101,11 @@ public enum GuestError: Error, CustomStringConvertible {
         }
     }
 }
+
+/// `GuestVM.create()` failed (clone, boot, SSH, firewall). Distinct from an error thrown while the guest was up, so
+/// the screen driver can retry a boot fault once (exit 3) without retrying everything else.
+public struct GuestBootError: Error, CustomStringConvertible {
+    public var underlying: Error
+    public init(_ underlying: Error) { self.underlying = underlying }
+    public var description: String { "guest boot failed: \(underlying)" }
+}
