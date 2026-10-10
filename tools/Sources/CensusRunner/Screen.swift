@@ -279,21 +279,34 @@ public enum Screen {
     /// empty tertile, yields what exists: never padded. Refuses emitters that were never verified (§5.6).
     public static func selectEmit(results: [ScreenResult], candidates: [CorpusPackage], screenId: String,
                                   seed: UInt64, count: Int) throws -> Selected {
+        // results.json must describe exactly the candidates now on disk (it goes stale after a D5 `--extend` that was
+        // not re-collected). `denominator` also rejects duplicates and a sum that differs from the number drawn.
+        let candidateIds = Set(candidates.map(\.id))
+        if let foreign = results.first(where: { !candidateIds.contains($0.packageId) }) {
+            throw ScreenError.incomplete(foreign.packageId, "result for an id that is not in candidates.yaml; results.json is stale or foreign")
+        }
+        let resultIds = Set(results.map(\.packageId))
+        if let missing = candidates.first(where: { !resultIds.contains($0.id) }) {
+            throw ScreenError.incomplete(missing.id, "candidate has no result; run `census screen collect` again (stale results.json after an extension?)")
+        }
+        _ = try denominator(drawn: candidates.count, results: results)
+
         let emitters = results.filter { $0.status == .emitter }
         if let unverified = emitters.first(where: { $0.verifyScreenCount == nil }) {
             throw ScreenError.unverified(unverified.packageId)
         }
         let byId = Dictionary(candidates.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         // `SPIRow` is named for SPI's export; here `errors` carries the screen count. Renaming it is out of scope.
-        let rows = emitters.compactMap { r -> SPIRow? in
-            guard let p = byId[r.packageId], let n = r.screenCount else { return nil }
+        let rows = try emitters.map { r -> SPIRow in
+            guard let p = byId[r.packageId] else { throw ScreenError.incomplete(r.packageId, "emitter is not a candidate") }
+            guard let n = r.screenCount else { throw ScreenError.incomplete(r.packageId, "emitter has no screen_count") }
             return SPIRow(url: p.url, errors: n, swiftVersion: swiftVersionLabel, asOf: "")
         }
         let byURL = Dictionary(candidates.map { ($0.url, $0) }, uniquingKeysWith: { a, _ in a })
         var perTertile: [Selection.Tertile: Int] = [:]
         var entries: [CorpusPackage] = []
         for (row, tertile) in Selection.sampleAcrossDistribution(rows: rows, count: count, seed: seed) {
-            guard let c = byURL[row.url] else { continue }
+            guard let c = byURL[row.url] else { throw ScreenError.incomplete(row.url, "sampled row is not a candidate") }
             perTertile[tertile, default: 0] += 1
             entries.append(CorpusPackage(
                 id: c.id, url: c.url, sha: c.sha, stratum: .emit, platforms: [.linuxSPM, .macosSPM],

@@ -46,6 +46,41 @@ import Testing
         }
     }
 
+    /// After a D5 `--extend` without re-collecting, results.json is older than candidates.yaml.
+    @Test func refusesStaleResultsThatDoNotCoverEveryCandidate() {
+        #expect(throws: ScreenError.self) {
+            try Screen.selectEmit(results: (1...3).map { emitter($0, count: $0) }, candidates: (1...5).map(cand),
+                                  screenId: "x", seed: 1, count: 30)
+        }
+    }
+
+    @Test func refusesResultsForAnIdThatIsNotACandidate() {
+        #expect(throws: ScreenError.self) {
+            try Screen.selectEmit(results: [emitter(1, count: 3), emitter(9, count: 4)], candidates: [cand(1), cand(2)],
+                                  screenId: "x", seed: 1, count: 30)
+        }
+    }
+
+    @Test func refusesAnEmitterWithoutAScreenCount() {
+        var r = emitter(1, count: 3)
+        r.screenCount = nil
+        #expect(throws: ScreenError.self) {
+            try Screen.selectEmit(results: [r], candidates: [cand(1)], screenId: "x", seed: 1, count: 30)
+        }
+    }
+
+    /// Fewer emitters than `count` yields exactly what exists, never padded.
+    @Test func shortSampleReturnsEveryEmitterWithoutPadding() throws {
+        let cands = (1...6).map(cand)
+        let rs = [emitter(1, count: 9), emitter(2, count: 7), emitter(3, count: 5), emitter(4, count: 2),
+                  ScreenResult(packageId: "o/r5", sha: "", status: .clean, screenCount: 0, batch: 1),
+                  ScreenResult(packageId: "o/r6", sha: "", status: .unresolvable, reason: "x", batch: 1)]
+        let s = try Screen.selectEmit(results: rs, candidates: cands, screenId: "x", seed: 1, count: 30)
+        #expect(s.emitters == 4 && s.entries.count == 4)
+        #expect(Set(s.entries.map(\.id)) == ["o/r1", "o/r2", "o/r3", "o/r4"])
+        #expect(s.perTertile[.head] == 2 && s.perTertile[.middle] == 1 && s.perTertile[.tail] == 1)
+    }
+
     func tempDirs() throws -> (URL, URL) {
         let base = FileManager.default.temporaryDirectory.appendingPathComponent("sel-\(UUID())")
         let src = base.appendingPathComponent("src"), dst = base.appendingPathComponent("dst")
