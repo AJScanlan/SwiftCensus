@@ -27,6 +27,13 @@ struct Paths {
     }
 }
 
+/// `--manifest`/`--resolved` let the screen (ADR 0007) keep its candidates outside `corpus/`. Defaults are the corpus.
+struct CorpusOptions: ParsableArguments {
+    @Option(name: .long, help: "Corpus manifest.") var manifest = "corpus/packages.yaml"
+    @Option(name: .long, help: "Directory of vendored Package.resolved files.") var resolved = "corpus/resolved"
+    var paths: Paths { Paths(corpus: URL(fileURLWithPath: manifest), resolved: URL(fileURLWithPath: resolved)) }
+}
+
 struct Validate: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Validate corpus/packages.yaml (P7: pinned SHAs).")
 
@@ -42,39 +49,53 @@ struct Validate: AsyncParsableCommand {
 
 struct Resolve: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "Vendor a Package.resolved per corpus entry (F1). A documented operation, never a drive-by.")
+        abstract: "Vendor a Package.resolved per corpus entry (F1). A documented operation, never a drive-by.",
+        discussion: "Skips packages already vendored (G3); --force re-resolves them.")
 
+    @OptionGroup var corpus: CorpusOptions
     @Option(name: .long, help: "Toolchain used to resolve.") var toolchain = "6.4"
     @Option(name: .long, parsing: .upToNextOption, help: "Only these package ids.") var package: [String] = []
+    @Flag(name: .long, help: "Re-resolve packages that already have a vendored file.") var force = false
+    @Flag(name: .long, help: "Record failures in failures.json and exit 0: the screen's unresolvable candidates are data.") var allowFailures = false
 
     func run() async throws {
-        let paths = Paths()
+        let paths = corpus.paths
         let manifest = try paths.loadManifest()
         guard let tc = Toolchain.named(toolchain) else { throw ValidationError("unknown toolchain \(toolchain)") }
         try FileManager.default.createDirectory(at: paths.scratch, withIntermediateDirectories: true)
         let resolver = Resolver(sources: paths.sources, resolvedDirectory: paths.resolved, scratch: paths.scratch, toolchain: tc)
+        let store = RunStore(root: paths.resolved)
 
         let provenanceURL = paths.resolved.appendingPathComponent("provenance.json")
+        let failuresURL = paths.resolved.appendingPathComponent("failures.json")
         var provenance = (try? JSONDecoder().decode([String: ResolvedProvenance].self, from: Data(contentsOf: provenanceURL))) ?? [:]
+        var failed = (try? JSONDecoder().decode([String: String].self, from: Data(contentsOf: failuresURL))) ?? [:]
+        let selected = manifest.packages.filter { $0.skipReason == nil && (package.isEmpty || package.contains($0.id)) }
+        let pending = Resolver.pending(selected, resolvedDirectory: paths.resolved, provenance: provenance, force: force)
+        print("\(pending.count) to resolve (\(selected.count - pending.count) already vendored)")
         var failures = 0
-        for p in manifest.packages where p.skipReason == nil && (package.isEmpty || package.contains(p.id)) {
+        for p in pending {
             do {
                 let result = try await resolver.resolve(p)
                 provenance[p.id] = result
+                failed[p.id] = nil
                 print("resolved \(p.id): \(result.source), \(result.pinCount) pins")
             } catch {
                 failures += 1
+                failed[p.id] = "\(error)"
                 print("FAILED \(p.id): \(error)")
             }
-            try RunStore(root: paths.resolved).write(provenance, to: provenanceURL)
+            try store.write(provenance, to: provenanceURL)
+            if failed.isEmpty { try? FileManager.default.removeItem(at: failuresURL) } else { try store.write(failed, to: failuresURL) }
         }
-        if failures > 0 { throw ExitCode.failure }
+        if failures > 0 && !allowFailures { throw ExitCode.failure }
     }
 }
 
 struct Run: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Run the matrix (Linux, containerised) and commit raw output under runs/<run-id>/.")
 
+    @OptionGroup var corpus: CorpusOptions
     @Option(name: .long, help: "Run identifier; the directory name under runs/.") var runId: String
     @Option(name: .long, help: "linux (Docker, five toolchains) or macos (Lima guest, Xcode 27). Platforms never share a run id (F6).") var platform = "linux"
     @Option(name: .long, parsing: .upToNextOption, help: "Toolchains (default: all of 6.1 6.2 6.3 6.4 nightly).") var toolchain: [String] = []
@@ -87,7 +108,7 @@ struct Run: AsyncParsableCommand {
     @Flag(name: .long, help: "Re-run cells that already have results.") var force = false
 
     func run() async throws {
-        let paths = Paths()
+        let paths = corpus.paths
         let manifest = try paths.loadManifest()
         let issues = manifest.validate()
         guard issues.isEmpty else {
@@ -178,10 +199,11 @@ struct Run: AsyncParsableCommand {
 struct Scan: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "SuppressionScan over every corpus checkout (A10). Compiles nothing.")
 
+    @OptionGroup var corpus: CorpusOptions
     @Option(name: .long, help: "Output file.") var output = "corpus/suppression.json"
 
     func run() async throws {
-        let paths = Paths()
+        let paths = corpus.paths
         let manifest = try paths.loadManifest()
         var results: [String: PackageScan] = [:]
         for p in manifest.packages {

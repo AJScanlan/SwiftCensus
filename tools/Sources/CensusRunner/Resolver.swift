@@ -34,6 +34,18 @@ public struct Resolver: Sendable {
         self.toolchain = toolchain
     }
 
+    /// G3: resume-safe. A package is done when its vendored file exists *and* provenance records it. Anything else
+    /// (never tried, failed, or interrupted between the two writes) is pending. `force` re-resolves everything,
+    /// which for the corpus is a documented operation with a fresh baseline run, never a drive-by.
+    public static func pending(_ packages: [CorpusPackage], resolvedDirectory: URL,
+                               provenance: [String: ResolvedProvenance], force: Bool) -> [CorpusPackage] {
+        guard !force else { return packages }
+        return packages.filter { p in
+            provenance[p.id] == nil
+                || !FileManager.default.fileExists(atPath: resolvedDirectory.appendingPathComponent("\(p.slug).resolved").path)
+        }
+    }
+
     static let emptyResolved = "{\n  \"pins\" : [\n\n  ],\n  \"version\" : 3\n}\n"
 
     static let script = """
