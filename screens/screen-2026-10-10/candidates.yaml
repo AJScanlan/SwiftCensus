@@ -1,0 +1,2103 @@
+# Screen candidates (ADR 0007), in draw order. Written by `census select screen`; pinned like the corpus.
+packages:
+- id: klaviyo/klaviyo-swift-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=66 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: effec593519f2a93afeaa231570818ac5e2364e9
+  stratum: screen
+  url: https://github.com/klaviyo/klaviyo-swift-sdk
+- id: JanGorman/Agrume
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=67 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 7f62ae1da1b19d6e498bf26e3ed8519f5fd4569b
+  stratum: screen
+  url: https://github.com/JanGorman/Agrume
+- id: brightdigit/SyndiKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=68 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f047249dfdcb11c6ae574003a31fe74864e9f5ee
+  stratum: screen
+  url: https://github.com/brightdigit/SyndiKit
+- id: SwiftStructure/CaseConverter
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=74 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: bdae9e4a9459119242d09dfc8358ce494fa19d81
+  stratum: screen
+  url: https://github.com/SwiftStructure/CaseConverter
+- id: worldcoin/idkit-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=75 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 91791171642583bfee33d4282f13a35a6793172f
+  stratum: screen
+  url: https://github.com/worldcoin/idkit-swift
+- id: dagronf/DSFAppearanceManager
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=76 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 415373c9d11f945bbd26ca2bb02664048c632720
+  stratum: screen
+  url: https://github.com/dagronf/DSFAppearanceManager
+- id: Victory-Apps/a2a-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=77 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2dbdef6a394844798da547b2ccb2fe2066433662
+  stratum: screen
+  url: https://github.com/Victory-Apps/a2a-swift
+- id: sbooth/CXXSharedMutex
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=88 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0ff213878225cdcbe28bf4dc556d5f2c7dfa58b1
+  stratum: screen
+  url: https://github.com/sbooth/CXXSharedMutex
+- id: emartech/ios-emarsys-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=89 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: a9932228e05569feb919f7e8ed0e2b8490728a93
+  stratum: screen
+  url: https://github.com/emartech/ios-emarsys-sdk
+- id: Kingpin-Apps/swift-cardano-wallet
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=90 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 02b08a9ecb6df528c5807f03d396f4f3e162403f
+  stratum: screen
+  url: https://github.com/Kingpin-Apps/swift-cardano-wallet
+- id: neothXT/Snowdrop
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=92 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 20436537734212a6bba0e437e553ab1464af6324
+  stratum: screen
+  url: https://github.com/neothXT/Snowdrop
+- id: elegantchaos/Versionator
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=93 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 84089f2c55c1e26ce92278d68e2080db331db972
+  stratum: screen
+  url: https://github.com/elegantchaos/Versionator
+- id: googleapis/swift-google-rpc
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=94 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 905c33c97b04e90c5a0af274b431cbe11e4027a3
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-rpc
+- id: markbattistella/TriggerKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=97 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d23c85e8c7610dd36757cc17f23e70f7ac0515d6
+  stratum: screen
+  url: https://github.com/markbattistella/TriggerKit
+- id: SelligentMarketingCloud/MobileSDK-iOS
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=98 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 28be89d8f6eea8416c9a41f26f8e871c5dcaf838
+  stratum: screen
+  url: https://github.com/SelligentMarketingCloud/MobileSDK-iOS
+- id: aptove/swift-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=99 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 6e7e67c8e650997e5a6eca670e01dcec338b815b
+  stratum: screen
+  url: https://github.com/aptove/swift-sdk
+- id: flexlixrup/pulsar-client-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=100 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d5294d84538095e5ac14fb575752a1445ff9235c
+  stratum: screen
+  url: https://github.com/flexlixrup/pulsar-client-swift
+- id: artembobkin/ImmersiveMap
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=101 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: deef641cadc387e59c99ab0df098194ab0619e04
+  stratum: screen
+  url: https://github.com/artembobkin/ImmersiveMap
+- id: onefootprint/Swift-Onboarding-Components
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=104 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 6fc16e28cce43cf22e61143299eb3b5de43862f5
+  stratum: screen
+  url: https://github.com/onefootprint/Swift-Onboarding-Components
+- id: winddpan/CodableWrapper
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=105 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: ac2c2668e288157c492ef55b6e59fd3fe5b00295
+  stratum: screen
+  url: https://github.com/winddpan/CodableWrapper
+- id: mesqueeb/MapSugar
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=107 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 014454cf992bc93e946a650deae2d50ebd93035f
+  stratum: screen
+  url: https://github.com/mesqueeb/MapSugar
+- id: alexey1312/baton
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=108 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c5f1f41cfae3811856aeac2d9d7534204cce3cdd
+  stratum: screen
+  url: https://github.com/alexey1312/baton
+- id: googleapis/swift-google-cloud-dataform-v1
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=110 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 37c3c4432c5905b91675f45babc527e4e1ad4df1
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-dataform-v1
+- id: EmergeTools/Pow
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=113 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 1b4b1dda28c50b95f0872927ee2226fe8b58950e
+  stratum: screen
+  url: https://github.com/EmergeTools/Pow
+- id: perfectlysoft/perfect-mysql
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=116 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 79b730b7a8252647c4adbd3cdaabd0d734b89011
+  stratum: screen
+  url: https://github.com/perfectlysoft/perfect-mysql
+- id: slidoapp/Appcast
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=119 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9871effb8f3c5cf7820200f112f1a1055d7a786c
+  stratum: screen
+  url: https://github.com/slidoapp/Appcast
+- id: dl-alexandre/opencode-sdk-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=121 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: dc59af9e52759e8bf590addd6f3008332e34fd21
+  stratum: screen
+  url: https://github.com/dl-alexandre/opencode-sdk-swift
+- id: InspiratioNULL/InfographicKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=122 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0479ce8c132e7f85ae2a3a287ee9e456e847a126
+  stratum: screen
+  url: https://github.com/InspiratioNULL/InfographicKit
+- id: Adyen/adyen-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=123 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: 5238e50d27b1ea869e1c26c633bce878f6d9a307
+  stratum: screen
+  url: https://github.com/Adyen/adyen-ios
+- id: dankinsoid/VDFlow
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=124 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 090e84029078d42a7f88eee7ddc2d664b685cbb6
+  stratum: screen
+  url: https://github.com/dankinsoid/VDFlow
+- id: weppos/uddf-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=125 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 938738e57b6f826a6a422e716ef7397cb326eeb7
+  stratum: screen
+  url: https://github.com/weppos/uddf-swift
+- id: googleapis/swift-google-cloud-locationfinder-v1
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=126 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a33fd3e98f69334876c946cca4b605a70353bfe3
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-locationfinder-v1
+- id: mattt/swift-xgrammar
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=127 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e0f2de361aa4891dbca5113629bc90ab8e5c3888
+  stratum: screen
+  url: https://github.com/mattt/swift-xgrammar
+- id: slepp/requisite-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=128 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c7ba0b9b9ba5ca83f0bfc2486df66cf5be06836d
+  stratum: screen
+  url: https://github.com/slepp/requisite-swift
+- id: mindbody/Conduit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=130 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f0513a2c40f7e0b29e89cc0088a2d6280d759a99
+  stratum: screen
+  url: https://github.com/mindbody/Conduit
+- id: t089/swift-vips
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=132 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: cbe1ad8915d4d5edae13537ca61693e21d8991e1
+  stratum: screen
+  url: https://github.com/t089/swift-vips
+- id: stack/Restructure
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=133 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 5e2c65c1a6018d46bae578a60989699e7ce2e475
+  stratum: screen
+  url: https://github.com/stack/Restructure
+- id: mannd/QTcPackage
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=134 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 30414ee6a4b664bc68d2993a6291eb20427087f8
+  stratum: screen
+  url: https://github.com/mannd/QTcPackage
+- id: sorunokoe/SwiftMapper
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=135 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8e45b05bdf9522d1c731ee543c0ce124f04cebe5
+  stratum: screen
+  url: https://github.com/sorunokoe/SwiftMapper
+- id: rryam/VecturaKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=138 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3f5c22fff3f87145042ac6fc044237e319e07675
+  stratum: screen
+  url: https://github.com/rryam/VecturaKit
+- id: swiftlang/swift-foundation
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=139 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: aadd9259be076a86a7e7918b938751d69dfe1198
+  stratum: screen
+  url: https://github.com/swiftlang/swift-foundation
+- id: stackotter/SwiftKotlin
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=140 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 88a9bb94d156ef95d177bc6a65580dfacdda4b13
+  stratum: screen
+  url: https://github.com/stackotter/SwiftKotlin
+- id: mapbox/mapbox-navigation-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=142 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d174b2aeac21537a7c67069d9136233914517890
+  stratum: screen
+  url: https://github.com/mapbox/mapbox-navigation-ios
+- id: SilverPineSoftware/UUSwiftCore
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=143 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 71abef434c7ebddeda99329db9fc1943c1361e6e
+  stratum: screen
+  url: https://github.com/SilverPineSoftware/UUSwiftCore
+- id: bradhowes/PriorityQueue
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=144 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 1338b72f13fd3f5c7f13ae6589eeb51bb952f477
+  stratum: screen
+  url: https://github.com/bradhowes/PriorityQueue
+- id: OpenSwiftUIProject/DarwinPrivateFrameworks
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=147 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: b00ecca4c7e77ab24da8c25d81f3d413db6fdcb5
+  stratum: screen
+  url: https://github.com/OpenSwiftUIProject/DarwinPrivateFrameworks
+- id: Appracatappra/SwiftletUtilities
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=150 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 95308eb0de42186e1e9d33bddaa78b090c16ef84
+  stratum: screen
+  url: https://github.com/Appracatappra/SwiftletUtilities
+- id: yockow/swiftranges
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=152 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 92499e84419a8161150fca86a29feb8931b43cb6
+  stratum: screen
+  url: https://github.com/yockow/swiftranges
+- id: dodobrands/DBThreadSafe-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=153 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0b822c3ed3c398d045bf44b52897b40c670e5858
+  stratum: screen
+  url: https://github.com/dodobrands/DBThreadSafe-ios
+- id: Janneman84/LeakedViewControllerDetector
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=159 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e5200a479ec003f8621773aca55b8e2cd3f59ebc
+  stratum: screen
+  url: https://github.com/Janneman84/LeakedViewControllerDetector
+- id: bidmachine/BidMachine-SPM
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=160 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: abe2bcd7034a47d727513a73a8234702aa24b57d
+  stratum: screen
+  url: https://github.com/bidmachine/BidMachine-SPM
+- id: googleads/swift-package-manager-google-programmatic-access-library-tvos
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=161 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 80aa720b58af8d8a66e056ae9331cbdf3ba2d92b
+  stratum: screen
+  url: https://github.com/googleads/swift-package-manager-google-programmatic-access-library-tvos
+- id: atacan/AssemblyAI
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=163 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ed31d2fbb08b69633e7d1bcc31bc4cf8eacc8718
+  stratum: screen
+  url: https://github.com/atacan/AssemblyAI
+- id: NikSativa/CombineExt
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=165 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a7542eb0bccbaa92b5490446ca69afa31c943b6b
+  stratum: screen
+  url: https://github.com/NikSativa/CombineExt
+- id: segmentio/Sovran-Swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=167 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 47f4fe247f4db9c57a5e3a571fcdc7243c34c98a
+  stratum: screen
+  url: https://github.com/segmentio/Sovran-Swift
+- id: pm-dev/swift-graphql-codegen
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=169 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: bfd697529b28de54fce33f54780c95e32183427d
+  stratum: screen
+  url: https://github.com/pm-dev/swift-graphql-codegen
+- id: jacky-xbb/PDF2MDKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=170 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 7a202f5dc8db51967ce8d05f3cdfd7befd350aa3
+  stratum: screen
+  url: https://github.com/jacky-xbb/PDF2MDKit
+- id: sirily11/swift-jsonschema-form
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=171 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 5d6531aec8e2df8ca3613981f7318c9479ef8483
+  stratum: screen
+  url: https://github.com/sirily11/swift-jsonschema-form
+- id: swiftlang/swift-playdate-examples
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=172 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 04c822229cc61bc7b15ad4b3c0771dac069db2e1
+  stratum: screen
+  url: https://github.com/swiftlang/swift-playdate-examples
+- id: s2mr/L10nLint
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=175 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3dd0a0cc061bb2240e05875c55f81f3ae5154f76
+  stratum: screen
+  url: https://github.com/s2mr/L10nLint
+- id: apple/coreai-models
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=178 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 52dbd93cb913c4327539ae0b80749e3ba9649538
+  stratum: screen
+  url: https://github.com/apple/coreai-models
+- id: namhoangdev31/ExploreSwiftUI
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=186 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d47dbb7b7df24b36c31bcad364de94adfd120264
+  stratum: screen
+  url: https://github.com/namhoangdev31/ExploreSwiftUI
+- id: Luminoid/Sophon
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=188 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fe795c9fb3b65a3c9a8dc7aaf6d6a4782192c011
+  stratum: screen
+  url: https://github.com/Luminoid/Sophon
+- id: kateinoigakukun/swift-indexstore
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=191 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 26d3af186fb38ec3a96c8a9a3172b7ccc3565524
+  stratum: screen
+  url: https://github.com/kateinoigakukun/swift-indexstore
+- id: AppliedRecognition/Ver-ID-Common-Types-Apple
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=192 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 79028470ece922969d461262e59c0f7f99ce6515
+  stratum: screen
+  url: https://github.com/AppliedRecognition/Ver-ID-Common-Types-Apple
+- id: jaywcjlove/swift-path-to
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=193 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0947df4c5d79c77507bd3ad38477b052df79998b
+  stratum: screen
+  url: https://github.com/jaywcjlove/swift-path-to
+- id: zunda-pixel/appattest-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=195 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: df0d85a46f091c4b0affb6d1ee1e9b4cfc75ad1e
+  stratum: screen
+  url: https://github.com/zunda-pixel/appattest-swift
+- id: tree-sitter-grammars/tree-sitter-xml
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=199 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 5000ae8f22d11fbe93939b05c1e37cf21117162d
+  stratum: screen
+  url: https://github.com/tree-sitter-grammars/tree-sitter-xml
+- id: SilverPineSoftware/UUSwiftUX
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=200 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c8ebe62dd7a677dc16e98318270db5c71aac85d2
+  stratum: screen
+  url: https://github.com/SilverPineSoftware/UUSwiftUX
+- id: DeclarativeHub/ReactiveKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=201 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 5c61e0869cfaf8f9fcd17afecb8e6c721d153186
+  stratum: screen
+  url: https://github.com/DeclarativeHub/ReactiveKit
+- id: StanfordSpezi/SpeziAccount
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=202 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 35c6e6fd04dbc0f91577398d2299be127e10f84b
+  stratum: screen
+  url: https://github.com/StanfordSpezi/SpeziAccount
+- id: frazer-rbsn/swift-json-canvas
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=206 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 3c9eb55b3b775b5e5fb48ac77b699ca872a3fcde
+  stratum: screen
+  url: https://github.com/frazer-rbsn/swift-json-canvas
+- id: dev-hamin-kim/HangulKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=208 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 36421e5acfd3f87bb51ebafdc367d576a126005b
+  stratum: screen
+  url: https://github.com/dev-hamin-kim/HangulKit
+- id: shahwaiz90/ghoststrings-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=209 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 6f1dcff89f677ebae5676913773aa038091792ab
+  stratum: screen
+  url: https://github.com/shahwaiz90/ghoststrings-ios
+- id: KalpeshTalkar/Tessera
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=210 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 525240a878344857a134b4c8cc18ae297e6d2cab
+  stratum: screen
+  url: https://github.com/KalpeshTalkar/Tessera
+- id: hidden-spectrum/swift-translate
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=211 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: d1e2bec164ce75c3d9a2ac18e0a8e4ee6dca62bd
+  stratum: screen
+  url: https://github.com/hidden-spectrum/swift-translate
+- id: ryanlintott/LookingGlassUI
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=212 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4ee892f3ce496bf515863d2cb8f633a171938989
+  stratum: screen
+  url: https://github.com/ryanlintott/LookingGlassUI
+- id: adobe/aepsdk-edgeidentity-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=217 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 58a195da219be3dab74824954e56d09dabaa8085
+  stratum: screen
+  url: https://github.com/adobe/aepsdk-edgeidentity-ios
+- id: StanfordBDHG/ResearchKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=218 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d1d523e9e738b7ad9c97ca6101aada1c041ea9da
+  stratum: screen
+  url: https://github.com/StanfordBDHG/ResearchKit
+- id: hackiftekhar/IQKeyboardManager
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=219 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 0972dd6eded87c930fb6ad36b3c5ecd620f06894
+  stratum: screen
+  url: https://github.com/hackiftekhar/IQKeyboardManager
+- id: Appracatappra/SoundManager
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=220 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 6bb1651d29ec084edc94a1816f20c517882bcc45
+  stratum: screen
+  url: https://github.com/Appracatappra/SoundManager
+- id: sinoru/swift-property-list
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=221 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: 1f0dd3a6b9564e31048e9b7de51a623175f5962d
+  stratum: screen
+  url: https://github.com/sinoru/swift-property-list
+- id: amirsaam/elementary-pines
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=223 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e266e814a562be016ae1989cb1aaa7c34cd70c1e
+  stratum: screen
+  url: https://github.com/amirsaam/elementary-pines
+- id: William-Weng/WWIntelligentAgent
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=224 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 92a69f8b4934c4abe5b8835225448975f9555088
+  stratum: screen
+  url: https://github.com/William-Weng/WWIntelligentAgent
+- id: WendellXY/CodableKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=227 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 304f8a8e07ecbe1f7e8259683e8a592ba316c229
+  stratum: screen
+  url: https://github.com/WendellXY/CodableKit
+- id: johnrbent/Rearrange
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=228 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f459af18b74f1792a263d4ad599dae076856bfb4
+  stratum: screen
+  url: https://github.com/johnrbent/Rearrange
+- id: zendesk/chat_sdk_ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=230 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 8ca4e594b0e13ebad7a552e0843ab0e7971516d0
+  stratum: screen
+  url: https://github.com/zendesk/chat_sdk_ios
+- id: MindscapeHQ/raygun4apple
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=231 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 2068d478f21ed1dec98f90bb60de07f4b708067c
+  stratum: screen
+  url: https://github.com/MindscapeHQ/raygun4apple
+- id: FabrizioBrancati/Queuer
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=234 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9ae00b0da125f127f1bbf2e92d8e1fbb0994427e
+  stratum: screen
+  url: https://github.com/FabrizioBrancati/Queuer
+- id: yliu-hashed/shimmers-hdl
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=237 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 18039791292ddb7609ab8f3bb344b9b903139af8
+  stratum: screen
+  url: https://github.com/yliu-hashed/shimmers-hdl
+- id: Livsy90/SkavokNetworking
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=244 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: df65f7a5b1f9475fed04a50c43e5f592b69cf16b
+  stratum: screen
+  url: https://github.com/Livsy90/SkavokNetworking
+- id: swiftlang/swift-toolchain-sqlite
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=246 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2725e5fc3939167eaf6658e0060e06603e82365d
+  stratum: screen
+  url: https://github.com/swiftlang/swift-toolchain-sqlite
+- id: AltiAntonov/SafeDecoding
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=247 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fd7a7ebe11431ad0663723c0cc740690ff019af5
+  stratum: screen
+  url: https://github.com/AltiAntonov/SafeDecoding
+- id: rudderlabs/rudder-sdk-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=248 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: dd6f62abd5fd46090e4f03aab1466449bf790174
+  stratum: screen
+  url: https://github.com/rudderlabs/rudder-sdk-ios
+- id: mesqueeb/SwiftSound
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=249 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 837586507ab58af917156e27e87f40289f99ff58
+  stratum: screen
+  url: https://github.com/mesqueeb/SwiftSound
+- id: swift-ietf/swift-rfc-5321
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=250 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8fcfffe318131fd5d1d941d08f73e1d1ceb60a2e
+  stratum: screen
+  url: https://github.com/swift-ietf/swift-rfc-5321
+- id: takeshishimada/Lockman
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=252 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 15b2660b229bdc75d6dba5122150a01f2a5d9933
+  stratum: screen
+  url: https://github.com/takeshishimada/Lockman
+- id: MahdiBM/enumerator-macro
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=253 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: bb4a4c0755e4bd95ee1646b946d3e74bcd7a3611
+  stratum: screen
+  url: https://github.com/MahdiBM/enumerator-macro
+- id: google/flatbuffers
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=262 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: b8431fbcd7a5c71817f314e18b332c0648554efa
+  stratum: screen
+  url: https://github.com/google/flatbuffers
+- id: googleapis/swift-google-cloud-redis-v1
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=263 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c09cf71489b55fb5441588cfce1eef32addddd2e
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-redis-v1
+- id: ShaftUI/Shaft
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=264 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ea52999447248fcb91096392dc95e2f1afece8ef
+  stratum: screen
+  url: https://github.com/ShaftUI/Shaft
+- id: teunlao/swift-ai-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=266 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c82deb28c16799b10a19cf301ae6bbf76d1406b5
+  stratum: screen
+  url: https://github.com/teunlao/swift-ai-sdk
+- id: blackjacx/SHDateFormatter
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=268 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: ca2e011acc769b2231c0293819bb7521b7ff7997
+  stratum: screen
+  url: https://github.com/blackjacx/SHDateFormatter
+- id: stackotter/SwiftJavaLang
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=269 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 1b7320afd8d40a669422ee61d5335ae6d647dce5
+  stratum: screen
+  url: https://github.com/stackotter/SwiftJavaLang
+- id: southkin/EthicalListView
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=270 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8abb6b6756f033bee02fc30434500b42c984a4b3
+  stratum: screen
+  url: https://github.com/southkin/EthicalListView
+- id: markbattistella/BezelKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=273 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 39dbbae7f5368943067800151581d52af8dc30a0
+  stratum: screen
+  url: https://github.com/markbattistella/BezelKit
+- id: Aikyuichi/SQLiteStore
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=274 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8552ec44fe8ab72ca649ff6d924fbabd65f51b5f
+  stratum: screen
+  url: https://github.com/Aikyuichi/SQLiteStore
+- id: twinkling-reality/opennook
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=275 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2b50b5c3a99df8914e25e199d29bf7aa505f7a59
+  stratum: screen
+  url: https://github.com/twinkling-reality/opennook
+- id: ciaranrobrien/SwiftUIScrollOffset
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=278 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: cfa31ff216e77d50b44cec8eeaf8f11d1a22035a
+  stratum: screen
+  url: https://github.com/ciaranrobrien/SwiftUIScrollOffset
+- id: tbxark/swift-telegram-bot-api
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=282 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 4ecd1377709728794ab881d944c2575cbff2f9c1
+  stratum: screen
+  url: https://github.com/tbxark/swift-telegram-bot-api
+- id: modern-swift-dev/roundtrip-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=284 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fe829ca4ed0d81b73c977067f3e247257fc97ffc
+  stratum: screen
+  url: https://github.com/modern-swift-dev/roundtrip-swift
+- id: MFranceschi6/swift-xml-coder
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=286 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 666369ce56816599eb686d69d865d9b841ce1f24
+  stratum: screen
+  url: https://github.com/MFranceschi6/swift-xml-coder
+- id: CorvidLabs/swift-retry
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=288 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 78115a52d51c6b8f8611c0ab9ac317abcf181410
+  stratum: screen
+  url: https://github.com/CorvidLabs/swift-retry
+- id: Quick/Nimble
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=289 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 727f75d91a0f7501d08d938966d17e6728b76a2a
+  stratum: screen
+  url: https://github.com/Quick/Nimble
+- id: ofgokce/Zerk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=291 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 97658482f419450ef6f5d0048eb8fd44d1d6350a
+  stratum: screen
+  url: https://github.com/ofgokce/Zerk
+- id: vivekptnk/ProximaKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=293 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9074a52e28baa4fb3abbb971bbc4b43ad8a24a65
+  stratum: screen
+  url: https://github.com/vivekptnk/ProximaKit
+- id: heestand-xyz/CoreGraphicsExtensions
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=295 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 13d3b721dc456d583a27be2def8b4d353f252dcc
+  stratum: screen
+  url: https://github.com/heestand-xyz/CoreGraphicsExtensions
+- id: orchetect/swift-ascii
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=296 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e4d7ae8e52aca79d06608cdf079a8bab85f01210
+  stratum: screen
+  url: https://github.com/orchetect/swift-ascii
+- id: amir-magdy-of-wizardlabz/kiahk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=297 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 5046c85d2beda1d97bb847658e065f534ff2490d
+  stratum: screen
+  url: https://github.com/amir-magdy-of-wizardlabz/kiahk
+- id: orlandos-nl/Citadel
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=300 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ae8562f895de06ccb86fdb1cbb65fd99c8976e12
+  stratum: screen
+  url: https://github.com/orlandos-nl/Citadel
+- id: alexlerikos/Projector
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=304 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 50438f0092c37ef2455b5d76d84378499770fe6c
+  stratum: screen
+  url: https://github.com/alexlerikos/Projector
+- id: apple/swift-collections-benchmark
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=305 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e9e8df493e3d8f9285103415176e52966c37a764
+  stratum: screen
+  url: https://github.com/apple/swift-collections-benchmark
+- id: gpambrozio/GitWorkbench
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=306 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e6405e0fa88983b56b14defe9f4e75aab6b68fa0
+  stratum: screen
+  url: https://github.com/gpambrozio/GitWorkbench
+- id: GRimAce11/Strata
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=307 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 992e15d7a085c1c20424faa8d463548a0113e50f
+  stratum: screen
+  url: https://github.com/GRimAce11/Strata
+- id: kylebrowning/vapor-sse
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=308 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8a1bbe35d46ea84a46b55b960a3f2676b34b6296
+  stratum: screen
+  url: https://github.com/kylebrowning/vapor-sse
+- id: vapor/postgres-nio
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=309 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 464a1376283b3db7ed57049bc786e2c9cd3f6b1c
+  stratum: screen
+  url: https://github.com/vapor/postgres-nio
+- id: Flizpay/flizpay-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=311 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 832e3be9718ce0bb1a03a8c5371f02413af07cd9
+  stratum: screen
+  url: https://github.com/Flizpay/flizpay-ios
+- id: naviapps/preset-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=315 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a630406e9ab70f05777b29a051ceadbf73a6ecd8
+  stratum: screen
+  url: https://github.com/naviapps/preset-kit
+- id: moslienko/InAppMaster
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=319 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 51447154a984588bf15730488154d98ec9516d11
+  stratum: screen
+  url: https://github.com/moslienko/InAppMaster
+- id: Janneman84/BoostedLifecycleMethods
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=320 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9e679662613b0d9ae3581b84e76e494e30fe608c
+  stratum: screen
+  url: https://github.com/Janneman84/BoostedLifecycleMethods
+- id: google/GTMAppAuth
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=322 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 57094cd46bc8700d3a887e2a429f42b6e8ea3f0b
+  stratum: screen
+  url: https://github.com/google/GTMAppAuth
+- id: luizmb/Hourglass
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=323 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c122a98281bdd61a1c231c111fe643e49a6eaa9c
+  stratum: screen
+  url: https://github.com/luizmb/Hourglass
+- id: AndyHeardApps/SwiftNetworking
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=325 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d0d641723185d865becee8780739c981578f0237
+  stratum: screen
+  url: https://github.com/AndyHeardApps/SwiftNetworking
+- id: thebbapp/swift-package-bb-app-status-bar
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=328 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d165c981b81ef7baf470241793e4d590c65430a6
+  stratum: screen
+  url: https://github.com/thebbapp/swift-package-bb-app-status-bar
+- id: The-Wand/Any
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=333 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 04a0012a916ed2258e3e359803f2cd12f5f4ed6f
+  stratum: screen
+  url: https://github.com/The-Wand/Any
+- id: cesarferreira/SwiftEventBus
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=335 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 588722d006bf04dd4e9feec4853cc9d1cc25b656
+  stratum: screen
+  url: https://github.com/cesarferreira/SwiftEventBus
+- id: Neuro-ID/neuroid-ios-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=339 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d7fd158bb081ea445a7ba459844bdcc59079571b
+  stratum: screen
+  url: https://github.com/Neuro-ID/neuroid-ios-sdk
+- id: ferdous-mahmud/SwiftUICarousel
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=340 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 138418094b0b9268b7aac72e281773260050ccb8
+  stratum: screen
+  url: https://github.com/ferdous-mahmud/SwiftUICarousel
+- id: swift-ietf/swift-rfc-791
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=341 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fce5188f772da717242089a65149e7403a3d7868
+  stratum: screen
+  url: https://github.com/swift-ietf/swift-rfc-791
+- id: adam-fowler/aws-signer-v4
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=344 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 457a4563817123bbbd7015adc59e7587189637ef
+  stratum: screen
+  url: https://github.com/adam-fowler/aws-signer-v4
+- id: ryanfrancesconi/spfk-metadata
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=345 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 392e0d2c8e8371797d5a4c3a0cc7b82e526c43b7
+  stratum: screen
+  url: https://github.com/ryanfrancesconi/spfk-metadata
+- id: yvente/swift-remove-markdown
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=348 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 08ee264f472d532d1420886db7782608d7b802a2
+  stratum: screen
+  url: https://github.com/yvente/swift-remove-markdown
+- id: ezefranca/BibTeXKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=355 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9d86aef9934451f57f18bd1c053889b147edcdab
+  stratum: screen
+  url: https://github.com/ezefranca/BibTeXKit
+- id: powersync-ja/powersync-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=358 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e6d57d6acb76369b6cd3b459834615a8f90b544e
+  stratum: screen
+  url: https://github.com/powersync-ja/powersync-swift
+- id: markbattistella/NotificationManager
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=359 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0ca86fa72d18afbdae36ce0d6b430c0bedd090e2
+  stratum: screen
+  url: https://github.com/markbattistella/NotificationManager
+- id: Jiropole/SwiftEDR
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=364 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 810b44fa40a60cda2f9aac79cfa05cd97e2061be
+  stratum: screen
+  url: https://github.com/Jiropole/SwiftEDR
+- id: CommandersAct/iOSV5
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=367 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 8a3d06fd4133f3b4a8534bf872250c75eb70a861
+  stratum: screen
+  url: https://github.com/CommandersAct/iOSV5
+- id: SumPositive/AZCalc
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=368 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 59fad575609785ca3ccc76dc83215eb836b6012b
+  stratum: screen
+  url: https://github.com/SumPositive/AZCalc
+- id: FlineDev/LinksKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=369 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e0ffbd207dffc398675406f72e716064c852312e
+  stratum: screen
+  url: https://github.com/FlineDev/LinksKit
+- id: Proof-of-Human-Network/sdk-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=370 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a8fd32373cbecb25429a5ac4c1383ee43e68cb62
+  stratum: screen
+  url: https://github.com/Proof-of-Human-Network/sdk-ios
+- id: sigilgreenhouse/pico-async-observable
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=371 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 5a1ff0ff41e8246aeacfe38cea171fe6abdd0c2a
+  stratum: screen
+  url: https://github.com/sigilgreenhouse/pico-async-observable
+- id: nerdzlab/NerdzValidation
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=373 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 0e7f03b6459ba5d440b5525fa9b1291c26dfdeca
+  stratum: screen
+  url: https://github.com/nerdzlab/NerdzValidation
+- id: thebbapp/swift-package-bb-app-intent
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=374 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f707edf289dceb2dfcc2e65485ed51e83d08821e
+  stratum: screen
+  url: https://github.com/thebbapp/swift-package-bb-app-intent
+- id: aykhanhajiyev/media-size-watchdog
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=375 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ea09b614280f595a6580fb368a7aba00b7bd7ce8
+  stratum: screen
+  url: https://github.com/aykhanhajiyev/media-size-watchdog
+- id: AgoraIO/AgoraLite_iOS
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=376 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4a46aa5f5d0030b642acf7d5e061ec3adc9c939f
+  stratum: screen
+  url: https://github.com/AgoraIO/AgoraLite_iOS
+- id: shareup/dispatch-timer
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=377 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9b03fa83669f6e01ee2135af8ab9105cc2b9b744
+  stratum: screen
+  url: https://github.com/shareup/dispatch-timer
+- id: apparata/markin
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=379 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 338699cd72ff2d845356f150c59e82bdca15bacc
+  stratum: screen
+  url: https://github.com/apparata/markin
+- id: samsonjs/NotificationSmuggler
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=381 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 645c1a049ee96f225f36342e3b72a41c30a2e502
+  stratum: screen
+  url: https://github.com/samsonjs/NotificationSmuggler
+- id: RCCoop/RCGPX
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=385 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 93fc5a5a96a07f353d0fb45d323e8274b7fce7b7
+  stratum: screen
+  url: https://github.com/RCCoop/RCGPX
+- id: imclaren/SwiftKeyExchange
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=387 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: dbbc4a4df3942eec5eeb9a4007b719d18e490f67
+  stratum: screen
+  url: https://github.com/imclaren/SwiftKeyExchange
+- id: swiftlang/example-package-figlet
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=388 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 013bf57c64e9f6eeb8096e66c54bb94d421ef02e
+  stratum: screen
+  url: https://github.com/swiftlang/example-package-figlet
+- id: ErsanQ/DeviceKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=389 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2df3ff15d3b282a1ad3d5ba036f9c895c91d19f4
+  stratum: screen
+  url: https://github.com/ErsanQ/DeviceKit
+- id: brightdigit/XMLCoder
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=394 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 141f4dd46f67c72b771235834d758c74382c71a9
+  stratum: screen
+  url: https://github.com/brightdigit/XMLCoder
+- id: hmlongco/Factory
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=397 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 39d340fbfc4eb79a8981e9166083cda011a6b3f8
+  stratum: screen
+  url: https://github.com/hmlongco/Factory
+- id: mgacy/swift-lambda-extras
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=399 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 82f7d217861eba4c11b52575fdc894cb82799177
+  stratum: screen
+  url: https://github.com/mgacy/swift-lambda-extras
+- id: StanfordSpezi/SpeziConsent
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=400 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8c37a69bb8bc7884f36831015652513c2fb87241
+  stratum: screen
+  url: https://github.com/StanfordSpezi/SpeziConsent
+- id: elvisperlika/notion-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=401 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c8d91603be60c7d4810effe8ee0c23f172c08bf7
+  stratum: screen
+  url: https://github.com/elvisperlika/notion-kit
+- id: pedronahum/MetalHLO
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=403 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 44b3a04be0095296f9be95ce060e93045b69c367
+  stratum: screen
+  url: https://github.com/pedronahum/MetalHLO
+- id: ibo2001/MushafImad
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=404 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c9d0665bcb98f1af77e06def155e1964dc7bb218
+  stratum: screen
+  url: https://github.com/ibo2001/MushafImad
+- id: mapbox/Fingertips
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=405 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: cc0a7da404725606107e1743bc668951ae1eda74
+  stratum: screen
+  url: https://github.com/mapbox/Fingertips
+- id: luizmb/FP
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=410 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 948dabce308fe0205c1da2bbcc3ccaa22f68eb22
+  stratum: screen
+  url: https://github.com/luizmb/FP
+- id: hylo-lang/Swifty-LLVM
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=411 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0cab6b5b628a0485226b899fa3a0abc37d603bb4
+  stratum: screen
+  url: https://github.com/hylo-lang/Swifty-LLVM
+- id: RougeWare/Swift-Function-Tools
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=412 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: ff75055b60271137f709963c4495613cb3d30587
+  stratum: screen
+  url: https://github.com/RougeWare/Swift-Function-Tools
+- id: marciliojrs/aurora
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=413 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0d1497b206ef77017760d9c819eafa191f4b00c5
+  stratum: screen
+  url: https://github.com/marciliojrs/aurora
+- id: tomasf/NavLibSwift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=418 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a8753146a840acdb0f9bf290430c7d7bdacf0825
+  stratum: screen
+  url: https://github.com/tomasf/NavLibSwift
+- id: kudit/Device
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=420 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7
+  stratum: screen
+  url: https://github.com/kudit/Device
+- id: sbooth/Geodesic
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=421 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: eec6694589e6fd3cf2dbf4d4a319c58eedd54a01
+  stratum: screen
+  url: https://github.com/sbooth/Geodesic
+- id: thebbapp/swift-package-bb-app-author-schema
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=422 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d0ea37a3eb32e7ee373b7dd8b9f20abfe4390e78
+  stratum: screen
+  url: https://github.com/thebbapp/swift-package-bb-app-author-schema
+- id: StanfordSpezi/SpeziDevices
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=423 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: b0758b5d38786b3c750c92abcc9732a9601389d6
+  stratum: screen
+  url: https://github.com/StanfordSpezi/SpeziDevices
+- id: ohitslaurence/swift-ai-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=424 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 06dc4f18b25297f3171bca5366ae0b7f38b769e2
+  stratum: screen
+  url: https://github.com/ohitslaurence/swift-ai-sdk
+- id: perfectlysoft/perfect-sqlite
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=429 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 94aa59d58902e3d2cd6068be0cd58fd215da6871
+  stratum: screen
+  url: https://github.com/perfectlysoft/perfect-sqlite
+- id: AppliedRecognition/Ver-ID-3-Serialization-Apple
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=430 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9196879adffc9cdfd3372af12319b7bb73f04e9a
+  stratum: screen
+  url: https://github.com/AppliedRecognition/Ver-ID-3-Serialization-Apple
+- id: stackotter/swift-java
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=431 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3b0c88364860b54c111b466369755a1be34b7146
+  stratum: screen
+  url: https://github.com/stackotter/swift-java
+- id: usabilla/usabilla-u4a-ios-swift-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=434 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 76916a8de9fcf9c81f44b30e088bf93b5f476eb0
+  stratum: screen
+  url: https://github.com/usabilla/usabilla-u4a-ios-swift-sdk
+- id: swifweb/web
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=435 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 92ae621c0c7c90c305c5abbedc62bb4db39664b8
+  stratum: screen
+  url: https://github.com/swifweb/web
+- id: SUMSUB/IdensicMobileSDK-iOS-Core
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=436 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 846eae199f9e2ea7cdc27b34f7ba9e0ed44dffb7
+  stratum: screen
+  url: https://github.com/SUMSUB/IdensicMobileSDK-iOS-Core
+- id: heestand-xyz/TextureMap
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=438 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 037f028bbc44dff9eff151b2f58a18fad1af159b
+  stratum: screen
+  url: https://github.com/heestand-xyz/TextureMap
+- id: swift-libp2p/swift-cid
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=441 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 279f85fb23f143c411e9f432d5227e26e958161b
+  stratum: screen
+  url: https://github.com/swift-libp2p/swift-cid
+- id: swhitty/swift-mutex
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=443 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d9c4906095b48fb5d0177d73590f984bf726a17d
+  stratum: screen
+  url: https://github.com/swhitty/swift-mutex
+- id: flocked/FZQuicklook
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=444 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: b05a9318dcea32c69b2cf51966cbcbd665743816
+  stratum: screen
+  url: https://github.com/flocked/FZQuicklook
+- id: nikolay-dementiev/DMAction
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=446 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 10bced08770c2db7f5957cdef7de22b48b66cb90
+  stratum: screen
+  url: https://github.com/nikolay-dementiev/DMAction
+- id: libtmux/libtmux-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=453 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 63551afeae8ea3d272e5262208b87735888daf5f
+  stratum: screen
+  url: https://github.com/libtmux/libtmux-swift
+- id: serpapi/serpapi-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=460 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ee0c50b91195c0a44bd340628a999aae5e97a2e5
+  stratum: screen
+  url: https://github.com/serpapi/serpapi-swift
+- id: MLSDev/LoadableViews
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=465 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 579c17534a56e99b50c9ca8efc2f858df4e6aff5
+  stratum: screen
+  url: https://github.com/MLSDev/LoadableViews
+- id: ken0nek/AppShowcaseKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=467 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a7ff857d43385a9c58e0665f46118815b55882db
+  stratum: screen
+  url: https://github.com/ken0nek/AppShowcaseKit
+- id: swiftlang/swift-subprocess
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=468 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 55d30558b8b12c0343793421328fe81a4919c776
+  stratum: screen
+  url: https://github.com/swiftlang/swift-subprocess
+- id: bazaarvoice/bv-ios-swift-sdk
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=469 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 3488d717a6eb11ee8b5c9b33524b6067bf8974f3
+  stratum: screen
+  url: https://github.com/bazaarvoice/bv-ios-swift-sdk
+- id: std-uritemplate/std-uritemplate-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=471 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: eab67b98f0ebf3ecbea32b03e5e2e971df310ad9
+  stratum: screen
+  url: https://github.com/std-uritemplate/std-uritemplate-swift
+- id: ryanashcraft/FabBar
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=472 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4f05fc7815fc676683807574fec4a826f49588da
+  stratum: screen
+  url: https://github.com/ryanashcraft/FabBar
+- id: couchdeveloper/EffectComponents
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=473 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8b63ae533d75c8bd3a03ff47a89254b0ebe43e7b
+  stratum: screen
+  url: https://github.com/couchdeveloper/EffectComponents
+- id: givip/telegrammer
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=474 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 459176871f1f52e34b1d20b22cdb4ee02cc98a30
+  stratum: screen
+  url: https://github.com/givip/telegrammer
+- id: vilimets/AsyncBLE-Swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=477 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 230b65ef91650acf2441ec36221e20297c1c7df9
+  stratum: screen
+  url: https://github.com/vilimets/AsyncBLE-Swift
+- id: ryanellis42675/gpt-images-25
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=478 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 1a1a08b9f394de4fd759361112a9114b373be593
+  stratum: screen
+  url: https://github.com/ryanellis42675/gpt-images-25
+- id: square/Blueprint
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=479 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: bbd01588a073ed8d916371e30e3609d9523c3f6a
+  stratum: screen
+  url: https://github.com/square/Blueprint
+- id: ErsanQ/HapticKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=483 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0e65cb72d4441393420d9623b4fd17b7d33aa1d5
+  stratum: screen
+  url: https://github.com/ErsanQ/HapticKit
+- id: Adobels/UIViewKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=486 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 6b7882699c76d9e56f5c5b04edff1e8a785ca629
+  stratum: screen
+  url: https://github.com/Adobels/UIViewKit
+- id: AppliedRecognition/Face-Recognition-ArcFace-Apple
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=488 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c9322246731b22ec8ae674fc7f83c9028109d755
+  stratum: screen
+  url: https://github.com/AppliedRecognition/Face-Recognition-ArcFace-Apple
+- id: toupper/Wink
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=489 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 91138e55abb1a95b83823d63f16b3073a2df51bf
+  stratum: screen
+  url: https://github.com/toupper/Wink
+- id: zendesk/messagingapi_sdk_ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=492 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: b6ffc31a76f2aacf378888ce1b878d72e0cdd2c0
+  stratum: screen
+  url: https://github.com/zendesk/messagingapi_sdk_ios
+- id: googleapis/swift-google-cloud-beyondcorp-clientconnectorservices-v1
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=493 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: af7c517fbdd035f03631e848c7bb3bc3a1849ea6
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-beyondcorp-clientconnectorservices-v1
+- id: futuredapp/FuturedKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=494 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8363828479f6b1d7f08f8b7ed991288af1d299e2
+  stratum: screen
+  url: https://github.com/futuredapp/FuturedKit
+- id: indextrown/AutoCodable
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=496 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: b3fa51137f8851ad7bc8decaee311d797e9ca8bf
+  stratum: screen
+  url: https://github.com/indextrown/AutoCodable
+- id: maartene/InkSwift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=497 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: cd471e30b43546f3cf662d515d05444bbcffebd2
+  stratum: screen
+  url: https://github.com/maartene/InkSwift
+- id: hayek/PopGestureRecognizerSwiftUI
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=498 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ca74d8683fd4f62453c670bb7a5d419e2b7a5934
+  stratum: screen
+  url: https://github.com/hayek/PopGestureRecognizerSwiftUI
+- id: googleapis/swift-google-cloud-location
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=499 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9180b9325554563bf4814525dc2af930be2cb712
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-location
+- id: yandex/vgsl
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=500 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2d628f1259c62ee99e5f09ec975ef3200935fad1
+  stratum: screen
+  url: https://github.com/yandex/vgsl
+- id: vapor/postgres-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=501 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 139b0c4712d97eaec09d97afd592d394cdb9dbde
+  stratum: screen
+  url: https://github.com/vapor/postgres-kit
+- id: jcmosc/swift-sexp
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=504 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9b86036edc8ce9b870acba04941d2239d71cd3c0
+  stratum: screen
+  url: https://github.com/jcmosc/swift-sexp
+- id: mappls-api/mappls-api-core-ios-distribution
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=508 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c0930b327405bde2f75bd3f241a590da414b00c0
+  stratum: screen
+  url: https://github.com/mappls-api/mappls-api-core-ios-distribution
+- id: moozzyk/SignalR-Client-Swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=510 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: a5aca80a4de24cc59bb51a1a9c7242960422b9b3
+  stratum: screen
+  url: https://github.com/moozzyk/SignalR-Client-Swift
+- id: BCSuite/Forging
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=513 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ff473161aa191ae62fd70827d81552cb17520240
+  stratum: screen
+  url: https://github.com/BCSuite/Forging
+- id: orchetect/swift-pdf-processor
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=515 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8bfc6369d7b5e648f8b1d718fe57feb9d81e949a
+  stratum: screen
+  url: https://github.com/orchetect/swift-pdf-processor
+- id: tuist/ZIPFoundation
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=517 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of development on 2026-10-10
+  sha: dfdbf2b3c96f220d4af7bbabc2cd38671f0bd06d
+  stratum: screen
+  url: https://github.com/tuist/ZIPFoundation
+- id: sindresorhus/Percentage
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=518 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 97b5a24cf067dd7c045fae3d1cdb68e8b9556281
+  stratum: screen
+  url: https://github.com/sindresorhus/Percentage
+- id: adobe/aepsdk-optimize-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=524 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 871e9f5e918e7b4af8717b2d13b7f5a3ccd596f1
+  stratum: screen
+  url: https://github.com/adobe/aepsdk-optimize-ios
+- id: AudioKit/Tonic
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=526 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f8af4074c76a5b4a689122ef3c4b294bb7866d30
+  stratum: screen
+  url: https://github.com/AudioKit/Tonic
+- id: saifmukhtar/kinetic-embed
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=527 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 7c46e7499f0d7105e5a3d1747e9f0a5e6a5b1cf0
+  stratum: screen
+  url: https://github.com/saifmukhtar/kinetic-embed
+- id: netreconlab/parse-server-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=529 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2e745fd8c9d1ce69722b34d1498f62fba640e59d
+  stratum: screen
+  url: https://github.com/netreconlab/parse-server-swift
+- id: codeandtheory/ct-analytics-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=531 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c5134a770d891251f1870938aa53d0b1e43d42c0
+  stratum: screen
+  url: https://github.com/codeandtheory/ct-analytics-ios
+- id: happn-app/XibLoc
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=532 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 66e12f5379c5fd365f2be96afae58bf134a5d9b6
+  stratum: screen
+  url: https://github.com/happn-app/XibLoc
+- id: timi2506/WelcomeView
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=533 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 8871c5e83cb112c5b5ca2137d32ad81de08a611c
+  stratum: screen
+  url: https://github.com/timi2506/WelcomeView
+- id: AlTavares/Ciao
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=537 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 53c2186c75962158b32f121707922b33ddbb214e
+  stratum: screen
+  url: https://github.com/AlTavares/Ciao
+- id: CocoaLumberjack/CocoaLumberjack
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=538 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: b75d3c3198a2930b4491b04fd47cb504b359c750
+  stratum: screen
+  url: https://github.com/CocoaLumberjack/CocoaLumberjack
+- id: regulaforensics/FaceSDK-Swift-Package
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=540 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2d36d692fd64f56b6758460f11cc9f4768f83d93
+  stratum: screen
+  url: https://github.com/regulaforensics/FaceSDK-Swift-Package
+- id: apple/swift-binary-parsing
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=542 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 16460852b0cbee87cb8c3029caf63232cc0cc9a1
+  stratum: screen
+  url: https://github.com/apple/swift-binary-parsing
+- id: Blaizzy/mlx-audio
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=543 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e66ad2ff4eb96ce1149000187b30370cbcd707aa
+  stratum: screen
+  url: https://github.com/Blaizzy/mlx-audio
+- id: SimformSolutionsPvtLtd/SSImageKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=544 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: c8c4044d00d141e428a1680b12b5cde37349147a
+  stratum: screen
+  url: https://github.com/SimformSolutionsPvtLtd/SSImageKit
+- id: twostraws/CodeScanner
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=549 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 5a921d49b5535a819610f2e2a2dff3ddf8a1ea9c
+  stratum: screen
+  url: https://github.com/twostraws/CodeScanner
+- id: jeremiahjordanisaacson/copilot-sdk-supercharged
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=550 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: dd34489d54addfa020a7ec5b7c5c8b61c6b99f8c
+  stratum: screen
+  url: https://github.com/jeremiahjordanisaacson/copilot-sdk-supercharged
+- id: acuteimmersive/openimmersivelib
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=551 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 670e0bc6701095d0b2aa5b80d0b8258763b57632
+  stratum: screen
+  url: https://github.com/acuteimmersive/openimmersivelib
+- id: William-Weng/WWSystemStatus
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=553 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 7a7f49e6b9c75c025d8fb6290ce811d9b3c60126
+  stratum: screen
+  url: https://github.com/William-Weng/WWSystemStatus
+- id: gradyzhuo/swift-ddd-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=556 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 795df679853ec97e8224d2fac319427479010b2c
+  stratum: screen
+  url: https://github.com/gradyzhuo/swift-ddd-kit
+- id: sideeffect-io/AsyncExtensions
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=557 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 20d9524142a07b4b54d314480054e2bb4c91b63e
+  stratum: screen
+  url: https://github.com/sideeffect-io/AsyncExtensions
+- id: stensoosaar/tws-api-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=558 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: b818061b896403eb88be62cf7529a93882a9f860
+  stratum: screen
+  url: https://github.com/stensoosaar/tws-api-swift
+- id: boxlinknet/kwtsms-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=559 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 86075613b084f370bc4c9910b83227d79fe0a40a
+  stratum: screen
+  url: https://github.com/boxlinknet/kwtsms-swift
+- id: RougeWare/Swift-Collection-Tools
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=560 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 84330a040a57296eb6a4d0c801294689dab80166
+  stratum: screen
+  url: https://github.com/RougeWare/Swift-Collection-Tools
+- id: thelastbackspace/swift-strip-json-comments
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=562 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 88d26f7234d940c1f976e60646cba83c348fc567
+  stratum: screen
+  url: https://github.com/thelastbackspace/swift-strip-json-comments
+- id: ghsiss/TrafficAuthV2XClient
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=564 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e36be878a7abc2eed3c96f54603114547f744903
+  stratum: screen
+  url: https://github.com/ghsiss/TrafficAuthV2XClient
+- id: steipete/Swiftdansi
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=566 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 44daf7a25bc1996a635afb037b1b8139443a034a
+  stratum: screen
+  url: https://github.com/steipete/Swiftdansi
+- id: SDWebImage/libwebp-Xcode
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=571 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 2b5256c29ff4e20f2a0d5ee863b62b1a22144434
+  stratum: screen
+  url: https://github.com/SDWebImage/libwebp-Xcode
+- id: SwiftyContacts/SwiftyContacts
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=574 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 6671f40607f5a8c65e40fed90517967003ec11de
+  stratum: screen
+  url: https://github.com/SwiftyContacts/SwiftyContacts
+- id: pubnub/swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=576 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: cddc5c38d44b9218c8a6ab80dcc593e91abf331e
+  stratum: screen
+  url: https://github.com/pubnub/swift
+- id: googleapis/swift-google-apps-script-type
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=578 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: bd45c7424d790287e9aa8123e91f4eddbb7398fa
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-apps-script-type
+- id: FelixHerrmann/swift-multipart-formdata
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=579 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 4e726a522025896d41a5706c92d5c6a1fce13e09
+  stratum: screen
+  url: https://github.com/FelixHerrmann/swift-multipart-formdata
+- id: mapbox/mapbox-speech-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=583 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2a9ce0a7c8447e5c53c7ee112f1ead750e47b0d3
+  stratum: screen
+  url: https://github.com/mapbox/mapbox-speech-swift
+- id: PureSwift/Socket
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=584 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 87047eaac3fb3012747d6d7b512edad0bc921311
+  stratum: screen
+  url: https://github.com/PureSwift/Socket
+- id: googleapis/swift-google-cloud-datastream-logging-v1
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=585 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 37acd2cf62d2d908eb4a50d32c0e07a9902edc58
+  stratum: screen
+  url: https://github.com/googleapis/swift-google-cloud-datastream-logging-v1
+- id: CostinDragos/ContextualRotation
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=589 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ae1034498235c5ef36e16d27d9eda0b3651943d5
+  stratum: screen
+  url: https://github.com/CostinDragos/ContextualRotation
+- id: Lakr233/openssl-spm
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=590 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4efe1d7be89862bda6b469be8d606667c771380e
+  stratum: screen
+  url: https://github.com/Lakr233/openssl-spm
+- id: sloik/ExTests
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=593 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 9994ae7ffb73b9c0f46897d980a4f21f3ed99454
+  stratum: screen
+  url: https://github.com/sloik/ExTests
+- id: cyphera-labs/cyphera-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=594 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 1e174629b11c81753cbf43dd1007e17821ff0ad2
+  stratum: screen
+  url: https://github.com/cyphera-labs/cyphera-swift
+- id: MrKai77/DynamicNotchKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=595 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: cd0b3e52d537db115ad3a9d89601f20e0bee8d27
+  stratum: screen
+  url: https://github.com/MrKai77/DynamicNotchKit
+- id: nerzh/everscale-client-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=601 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 0d54a50ed7d759f4b158d2492398dad541fe018e
+  stratum: screen
+  url: https://github.com/nerzh/everscale-client-swift
+- id: regulaforensics/DocumentReaderOCRRFID-Swift-Package
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=602 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 0fa45506685dc3ccaaeb3300974d06bac8c7b6ae
+  stratum: screen
+  url: https://github.com/regulaforensics/DocumentReaderOCRRFID-Swift-Package
+- id: philiprehberger/swift-keychain-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=605 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 994c08cac35f771b3f8eb6ec891c74b785bed67a
+  stratum: screen
+  url: https://github.com/philiprehberger/swift-keychain-kit
+- id: atacan/swift-string-similarity
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=606 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fa60a54c53807bc9db97593a405e0fcbbc6bd40f
+  stratum: screen
+  url: https://github.com/atacan/swift-string-similarity
+- id: Esri/arcgis-maps-sdk-swift
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=607 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: fbd6c04e9c5b94af6556488de1e770bacf44fc3a
+  stratum: screen
+  url: https://github.com/Esri/arcgis-maps-sdk-swift
+- id: quran/quran-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=609 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f9f923eb4cec4358b04a281da112d135efd53a20
+  stratum: screen
+  url: https://github.com/quran/quran-ios
+- id: Appracatappra/CircularProgressGauge
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=611 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ad4d0531839795eb26536fb371c9126f4dcc068c
+  stratum: screen
+  url: https://github.com/Appracatappra/CircularProgressGauge
+- id: josshad/Signaling
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=612 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c0b42b3bdc3bb8029d919b4eb55484af2062527f
+  stratum: screen
+  url: https://github.com/josshad/Signaling
+- id: William-Weng/WWWebImage
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=613 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d984fe1b2b7788b929140363902d6cd8cd8e3731
+  stratum: screen
+  url: https://github.com/William-Weng/WWWebImage
+- id: Kyle-Ye/ScreenShieldKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=614 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: c1efd0cf6c534121c39e7359f7671b67283c3dd5
+  stratum: screen
+  url: https://github.com/Kyle-Ye/ScreenShieldKit
+- id: swift-atoms/swift-ownership
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=617 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f8702ec8ac91f13677fe3126ec05217cc8116869
+  stratum: screen
+  url: https://github.com/swift-atoms/swift-ownership
+- id: rhx/SwiftPango
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=618 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 924b36f358e6e5dca87df163cc0227b945be3c01
+  stratum: screen
+  url: https://github.com/rhx/SwiftPango
+- id: William-Weng/WWSQLite3Manager
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=620 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3692e6158ced08c2b9d7611e9e267ac478d45331
+  stratum: screen
+  url: https://github.com/William-Weng/WWSQLite3Manager
+- id: bradhowes/brh-splitview
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=624 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 2c30dc1bcb50e5ba3d4b36d42e111c077a3620c3
+  stratum: screen
+  url: https://github.com/bradhowes/brh-splitview
+- id: thebbapp/swift-package-bb-app-relative-date
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=625 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f92fb66745ebca0b2301e05f843bc94f643ecd0b
+  stratum: screen
+  url: https://github.com/thebbapp/swift-package-bb-app-relative-date
+- id: ciaranrobrien/SwiftUIFrameReader
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=628 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 63016291ed58ac9baaf4dc4655186978b4730e84
+  stratum: screen
+  url: https://github.com/ciaranrobrien/SwiftUIFrameReader
+- id: pinterest/PINRemoteImage
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=631 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: f16af5e8bbb7541e7faeb741e09bc548a663f2b4
+  stratum: screen
+  url: https://github.com/pinterest/PINRemoteImage
+- id: alexanderwe/SemanticVersioningKit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=633 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: df2b85c65c3a28efea0cb853acba57041c5c9faa
+  stratum: screen
+  url: https://github.com/alexanderwe/SemanticVersioningKit
+- id: atacan/TelegramBotAPI
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=634 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: aaca2e49476e03deb95269d26753800f09941798
+  stratum: screen
+  url: https://github.com/atacan/TelegramBotAPI
+- id: amplitude/Amplitude-iOS
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=636 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 26724a616e1c0a2539e2ad23d07bd39373765212
+  stratum: screen
+  url: https://github.com/amplitude/Amplitude-iOS
+- id: stripe/stripe-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=637 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of master on 2026-10-10
+  sha: 430531df0a0aa26dcc6777fb1898877041dc793e
+  stratum: screen
+  url: https://github.com/stripe/stripe-ios
+- id: braintree/braintree_ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=638 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3e5bca8b4a27f199f69337028280c5fe44f29bab
+  stratum: screen
+  url: https://github.com/braintree/braintree_ios
+- id: bradhowes/SF2Lib
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=640 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: d9217744e128138095f335badb34786050d8f16f
+  stratum: screen
+  url: https://github.com/bradhowes/SF2Lib
+- id: skedgo/tripkit-ios
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=641 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4d924f9347e455228919c16b7d68018b43309802
+  stratum: screen
+  url: https://github.com/skedgo/tripkit-ios
+- id: hromni/SwiftAPIClient
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=642 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of develop on 2026-10-10
+  sha: 008e74bca67de6fb132d06684df2706b0e5c8919
+  stratum: screen
+  url: https://github.com/hromni/SwiftAPIClient
+- id: lintuxt/swift-cli-kit
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=643 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of trunk on 2026-10-10
+  sha: 621fbd8baaf3872c7662b86778f52d7982e709bb
+  stratum: screen
+  url: https://github.com/lintuxt/swift-cli-kit
+- id: ZipArchive/ZipArchive
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=645 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: acc61be58181e635ae77718e66530b4ee7dea4be
+  stratum: screen
+  url: https://github.com/ZipArchive/ZipArchive
+- id: joogps/Glur
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=646 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ba4f05d3c9a608ec773b9305f2af6089390de68a
+  stratum: screen
+  url: https://github.com/joogps/Glur
+- id: unionst/swift-chat
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=647 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 4bbe30e53e3c8e4e34a618c3f8a0df1ea7122463
+  stratum: screen
+  url: https://github.com/unionst/swift-chat
+- id: CleanCocoa/TextBuffer
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=650 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 3dfbfc13fe4e7f898a3b7c3d13d3eb1451eb8386
+  stratum: screen
+  url: https://github.com/CleanCocoa/TextBuffer
+- id: Appracatappra/SwiftletData
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=652 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: e7b7d0b0d8ae7627af9ed426e92e7f990a9213b0
+  stratum: screen
+  url: https://github.com/Appracatappra/SwiftletData
+- id: csjones/lefthook-plugin
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=653 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: f8e0d9097eb0c5242b70fe5b16d6fec54674858e
+  stratum: screen
+  url: https://github.com/csjones/lefthook-plugin
+- id: maniramezan/UserDefaultMacro
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=655 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 42c0ceee9a39ed7fbeb6c5cee8de4a479846a0c8
+  stratum: screen
+  url: https://github.com/maniramezan/UserDefaultMacro
+- id: heckj/CameraControlARView
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=658 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 7161ec652b1612e9113d7f8047dbfbbbc13fbcc0
+  stratum: screen
+  url: https://github.com/heckj/CameraControlARView
+- id: iankoex/AudioVisualService
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=659 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: ba75d6cc7113c2cc35ac87425a69c495e2acc8b0
+  stratum: screen
+  url: https://github.com/iankoex/AudioVisualService
+- id: hackiftekhar/IQTextView
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=660 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: a22900744a1ef2d08b4949de5eb82a794a6bde98
+  stratum: screen
+  url: https://github.com/hackiftekhar/IQTextView
+- id: swift-compositions/swift-testing-performance
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=661 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 621a9b3e3e4e5acd31b09ac61d2a950b5e89e240
+  stratum: screen
+  url: https://github.com/swift-compositions/swift-testing-performance
+- id: kylehughes/swift-async-result
+  platforms:
+  - macos-spm
+  selection: seed=20261004 draw-position=663 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-10
+  sha: 99313d55d9cff4f9450f409838907b5f12be41d0
+  stratum: screen
+  url: https://github.com/kylehughes/swift-async-result
+schema_version: 1
