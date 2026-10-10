@@ -134,16 +134,32 @@ extension Select {
 
     struct Emit: AsyncParsableCommand {
         static let configuration = CommandConfiguration(
-            abstract: "S-emit: sample across SPI's data-race count distribution from a supplied export (corpus/spi-counts.csv).",
+            abstract: "S-emit: sample across the data-race count distribution, from a supplied SPI export (corpus/spi-counts.csv) or a collected screen (--from-screen).",
             discussion: "Columns: package_url,data_race_errors,swift_version,as_of. The data must come from SPI's own published figures.")
 
         @Option(name: .long, help: "SPI export.") var spiData = "corpus/spi-counts.csv"
         @Option(name: .long) var seed: UInt64
         @Option(name: .long) var count = 30
+        @Option(name: .long, help: "Select from a collected screen (ADR 0007) instead of an SPI export.") var fromScreen: String?
+        @Option(name: .long, help: "Directory holding screen directories.") var screensRoot = "screens"
 
         func run() async throws {
             let paths = Paths()
             let manifest = try paths.loadManifest()
+            if let id = fromScreen {
+                let sp = ScreenPaths(root: screensRoot, id: id)
+                let selected = try Screen.selectEmit(results: try sp.loadResults(), candidates: try sp.loadCandidates().packages,
+                                                     screenId: id, seed: seed, count: count)
+                print("stable emitters \(selected.emitters); selected \(selected.entries.count) of \(count): "
+                    + [Selection.Tertile.head, .middle, .tail].map { "\($0.rawValue) \(selected.perTertile[$0] ?? 0)" }.joined(separator: ", "))
+                if selected.entries.count < count {
+                    print("FEWER THAN \(count): taking what exists, not padding. Record this in ADR 0007's results.")
+                }
+                // Copy first: if it refuses, the manifest is untouched.
+                try Screen.copyResolved(selected.entries, from: sp.resolved, to: paths.resolved)
+                try save(manifest, to: paths.corpus, replacing: .emit, with: selected.entries)
+                return
+            }
             let rows = try Selection.parseSPICSV(String(contentsOfFile: spiData, encoding: .utf8))
             let sample = Selection.sampleAcrossDistribution(rows: rows, count: count, seed: seed)
             let date = today()

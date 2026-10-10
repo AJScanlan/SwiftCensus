@@ -268,4 +268,65 @@ public enum Screen {
         guard s.count == 10, parts.map(\.count) == [4, 2, 2], parts.allSatisfy({ $0.allSatisfy(\.isNumber) }) else { return nil }
         return s
     }
+
+    public struct Selected: Sendable {
+        public var entries: [CorpusPackage]
+        public var emitters: Int
+        public var perTertile: [Selection.Tertile: Int]
+    }
+
+    /// §5.7. Tertiles over the stable emitters, at each candidate's screened SHA (G1). Fewer than `count`, or an
+    /// empty tertile, yields what exists: never padded. Refuses emitters that were never verified (§5.6).
+    public static func selectEmit(results: [ScreenResult], candidates: [CorpusPackage], screenId: String,
+                                  seed: UInt64, count: Int) throws -> Selected {
+        let emitters = results.filter { $0.status == .emitter }
+        if let unverified = emitters.first(where: { $0.verifyScreenCount == nil }) {
+            throw ScreenError.unverified(unverified.packageId)
+        }
+        let byId = Dictionary(candidates.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        // `SPIRow` is named for SPI's export; here `errors` carries the screen count. Renaming it is out of scope.
+        let rows = emitters.compactMap { r -> SPIRow? in
+            guard let p = byId[r.packageId], let n = r.screenCount else { return nil }
+            return SPIRow(url: p.url, errors: n, swiftVersion: swiftVersionLabel, asOf: "")
+        }
+        let byURL = Dictionary(candidates.map { ($0.url, $0) }, uniquingKeysWith: { a, _ in a })
+        var perTertile: [Selection.Tertile: Int] = [:]
+        var entries: [CorpusPackage] = []
+        for (row, tertile) in Selection.sampleAcrossDistribution(rows: rows, count: count, seed: seed) {
+            guard let c = byURL[row.url] else { continue }
+            perTertile[tertile, default: 0] += 1
+            entries.append(CorpusPackage(
+                id: c.id, url: c.url, sha: c.sha, stratum: .emit, platforms: [.linuxSPM, .macosSPM],
+                selection: "seed=\(seed) \(tertile.rawValue)-tertile of \(rows.count) stable emitters; "
+                    + "screen \(screenId) count \(row.errors); screened SHA (ADR 0007)",
+                screenId: screenId, screenCountAtSelection: row.errors))
+        }
+        return Selected(entries: entries, emitters: rows.count, perTertile: perTertile)
+    }
+
+    /// §5.7 and G1: the matrix must build the graph that was screened, so each vendored file is copied byte for byte
+    /// and never re-resolved. Checks everything before writing anything, and refuses to replace a different
+    /// existing file: a pinned graph is never changed as a drive-by.
+    public static func copyResolved(_ packages: [CorpusPackage], from source: URL, to destination: URL) throws {
+        let decoder = JSONDecoder()
+        let sourceProvenance = try decoder.decode([String: ResolvedProvenance].self,
+                                                  from: Data(contentsOf: source.appendingPathComponent("provenance.json")))
+        let destinationProvenanceURL = destination.appendingPathComponent("provenance.json")
+        var destinationProvenance: [String: ResolvedProvenance] = [:]
+        if FileManager.default.fileExists(atPath: destinationProvenanceURL.path) {
+            destinationProvenance = try decoder.decode([String: ResolvedProvenance].self, from: Data(contentsOf: destinationProvenanceURL))
+        }
+        var writes: [(URL, Data)] = []
+        for p in packages {
+            let name = "\(p.slug).resolved"
+            let bytes = try Data(contentsOf: source.appendingPathComponent(name))
+            let target = destination.appendingPathComponent(name)
+            if let existing = try? Data(contentsOf: target), existing != bytes { throw ScreenError.resolvedMismatch(p.id) }
+            guard let provenance = sourceProvenance[p.id] else { throw ScreenError.incomplete(p.id, "no provenance entry in \(source.path)") }
+            writes.append((target, bytes))
+            destinationProvenance[p.id] = provenance
+        }
+        for (url, bytes) in writes { try bytes.write(to: url) }
+        try RunStore(root: destination).write(destinationProvenance, to: destinationProvenanceURL)
+    }
 }
