@@ -16,8 +16,9 @@ private func pkg(_ id: String) -> CorpusPackage {
 }
 
 private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticRecord] = [],
-                  id: String = "o/r", note: String? = nil) -> RunStore.LoadedCell {
-    var r = CellRecord(packageId: id, sha: String(repeating: "c", count: 40), stratum: .screen, toolchain: "xcode-27.0",
+                  id: String = "o/r", note: String? = nil,
+                  sha: String = String(repeating: "c", count: 40)) -> RunStore.LoadedCell {
+    var r = CellRecord(packageId: id, sha: sha, stratum: .screen, toolchain: "xcode-27.0",
                        mode: mode, platform: .macosSPM, outcome: outcome, exitCode: 0, startedAt: "", durationSeconds: 0,
                        invocation: [], image: "")
     r.note = note
@@ -136,6 +137,28 @@ private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticReco
         #expect(throws: ScreenError.self) {
             try Screen.classify(package: p, batch: 1, resolveFailure: nil,
                                 complete: cell(.strictCompleteV5, .built, d, id: "o/other"), minimal: cell(.minimalV5, .built, [diag("a")]))
+        }
+    }
+
+    /// A cell built from another commit of the same package (candidates re-drawn, or a stale run directory) is not
+    /// a measurement of this candidate.
+    @Test func aCellBuiltAtADifferentSHAIsRefused() {
+        let other = String(repeating: "d", count: 40)
+        let d = [diag("a"), diag("b", line: 2)]
+        #expect(throws: ScreenError.self) {
+            try Screen.classify(package: p, batch: 1, resolveFailure: nil,
+                                complete: cell(.strictCompleteV5, .built, d, sha: other), minimal: cell(.minimalV5, .built, [diag("a")]))
+        }
+        #expect(throws: ScreenError.self) {
+            try Screen.classify(package: p, batch: 1, resolveFailure: nil,
+                                complete: cell(.strictCompleteV5, .built, d), minimal: cell(.minimalV5, .built, [diag("a")], sha: other))
+        }
+        // The message names both SHAs.
+        do {
+            _ = try Screen.classify(package: p, batch: 1, resolveFailure: nil, complete: cell(.strictCompleteV5, .built, d, sha: other), minimal: nil)
+            Issue.record("expected a throw")
+        } catch {
+            #expect("\(error)".contains(other) && "\(error)".contains(p.sha))
         }
     }
 

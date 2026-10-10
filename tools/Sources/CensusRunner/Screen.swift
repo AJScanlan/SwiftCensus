@@ -152,6 +152,11 @@ public enum Screen {
         guard cell.record.packageId == p.id, cell.record.mode == mode else {
             throw ScreenError.incomplete(p.id, "cell for \(cell.record.packageId) \(cell.record.mode.rawValue) passed as \(which)")
         }
+        // Candidates are pinned to a SHA; a cell from another commit (re-drawn candidates, stale run directory) is not
+        // a measurement of this one.
+        guard cell.record.sha == p.sha else {
+            throw ScreenError.incomplete(p.id, "\(which) cell was built at \(cell.record.sha), but the candidate is pinned at \(p.sha)")
+        }
     }
 
     /// §5.4. Throws rather than guess when a cell the status depends on is missing.
