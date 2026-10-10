@@ -72,6 +72,15 @@ public enum ScreenError: Error, CustomStringConvertible, Equatable {
     }
 }
 
+public struct DrawCountError: Error, CustomStringConvertible {
+    var extensionCount: Int
+    var requested: Int?
+    public var description: String {
+        "D5 pre-registers one extension of +\(extensionCount): pass --count \(extensionCount) with --extend"
+            + (requested.map { " (got --count \($0))" } ?? " (no --count given)")
+    }
+}
+
 public struct Denominator: Equatable, Sendable {
     public var drawn: Int
     public var byStatus: [ScreenStatus: Int]
@@ -130,6 +139,20 @@ public enum Screen {
     /// §5.2 step 4, early exit: only a built complete cell with a primary diagnostic can have a non-zero count.
     public static func needsMinimal(_ complete: RunStore.LoadedCell) -> Bool {
         complete.record.outcome == .built && primaryDiagnostics(complete.diagnostics) > 0
+    }
+
+    /// Pre-registered sizes (D5): the initial draw, and the one extension if stable emitters are too few.
+    public static let initialDrawCount = 300
+    public static let extensionCount = 150
+
+    /// `select screen --count`. A fresh draw defaults to 300. An extension has no default: D5 pre-registers exactly
+    /// one of +150, so it must be stated and must equal 150, or a forgotten flag would silently draw +300.
+    public static func drawCount(requested: Int?, extend: Bool) throws -> Int {
+        guard extend else { return requested ?? initialDrawCount }
+        guard requested == extensionCount else {
+            throw DrawCountError(extensionCount: extensionCount, requested: requested)
+        }
+        return extensionCount
     }
 
     public static func batchCount(_ total: Int) -> Int { (total + batchSize - 1) / batchSize }

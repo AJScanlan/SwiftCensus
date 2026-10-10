@@ -96,12 +96,14 @@ extension Select {
         @Option(name: .long, help: "Screen id, ending in its date, e.g. screen-2026-10-10.") var screenId: String
         @Option(name: .long, help: "Directory holding screen directories.") var root = "screens"
         @Option(name: .long, help: "PRNG seed (pre-registered: 20261004).") var seed: UInt64
-        @Option(name: .long, help: "Candidates to draw.") var count = 300
+        @Option(name: .long, help: "Candidates to draw. Default 300; with --extend it is required and must be 150 (D5 pre-registers +150).") var count: Int?
         @Option(name: .long, help: "Treat repos with no push in this many days of the draw date as inactive.") var activeDays = 365
         @Option(name: .long, help: "PackageList commit (D2).") var packageListSha = pinnedPackageListSHA
         @Flag(name: .long, help: "D5: append --count more after the last drawn position instead of drawing afresh.") var extend = false
 
         func run() async throws {
+            let count: Int
+            do { count = try Screen.drawCount(requested: self.count, extend: extend) } catch { throw ValidationError("\(error)") }
             let corpus = try Paths().loadManifest()
             let sp = ScreenPaths(root: root, id: screenId)
             let fm = FileManager.default

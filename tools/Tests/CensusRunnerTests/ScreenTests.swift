@@ -284,3 +284,18 @@ private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticReco
         #expect(cells.allSatisfy { $0.mode == .minimalV5 && $0.toolchain == Toolchain.macOSXcode })
     }
 }
+
+@Suite struct ScreenDrawCountTests {
+    @Test func freshDrawDefaultsTo300AndAcceptsAnExplicitCount() throws {
+        #expect(try Screen.drawCount(requested: nil, extend: false) == 300)
+        #expect(try Screen.drawCount(requested: 20, extend: false) == 20)
+    }
+
+    /// D5 pre-registers exactly one extension of +150; a forgotten `--count` must never become +300.
+    @Test func extensionMustStateExactly150() throws {
+        #expect(try Screen.drawCount(requested: 150, extend: true) == 150)
+        #expect(throws: (any Error).self) { try Screen.drawCount(requested: nil, extend: true) }
+        #expect(throws: (any Error).self) { try Screen.drawCount(requested: 300, extend: true) }
+        #expect(throws: (any Error).self) { try Screen.drawCount(requested: 100, extend: true) }
+    }
+}
