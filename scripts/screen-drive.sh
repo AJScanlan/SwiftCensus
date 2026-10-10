@@ -139,8 +139,15 @@ if ! is_done resolve; then
   # shellcheck disable=SC2086
   [[ -z "$stale" ]] || bounded 60 docker rm -f $stale >/dev/null 2>&1 || true
   log "phase: resolve"
+  resolve_stop="census resolve failed outright (INFRA lines mean Docker/network, not the package; if one package's source fetch fails on every attempt, record it with \`census resolve --manifest $ROOT/$ID/candidates.yaml --resolved $ROOT/$ID/resolved --record-unresolvable <id> --reason '<why>'\`, delete STOPPED, relaunch; resolve resumes); see $LOG"
   run_census resolve --manifest "$ROOT/$ID/candidates.yaml" --resolved "$ROOT/$ID/resolved" --toolchain 6.4 --allow-failures \
-    || stop "census resolve failed outright (an INFRA line in the log means Docker or network, not a package; fix it and relaunch, resolve resumes); see $LOG"
+    || stop "$resolve_stop"
+  # A recorded failure must fail twice before it is published as unresolvable: a transient network drop inside
+  # SwiftPM's fetch is indistinguishable from a genuine failure in a single attempt. Pending treats recorded failures
+  # as pending and skips vendored packages, so the second pass retries exactly the failures.
+  log "phase: resolve (attempt 2: re-trying recorded failures)"
+  run_census resolve --manifest "$ROOT/$ID/candidates.yaml" --resolved "$ROOT/$ID/resolved" --toolchain 6.4 --allow-failures \
+    || stop "$resolve_stop"
   mark_done resolve
 fi
 
