@@ -54,6 +54,15 @@ public struct Resolver: Sendable {
         return false
     }
 
+    /// Reads the `/out/source` marker the container script writes. `failed` is SwiftPM's verdict on the package.
+    /// An absent or empty marker means the container never finished (ENOSPC, killed): infrastructure, never data.
+    static func parseOutcome(marker: String?, id: String, log: String) throws -> String {
+        let outcome = marker?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        guard !outcome.isEmpty else { throw ResolverError.noOutcomeMarker(id) }
+        guard outcome != "failed" else { throw ResolverError.resolutionFailed(id, String(log.suffix(800))) }
+        return outcome
+    }
+
     static let emptyResolved = "{\n  \"pins\" : [\n\n  ],\n  \"version\" : 3\n}\n"
 
     static let script = """
@@ -99,12 +108,9 @@ public struct Resolver: Sendable {
         }
         _ = try? await Shell.run("docker", ["rm", "-f", name])
 
-        let outcome = (try? String(contentsOf: raw.appendingPathComponent("source"), encoding: .utf8))?
-            .trimmingCharacters(in: .whitespacesAndNewlines) ?? "failed"
-        guard outcome != "failed" else {
-            let log = (try? String(contentsOf: raw.appendingPathComponent("resolve.log"), encoding: .utf8)) ?? ""
-            throw ResolverError.resolutionFailed(package.id, String(log.suffix(800)))
-        }
+        let outcome = try Self.parseOutcome(
+            marker: try? String(contentsOf: raw.appendingPathComponent("source"), encoding: .utf8), id: package.id,
+            log: (try? String(contentsOf: raw.appendingPathComponent("resolve.log"), encoding: .utf8)) ?? "")
 
         let produced = raw.appendingPathComponent("Package.resolved")
         let destination = resolvedDirectory.appendingPathComponent("\(package.slug).resolved")
@@ -130,9 +136,12 @@ public struct Resolver: Sendable {
 
 public enum ResolverError: Error, CustomStringConvertible {
     case resolutionFailed(String, String)
+    /// The container left no `/out/source`: it did not finish. Infrastructure, not a property of the package.
+    case noOutcomeMarker(String)
     public var description: String {
         switch self {
         case .resolutionFailed(let id, let tail): "\(id): dependency resolution failed:\n\(tail)"
+        case .noOutcomeMarker(let id): "\(id): the resolve container wrote no outcome marker (killed or out of disk?)"
         }
     }
 }

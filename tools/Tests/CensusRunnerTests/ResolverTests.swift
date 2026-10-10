@@ -38,3 +38,31 @@ import Testing
         #expect(!Resolver.isPackageFailure(CocoaError(.fileWriteUnknown)))
     }
 }
+
+@Suite struct ResolverOutcomeMarkerTests {
+    /// The container writes `/out/source` last-but-one. A marker that is `failed` is a SwiftPM verdict on the package;
+    /// a marker that is missing means the container never got that far (ENOSPC, killed), which is infrastructure.
+    @Test func failedMarkerIsAPackageFailure() {
+        #expect(throws: ResolverError.self) { try Resolver.parseOutcome(marker: "failed\n", id: "o/p", log: "boom") }
+        do { _ = try Resolver.parseOutcome(marker: "failed", id: "o/p", log: "boom") } catch {
+            #expect(Resolver.isPackageFailure(error))
+        }
+    }
+
+    @Test func missingOrEmptyMarkerIsNotAPackageFailure() {
+        for marker in [nil, "", "  \n"] as [String?] {
+            do {
+                _ = try Resolver.parseOutcome(marker: marker, id: "o/p", log: "")
+                Issue.record("expected a throw for marker \(String(describing: marker))")
+            } catch {
+                #expect(!Resolver.isPackageFailure(error))
+                if case ResolverError.noOutcomeMarker = error {} else { Issue.record("wrong error \(error)") }
+            }
+        }
+    }
+
+    @Test func upstreamAndGeneratedAreSuccess() throws {
+        #expect(try Resolver.parseOutcome(marker: "upstream\n", id: "o/p", log: "") == "upstream")
+        #expect(try Resolver.parseOutcome(marker: "generated", id: "o/p", log: "") == "generated")
+    }
+}
