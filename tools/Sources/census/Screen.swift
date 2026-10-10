@@ -161,7 +161,9 @@ extension ScreenCommand {
 
             var cells: [RunStore.CellKey: RunStore.LoadedCell] = [:]
             for n in stride(from: 1, through: Screen.batchCount(candidates.count), by: 1) {
-                cells.merge(try RunStore(root: paths.runDirectory(sp.runId(batch: n))).loadCells()) { a, _ in a }
+                for (k, cell) in try RunStore(root: paths.runDirectory(sp.runId(batch: n))).loadCells() {
+                    guard cells.updateValue(cell, forKey: k) == nil else { throw ValidationError("cell \(k) appears in more than one batch run") }
+                }
             }
             var results = try candidates.enumerated().map { i, p in
                 try Screen.classify(package: p, batch: i / Screen.batchSize + 1, resolveFailure: failures[p.id],
@@ -187,16 +189,18 @@ extension ScreenCommand {
             }
 
             let table = try Screen.denominator(drawn: candidates.count, results: results)
-            try RunStore(root: sp.directory).write(results, to: sp.results)
-            try Screen.emittersCSV(results: results, candidates: candidates, asOf: asOf)
-                .write(to: sp.emitters, atomically: true, encoding: .utf8)
             print(table.rendered)
             let minimalFailed = results.filter { $0.status == .minimalFailed }
             if !minimalFailed.isEmpty { print("INVESTIGATE minimal_failed (expected ~0): " + minimalFailed.map(\.packageId).joined(separator: ", ")) }
+            // A failed A7 check writes nothing: the pass-1 files on disk have no verify_screen_count, so selection refuses them.
             if !setIdentical {
                 print("NOT SET-IDENTICAL across passes for stable emitters: investigate before selecting (spec §10a rule 6)")
+                print("results.json and emitters.csv left at pass 1 (not written)")
                 throw ExitCode.failure
             }
+            try RunStore(root: sp.directory).write(results, to: sp.results)
+            try Screen.emittersCSV(results: results, candidates: candidates, asOf: asOf)
+                .write(to: sp.emitters, atomically: true, encoding: .utf8)
         }
     }
 
@@ -231,7 +235,8 @@ extension ScreenCommand {
                     let complete = members.compactMap { cells[RunStore.CellKey(toolchain: tc, mode: .strictCompleteV5, packageId: $0.id)] }
                     let needed = complete.filter(Screen.needsMinimal).count
                     let minimal = members.filter { cells[RunStore.CellKey(toolchain: tc, mode: .minimalV5, packageId: $0.id)] != nil }.count
-                    let infra = cells.values.filter { $0.record.outcome == .infraError }.count
+                    let memberIds = Set(Screen.batch(n, of: pool).map(\.id))
+                    let infra = cells.values.filter { $0.record.outcome == .infraError && memberIds.contains($0.record.packageId) }.count
                     let marker = fm.fileExists(atPath: sp.state.appendingPathComponent("\(label)-\(n).done").path) ? " [done]" : ""
                     print("  \(label) \(n)/\(total): complete \(complete.count)/\(members.count), minimal \(minimal)/\(needed)"
                         + (infra > 0 ? ", infra_error \(infra)" : "") + marker)
@@ -239,7 +244,8 @@ extension ScreenCommand {
             }
             print("pass 1:")
             try progress("batch", pool: candidates) { sp.runId(batch: $0) }
-            if let results = try? sp.loadResults() {
+            if fm.fileExists(atPath: sp.results.path) {
+                let results = try sp.loadResults()
                 let byStatus = Dictionary(grouping: results, by: \.status).mapValues(\.count)
                 print("results.json: " + ScreenStatus.allCases.map { "\($0.rawValue) \(byStatus[$0] ?? 0)" }.joined(separator: ", "))
                 print("verify pass:")
