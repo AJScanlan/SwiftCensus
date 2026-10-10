@@ -109,6 +109,9 @@ extension Select {
             if fm.fileExists(atPath: sp.candidates.path) {
                 guard extend else { throw ValidationError("\(sp.candidates.path) exists and is pinned; --extend appends to it (D5)") }
                 candidates = try sp.loadCandidates()
+                if let id = Draw.extensionMismatch(candidates.packages, seed: seed, packageListSHA: packageListSha) {
+                    throw ValidationError("--extend must continue the same order: \(id) was drawn with a different seed or PackageList commit")
+                }
             } else if extend {
                 throw ValidationError("--extend needs an existing \(sp.candidates.path)")
             }

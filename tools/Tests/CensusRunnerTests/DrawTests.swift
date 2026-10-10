@@ -53,6 +53,15 @@ import Testing
         #expect((first.packages + more.packages).map(\.id) == Array(golden.prefix(8)))
     }
 
+    /// D5: an extension must continue the same order, so every candidate must record this seed and frame.
+    @Test func extensionMismatchRefusesADifferentSeedOrFrame() async {
+        let r = await Draw.draw(repos: Draw.repos(fromPackageList: list), spec: spec(count: 3), excluding: [], check: eligible)
+        let frame = "4dc1035a98457e87f4d2c5649a33cd43ee6b80e8"
+        #expect(Draw.extensionMismatch(r.packages, seed: 20261004, packageListSHA: frame) == nil)
+        #expect(Draw.extensionMismatch(r.packages, seed: 1, packageListSHA: frame) == r.packages[0].id)
+        #expect(Draw.extensionMismatch(r.packages, seed: 20261004, packageListSHA: String(repeating: "c", count: 40)) == r.packages[0].id)
+    }
+
     @Test func encodingKeepsDrawOrderAndIsByteStable() async throws {
         let r = await Draw.draw(repos: Draw.repos(fromPackageList: list), spec: spec(), excluding: [], check: eligible)
         let again = await Draw.draw(repos: Draw.repos(fromPackageList: list.reversed()), spec: spec(), excluding: [], check: eligible)

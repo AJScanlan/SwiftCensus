@@ -86,6 +86,14 @@ public enum Draw {
         return .active(branch: f[3])
     }
 
+    /// D5: an extension continues the *same* order. Every existing candidate must record this seed and PackageList
+    /// commit in its `selection`; returns the first that does not, so a mismatched extension is refused.
+    public static func extensionMismatch(_ existing: [CorpusPackage], seed: UInt64, packageListSHA: String) -> String? {
+        existing.first {
+            !$0.selection.contains("seed=\(seed) ") || !$0.selection.contains("PackageList@\(packageListSHA) ")
+        }?.id
+    }
+
     /// The `draw-position=` that `draw` recorded in a `selection` string. An extension resumes one past the largest.
     public static func position(inSelection s: String) -> Int? {
         guard let r = s.range(of: "draw-position=") else { return nil }
@@ -97,7 +105,7 @@ public enum CorpusYAML {
     /// `sortKeys` orders each entry's keys deterministically (G9). Package order is the caller's: the corpus sorts,
     /// the screen keeps draw order.
     public static func encode(_ manifest: CorpusManifest, header: String) throws -> String {
-        var encoder = YAMLEncoder()
+        let encoder = YAMLEncoder()
         encoder.options.sortKeys = true
         encoder.options.width = 120
         return header + (try encoder.encode(manifest))
