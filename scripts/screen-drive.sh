@@ -10,7 +10,7 @@
 #
 # Phases: resolve (Docker on) -> quit Docker -> pass-1 batches -> collect -> verify batches -> collect --with-verify
 # -> start Docker. It stops there: the extension (D5) and selection are separate, manual steps. After a D5 extension,
-# delete work/screen-state/<id>/*.done and relaunch; that is safe because every phase skips finished work.
+# delete work/screen-state/<id>/*.done and *.retried, then relaunch; that is safe because every phase skips finished work.
 #
 # Idempotent: rerun after any interruption (crash, sleep, SIGKILL, session end). The on-disk cells are the truth, and
 # the *.done files are only an optimisation. It never commits, and never edits tracked files except through `census`.
@@ -47,9 +47,13 @@ fi
 echo $$ > "$STATE/driver.pid"
 trap 'rm -f "$STATE/driver.pid"' EXIT
 
+# Run a command with a wall-clock limit (seconds); a timeout is a non-zero exit. macOS has no `timeout`.
+bounded() { local s="$1"; shift; perl -e 'alarm shift; exec @ARGV' "$s" "$@"; }
+
 # A SIGKILLed driver leaves its child `census` running. It would race this driver for the guest and the cells.
 reap() {
   if pkill -KILL -f "census (screen|resolve) .*$ID" 2>/dev/null; then log "killed an orphaned census process from a previous driver"; fi
+  if pkill -KILL -f 'limactl .*census-run-' 2>/dev/null; then log "killed an orphaned limactl process from a previous driver"; fi
   sleep 2
   local inst
   for inst in $(limactl list --format '{{.Name}}' 2>/dev/null | grep '^census-run-' || true); do
@@ -59,12 +63,18 @@ reap() {
   done
 }
 
+# $1: "soft" to warn and return 1 instead of writing STOPPED when Docker will not start (the final call).
 docker_up() {
-  docker info >/dev/null 2>&1 && return 0
+  local _ soft="${1:-}"
+  log "probing Docker"
+  bounded 20 docker info >/dev/null 2>&1 && return 0
   log "starting Docker Desktop"
-  open -a Docker
-  local _
-  for _ in $(seq 1 100); do docker info >/dev/null 2>&1 && return 0; sleep 3; done
+  if ! open -a Docker; then
+    [[ "$soft" == soft ]] && { log "WARNING: could not launch Docker Desktop; start it by hand"; return 1; }
+    stop "could not launch Docker Desktop"
+  fi
+  for _ in $(seq 1 100); do bounded 20 docker info >/dev/null 2>&1 && return 0; sleep 3; done
+  [[ "$soft" == soft ]] && { log "WARNING: Docker Desktop did not restart; start it by hand"; return 1; }
   stop "Docker did not come up within 300 s"
 }
 
@@ -83,6 +93,9 @@ check_disk() {
   free=$(df -g . | awk 'NR==2 {print $4}')
   (( free >= 25 )) || stop "only ${free} GB free; each guest clone grows the sparse image (spec §0)"
 }
+
+log "driver start (pid $$) for $ROOT/$ID"
+reap
 
 CENSUS="${CENSUS:-}"
 if [[ -z "$CENSUS" ]]; then
@@ -113,20 +126,18 @@ batch_loop() {
       rc=$?
     fi
     set -e
-    (( rc == 0 )) || stop "$prefix $n exited $rc (3 = infra_error after one retry); see $LOG"
+    (( rc == 0 )) || stop "$prefix $n exited $rc (3 = infra_error after one retry); see $LOG. If the cause is fixed, delete $STATE/$prefix-$n.retried as well as STOPPED to allow one more retry"
     mark_done "$prefix-$n"
   done
 }
 
-log "driver start (pid $$) for $ROOT/$ID"
-reap
 [[ -f "$ROOT/$ID/candidates.yaml" ]] || stop "no $ROOT/$ID/candidates.yaml; draw first (census select screen)"
 
 if ! is_done resolve; then
   docker_up
-  stale=$(docker ps -aq --filter name=census-resolve- 2>/dev/null || true)
+  stale=$(bounded 30 docker ps -aq --filter name=census-resolve- 2>/dev/null || true)
   # shellcheck disable=SC2086
-  [[ -z "$stale" ]] || docker rm -f $stale >/dev/null 2>&1 || true
+  [[ -z "$stale" ]] || bounded 60 docker rm -f $stale >/dev/null 2>&1 || true
   log "phase: resolve"
   run_census resolve --manifest "$ROOT/$ID/candidates.yaml" --resolved "$ROOT/$ID/resolved" --toolchain 6.4 --allow-failures \
     || stop "census resolve failed outright; see $LOG"
@@ -151,5 +162,5 @@ if ! is_done collect-verify; then
   mark_done collect-verify
 fi
 
-docker_up
+docker_up soft || true
 log "finished: commit the outputs, then apply D5 if needed (runbook step 8) and select (step 9)"
