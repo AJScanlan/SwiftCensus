@@ -123,6 +123,22 @@ private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticReco
         #expect(b.status == .infraError)
     }
 
+    @Test func aSwappedOrForeignCellNeverYieldsACount() {
+        let d = [diag("a"), diag("b", line: 2)]
+        #expect(throws: ScreenError.self) {
+            try Screen.classify(package: p, batch: 1, resolveFailure: nil,
+                                complete: cell(.minimalV5, .built, d), minimal: cell(.minimalV5, .built, [diag("a")]))
+        }
+        #expect(throws: ScreenError.self) {
+            try Screen.classify(package: p, batch: 1, resolveFailure: nil,
+                                complete: cell(.strictCompleteV5, .built, d), minimal: cell(.minimalV5, .built, [diag("a")], id: "o/other"))
+        }
+        #expect(throws: ScreenError.self) {
+            try Screen.classify(package: p, batch: 1, resolveFailure: nil,
+                                complete: cell(.strictCompleteV5, .built, d, id: "o/other"), minimal: cell(.minimalV5, .built, [diag("a")]))
+        }
+    }
+
     @Test func aMissingCellIsAnErrorNeverASilentGap() {
         #expect(throws: ScreenError.self) {
             try Screen.classify(package: p, batch: 1, resolveFailure: nil, complete: nil, minimal: nil)
@@ -157,6 +173,18 @@ private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticReco
     @Test func aDifferentOutcomeIsUnstable() throws {
         let r = try Screen.applyVerify(try pass1(), package: p, complete: cell(.strictCompleteV5, .buildFailed, [diag("a")]), minimal: nil)
         #expect(r.status == .unstable)
+    }
+
+    /// A machine fault is retried, never recorded as package instability.
+    @Test func aVerifyInfraErrorIsRetriedNotUnstable() throws {
+        #expect(throws: ScreenError.self) {
+            try Screen.applyVerify(try pass1(), package: p, complete: cell(.strictCompleteV5, .infraError), minimal: nil)
+        }
+        #expect(throws: ScreenError.self) {
+            try Screen.applyVerify(try pass1(), package: p,
+                                   complete: cell(.strictCompleteV5, .built, [diag("a"), diag("b", line: 2)]),
+                                   minimal: cell(.minimalV5, .infraError))
+        }
     }
 
     @Test func nonEmittersAreReturnedUnchanged() throws {
@@ -194,8 +222,12 @@ private func cell(_ mode: Mode, _ outcome: CellOutcome, _ diags: [DiagnosticReco
     }
 
     @Test func aMissingOrDuplicatedCandidateFailsTheAssertion() {
-        #expect(throws: ScreenError.self) { try Screen.denominator(drawn: 3, results: [res("o/a", .clean), res("o/b", .emitter)]) }
-        #expect(throws: ScreenError.self) { try Screen.denominator(drawn: 2, results: [res("o/a", .clean), res("o/a", .clean)]) }
+        #expect(throws: ScreenError.denominatorMismatch(drawn: 3, sum: 2)) {
+            try Screen.denominator(drawn: 3, results: [res("o/a", .clean), res("o/b", .emitter)])
+        }
+        #expect(throws: ScreenError.duplicateResults("o/a")) {
+            try Screen.denominator(drawn: 2, results: [res("o/a", .clean), res("o/a", .clean)])
+        }
     }
 
     @Test func emittersCSVRoundTripsThroughTheSPIParserAndOmitsUnstable() throws {

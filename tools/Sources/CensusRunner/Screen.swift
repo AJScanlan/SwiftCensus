@@ -59,12 +59,14 @@ public enum ScreenError: Error, CustomStringConvertible, Equatable {
     case denominatorMismatch(drawn: Int, sum: Int)
     case resolvedMismatch(String)
     case unverified(String)
+    case duplicateResults(String)
 
     public var description: String {
         switch self {
         case .incomplete(let id, let what): "\(id): \(what)"
         case .denominatorMismatch(let drawn, let sum): "denominator sums to \(sum), but \(drawn) were drawn"
         case .resolvedMismatch(let id): "\(id): corpus/resolved already holds a different file; refusing to overwrite a pinned graph"
+        case .duplicateResults(let id): "\(id): more than one result for this candidate"
         case .unverified(let id): "\(id): emitter has no verify-pass count; run `census screen collect --with-verify` first (§5.6)"
         }
     }
@@ -145,6 +147,13 @@ public enum Screen {
         packages.map { PlannedCell(package: $0, toolchain: toolchain, mode: mode) }
     }
 
+    /// A swapped or foreign cell must never yield a count.
+    private static func require(_ cell: RunStore.LoadedCell, for p: CorpusPackage, mode: Mode, as which: String) throws {
+        guard cell.record.packageId == p.id, cell.record.mode == mode else {
+            throw ScreenError.incomplete(p.id, "cell for \(cell.record.packageId) \(cell.record.mode.rawValue) passed as \(which)")
+        }
+    }
+
     /// §5.4. Throws rather than guess when a cell the status depends on is missing.
     public static func classify(package p: CorpusPackage, batch: Int, resolveFailure: String?,
                                 complete: RunStore.LoadedCell?, minimal: RunStore.LoadedCell?) throws -> ScreenResult {
@@ -157,6 +166,7 @@ public enum Screen {
             r.reason = resolveFailure
             return r
         }
+        try require(complete, for: p, mode: .strictCompleteV5, as: "complete")
         let completeCount = primaryDiagnostics(complete.diagnostics)
         r.completeOutcome = complete.record.outcome
         r.completePrimaryDiagnostics = completeCount
@@ -177,6 +187,7 @@ public enum Screen {
             return r
         }
         guard let minimal else { throw ScreenError.incomplete(p.id, "complete has diagnostics but there is no minimal-v5 cell") }
+        try require(minimal, for: p, mode: .minimalV5, as: "minimal")
         r.minimalOutcome = minimal.record.outcome
         r.minimalPrimaryDiagnostics = primaryDiagnostics(minimal.diagnostics)
         switch minimal.record.outcome {
@@ -195,11 +206,15 @@ public enum Screen {
     }
 
     /// §5.6. A pass-1 emitter whose verify-pass count or either cell outcome differs is `unstable`. Neither pass is
-    /// preferred and nothing is averaged. Non-emitters were not re-run and are returned unchanged.
+    /// preferred and nothing is averaged. Non-emitters were not re-run and are returned unchanged. A verify-pass
+    /// `infra_error` is a machine fault: it is retried (thrown), never judged as package instability.
     public static func applyVerify(_ pass1: ScreenResult, package: CorpusPackage,
                                    complete: RunStore.LoadedCell?, minimal: RunStore.LoadedCell?) throws -> ScreenResult {
         guard pass1.status == .emitter else { return pass1 }
         guard complete != nil else { throw ScreenError.incomplete(pass1.packageId, "no verify-pass strict-complete-v5 cell") }
+        if complete?.record.outcome == .infraError || minimal?.record.outcome == .infraError {
+            throw ScreenError.incomplete(pass1.packageId, "verify-pass infra_error; retry the verify batch")
+        }
         let v = try classify(package: package, batch: pass1.batch, resolveFailure: nil, complete: complete, minimal: minimal)
         var r = pass1
         r.verifyScreenCount = v.screenCount
@@ -225,9 +240,11 @@ public enum Screen {
             byStatus: Dictionary(grouping: results, by: \.status).mapValues(\.count),
             notScreenableByReason: Dictionary(grouping: results.filter { $0.status == .notScreenable }, by: { $0.reason ?? "unknown" })
                 .mapValues(\.count))
-        guard d.total == drawn, Set(results.map(\.packageId)).count == results.count else {
-            throw ScreenError.denominatorMismatch(drawn: drawn, sum: Set(results.map(\.packageId)).count)
+        var seen = Set<String>()
+        if let dup = results.map(\.packageId).first(where: { !seen.insert($0).inserted }) {
+            throw ScreenError.duplicateResults(dup)
         }
+        guard d.total == drawn else { throw ScreenError.denominatorMismatch(drawn: drawn, sum: d.total) }
         return d
     }
 
