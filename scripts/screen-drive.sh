@@ -48,7 +48,7 @@ echo $$ > "$STATE/driver.pid"
 trap 'rm -f "$STATE/driver.pid"' EXIT
 
 # Run a command with a wall-clock limit (seconds); a timeout is a non-zero exit. macOS has no `timeout`.
-bounded() { local s="$1"; shift; perl -e 'alarm shift; exec @ARGV' "$s" "$@"; }
+bounded() { local s="$1"; shift; perl -e 'alarm shift; exec @ARGV or exit 127' "$s" "$@"; }
 
 # A SIGKILLed driver leaves its child `census` running. It would race this driver for the guest and the cells.
 reap() {
