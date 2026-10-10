@@ -1,6 +1,6 @@
 # Spec — the macOS screen for `S-emit`
 
-**Status:** draft for owner review, then hand-off to an implementing agent.
+**Status:** **decisions D1–D12 confirmed by the owner (2026-10-10)**; ready to hand off to an implementing agent. §10 (unattended operation) was added after confirmation, in response to the owner's concern about session limits.
 **Branch:** continue on `m1/matrix-runner`.
 **Implements:** ADR 0004 §4's fallback ("option 4"), on the macOS platform of ADR 0006.
 **Does not implement:** the full `S-emit` matrix runs, M2, or anything in SPEC §9.4.
@@ -61,8 +61,10 @@ count, by construction (same source, same `Package.resolved`, same compiler, det
 
 ## 2. Decisions to confirm (owner) — with the defaults you implement unless told otherwise
 
-Each is a place where the project's docs are silent or ambiguous. **Do not decide these silently.** If the
-owner has not overridden a default when you start, implement the default and record it in ADR 0007 (§4.1).
+Each is a place where the project's docs are silent or ambiguous. **The owner confirmed every default below on
+2026-10-10** (D1 differential; D6 iOS-only excluded; D8 threshold of 50% accepted; D3/D4/D10 as recommended;
+the rest "looks good"). Record them in ADR 0007 as accepted. If you find a reason to deviate, stop and ask;
+do not decide silently.
 
 | # | Question | Default (my recommendation) | Why |
 |---|---|---|---|
@@ -119,6 +121,9 @@ data (§8); and a results section **left empty until the screen has run**, then 
 | `ScreenStatus` and `ScreenResult` | same file | §5.4 |
 | `census screen collect <id>` | `census/Screen.swift` | Reads the runs, writes `screens/<id>/results.json` and `emitters.csv` (§5.5) |
 | `census select emit --from-screen <id>` | `census/Select.swift` | Samples tertiles and writes `S-emit` entries **at the screened SHA** (see Gotcha G1) |
+| `census screen status <id>` | `census/Screen.swift` | Read-only: phase, batches done/total, cells present/expected, emitters so far, stale guest instances. Lets a brand-new session resume with no memory (§10) |
+| `scripts/screen-drive.sh` | new | The unattended driver for runbook steps 5–8 (§10) |
+| Durations on `SuspendingClock` | `CellRunner.swift`, `MacCellRunner.swift` | `Date()` differences include time asleep (the 6,635 s cell). `SuspendingClock` does not. `caffeinate` prevents sleep; this makes a missed one visible instead of silently wrong |
 
 Add no new package dependencies.
 
@@ -301,23 +306,75 @@ right. The two selection signals must not be mixed in one stratum.
 
 ## 10. Runbook (the order matters)
 
-1. Owner confirms §2. Write and commit ADR 0007 (pre-registration). **Stop here if the owner has not confirmed.**
+1. Write and commit ADR 0007 (pre-registration) with §2 recorded as accepted on 2026-10-10.
 2. TDD the code in §4.2 (draw, mode, count, status, collect, select). `swift test` green. Commit.
-3. Dry run on **5** candidates end to end: draw `--count 5` to a scratch file (not `screens/`), resolve, run both modes in one
+3. Dry run on **5** candidates end to end, **including killing the driver mid-batch and relaunching it**: draw `--count 5` to a scratch file (not `screens/`), resolve, run both modes in one
    batch, collect, check the denominator sums. Delete the scratch artefacts. Do not skip this: three of this
    project's worst bugs were found by the first real run.
 4. Draw 300. Commit `candidates.yaml`.
-5. Resolve all (Docker on). Commit `resolved/` and `provenance.json`.
-6. Quit Docker. Screen in batches of 50 under `caffeinate -i`. Between batches, `limactl list` (no stray
-   instances) and `df -h /`. Commit each batch's run directory.
-7. `census screen collect`. Apply D5 if emitters < 45 (one extension, back to step 4's draw for the next 150).
-8. Verify pass over the emitters (§5.6). Collect again.
+5–8. **Run `scripts/screen-drive.sh` (§10).** It resolves, screens in batches, collects, verifies the emitters and
+   collects again, unattended and resumable. Commit its output (`resolved/`, `provenance.json`, each `runs/…` directory,
+   `results.json`) when it finishes, or in pieces as you go.
+   **Apply D5 yourself afterwards:** if emitters < 45, draw the next 150 (one extension only), rerun the driver, and
+   collect again.
 9. `census select emit --from-screen`. `census validate`. Commit `corpus/` changes.
 10. Fill ADR 0007's results section. Update `runs/README.md` and `corpus/README.md`. Relaunch Docker Desktop.
 11. Report: the denominator table, counts per tertile, instabilities, and anything unexpected. **Hand back; do not
     proceed to the `S-emit` matrix runs** — that is the next task.
 
 Expected wall time: ~2.5 h resolve + ~7–10 h screen + ~1.5 h verify, mostly unattended.
+
+---
+
+## 10a. Unattended operation and session limits (§10 in the runbook above)
+
+The owner may hit Claude session limits mid-run. The agent session is not on the critical path: the long phases
+are plain processes. Build it so that **losing the agent costs nothing but time**.
+
+**Design rules**
+
+1. **Everything long runs in `scripts/screen-drive.sh`, not in the agent.** The agent starts it and polls; it never
+   `await`s a multi-hour `census run` in the foreground. (Foreground commands over ~10 minutes are backgrounded by the
+   harness anyway.)
+2. **Idempotent and resumable at every level.** Re-running the script after any interruption — crash, sleep, power,
+   session end — must continue, never redo finished work or corrupt it:
+   - `census run` already skips a cell whose `cell.json` exists (it is written last, so it means "complete");
+     keep it that way.
+   - Resolve skips candidates already resolved (G3).
+   - A batch whose cells are all present is skipped; a half-done batch continues in the **same** run id. A stale
+     guest clone from a killed run is deleted by `GuestVM.create()`; the script must also `limactl list` and
+     delete any `census-run-*` instance it does not own before starting.
+   - Phase state lives in `work/screen-state/<id>/` as small files (`resolve.done`, `batch-3.done`, `collect.done`,
+     `verify-2.done`). The files are an optimisation; correctness comes from the on-disk cells, so deleting them is safe.
+3. **Phase gating owns Docker.** The script quits Docker Desktop before any macOS phase and starts it
+   (`open -a Docker`, then polls `docker info`) before the resolve phase. It leaves Docker running at the end.
+4. **It does not commit, push, or edit tracked files except through `census`.** Committing is the agent's job, done
+   afterwards, so a half-finished script can never leave the repo in a state that looks complete.
+5. **One log, one status.** Output to `work/screen-state/<id>/drive.log`; the last line always says what it is doing.
+   `census screen status <id>` is the human-and-agent view. A new session with no memory must be able to run
+   `census screen status <id>` and know exactly what to do next.
+6. **It stops, loudly, on a state it does not understand** (an unexpected status, a failed denominator assertion,
+   a batch with `infra_error` after retry) by writing `work/screen-state/<id>/STOPPED` with the reason and exiting
+   non-zero. It never papers over.
+7. **It stops after the verify-pass collect.** Extension (D5) and selection are separate steps.
+
+**Launching.** Starting from the agent's shell works (`nohup` survives between turns here) but is not proven to survive
+quitting Claude Code. The robust way is for the owner to start it from Terminal.app:
+
+```
+cd /Users/aj/iOS/SwiftCensus
+nohup caffeinate -i scripts/screen-drive.sh screen-2026-10-10 >/dev/null 2>&1 &
+```
+
+`caffeinate -i` stops idle sleep only. It does **not** keep a laptop awake with the lid closed on battery; the machine
+should be plugged in with the lid open (or in clamshell mode with a display). Say so in the script's header comment.
+
+**If the session limit hits mid-run:** nothing stops. When the owner is back, start a fresh session, tell it to read this
+spec and run `census screen status screen-2026-10-10`. If the machine slept or rebooted, rerun the same launch command.
+
+**What the agent can and cannot do about limits.** It cannot see or extend them. It can leave the project in a state where a
+cold start costs one command: commit after each phase, keep ADR 0007's results section current, and write nothing that only
+exists in its head.
 
 ---
 
@@ -329,6 +386,8 @@ Expected wall time: ~2.5 h resolve + ~7–10 h screen + ~1.5 h verify, mostly un
   screened `.resolved` byte-identical in `corpus/resolved/`.
 - Every selected entry's pass-1 and verify-pass `screen_count` agree.
 - `census validate`, `swift test`, and `census compare` on the verify run all pass.
+- Killing `scripts/screen-drive.sh` mid-batch (SIGKILL) and relaunching it completes the screen with no cell run twice and no
+  stale guest instance; demonstrate this in the 5-candidate dry run (step 3), not on the full run.
 - No existing committed run directory was modified.
 - The agent's report states plainly what the emit rate was, what was excluded and why, and what it did **not** verify.
 
