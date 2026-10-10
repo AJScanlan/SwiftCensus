@@ -25,3 +25,16 @@ import Testing
         #expect(Resolver.pending(all, resolvedDirectory: dir, provenance: provenance, force: true).count == 4)
     }
 }
+
+@Suite struct ResolverFailureClassificationTests {
+    struct Boom: Error {}
+
+    /// Only a genuine SwiftPM resolution failure is a property of the package. Everything else (docker, timeouts,
+    /// source fetch) is infrastructure and must never reach failures.json, where it would read as `unresolvable`.
+    @Test func onlyResolutionFailedIsAPackageFailure() {
+        #expect(Resolver.isPackageFailure(ResolverError.resolutionFailed("o/p", "tail")))
+        #expect(!Resolver.isPackageFailure(Boom()))
+        #expect(!Resolver.isPackageFailure(CancellationError()))
+        #expect(!Resolver.isPackageFailure(CocoaError(.fileWriteUnknown)))
+    }
+}

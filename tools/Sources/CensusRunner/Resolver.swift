@@ -46,6 +46,14 @@ public struct Resolver: Sendable {
         }
     }
 
+    /// Only a genuine SwiftPM dependency-resolution failure is a property of the package and may be recorded
+    /// as `unresolvable`. Docker create/cp/start failures, timeouts and source-fetch failures are infrastructure:
+    /// recording them would publish a Docker or network fault as package data.
+    public static func isPackageFailure(_ error: Error) -> Bool {
+        if case ResolverError.resolutionFailed = error { return true }
+        return false
+    }
+
     static let emptyResolved = "{\n  \"pins\" : [\n\n  ],\n  \"version\" : 3\n}\n"
 
     static let script = """

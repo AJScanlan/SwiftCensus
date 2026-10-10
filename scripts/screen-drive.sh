@@ -140,7 +140,7 @@ if ! is_done resolve; then
   [[ -z "$stale" ]] || bounded 60 docker rm -f $stale >/dev/null 2>&1 || true
   log "phase: resolve"
   run_census resolve --manifest "$ROOT/$ID/candidates.yaml" --resolved "$ROOT/$ID/resolved" --toolchain 6.4 --allow-failures \
-    || stop "census resolve failed outright; see $LOG"
+    || stop "census resolve failed outright (an INFRA line in the log means Docker or network, not a package; fix it and relaunch, resolve resumes); see $LOG"
   mark_done resolve
 fi
 

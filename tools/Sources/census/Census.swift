@@ -106,7 +106,7 @@ struct Resolve: AsyncParsableCommand {
     @Option(name: .long, help: "Toolchain used to resolve.") var toolchain = "6.4"
     @Option(name: .long, parsing: .upToNextOption, help: "Only these package ids.") var package: [String] = []
     @Flag(name: .long, help: "Re-resolve packages that already have a vendored file.") var force = false
-    @Flag(name: .long, help: "Record failures in failures.json and exit 0: the screen's unresolvable candidates are data.") var allowFailures = false
+    @Flag(name: .long, help: "Record genuine dependency-resolution failures in failures.json and exit 0: the screen's unresolvable candidates are data. Infrastructure errors (docker, timeout, source fetch) are never recorded and still stop the command with a non-zero exit.") var allowFailures = false
 
     func run() async throws {
         let paths = corpus.paths
@@ -131,6 +131,12 @@ struct Resolve: AsyncParsableCommand {
                 failed[p.id] = nil
                 print("resolved \(p.id): \(result.source), \(result.pinCount) pins")
             } catch {
+                guard Resolver.isPackageFailure(error) else {
+                    // Not a property of the package: record nothing, and stop at once so a dead Docker does not
+                    // churn through every remaining candidate. Rerunning resumes (G3).
+                    print("INFRA \(p.id): \(error)")
+                    throw ExitCode.failure
+                }
                 failures += 1
                 failed[p.id] = "\(error)"
                 print("FAILED \(p.id): \(error)")
