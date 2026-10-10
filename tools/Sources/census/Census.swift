@@ -10,7 +10,7 @@ import Yams
 struct Census: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "swift-diagnostic-census instrument.",
-        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self, Reclassify.self])
+        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self, Reclassify.self, ScreenCommand.self])
 }
 
 /// Everything resolves relative to the repository root (the current directory).
@@ -32,6 +32,50 @@ struct CorpusOptions: ParsableArguments {
     @Option(name: .long, help: "Corpus manifest.") var manifest = "corpus/packages.yaml"
     @Option(name: .long, help: "Directory of vendored Package.resolved files.") var resolved = "corpus/resolved"
     var paths: Paths { Paths(corpus: URL(fileURLWithPath: manifest), resolved: URL(fileURLWithPath: resolved)) }
+}
+
+/// Written once per run directory, before its first cell.
+func writeRunManifest(runId: String, paths: Paths, store: RunStore, toolchains: [Toolchain], platform: Platform,
+                      hostPlatform: String) async throws {
+    let url = store.root.appendingPathComponent("run.json")
+    guard !FileManager.default.fileExists(atPath: url.path) else { return }
+    let commit = try? await Shell.run("git", ["rev-parse", "HEAD"]).stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
+    let dirty = try? await Shell.run("git", ["status", "--porcelain", "--", "tools", "corpus"]).stdoutString
+    let docker = try? await Shell.run("docker", ["version", "--format", "{{.Server.Version}}"]).stdoutString
+        .trimmingCharacters(in: .whitespacesAndNewlines)
+    let manifest = RunManifest(
+        runId: runId, startedAt: ISO8601DateFormatter().string(from: Date()), toolsGitCommit: commit,
+        toolsGitDirty: dirty.map { !$0.isEmpty },
+        corpusManifestSHA256: try MatrixRun.sha256Hex(of: paths.corpus),
+        hostPlatform: hostPlatform,
+        dockerServerVersion: platform == .linuxSPM ? docker : nil,
+        toolchains: Dictionary(uniqueKeysWithValues: toolchains.map { ($0.name, $0.image) }),
+        modes: Mode.allCases, platform: platform)
+    try store.write(manifest, to: url)
+}
+
+/// One fresh clone of the golden guest for the duration of `body`, always destroyed afterwards (ADR 0006:
+/// isolation is per run). `GuestVM.create()` deletes any stale clone of the same name first.
+func withMacGuest(runId: String, paths: Paths, store: RunStore, timeoutMinutes: Int,
+                  _ body: (MacCellRunner) async throws -> Void) async throws {
+    let vm = GuestVM(runId: runId)
+    print("cloning \(GuestVM.goldenName) -> \(vm.instance)")
+    try await vm.create()
+    let guestInfo = await vm.describe()
+    print("guest:\n\(guestInfo)")
+    do {
+        try await writeRunManifest(
+            runId: runId, paths: paths, store: store, toolchains: [Toolchain.macOSXcode], platform: .macosSPM,
+            hostPlatform: "macOS guest (Lima/vz): " + guestInfo.replacingOccurrences(of: "\n", with: "; "))
+        let runner = MacCellRunner(
+            vm: vm, sources: paths.sources, resolvedDirectory: paths.resolved, store: store,
+            scratch: paths.scratch, timeout: TimeInterval(timeoutMinutes * 60), imageID: GuestVM.restoreImageDigest())
+        try await body(runner)
+    } catch {
+        await vm.destroy()
+        throw error
+    }
+    await vm.destroy()
 }
 
 /// Missing means empty; present but undecodable is an error, never a silent reset (a reset would re-resolve pinned graphs).
@@ -157,48 +201,19 @@ struct Run: AsyncParsableCommand {
         }
 
         if target == .macosSPM {
-            let vm = GuestVM(runId: runId)
-            print("cloning \(GuestVM.goldenName) -> \(vm.instance)")
-            try await vm.create()
-            let guestInfo = await vm.describe()
-            print("guest:\n\(guestInfo)")
-            do {
-                try await writeRunManifest(paths: paths, store: store, toolchains: toolchains, platform: target, hostPlatform: "macOS guest (Lima/vz): " + guestInfo.replacingOccurrences(of: "\n", with: "; "))
-                let runner = MacCellRunner(
-                    vm: vm, sources: paths.sources, resolvedDirectory: paths.resolved, store: store,
-                    scratch: paths.scratch, timeout: TimeInterval(timeoutMinutes * 60), imageID: GuestVM.restoreImageDigest())
-                await MatrixRun.execute(cells: cells, runner: runner, jobs: 1, force: force, imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
-            } catch {
-                await vm.destroy()
-                throw error
+            try await withMacGuest(runId: runId, paths: paths, store: store, timeoutMinutes: timeoutMinutes) { runner in
+                await MatrixRun.execute(cells: cells, runner: runner, jobs: 1, force: force,
+                                        imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
             }
-            await vm.destroy()
             return
         }
 
-        try await writeRunManifest(paths: paths, store: store, toolchains: toolchains, platform: target,
+        try await writeRunManifest(runId: runId, paths: paths, store: store, toolchains: toolchains, platform: target,
                                    hostPlatform: "\(ProcessInfo.processInfo.operatingSystemVersionString) (container runtime)")
         let runner = CellRunner(
             sources: paths.sources, resolvedDirectory: paths.resolved, store: store, scratch: paths.scratch,
             limits: CellLimits(cpus: cpus, memoryGB: memoryGb, timeout: TimeInterval(timeoutMinutes * 60)), runId: runId)
         await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force) { print($0); fflush(stdout) }
-    }
-
-    private func writeRunManifest(paths: Paths, store: RunStore, toolchains: [Toolchain], platform: Platform, hostPlatform: String) async throws {
-        let url = store.root.appendingPathComponent("run.json")
-        guard !FileManager.default.fileExists(atPath: url.path) else { return }
-        let commit = try? await Shell.run("git", ["rev-parse", "HEAD"]).stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
-        let dirty = try? await Shell.run("git", ["status", "--porcelain", "--", "tools", "corpus"]).stdoutString
-        let docker = try? await Shell.run("docker", ["version", "--format", "{{.Server.Version}}"]).stdoutString
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-        let manifest = RunManifest(
-            runId: runId, startedAt: ISO8601DateFormatter().string(from: Date()), toolsGitCommit: commit,
-            toolsGitDirty: dirty.map { !$0.isEmpty },
-            corpusManifestSHA256: try MatrixRun.sha256Hex(of: paths.corpus),
-            hostPlatform: hostPlatform,
-            dockerServerVersion: platform == .linuxSPM ? docker : nil, toolchains: Dictionary(uniqueKeysWithValues: toolchains.map { ($0.name, $0.image) }),
-            modes: Mode.allCases, platform: platform)
-        try store.write(manifest, to: url)
     }
 }
 
