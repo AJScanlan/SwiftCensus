@@ -1,0 +1,155 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "UselessAvailabilityCheck",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/useless-availability-check",
+    "id" : "availability_query_useless_enclosing_scope",
+    "line" : 51,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniColors.swift",
+    "severity" : "warning",
+    "text" : "unnecessary check for 'macOS'; enclosing scope ensures guard will always be true"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "availability_query_useless_enclosing_scope_here",
+    "line" : 32,
+    "parent" : 0,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniColors.swift",
+    "severity" : "note",
+    "text" : "enclosing scope here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "UselessAvailabilityCheck",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/useless-availability-check",
+    "id" : "availability_query_useless_enclosing_scope",
+    "line" : 60,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniColors.swift",
+    "severity" : "warning",
+    "text" : "unnecessary check for 'macOS'; enclosing scope ensures guard will always be true"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "availability_query_useless_enclosing_scope_here",
+    "line" : 32,
+    "parent" : 2,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniColors.swift",
+    "severity" : "note",
+    "text" : "enclosing scope here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "group" : "ResultBuilderMethods",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/result-builder-methods",
+    "id" : "result_builder_missing_limited_availability",
+    "line" : 81,
+    "path" : "Sources/ExploreSwiftUI/Components/UniControlGroup.swift",
+    "severity" : "warning",
+    "text" : "result builder 'ViewBuilder' does not implement 'buildLimitedAvailability'; this code may crash on earlier versions of the OS"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "conformance_availability_only_version_newer",
+    "line" : 79,
+    "path" : "Sources/ExploreSwiftUI/Components/UniControlGroup.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'TupleContent<repeat each Content>' to 'View' is only available in macOS 26.0 or newer; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 1,
+    "id" : "availability_guard_with_version_check",
+    "line" : 79,
+    "parent" : 5,
+    "path" : "Sources/ExploreSwiftUI/Components/UniControlGroup.swift",
+    "severity" : "note",
+    "text" : "add 'if #available' version check"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 1,
+    "id" : "availability_add_attribute",
+    "line" : 17,
+    "parent" : 5,
+    "path" : "Sources/ExploreSwiftUI/Components/UniControlGroup.swift",
+    "severity" : "note",
+    "text" : "add '@available' attribute to enclosing generic struct"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 293,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniTabViews.swift",
+    "severity" : "error",
+    "text" : "'never' is unavailable in macOS"
+  },
+  {
+    "attribution" : "external",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 7,
+    "parent" : 8,
+    "path" : "SwiftUI.TabBarMinimizeBehavior.never",
+    "severity" : "note",
+    "text" : "'never' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 66,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 294,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniTabViews.swift",
+    "severity" : "error",
+    "text" : "'onScrollDown' is unavailable in macOS"
+  },
+  {
+    "attribution" : "external",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 7,
+    "parent" : 10,
+    "path" : "SwiftUI.TabBarMinimizeBehavior.onScrollDown",
+    "severity" : "note",
+    "text" : "'onScrollDown' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 295,
+    "path" : "Sources/ExploreSwiftUI/Bridges/UniTabViews.swift",
+    "severity" : "error",
+    "text" : "'onScrollUp' is unavailable in macOS"
+  },
+  {
+    "attribution" : "external",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 7,
+    "parent" : 12,
+    "path" : "SwiftUI.TabBarMinimizeBehavior.onScrollUp",
+    "severity" : "note",
+    "text" : "'onScrollUp' has been explicitly marked unavailable here"
+  }
+]

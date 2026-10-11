@@ -1,0 +1,11 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 8,
+    "fixIts" : 0,
+    "line" : 1,
+    "path" : "/private/tmp/pdf2mdkit-build/Tests/PDF2MDKitTests/PDF2MDKitTests.swift",
+    "severity" : "error",
+    "text" : "no such module 'XCTest'"
+  }
+]

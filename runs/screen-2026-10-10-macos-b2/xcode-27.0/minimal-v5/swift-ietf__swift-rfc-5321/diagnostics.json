@@ -1,0 +1,48 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "group" : "InconsistentImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/inconsistent-import-access",
+    "id" : "inconsistent_import_access_levels",
+    "line" : 3,
+    "path" : "Sources/RFC 5321/RFC_5321.EmailAddress.LocalPart.swift",
+    "severity" : "warning",
+    "text" : "module 'Byte' is imported as 'public' from the same file; this 'internal' access level will be ignored"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 0,
+    "id" : "inconsistent_implicit_access_level_on_import_here",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "Sources/RFC 5321/RFC_5321.EmailAddress.LocalPart.swift",
+    "severity" : "note",
+    "text" : "imported 'public' here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "group" : "InconsistentImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/inconsistent-import-access",
+    "id" : "inconsistent_import_access_levels",
+    "line" : 3,
+    "path" : "Sources/RFC 5321/RFC_5321.EmailAddress.swift",
+    "severity" : "warning",
+    "text" : "module 'Byte' is imported as 'public' from the same file; this 'internal' access level will be ignored"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 0,
+    "id" : "inconsistent_implicit_access_level_on_import_here",
+    "line" : 2,
+    "parent" : 2,
+    "path" : "Sources/RFC 5321/RFC_5321.EmailAddress.swift",
+    "severity" : "note",
+    "text" : "imported 'public' here"
+  }
+]

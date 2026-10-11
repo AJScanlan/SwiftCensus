@@ -1,0 +1,14 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 106,
+    "path" : "swift/Sources/FlexBuffers/Utils/functions.swift",
+    "severity" : "warning",
+    "text" : "'vectorString' is deprecated: use FBT_VECTOR or FBT_VECTOR_KEY instead."
+  }
+]

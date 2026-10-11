@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 1,
+    "id" : "dynamic_member_lookup_candidate_inaccessible",
+    "line" : 17,
+    "path" : "Sources/SwiftIndexStore/LibIndexStore.swift",
+    "severity" : "warning",
+    "text" : "'@dynamicMemberLookup' requires 'subscript(dynamicMember:)' to be as accessible as its enclosing type; this will be an error in a future Swift language mode"
+  }
+]

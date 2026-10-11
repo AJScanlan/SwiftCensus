@@ -1,0 +1,78 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 25,
+    "path" : "Sources/Tessera/RegionLayerManager.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/RegionLayerManager.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'Tessera'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/SVGDocument.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/SVGPathParser.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/SVGRegion.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/TesseraConfiguration.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/Tessera/TesseraView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

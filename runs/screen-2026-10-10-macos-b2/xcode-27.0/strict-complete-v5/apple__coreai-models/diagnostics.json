@@ -1,0 +1,143 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "expected_expr_after_unary_operator",
+    "line" : 756,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Filters.swift",
+    "severity" : "error",
+    "text" : "expected expression after unary operator"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_collection_literal",
+    "line" : 756,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Filters.swift",
+    "severity" : "error",
+    "text" : "expected expression in container literal"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 30,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 756,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Filters.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 756,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Filters.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 48,
+    "fixIts" : 0,
+    "id" : "macro_expansion_expr_expected_macro_identifier",
+    "line" : 48,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "expected a macro identifier for a pound literal expression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "lex_unexpected_block_comment_end",
+    "line" : 49,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "unexpected end of block comment"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "expected_expr_after_unary_operator",
+    "line" : 61,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "expected expression after unary operator"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "expected_init_value",
+    "line" : 61,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "expected initial value after '='"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 61,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "macro_expansion_expr_expected_macro_identifier",
+    "line" : 62,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "expected a macro identifier for a pound literal expression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 62,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "expected_decl",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "expected declaration"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 15,
+    "fixIts" : 0,
+    "id" : "note_in_decl_of",
+    "line" : 5,
+    "parent" : 11,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "note",
+    "text" : "in declaration of 'Template'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "extra_rbrace",
+    "line" : 91,
+    "path" : ".build/checkouts/swift-jinja/Sources/Jinja/Template.swift",
+    "severity" : "error",
+    "text" : "extraneous '}' at top level"
+  }
+]

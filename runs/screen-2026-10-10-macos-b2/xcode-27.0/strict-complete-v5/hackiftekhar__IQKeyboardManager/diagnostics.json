@@ -1,0 +1,77 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 24,
+    "path" : ".build/checkouts/IQKeyboardCore/IQKeyboardCore/Classes/IQKeyboardExtended.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 24,
+    "parent" : 0,
+    "path" : ".build/checkouts/IQKeyboardCore/IQKeyboardCore/Classes/IQKeyboardExtended.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'IQKeyboardCore'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 24,
+    "parent" : 0,
+    "path" : ".build/checkouts/IQKeyboardCore/IQKeyboardCore/Classes/IQTextInputView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 24,
+    "parent" : 0,
+    "path" : ".build/checkouts/IQKeyboardCore/IQKeyboardCore/Classes/UIKitExtensions/UIView+Hierarchy.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 24,
+    "path" : ".build/checkouts/IQKeyboardNotification/IQKeyboardNotification/Classes/IQKeyboardInfo.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 24,
+    "parent" : 4,
+    "path" : ".build/checkouts/IQKeyboardNotification/IQKeyboardNotification/Classes/IQKeyboardInfo.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'IQKeyboardNotification'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 24,
+    "parent" : 4,
+    "path" : ".build/checkouts/IQKeyboardNotification/IQKeyboardNotification/Classes/IQKeyboardNotification.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 34,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "variable_never_used",
+    "line" : 46,
+    "path" : "Sources/JSONSchemaForm/Fields/BooleanField.swift",
+    "severity" : "warning",
+    "text" : "immutable value 'value' was never used; consider replacing with '_' or removing it"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "id" : "conditional_downcast_coercion",
+    "line" : 14,
+    "path" : "Sources/JSONSchemaForm/Templates/DescriptionFieldTemplate.swift",
+    "severity" : "warning",
+    "text" : "conditional cast from 'String' to 'String' always succeeds"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 0,
+    "id" : "optional_to_any_coercion",
+    "line" : 200,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "expression implicitly coerced from 'Any?' to 'Any'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 200,
+    "parent" : 2,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 1,
+    "id" : "force_optional_to_any",
+    "line" : 200,
+    "parent" : 2,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "force-unwrap the value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 1,
+    "id" : "silence_optional_to_any",
+    "line" : 200,
+    "parent" : 2,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "explicitly cast to 'Any' with 'as Any' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "optional_to_any_coercion",
+    "line" : 239,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "expression implicitly coerced from 'Any?' to 'Any'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 239,
+    "parent" : 6,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 1,
+    "id" : "force_optional_to_any",
+    "line" : 239,
+    "parent" : 6,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "force-unwrap the value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 1,
+    "id" : "silence_optional_to_any",
+    "line" : 239,
+    "parent" : 6,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "explicitly cast to 'Any' with 'as Any' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 58,
+    "fixIts" : 0,
+    "id" : "optional_to_any_coercion",
+    "line" : 276,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "expression implicitly coerced from 'Any?' to 'Any'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 276,
+    "parent" : 10,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 1,
+    "id" : "force_optional_to_any",
+    "line" : 276,
+    "parent" : 10,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "force-unwrap the value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 1,
+    "id" : "silence_optional_to_any",
+    "line" : 276,
+    "parent" : 10,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "explicitly cast to 'Any' with 'as Any' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 42,
+    "fixIts" : 0,
+    "id" : "optional_to_any_coercion",
+    "line" : 282,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "expression implicitly coerced from 'Any?' to 'Any'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 282,
+    "parent" : 14,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "force_optional_to_any",
+    "line" : 282,
+    "parent" : 14,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "force-unwrap the value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "silence_optional_to_any",
+    "line" : 282,
+    "parent" : 14,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "explicitly cast to 'Any' with 'as Any' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "optional_to_any_coercion",
+    "line" : 283,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "expression implicitly coerced from 'Any?' to 'Any'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 283,
+    "parent" : 18,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 1,
+    "id" : "force_optional_to_any",
+    "line" : 283,
+    "parent" : 18,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "force-unwrap the value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 1,
+    "id" : "silence_optional_to_any",
+    "line" : 283,
+    "parent" : 18,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "note",
+    "text" : "explicitly cast to 'Any' with 'as Any' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "downcast_to_unrelated",
+    "line" : 292,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "cast from 'EnumValue' to unrelated type 'String' always fails"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "id" : "downcast_to_unrelated",
+    "line" : 296,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "cast from 'EnumValue' to unrelated type 'Bool' always fails"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 51,
+    "fixIts" : 0,
+    "id" : "downcast_to_unrelated",
+    "line" : 300,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "cast from 'EnumValue' to unrelated type 'Double' always fails"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 51,
+    "fixIts" : 0,
+    "id" : "downcast_to_unrelated",
+    "line" : 304,
+    "path" : "Sources/JSONSchemaForm/Fields/EnumField.swift",
+    "severity" : "warning",
+    "text" : "cast from 'EnumValue' to unrelated type 'Int' always fails"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "isa_is_always_true",
+    "line" : 255,
+    "path" : "Sources/JSONSchemaForm/Controller/JSONSchemaFormController.swift",
+    "severity" : "warning",
+    "text" : "'as' test is always true"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 1,
+    "group" : "VariableNeverMutated",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/variable-never-mutated",
+    "id" : "variable_never_mutated",
+    "line" : 91,
+    "path" : "Sources/JSONSchemaForm/Utils/SchemaUtils.swift",
+    "severity" : "warning",
+    "text" : "variable 'idSchema' was never mutated; consider changing to 'let' constant"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 33,
+    "path" : "Sources/JSONSchemaForm/Templates/WrapIfAdditionalTemplate.swift",
+    "severity" : "warning",
+    "text" : "'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead."
+  }
+]

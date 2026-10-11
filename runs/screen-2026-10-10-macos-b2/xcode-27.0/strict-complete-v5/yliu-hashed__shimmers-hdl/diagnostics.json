@@ -1,0 +1,88 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "id" : "async_in_nonasync_function",
+    "line" : 28,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "error",
+    "text" : "'async' call in a function that does not support concurrency"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "note_add_async_to_function",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "note",
+    "text" : "add 'async' to function 'resolve(name:)' to make it asynchronous"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 2,
+    "id" : "wrong_argument_labels",
+    "line" : 98,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "error",
+    "text" : "incorrect argument labels in call (have '_:arguments:input:error:_:', expected '_:arguments:environment:workingDirectory:platformOptions:input:output:error:')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "group" : "ProtocolTypeNonConformance",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/protocol-type-non-conformance",
+    "id" : "type_cannot_conform",
+    "line" : 98,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "error",
+    "text" : "type '(_, _) async throws -> Dictionary<UInt64, Bool>' cannot conform to 'OutputProtocol'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "only_concrete_types_conform_to_protocols",
+    "line" : 98,
+    "parent" : 3,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "note",
+    "text" : "only concrete types such as structs, enums and classes can conform to protocols"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "required_by_decl",
+    "line" : 98,
+    "parent" : 3,
+    "path" : "Sources/Shimmers/Scope/SAT Solver.swift",
+    "severity" : "note",
+    "text" : "required by global function 'run(_:arguments:environment:workingDirectory:platformOptions:input:output:error:)' where 'Output' = '(_, _) async throws -> Dictionary<UInt64, Bool>'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "async_in_nonasync_function",
+    "line" : 70,
+    "path" : "Sources/Shimmers/Scope/Scope.swift",
+    "severity" : "error",
+    "text" : "'async' call in a function that does not support concurrency"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 1,
+    "id" : "note_add_async_to_function",
+    "line" : 60,
+    "parent" : 6,
+    "path" : "Sources/Shimmers/Scope/Scope.swift",
+    "severity" : "note",
+    "text" : "add 'async' to function 'init(name:with:)' to make it asynchronous"
+  }
+]

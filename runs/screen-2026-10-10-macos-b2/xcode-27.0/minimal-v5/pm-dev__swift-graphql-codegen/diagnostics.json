@@ -1,0 +1,25 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 2,
+    "group" : "TrailingClosureMatching",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/trailing-closure-matching",
+    "id" : "unlabeled_trailing_closure_deprecated",
+    "line" : 234,
+    "path" : "Sources/GraphQLCodegen/Validation/GeneratedTypeNameValidator.swift",
+    "severity" : "warning",
+    "text" : "backward matching of the unlabeled trailing closure is deprecated; label the argument with 'formatList' to suppress this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/GraphQLCodegen/Output/SwiftSourceBuilders/SourceTypeName.swift",
+    "severity" : "note",
+    "text" : "'formatted(formatName:formatOptional:formatList:)' declared here"
+  }
+]

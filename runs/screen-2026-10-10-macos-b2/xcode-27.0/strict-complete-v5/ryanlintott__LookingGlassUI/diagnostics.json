@@ -1,0 +1,73 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 12,
+    "path" : "Sources/LookingGlassUI/InfoDictionary.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'UIDeviceOrientation' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 14,
+    "path" : "Sources/LookingGlassUI/InfoDictionary.swift",
+    "severity" : "error",
+    "text" : "cannot find 'UIDeviceOrientation' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 29,
+    "path" : "Sources/LookingGlassUI/MotionManager.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'UIDeviceOrientation' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 19,
+    "path" : "Sources/LookingGlassUI/MotionManager.swift",
+    "severity" : "error",
+    "text" : "cannot find 'UIScreen' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 22,
+    "path" : "Sources/LookingGlassUI/MotionManager.swift",
+    "severity" : "error",
+    "text" : "'CMMotionManager' is unavailable in macOS"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 87,
+    "parent" : 4,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/CoreMotion.framework/Headers/CMMotionManager.h",
+    "severity" : "note",
+    "text" : "'CMMotionManager' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 10,
+    "path" : "Sources/LookingGlassUI/_Extensions-Internal/UIDeviceOrientation-extension.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'UIDeviceOrientation' in scope"
+  }
+]

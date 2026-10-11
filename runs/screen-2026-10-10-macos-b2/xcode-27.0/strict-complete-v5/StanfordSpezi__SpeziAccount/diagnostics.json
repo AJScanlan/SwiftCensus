@@ -1,0 +1,62 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 41,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "expected_member_name",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "expected member name following '.'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 96,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 112,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 148,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 164,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 184,
+    "path" : ".build/checkouts/SpeziFoundation/Sources/SpeziFoundation/Misc/Version.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  }
+]

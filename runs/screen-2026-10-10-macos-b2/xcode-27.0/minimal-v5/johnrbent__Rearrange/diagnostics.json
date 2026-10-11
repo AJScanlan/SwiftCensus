@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "extension_retroactive_conformance",
+    "line" : 22,
+    "path" : "Sources/Rearrange/NSRange+Convenience.swift",
+    "severity" : "warning",
+    "text" : "extension declares a conformance of imported type '_NSRange' to imported protocol 'Sequence'; this will not behave correctly if the owners of 'Foundation' introduce this conformance in the future"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "extension_retroactive_conformance_silence",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/Rearrange/NSRange+Convenience.swift",
+    "severity" : "note",
+    "text" : "add '@retroactive' to silence this warning"
+  }
+]

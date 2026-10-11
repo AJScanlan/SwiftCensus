@@ -1,0 +1,112 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 46,
+    "path" : "Sources/SophonAnthropic/DTO/AnthropicErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "id" : "expected_label_before_colon",
+    "line" : 46,
+    "path" : "Sources/SophonAnthropic/DTO/AnthropicErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected argument label before colon"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 67,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 46,
+    "path" : "Sources/SophonAnthropic/DTO/AnthropicErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 67,
+    "fixIts" : 1,
+    "id" : "expected_label_before_colon",
+    "line" : 46,
+    "path" : "Sources/SophonAnthropic/DTO/AnthropicErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected argument label before colon"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 76,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 76,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 81,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 76,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_collection_literal",
+    "line" : 83,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "expected expression in container literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 0,
+    "id" : "lex_invalid_escape",
+    "line" : 83,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "invalid escape sequence in literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 1,
+    "id" : "lex_single_quote_string",
+    "line" : 83,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "single-quoted string literal found, use '\"'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 83,
+    "path" : "Sources/SophonOpenAI/DTO/OpenAIErrorBody.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  }
+]

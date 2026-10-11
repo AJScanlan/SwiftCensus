@@ -1,0 +1,32 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "use_nonmatching_operator",
+    "line" : 61,
+    "path" : "Sources/SwiftSound/spectrumToSvg.swift",
+    "severity" : "error",
+    "text" : "'/' is not a prefix unary operator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 42,
+    "fixIts" : 0,
+    "id" : "use_nonmatching_operator",
+    "line" : 61,
+    "path" : "Sources/SwiftSound/spectrumToSvg.swift",
+    "severity" : "error",
+    "text" : "'/' is not a postfix unary operator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 42,
+    "fixIts" : 0,
+    "id" : "expr_swift_keypath_invalid_component",
+    "line" : 61,
+    "path" : "Sources/SwiftSound/spectrumToSvg.swift",
+    "severity" : "error",
+    "text" : "invalid component of Swift key path"
+  }
+]

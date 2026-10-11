@@ -1,0 +1,65 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 1,
+    "group" : "deprecation",
+    "id" : "anyobject_class_inheritance_deprecated",
+    "line" : 22,
+    "path" : "Sources/Deallocatable.swift",
+    "severity" : "warning",
+    "text" : "using 'class' keyword to define a class-constrained protocol is deprecated; use 'AnyObject' instead"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 60,
+    "fixIts" : 0,
+    "id" : "nontrivial_string_to_rawpointer_conversion",
+    "line" : 56,
+    "path" : "Sources/Deallocatable.swift",
+    "severity" : "warning",
+    "text" : "forming 'UnsafeRawPointer' to an inout variable of type String exposes the internal representation rather than the string contents."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "nontrivial_string_to_rawpointer_conversion",
+    "line" : 60,
+    "path" : "Sources/Deallocatable.swift",
+    "severity" : "warning",
+    "text" : "forming 'UnsafeRawPointer' to an inout variable of type String exposes the internal representation rather than the string contents."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 1,
+    "id" : "access_control_non_objc_open_member",
+    "line" : 216,
+    "path" : "Sources/Deprecations.swift",
+    "severity" : "warning",
+    "text" : "non-'@objc' instance method declared in extension cannot be overridden; use 'public' instead; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 1,
+    "group" : "deprecation",
+    "id" : "anyobject_class_inheritance_deprecated",
+    "line" : 356,
+    "path" : "Sources/LoadingSignal.swift",
+    "severity" : "warning",
+    "text" : "using 'class' keyword to define a class-constrained protocol is deprecated; use 'AnyObject' instead"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 45,
+    "fixIts" : 1,
+    "group" : "deprecation",
+    "id" : "anyobject_class_inheritance_deprecated",
+    "line" : 49,
+    "path" : "Sources/Reactive.swift",
+    "severity" : "warning",
+    "text" : "using 'class' keyword to define a class-constrained protocol is deprecated; use 'AnyObject' instead"
+  }
+]
