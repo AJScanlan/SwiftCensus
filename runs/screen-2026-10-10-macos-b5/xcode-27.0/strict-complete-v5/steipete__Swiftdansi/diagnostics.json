@@ -1,0 +1,152 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "expr_keypath_expected_expr",
+    "line" : 92,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression path in Swift key path"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 92,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 92,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 92,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "expr_keypath_expected_expr",
+    "line" : 137,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression path in Swift key path"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 137,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 137,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 137,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 60,
+    "fixIts" : 0,
+    "id" : "expr_keypath_expected_expr",
+    "line" : 810,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression path in Swift key path"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 810,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 0,
+    "id" : "expr_keypath_expected_expr",
+    "line" : 810,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression path in Swift key path"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 872,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 872,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "id" : "lex_invalid_escape",
+    "line" : 872,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "invalid escape sequence in literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 872,
+    "path" : "Sources/Swiftdansi/Renderer.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "UnnecessaryEffectMarker",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker",
+    "id" : "no_throw_in_try",
+    "line" : 41,
+    "path" : "Sources/KurrentSupport/Adapter/KurrentStorageCoordinator.swift",
+    "severity" : "warning",
+    "text" : "no calls to throwing functions occur within 'try' expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "pbd_never_used",
+    "line" : 49,
+    "path" : "Sources/generate/ProjectionModel.swift",
+    "severity" : "warning",
+    "text" : "initialization of immutable value 'aggregateRootGenerator' was never used; consider replacing with assignment to '_' or removing it"
+  }
+]

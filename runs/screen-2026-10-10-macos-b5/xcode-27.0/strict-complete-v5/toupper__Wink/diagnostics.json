@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 9,
+    "path" : "Sources/Wink/FacialExpressionDetectorViewController.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "Sources/Wink/FacialExpressionDetectorViewController.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'Wink'"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 65,
+    "path" : "Sources/PostgresKit/PostgresDataTranslation.swift",
+    "severity" : "warning",
+    "text" : "'PostgresDataConvertible' is deprecated: This protocol is going to be replaced with ``PostgresEncodable`` and ``PostgresDecodable``"
+  }
+]

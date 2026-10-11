@@ -1,0 +1,34 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 117,
+    "path" : "Sources/FuturedArchitecture/Architecture/Coordinator.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated property 'modalCover' can not be mutated from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "actor_mutable_state",
+    "line" : 31,
+    "parent" : 0,
+    "path" : "Sources/FuturedArchitecture/Architecture/Coordinator.swift",
+    "severity" : "note",
+    "text" : "mutation of this property is only permitted within the actor"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 115,
+    "parent" : 0,
+    "path" : "Sources/FuturedArchitecture/Architecture/Coordinator.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make instance method 'reset()' part of global actor 'MainActor'"
+  }
+]

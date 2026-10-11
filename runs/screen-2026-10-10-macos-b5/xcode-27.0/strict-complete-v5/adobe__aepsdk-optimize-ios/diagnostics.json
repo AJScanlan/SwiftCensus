@@ -1,0 +1,34 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 17,
+    "path" : ".build/checkouts/aepsdk-core-ios/AEPServices/Sources/ApplicationSystemInfoService.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 17,
+    "parent" : 0,
+    "path" : ".build/checkouts/aepsdk-core-ios/AEPServices/Sources/ApplicationSystemInfoService.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'AEPServices'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 14,
+    "parent" : 0,
+    "path" : ".build/checkouts/aepsdk-core-ios/AEPServices/Sources/URLService.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 9,
+    "path" : "Sources/PopGestureRecognizerSwiftUI/PopGestureRecognizerSwiftUI.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "Sources/PopGestureRecognizerSwiftUI/PopGestureRecognizerSwiftUI.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'PopGestureRecognizerSwiftUI'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "Sources/PopGestureRecognizerSwiftUI/UIKitNavigationWrapper.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

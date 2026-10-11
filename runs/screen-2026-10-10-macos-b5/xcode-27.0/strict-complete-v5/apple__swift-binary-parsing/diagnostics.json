@@ -1,0 +1,144 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 1,
+    "id" : "declaration_same_line_without_semi",
+    "line" : 17,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "consecutive declarations on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "expected_decl",
+    "line" : 17,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected declaration"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "note_in_decl_of",
+    "line" : 14,
+    "parent" : 1,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "note",
+    "text" : "in declaration of 'Regexes'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "declaration_same_line_without_semi",
+    "line" : 21,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "consecutive declarations on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "expected_decl",
+    "line" : 21,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected declaration"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "note_in_decl_of",
+    "line" : 14,
+    "parent" : 4,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "note",
+    "text" : "in declaration of 'Regexes'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 25,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "expected_expr_after_unary_operator",
+    "line" : 31,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression after unary operator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 31,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "expected_expr_after_unary_operator",
+    "line" : 53,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression after unary operator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 53,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "expected_expr_after_unary_operator",
+    "line" : 75,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression after unary operator"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 75,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "expr_keypath_expected_expr",
+    "line" : 103,
+    "path" : "Sources/BinaryParsingMacros/ParserMacro/ParserMacroRegexes.swift",
+    "severity" : "error",
+    "text" : "expected expression path in Swift key path"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "ImplicitStrongCapture",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/implicit-strong-capture",
+    "id" : "implicit_weak_to_strong_capture",
+    "line" : 40,
+    "path" : "Sources/SSImageKitUI/ViewModels/AdjustmentEditorViewModel.swift",
+    "severity" : "warning",
+    "text" : "'weak' ownership of capture 'self' differs from implicitly-captured strong reference in outer scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_loc",
+    "line" : 39,
+    "parent" : 0,
+    "path" : "Sources/SSImageKitUI/ViewModels/AdjustmentEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "'self' implicitly strongly captured here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_add_capture_list_item",
+    "line" : 39,
+    "parent" : 0,
+    "path" : "Sources/SSImageKitUI/ViewModels/AdjustmentEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "add 'self' as a capture list item to silence"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 1,
+    "id" : "implicit_weak_to_strong_capture_assign_to_silence",
+    "line" : 40,
+    "parent" : 0,
+    "path" : "Sources/SSImageKitUI/ViewModels/AdjustmentEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "explicitly assign the capture list item to silence"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "ImplicitStrongCapture",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/implicit-strong-capture",
+    "id" : "implicit_weak_to_strong_capture",
+    "line" : 41,
+    "path" : "Sources/SSImageKitUI/ViewModels/DetailEditorViewModel.swift",
+    "severity" : "warning",
+    "text" : "'weak' ownership of capture 'self' differs from implicitly-captured strong reference in outer scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_loc",
+    "line" : 40,
+    "parent" : 4,
+    "path" : "Sources/SSImageKitUI/ViewModels/DetailEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "'self' implicitly strongly captured here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_add_capture_list_item",
+    "line" : 40,
+    "parent" : 4,
+    "path" : "Sources/SSImageKitUI/ViewModels/DetailEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "add 'self' as a capture list item to silence"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 1,
+    "id" : "implicit_weak_to_strong_capture_assign_to_silence",
+    "line" : 41,
+    "parent" : 4,
+    "path" : "Sources/SSImageKitUI/ViewModels/DetailEditorViewModel.swift",
+    "severity" : "note",
+    "text" : "explicitly assign the capture list item to silence"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "group" : "IsolatedConformances",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/isolated-conformances",
+    "id" : "isolated_conformance_may_cross_isolation",
+    "line" : 24,
+    "path" : "Sources/SSImageKitEngine/Markup/MarkupEditingCommand.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'Content' to protocol 'View' may be isolated and cannot be passed to main actor-isolated context"
+  }
+]

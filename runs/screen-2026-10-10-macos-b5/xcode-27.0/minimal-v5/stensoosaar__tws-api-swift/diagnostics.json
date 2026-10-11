@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "conformance_availability_unavailable",
+    "line" : 190,
+    "path" : "Sources/TWSAPI/Connection/Connection.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'ByteToMessageHandler<Decoder>' to 'Sendable' is unavailable; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "conformance_availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "NIOCore.ByteToMessageHandler",
+    "severity" : "note",
+    "text" : "conformance of 'ByteToMessageHandler<Decoder>' to 'Sendable' has been explicitly marked unavailable here"
+  }
+]

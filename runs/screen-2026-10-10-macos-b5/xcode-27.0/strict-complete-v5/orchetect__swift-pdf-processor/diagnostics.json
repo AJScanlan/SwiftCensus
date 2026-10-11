@@ -1,0 +1,44 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 18,
+    "path" : "Sources/PDFProcessor/PDFProcessor VariableContent.swift",
+    "severity" : "warning",
+    "text" : "associated value 'pdfPage' of 'Sendable'-conforming enum 'VariableContent' has non-Sendable type 'PDFPage'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 50,
+    "parent" : 0,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/PDFKit.framework/Headers/PDFPage.h",
+    "severity" : "note",
+    "text" : "class 'PDFPage' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 21,
+    "path" : "Sources/PDFProcessor/PDFProcessor VariableContent.swift",
+    "severity" : "warning",
+    "text" : "associated value 'pdfDocument' of 'Sendable'-conforming enum 'VariableContent' has non-Sendable type 'PDFDocument'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 130,
+    "parent" : 2,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/PDFKit.framework/Headers/PDFDocument.h",
+    "severity" : "note",
+    "text" : "class 'PDFDocument' does not conform to the 'Sendable' protocol"
+  }
+]

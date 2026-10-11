@@ -1,0 +1,52 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 1,
+    "id" : "actor_isolated_access_outside_of_actor_context",
+    "line" : 53,
+    "path" : "swift/Examples/BasicExample/main.swift",
+    "severity" : "error",
+    "text" : "actor-isolated property 'sessionId' cannot be accessed from outside of the actor"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 91,
+    "path" : "swift/Sources/CopilotSDK/Types.swift",
+    "severity" : "warning",
+    "text" : "stored property 'arguments' of 'Sendable'-conforming struct 'ToolInvocation' contains non-Sendable type 'Any'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 110,
+    "path" : "swift/Sources/CopilotSDK/Types.swift",
+    "severity" : "warning",
+    "text" : "stored property 'parameters' of 'Sendable'-conforming struct 'Tool' contains non-Sendable type 'Any'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 244,
+    "path" : "swift/Sources/CopilotSDK/Types.swift",
+    "severity" : "warning",
+    "text" : "stored property 'rawData' of 'Sendable'-conforming struct 'PermissionRequest' contains non-Sendable type 'Any'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 1346,
+    "path" : "swift/Sources/CopilotSDK/Types.swift",
+    "severity" : "warning",
+    "text" : "stored property 'data' of 'Sendable'-conforming struct 'SessionEvent' contains non-Sendable type 'Any'; this is an error in the Swift 6 language mode"
+  }
+]

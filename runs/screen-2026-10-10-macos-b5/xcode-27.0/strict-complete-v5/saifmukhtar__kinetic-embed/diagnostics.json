@@ -1,0 +1,326 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 14,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 38,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'ForeignBytes' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 65,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'ForeignBytes' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 67,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'ForeignBytes' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 73,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'ForeignBytes' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 77,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'ForeignBytes' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 63,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "type 'FfiConverterByRefBytes' does not conform to protocol 'FfiConverter'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 1,
+    "id" : "missing_witnesses_general",
+    "line" : 63,
+    "parent" : 6,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "note",
+    "text" : "add stubs for conformance"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "no_witnesses_type",
+    "line" : 206,
+    "parent" : 6,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "note",
+    "text" : "protocol requires nested type 'FfiType'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 98,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 76,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 236,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 242,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 53,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 255,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 302,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 60,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 315,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 321,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 322,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 327,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 328,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 338,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 339,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 373,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 386,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustCallStatus' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 389,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 470,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 472,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 487,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'RustBuffer' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 468,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "type 'FfiConverterString' does not conform to protocol 'FfiConverter'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 1,
+    "id" : "missing_witnesses_general",
+    "line" : 468,
+    "parent" : 27,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "note",
+    "text" : "add stubs for conformance"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "no_witnesses_type",
+    "line" : 206,
+    "parent" : 27,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "note",
+    "text" : "protocol requires nested type 'FfiType'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 535,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find 'ffi_kinetic_embed_uniffi_contract_version' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 539,
+    "path" : "Sources/KineticEmbed/kinetic_embed.swift",
+    "severity" : "error",
+    "text" : "cannot find 'uniffi_kinetic_embed_checksum_func_invoke_kinetic_json' in scope"
+  }
+]

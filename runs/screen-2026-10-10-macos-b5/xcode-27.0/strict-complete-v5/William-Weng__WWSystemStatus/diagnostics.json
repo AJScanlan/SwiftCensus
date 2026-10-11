@@ -1,0 +1,43 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 0,
+    "fixIts" : 0,
+    "line" : 0,
+    "path" : "<unknown>",
+    "severity" : "error",
+    "text" : "clang dependency scanning failure: "
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 8,
+    "path" : "Sources/WWSystemStatus/Utility/Extension.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 8,
+    "parent" : 1,
+    "path" : "Sources/WWSystemStatus/Utility/Extension.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'WWSystemStatus'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 8,
+    "parent" : 1,
+    "path" : "Sources/WWSystemStatus/WWSystemStatus.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "macro_expansion_expr_expected_macro_identifier",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "expected a macro identifier for a pound literal expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 61,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 81,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 102,
+    "fixIts" : 0,
+    "id" : "lex_invalid_digit_in_int_literal",
+    "line" : 91,
+    "path" : "Sources/Utils/Config.swift",
+    "severity" : "error",
+    "text" : "'A' is not a valid digit in integer literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 112,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 72,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 112,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 72,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 112,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 82,
+    "fixIts" : 0,
+    "id" : "expected_pattern",
+    "line" : 113,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected pattern"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 60,
+    "fixIts" : 0,
+    "id" : "expected_pattern",
+    "line" : 114,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected pattern"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 152,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 152,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 153,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 153,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 153,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 154,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 154,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 154,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 155,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 155,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 155,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 156,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 156,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 156,
+    "path" : "Sources/Utils/PlaylistReader.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 118,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 118,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 118,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 140,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 140,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "lex_unterminated_string",
+    "line" : 140,
+    "path" : "Sources/Utils/PlaylistWriter.swift",
+    "severity" : "error",
+    "text" : "unterminated string literal"
+  }
+]
