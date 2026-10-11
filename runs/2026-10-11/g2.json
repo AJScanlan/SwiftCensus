@@ -1,0 +1,1191 @@
+{
+  "columns" : [
+    {
+      "by_tertile" : {
+        "head" : {
+          "emits" : 1,
+          "total" : 10
+        },
+        "middle" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "tail" : {
+          "emits" : 5,
+          "total" : 10
+        }
+      },
+      "emits" : 8,
+      "emits_any_outcome" : 24,
+      "image_ids" : [
+        "sha256:6e43114610e161e38ad41636ebcafd6940dc67dfab355eace3a0ca100b2263db"
+      ],
+      "infra_error" : 0,
+      "missing" : 0,
+      "packages" : [
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "AlTavares/Ciao",
+          "primary_non_note_count" : 37,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "Appracatappra/SwiftletData",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "AudioKit/Tonic",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "DeclarativeHub/ReactiveKit",
+          "primary_non_note_count" : 45,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "EmergeTools/Pow",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "InspiratioNULL/InfographicKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "MLSDev/LoadableViews",
+          "primary_non_note_count" : 12,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Quick/Nimble",
+          "primary_non_note_count" : 93,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "RCCoop/RCGPX",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "ShaftUI/Shaft",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "blackjacx/SHDateFormatter",
+          "primary_non_note_count" : 4,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "built",
+          "package_id" : "dagronf/DSFAppearanceManager",
+          "primary_non_note_count" : 0,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dankinsoid/VDFlow",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "dev-hamin-kim/HangulKit",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "dl-alexandre/opencode-sdk-swift",
+          "primary_non_note_count" : 0,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "flocked/FZQuicklook",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "iankoex/AudioVisualService",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "luizmb/FP",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "maartene/InkSwift",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mapbox/mapbox-speech-swift",
+          "primary_non_note_count" : 29,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mindbody/Conduit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "s2mr/L10nLint",
+          "primary_non_note_count" : 21,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "sbooth/Geodesic",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "segmentio/Sovran-Swift",
+          "primary_non_note_count" : 4,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "shahwaiz90/ghoststrings-ios",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "swiftlang/example-package-figlet",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "weppos/uddf-swift",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "yandex/vgsl",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        }
+      ],
+      "toolchain" : "6.1"
+    },
+    {
+      "by_tertile" : {
+        "head" : {
+          "emits" : 1,
+          "total" : 10
+        },
+        "middle" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "tail" : {
+          "emits" : 5,
+          "total" : 10
+        }
+      },
+      "emits" : 8,
+      "emits_any_outcome" : 25,
+      "image_ids" : [
+        "sha256:eccc7a97f9b9881d9659e2e788081fd7675f86d39793b51200bfb178398b3784"
+      ],
+      "infra_error" : 0,
+      "missing" : 0,
+      "packages" : [
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "AlTavares/Ciao",
+          "primary_non_note_count" : 37,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "Appracatappra/SwiftletData",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "AudioKit/Tonic",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "DeclarativeHub/ReactiveKit",
+          "primary_non_note_count" : 55,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "EmergeTools/Pow",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "InspiratioNULL/InfographicKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "MLSDev/LoadableViews",
+          "primary_non_note_count" : 12,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Quick/Nimble",
+          "primary_non_note_count" : 150,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "RCCoop/RCGPX",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "ShaftUI/Shaft",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "blackjacx/SHDateFormatter",
+          "primary_non_note_count" : 4,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "built",
+          "package_id" : "dagronf/DSFAppearanceManager",
+          "primary_non_note_count" : 0,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dankinsoid/VDFlow",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "dev-hamin-kim/HangulKit",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dl-alexandre/opencode-sdk-swift",
+          "primary_non_note_count" : 15,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "flocked/FZQuicklook",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "iankoex/AudioVisualService",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "luizmb/FP",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "maartene/InkSwift",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mapbox/mapbox-speech-swift",
+          "primary_non_note_count" : 29,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mindbody/Conduit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "s2mr/L10nLint",
+          "primary_non_note_count" : 23,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "sbooth/Geodesic",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "segmentio/Sovran-Swift",
+          "primary_non_note_count" : 5,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "shahwaiz90/ghoststrings-ios",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "swiftlang/example-package-figlet",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "weppos/uddf-swift",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "yandex/vgsl",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        }
+      ],
+      "toolchain" : "6.2"
+    },
+    {
+      "by_tertile" : {
+        "head" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "middle" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "tail" : {
+          "emits" : 5,
+          "total" : 10
+        }
+      },
+      "emits" : 9,
+      "emits_any_outcome" : 26,
+      "image_ids" : [
+        "sha256:cd45c27b3abc42310c33cfaf3008b18156cbdc9187834c9617e8f43a26d2675c"
+      ],
+      "infra_error" : 0,
+      "missing" : 0,
+      "packages" : [
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "AlTavares/Ciao",
+          "primary_non_note_count" : 37,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "unsupported_tools_version",
+          "package_id" : "Appracatappra/SwiftletData",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "AudioKit/Tonic",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "DeclarativeHub/ReactiveKit",
+          "primary_non_note_count" : 55,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "EmergeTools/Pow",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "InspiratioNULL/InfographicKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "MLSDev/LoadableViews",
+          "primary_non_note_count" : 12,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Quick/Nimble",
+          "primary_non_note_count" : 149,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "RCCoop/RCGPX",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "ShaftUI/Shaft",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "blackjacx/SHDateFormatter",
+          "primary_non_note_count" : 4,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "built",
+          "package_id" : "dagronf/DSFAppearanceManager",
+          "primary_non_note_count" : 0,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dankinsoid/VDFlow",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "dev-hamin-kim/HangulKit",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dl-alexandre/opencode-sdk-swift",
+          "primary_non_note_count" : 17,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "flocked/FZQuicklook",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "iankoex/AudioVisualService",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "luizmb/FP",
+          "primary_non_note_count" : 121,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "maartene/InkSwift",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mapbox/mapbox-speech-swift",
+          "primary_non_note_count" : 28,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mindbody/Conduit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "s2mr/L10nLint",
+          "primary_non_note_count" : 23,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "sbooth/Geodesic",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "segmentio/Sovran-Swift",
+          "primary_non_note_count" : 5,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "shahwaiz90/ghoststrings-ios",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "swiftlang/example-package-figlet",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "weppos/uddf-swift",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "yandex/vgsl",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        }
+      ],
+      "toolchain" : "6.3"
+    },
+    {
+      "by_tertile" : {
+        "head" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "middle" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "tail" : {
+          "emits" : 4,
+          "total" : 10
+        }
+      },
+      "emits" : 8,
+      "emits_any_outcome" : 24,
+      "image_ids" : [
+        "sha256:4601bf61dab9485a3e93087770b72d268737e945a5b000e2286b6cc48bb048b6"
+      ],
+      "infra_error" : 0,
+      "missing" : 0,
+      "packages" : [
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "AlTavares/Ciao",
+          "primary_non_note_count" : 33,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Appracatappra/SwiftletData",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "AudioKit/Tonic",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "DeclarativeHub/ReactiveKit",
+          "primary_non_note_count" : 55,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "EmergeTools/Pow",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "InspiratioNULL/InfographicKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "MLSDev/LoadableViews",
+          "primary_non_note_count" : 6,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Quick/Nimble",
+          "primary_non_note_count" : 13,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "RCCoop/RCGPX",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "ShaftUI/Shaft",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "blackjacx/SHDateFormatter",
+          "primary_non_note_count" : 4,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "built",
+          "package_id" : "dagronf/DSFAppearanceManager",
+          "primary_non_note_count" : 0,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dankinsoid/VDFlow",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "dev-hamin-kim/HangulKit",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dl-alexandre/opencode-sdk-swift",
+          "primary_non_note_count" : 6,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "flocked/FZQuicklook",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "iankoex/AudioVisualService",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "luizmb/FP",
+          "primary_non_note_count" : 121,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "maartene/InkSwift",
+          "primary_non_note_count" : 0,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mapbox/mapbox-speech-swift",
+          "primary_non_note_count" : 8,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mindbody/Conduit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "s2mr/L10nLint",
+          "primary_non_note_count" : 23,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "sbooth/Geodesic",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "segmentio/Sovran-Swift",
+          "primary_non_note_count" : 5,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "shahwaiz90/ghoststrings-ios",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "swiftlang/example-package-figlet",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "weppos/uddf-swift",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "yandex/vgsl",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        }
+      ],
+      "toolchain" : "6.4"
+    },
+    {
+      "by_tertile" : {
+        "head" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "middle" : {
+          "emits" : 2,
+          "total" : 10
+        },
+        "tail" : {
+          "emits" : 4,
+          "total" : 10
+        }
+      },
+      "emits" : 8,
+      "emits_any_outcome" : 24,
+      "image_ids" : [
+        "sha256:191f78f3b9570ccdd382437b07ea0e8f98750206b96c71bad4f9515ec3aed4d2"
+      ],
+      "infra_error" : 0,
+      "missing" : 0,
+      "packages" : [
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "AlTavares/Ciao",
+          "primary_non_note_count" : 33,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Appracatappra/SwiftletData",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "AudioKit/Tonic",
+          "primary_non_note_count" : 3,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "DeclarativeHub/ReactiveKit",
+          "primary_non_note_count" : 55,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "EmergeTools/Pow",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "InspiratioNULL/InfographicKit",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "MLSDev/LoadableViews",
+          "primary_non_note_count" : 16,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "Quick/Nimble",
+          "primary_non_note_count" : 14,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "RCCoop/RCGPX",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "ShaftUI/Shaft",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "blackjacx/SHDateFormatter",
+          "primary_non_note_count" : 4,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "built",
+          "package_id" : "dagronf/DSFAppearanceManager",
+          "primary_non_note_count" : 0,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dankinsoid/VDFlow",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "dev-hamin-kim/HangulKit",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "dl-alexandre/opencode-sdk-swift",
+          "primary_non_note_count" : 6,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "flocked/FZQuicklook",
+          "primary_non_note_count" : 0,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "iankoex/AudioVisualService",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "luizmb/FP",
+          "primary_non_note_count" : 121,
+          "tertile" : "head"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "maartene/InkSwift",
+          "primary_non_note_count" : 0,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mapbox/mapbox-speech-swift",
+          "primary_non_note_count" : 8,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "mindbody/Conduit",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "s2mr/L10nLint",
+          "primary_non_note_count" : 23,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "sbooth/Geodesic",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "segmentio/Sovran-Swift",
+          "primary_non_note_count" : 5,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "shahwaiz90/ghoststrings-ios",
+          "primary_non_note_count" : 1,
+          "tertile" : "middle"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "swiftlang/example-package-figlet",
+          "primary_non_note_count" : 1,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : true,
+          "outcome" : "built",
+          "package_id" : "weppos/uddf-swift",
+          "primary_non_note_count" : 2,
+          "tertile" : "tail"
+        },
+        {
+          "emits" : false,
+          "outcome" : "build_failed",
+          "package_id" : "yandex/vgsl",
+          "primary_non_note_count" : 1,
+          "tertile" : "head"
+        }
+      ],
+      "toolchain" : "nightly"
+    }
+  ],
+  "gating_toolchain" : "6.4",
+  "population" : 30,
+  "reasons" : [
+
+  ],
+  "threshold" : 0.5,
+  "verdict" : "fail"
+}
