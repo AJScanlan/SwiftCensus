@@ -51,7 +51,7 @@ struct ScreenCommand: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "screen",
         abstract: "The macOS screen that selects S-emit by measurement (ADR 0007).",
-        subcommands: [Batch.self, Batches.self, Collect.self, Status.self])
+        subcommands: [Batch.self, Batches.self, Collect.self, Status.self, Reproduce.self])
 }
 
 /// The packages a pass works through: every candidate for pass 1, the pass-1 emitters for the verify pass.
@@ -60,7 +60,48 @@ private func pool(_ sp: ScreenPaths, verify: Bool) throws -> [CorpusPackage] {
     return verify ? Screen.verifyPackages(results: try sp.loadResults(), candidates: candidates) : candidates
 }
 
+/// Every pass-1 batch's cells, merged. A key in two batches is an error, never a silent overwrite.
+private func passOneCells(_ sp: ScreenPaths) throws -> [RunStore.CellKey: RunStore.LoadedCell] {
+    var cells: [RunStore.CellKey: RunStore.LoadedCell] = [:]
+    for n in stride(from: 1, through: Screen.batchCount(try sp.loadCandidates().packages.count), by: 1) {
+        for (k, cell) in try RunStore(root: sp.corpusPaths.runDirectory(sp.runId(batch: n))).loadCells() {
+            guard cells.updateValue(cell, forKey: k) == nil else { throw ValidationError("cell \(k) appears in more than one batch run") }
+        }
+    }
+    return cells
+}
+
 extension ScreenCommand {
+    struct Reproduce: AsyncParsableCommand {
+        static let configuration = CommandConfiguration(
+            abstract: "Do a macOS run's S-emit strict-complete-v5 cells reproduce the screen's pass-1 cells (A7)?",
+            discussion: "Spec 2026-10-11 §3.2. Exit 1 if not, including when any entry's SHA, resolved file, guest image "
+                + "or Xcode build differs between the two sides (then nothing is compared).")
+
+        @OptionGroup var screen: ScreenOptions
+        @Argument(help: "macOS run directory, e.g. runs/2026-10-11-macos.") var runDirectory: String
+        @Option(name: .long, help: "Corpus manifest holding the S-emit entries.") var manifest = "corpus/packages.yaml"
+
+        func run() async throws {
+            let sp = screen.paths
+            let packages = try Paths(corpus: URL(fileURLWithPath: manifest)).loadManifest().packages
+                .filter { $0.stratum == .emit && $0.screenId == sp.id }
+            guard !packages.isEmpty else { throw ValidationError("no S-emit entries in \(manifest) carry screen_id \(sp.id)") }
+            let result = ScreenReproduction.check(
+                packages: packages, screenCells: try passOneCells(sp),
+                runCells: try RunStore(root: URL(fileURLWithPath: runDirectory)).loadCells())
+            print("S-emit entries: \(packages.count); ignored cells: screen \(result.ignoredScreenCells), "
+                + "run \(result.ignoredRunCells)")
+            for m in result.inputMismatches { print("INPUT DIFFERS \(m)") }
+            if let comparison = result.comparison {
+                printComparison(comparison, left: "screen \(sp.id)", right: runDirectory)
+            } else {
+                print("NOT COMPARED: the two sides were built from different inputs")
+            }
+            if !result.isReproduced { throw ExitCode.failure }
+        }
+    }
+
     struct Batch: AsyncParsableCommand {
         static let configuration = CommandConfiguration(
             abstract: "Screen one batch of 50 in one fresh guest clone (§5.2).",
@@ -165,12 +206,7 @@ extension ScreenCommand {
             let tc = Screen.toolchain.name
             func key(_ id: String, _ m: Mode) -> RunStore.CellKey { RunStore.CellKey(toolchain: tc, mode: m, packageId: id) }
 
-            var cells: [RunStore.CellKey: RunStore.LoadedCell] = [:]
-            for n in stride(from: 1, through: Screen.batchCount(candidates.count), by: 1) {
-                for (k, cell) in try RunStore(root: paths.runDirectory(sp.runId(batch: n))).loadCells() {
-                    guard cells.updateValue(cell, forKey: k) == nil else { throw ValidationError("cell \(k) appears in more than one batch run") }
-                }
-            }
+            let cells = try passOneCells(sp)
             var results = try candidates.enumerated().map { i, p in
                 try Screen.classify(package: p, batch: i / Screen.batchSize + 1, resolveFailure: failures[p.id],
                                     complete: cells[key(p.id, .strictCompleteV5)], minimal: cells[key(p.id, .minimalV5)])

@@ -287,19 +287,24 @@ struct Compare: AsyncParsableCommand {
         let l = try RunStore(root: URL(fileURLWithPath: left)).loadCells()
         let r = try RunStore(root: URL(fileURLWithPath: right)).loadCells()
         let report = RunComparison.compare(l, r)
-        print("cells compared: \(report.cellsCompared); set-identical: \(report.identical); "
-            + "no-diagnostic outcomes (equal): \(report.noDiagnosticCells)")
-        for k in report.onlyInLeft { print("only in \(left): \(k)") }
-        for k in report.onlyInRight { print("only in \(right): \(k)") }
-        for m in report.outcomeMismatches { print("OUTCOME DIFFERS \(m.key): \(m.left.rawValue) vs \(m.right.rawValue)") }
-        for d in report.differing {
-            print("MULTISET DIFFERS \(d.key): -\(d.difference.onlyInLeft.count) +\(d.difference.onlyInRight.count)")
-            for k in d.difference.onlyInLeft.prefix(5) { print("  only left : \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
-            for k in d.difference.onlyInRight.prefix(5) { print("  only right: \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
-        }
-        print(report.isSetIdentical ? "SET-IDENTICAL" : "NOT SET-IDENTICAL")
+        printComparison(report, left: left, right: right)
         if !report.isSetIdentical { throw ExitCode.failure }
     }
+}
+
+/// An A7 report as `census compare` prints it; shared with `census screen reproduce`.
+func printComparison(_ report: RunComparison.Report, left: String, right: String) {
+    print("cells compared: \(report.cellsCompared); set-identical: \(report.identical); "
+        + "no-diagnostic outcomes (equal): \(report.noDiagnosticCells)")
+    for k in report.onlyInLeft { print("only in \(left): \(k)") }
+    for k in report.onlyInRight { print("only in \(right): \(k)") }
+    for m in report.outcomeMismatches { print("OUTCOME DIFFERS \(m.key): \(m.left.rawValue) vs \(m.right.rawValue)") }
+    for d in report.differing {
+        print("MULTISET DIFFERS \(d.key): -\(d.difference.onlyInLeft.count) +\(d.difference.onlyInRight.count)")
+        for k in d.difference.onlyInLeft.prefix(5) { print("  only left : \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
+        for k in d.difference.onlyInRight.prefix(5) { print("  only right: \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
+    }
+    print(report.isSetIdentical ? "SET-IDENTICAL" : "NOT SET-IDENTICAL")
 }
 
 struct Parse: AsyncParsableCommand {
