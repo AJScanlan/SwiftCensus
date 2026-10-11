@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "pound_error",
+    "line" : 72,
+    "path" : ".build/checkouts/swift-google-gax/Sources/GoogleGax/ApiClientHeader.swift",
+    "severity" : "error",
+    "text" : "This version of Swift is unknown or unsupported"
+  }
+]

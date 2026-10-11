@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "sema_no_import",
+    "line" : 1,
+    "path" : "Sources/PulseKitWrapper/Exports.swift",
+    "severity" : "error",
+    "text" : "no such module 'PulseKit'"
+  }
+]

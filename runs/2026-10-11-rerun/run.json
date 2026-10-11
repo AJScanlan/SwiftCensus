@@ -1,0 +1,24 @@
+{
+  "corpus_manifest_sha256" : "bca2cc3ebd37ddda89d73d6c35cff47330613abd8155665c758472cd0ac285f4",
+  "docker_server_version" : "29.4.2",
+  "host_platform" : "Version 27.0 (Build 26A428) (container runtime)",
+  "modes" : [
+    "strict-complete-v5",
+    "strict-complete-declared",
+    "minimal-v5"
+  ],
+  "platform" : "linux-spm",
+  "run_id" : "2026-10-11-rerun",
+  "schema_version" : 1,
+  "started_at" : "2026-10-11T14:24:07Z",
+  "test_targets_built" : false,
+  "toolchains" : {
+    "6.1" : "swift:6.1",
+    "6.2" : "swift:6.2",
+    "6.3" : "swift:6.3",
+    "6.4" : "swift:6.4",
+    "nightly" : "swiftlang/swift:nightly-main-jammy"
+  },
+  "tools_git_commit" : "505b3408d4e85424f0211b4b9bfae5c671285e41",
+  "tools_git_dirty" : false
+}

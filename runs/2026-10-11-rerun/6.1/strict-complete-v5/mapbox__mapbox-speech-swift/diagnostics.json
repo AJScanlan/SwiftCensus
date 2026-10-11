@@ -1,0 +1,424 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "id" : "init_candidate_inaccessible",
+    "line" : 41,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'ProcessInfo' initializer is inaccessible due to 'internal' protection level"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "FoundationEssentials.ProcessInfo.init",
+    "severity" : "note",
+    "text" : "'init()' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 88,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'SpeechSynthesizer' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 78,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "class 'SpeechSynthesizer' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 88,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 88,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 124,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 150,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLSessionDataTask' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 6,
+    "path" : "Foundation.URLSessionDataTask",
+    "severity" : "note",
+    "text" : "'URLSessionDataTask' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 158,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 174,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLSessionDataTask' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 8,
+    "path" : "Foundation.URLSessionDataTask",
+    "severity" : "note",
+    "text" : "'URLSessionDataTask' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 77,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 240,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 10,
+    "path" : "Foundation.URLResponse",
+    "severity" : "note",
+    "text" : "'URLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 257,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 12,
+    "path" : "Foundation.URLResponse",
+    "severity" : "note",
+    "text" : "'URLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 257,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "associated value 'unknown(response:underlying:code:message:)' of 'Sendable'-conforming enum 'SpeechError' has non-sendable type 'URLResponse' (aka 'AnyObject'); this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "non_nominal_extension",
+    "line" : 299,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "non-nominal type 'HTTPURLResponse' (aka 'AnyObject') cannot be extended"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 98,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "cannot find 'Selector' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 98,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'AnyClass' (aka 'any AnyObject.Type') has no member 'responds'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 99,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'AnyClass' (aka 'any AnyObject.Type') has no member 'value'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 101,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "cannot find 'Selector' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 101,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'AnyClass' (aka 'any AnyObject.Type') has no member 'responds'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 102,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'AnyClass' (aka 'any AnyObject.Type') has no member 'value'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 161,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'URLSessionDataTask' (aka 'AnyObject') has no member 'resume'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 154,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "capture of 'completionHandler' with non-sendable type 'SpeechSynthesizer.CompletionHandler' (aka '(Optional<Data>, Optional<SpeechError>) -> ()') in a '@Sendable' closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 154,
+    "parent" : 23,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 158,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "capture of 'completionHandler' with non-sendable type 'SpeechSynthesizer.CompletionHandler' (aka '(Optional<Data>, Optional<SpeechError>) -> ()') in a '@Sendable' closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 158,
+    "parent" : 25,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 176,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "cannot find 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 178,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "could_not_find_type_member",
+    "line" : 178,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "type 'URLSession' (aka 'AnyObject') has no member 'shared'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "cannot_convert_argument_value_anyobject",
+    "line" : 180,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "argument type '_' expected to be an instance of a class or class-constrained type"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 1,
+    "id" : "conditional_downcast_same_type",
+    "line" : 241,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "conditional downcast from 'URLResponse?' (aka 'Optional<AnyObject>') to 'HTTPURLResponse' (aka 'AnyObject') does nothing"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 241,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'HTTPURLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 32,
+    "path" : "Foundation.HTTPURLResponse",
+    "severity" : "note",
+    "text" : "'HTTPURLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 242,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'statusCode'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 244,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'rateLimitInterval'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 104,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 244,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'rateLimit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 135,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 244,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'rateLimitResetTime'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 266,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'DateComponentsFormatter' is unavailable: Not supported in swift-corelibs-foundation"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 38,
+    "path" : "Foundation.DateComponentsFormatter",
+    "severity" : "note",
+    "text" : "'DateComponentsFormatter' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "could_not_find_type_member",
+    "line" : 277,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "type 'HTTPURLResponse' (aka 'AnyObject') has no member 'localizedString'"
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 40,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 45,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 57,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 71,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "initializer_does_not_override",
+    "line" : 73,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "initializer does not override a designated initializer from its superclass"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 71,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "type 'LoadableView' does not conform to protocol 'NibLoadableProtocol'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "missing_witnesses_general",
+    "line" : 71,
+    "parent" : 5,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "add stubs for conformance"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 51,
+    "parent" : 5,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "protocol requires property 'nibName' with type 'String'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 54,
+    "parent" : 5,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "protocol requires property 'bundle' with type 'Bundle'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Foundation.NSObjectProtocol.isEqual",
+    "severity" : "note",
+    "text" : "protocol requires function 'isEqual' with type '(Any?) -> Bool'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Foundation.NSObjectProtocol.hash",
+    "severity" : "note",
+    "text" : "protocol requires property 'hash' with type 'Int'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Foundation.NSObjectProtocol.self",
+    "severity" : "note",
+    "text" : "protocol requires function 'self()' with type '() -> Self'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Foundation.NSObjectProtocol.isProxy",
+    "severity" : "note",
+    "text" : "protocol requires function 'isProxy()' with type '() -> Bool'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Foundation.NSObjectProtocol.description",
+    "severity" : "note",
+    "text" : "protocol requires property 'description' with type 'String'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "super_no_superclass",
+    "line" : 74,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "'super' cannot be used in class 'LoadableView' because it has no superclass"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "super_no_superclass",
+    "line" : 79,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "'super' cannot be used in class 'LoadableView' because it has no superclass"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 84,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find 'setupView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 84,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find 'loadNib' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 84,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find 'nibContainerView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 59,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  }
+]

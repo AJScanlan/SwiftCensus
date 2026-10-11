@@ -1,0 +1,21 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 0,
+    "line" : 31,
+    "path" : ".build/checkouts/swift-docc-plugin/Plugins/Swift-DocC Preview/Symbolic Links/SharedPackagePluginExtensions/PackageExtensions.swift",
+    "severity" : "warning",
+    "text" : "switch covers known cases, but 'TargetDependency' may have additional unknown values; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 1,
+    "line" : 31,
+    "parent" : 0,
+    "path" : ".build/checkouts/swift-docc-plugin/Plugins/Swift-DocC Preview/Symbolic Links/SharedPackagePluginExtensions/PackageExtensions.swift",
+    "severity" : "note",
+    "text" : "handle unknown values using \"@unknown default\""
+  }
+]

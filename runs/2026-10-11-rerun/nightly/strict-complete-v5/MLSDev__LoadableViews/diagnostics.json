@@ -1,0 +1,250 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 40,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 45,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 57,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 59,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_non_objc_open_member",
+    "line" : 59,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "warning",
+    "text" : "non-'@objc' property declared in extension cannot be overridden; use 'public' instead; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_open_bad_decl",
+    "line" : 59,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "only classes and overridable class members can be declared 'open'; use 'public'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 1,
+    "id" : "invalid_objc_decl_context",
+    "line" : 59,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "'@objc' can only be used with members of classes, '@objc' protocols, and concrete extensions of classes"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_non_objc_open_member",
+    "line" : 62,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "warning",
+    "text" : "non-'@objc' property declared in extension cannot be overridden; use 'public' instead; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_open_bad_decl",
+    "line" : 62,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "only classes and overridable class members can be declared 'open'; use 'public'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 1,
+    "id" : "invalid_objc_decl_context",
+    "line" : 62,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "'@objc' can only be used with members of classes, '@objc' protocols, and concrete extensions of classes"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_non_objc_open_member",
+    "line" : 65,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "warning",
+    "text" : "non-'@objc' property declared in extension cannot be overridden; use 'public' instead; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "access_control_open_bad_decl",
+    "line" : 65,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "only classes and overridable class members can be declared 'open'; use 'public'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 6,
+    "fixIts" : 1,
+    "id" : "invalid_objc_decl_context",
+    "line" : 65,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "'@objc' can only be used with members of classes, '@objc' protocols, and concrete extensions of classes"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 71,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'PlatformView' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "initializer_does_not_override",
+    "line" : 73,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "initializer does not override a designated initializer from its superclass"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 71,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "error",
+    "text" : "type 'LoadableView' does not conform to protocol 'NibLoadableProtocol'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "missing_witnesses_general",
+    "line" : 71,
+    "parent" : 15,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "add stubs for conformance"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 51,
+    "parent" : 15,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "protocol requires property 'nibName' with type 'String'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 54,
+    "parent" : 15,
+    "path" : "Sources/LoadableViews/LoadableView.swift",
+    "severity" : "note",
+    "text" : "protocol requires property 'bundle' with type 'Bundle'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 15,
+    "path" : "Foundation.NSObjectProtocol.isEqual",
+    "severity" : "note",
+    "text" : "protocol requires function 'isEqual' with type '(Any?) -> Bool'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 15,
+    "path" : "Foundation.NSObjectProtocol.hash",
+    "severity" : "note",
+    "text" : "protocol requires property 'hash' with type 'Int'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 15,
+    "path" : "Foundation.NSObjectProtocol.self",
+    "severity" : "note",
+    "text" : "protocol requires function 'self()' with type '() -> Self'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 6,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 15,
+    "path" : "Foundation.NSObjectProtocol.isProxy",
+    "severity" : "note",
+    "text" : "protocol requires function 'isProxy()' with type '() -> Bool'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "no_witnesses",
+    "line" : 2,
+    "parent" : 15,
+    "path" : "Foundation.NSObjectProtocol.description",
+    "severity" : "note",
+    "text" : "protocol requires property 'description' with type 'String'"
+  }
+]

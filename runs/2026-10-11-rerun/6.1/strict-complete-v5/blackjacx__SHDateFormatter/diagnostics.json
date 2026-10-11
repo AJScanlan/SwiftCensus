@@ -1,0 +1,108 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 36,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'SHDateFormatter' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 34,
+    "parent" : 0,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'SHDateFormatter' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 36,
+    "parent" : 0,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 36,
+    "parent" : 0,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 45,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "warning",
+    "text" : "static property 'iso8601Formatter' is not concurrency-safe because non-'Sendable' type 'ISO8601DateFormatter' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 4,
+    "path" : "Foundation.ISO8601DateFormatter",
+    "severity" : "note",
+    "text" : "class 'ISO8601DateFormatter' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 45,
+    "parent" : 4,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'iso8601Formatter' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 45,
+    "parent" : 4,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 95,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "error",
+    "text" : "value of type 'DateFormatter' has no member 'formatterBehavior'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 0,
+    "id" : "cannot_infer_base_of_unresolved_member",
+    "line" : 95,
+    "path" : "Source/SHDateFormatter/Classes/SHDateFormatter.swift",
+    "severity" : "error",
+    "text" : "cannot infer contextual base in reference to member 'default'"
+  }
+]
