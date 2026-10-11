@@ -8,6 +8,8 @@ public enum G2 {
     public static let populationSize = 30
     public static let gatingToolchain = "6.4"
     public static let threshold = 0.5
+    /// `swift:6.4` as `2026-10-04` recorded it. A gating cell built from any other image is not the pre-registered column.
+    public static let gatingImageID = "sha256:4601bf61dab9485a3e93087770b72d268737e945a5b000e2286b6cc48bb048b6"
 
     public enum Tertile: String, Codable, Sendable, CaseIterable { case head, middle, tail }
 
@@ -42,12 +44,14 @@ public enum G2 {
         public var emitsAnyOutcome = 0
         public var missing = 0
         public var infraError = 0
+        /// Distinct `image_id`s of this column's cells, sorted; "nil" for a cell that recorded none.
+        public var imageIDs: [String] = []
         public var byTertile: [String: TertileCount] = [:]
         public var packages: [PackageResult] = []
 
         enum CodingKeys: String, CodingKey {
             case toolchain, emits, emitsAnyOutcome = "emits_any_outcome", missing, infraError = "infra_error"
-            case byTertile = "by_tertile", packages
+            case imageIDs = "image_ids", byTertile = "by_tertile", packages
         }
     }
 
@@ -83,13 +87,20 @@ public enum G2 {
         Tertile.allCases.first { package.selection.contains("\($0.rawValue)-tertile") }
     }
 
+    /// `manifestSHA256` is the hash of the manifest passed in, `runManifestSHA256` the one the run's `run.json` recorded.
+    /// They must agree: ADR 0008's population is the manifest the run was built from, not whatever is checked out now.
     public static func evaluate(manifest: CorpusManifest,
-                                cells: [RunStore.CellKey: RunStore.LoadedCell]) -> Report {
+                                cells: [RunStore.CellKey: RunStore.LoadedCell],
+                                manifestSHA256: String? = nil, runManifestSHA256: String? = nil) -> Report {
         let population = manifest.packages.filter { $0.stratum == .emit }.sorted { $0.id < $1.id }
         let ids = Set(population.map(\.id))
         let scored = cells.filter { ids.contains($0.key.packageId) && $0.key.mode == .strictCompleteV5 }
 
         var reasons: [String] = []
+        if manifestSHA256 != runManifestSHA256 {
+            reasons.append("the manifest read (\(manifestSHA256 ?? "nil")) is not the one the run recorded "
+                + "(\(runManifestSHA256 ?? "nil"))")
+        }
         if population.count != populationSize {
             reasons.append("the manifest has \(population.count) S-emit entries; ADR 0008 fixes \(populationSize)")
         }
@@ -103,6 +114,9 @@ public enum G2 {
         let gating = columns.first { $0.toolchain == gatingToolchain } ?? Column(toolchain: gatingToolchain)
         if gating.missing > 0 { reasons.append("\(gating.missing) S-emit cells missing on \(gatingToolchain)") }
         if gating.infraError > 0 { reasons.append("\(gating.infraError) S-emit cells are infra_error on \(gatingToolchain)") }
+        if let other = gating.imageIDs.first(where: { $0 != gatingImageID }) {
+            reasons.append("a \(gatingToolchain) cell was built from \(other); ADR 0008 pins \(gatingImageID)")
+        }
 
         let verdict: Verdict = !reasons.isEmpty ? .notEvaluable
             : Double(gating.emits) / Double(populationSize) < threshold ? .fail : .pass
@@ -113,8 +127,10 @@ public enum G2 {
     static func column(_ toolchain: String, population: [CorpusPackage],
                        cells: [RunStore.CellKey: RunStore.LoadedCell]) -> Column {
         var c = Column(toolchain: toolchain)
+        var images = Set<String>()
         for p in population {
             let cell = cells[RunStore.CellKey(toolchain: toolchain, mode: .strictCompleteV5, packageId: p.id)]
+            if let cell { images.insert(cell.record.imageID ?? "nil") }
             let outcome = cell?.record.outcome
             let count = cell.map { primaryNonNoteCount($0.diagnostics) } ?? 0
             let emitting = cell.map { emits($0) } ?? false
@@ -130,6 +146,7 @@ public enum G2 {
             c.packages.append(PackageResult(packageId: p.id, tertile: t, outcome: outcome,
                                             primaryNonNoteCount: count, emits: emitting))
         }
+        c.imageIDs = images.sorted()
         return c
     }
 

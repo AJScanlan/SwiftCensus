@@ -22,9 +22,10 @@ private let population = (0..<30).map(emitEntry)
 private func cell(_ id: String, toolchain: String = "6.4", _ outcome: CellOutcome = .built,
                   _ diags: [DiagnosticRecord] = [], mode: Mode = .strictCompleteV5,
                   platform: Platform = .linuxSPM, stratum: Stratum = .emit) -> (RunStore.CellKey, RunStore.LoadedCell) {
-    let r = CellRecord(packageId: id, sha: String(repeating: "a", count: 40), stratum: stratum, toolchain: toolchain,
+    var r = CellRecord(packageId: id, sha: String(repeating: "a", count: 40), stratum: stratum, toolchain: toolchain,
                        mode: mode, platform: platform, outcome: outcome, exitCode: 0, startedAt: "", durationSeconds: 0,
                        invocation: [], image: "")
+    r.imageID = toolchain == G2.gatingToolchain ? G2.gatingImageID : "sha256:other-\(toolchain)"
     return (RunStore.CellKey(toolchain: toolchain, mode: mode, packageId: id),
             RunStore.LoadedCell(record: r, diagnostics: diags, directory: URL(fileURLWithPath: "/")))
 }
@@ -147,6 +148,27 @@ private func with(_ base: [RunStore.CellKey: RunStore.LoadedCell],
         let cells = with(column(emitting: 30), cell("o/p0", .built, [diag()], platform: .macosSPM))
         let r = G2.evaluate(manifest: CorpusManifest(packages: population), cells: cells)
         #expect(r.verdict == .notEvaluable)
+    }
+
+    /// Review fix: ADR 0008 pins the gating image; a 6.4 cell built from any other image cannot be scored.
+    @Test func aGatingCellFromAnotherImageIsNotEvaluable() {
+        var cells = column(emitting: 30)
+        let k = RunStore.CellKey(toolchain: "6.4", mode: .strictCompleteV5, packageId: "o/p3")
+        cells[k]?.record.imageID = "sha256:pulled-later"
+        let r = G2.evaluate(manifest: CorpusManifest(packages: population), cells: cells)
+        #expect(r.verdict == .notEvaluable)
+        #expect(r.gating?.imageIDs == [G2.gatingImageID, "sha256:pulled-later"].sorted())
+    }
+
+    /// Review fix: the population must be the manifest the run was built from.
+    @Test func aManifestOtherThanTheRunsIsNotEvaluable() {
+        let differs = G2.evaluate(manifest: CorpusManifest(packages: population), cells: column(emitting: 30),
+                                  manifestSHA256: "aaa", runManifestSHA256: "bbb")
+        #expect(differs.verdict == .notEvaluable)
+        #expect(differs.reasons.contains { $0.contains("bbb") })
+        let same = G2.evaluate(manifest: CorpusManifest(packages: population), cells: column(emitting: 30),
+                               manifestSHA256: "aaa", runManifestSHA256: "aaa")
+        #expect(same.verdict == .pass)
     }
 
     @Test func countsPerTertile() {
