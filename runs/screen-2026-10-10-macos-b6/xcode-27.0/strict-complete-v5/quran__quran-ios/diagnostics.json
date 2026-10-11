@@ -1,0 +1,56 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 21,
+    "path" : "UI/ViewConstrainer/Sources/GroupConstrainer.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 21,
+    "parent" : 0,
+    "path" : "UI/ViewConstrainer/Sources/GroupConstrainer.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'ViewConstrainer'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 21,
+    "parent" : 0,
+    "path" : "UI/ViewConstrainer/Sources/SingleConstrainer.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 21,
+    "parent" : 0,
+    "path" : "UI/ViewConstrainer/Sources/UIView+Const.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 21,
+    "parent" : 0,
+    "path" : "UI/ViewConstrainer/Sources/ViewConstrainer.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

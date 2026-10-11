@@ -1,0 +1,26 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "UnnecessaryEffectMarker",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker",
+    "id" : "no_throw_in_try",
+    "line" : 58,
+    "path" : "Sources/SwiftAPIClient/Concurency/APIClient.swift",
+    "severity" : "warning",
+    "text" : "no calls to throwing functions occur within 'try' expression"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "UnnecessaryEffectMarker",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker",
+    "id" : "no_throw_in_try",
+    "line" : 77,
+    "path" : "Sources/SwiftAPIClient/Concurency/APIClient.swift",
+    "severity" : "warning",
+    "text" : "no calls to throwing functions occur within 'try' expression"
+  }
+]

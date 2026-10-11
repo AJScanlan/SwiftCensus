@@ -1,0 +1,56 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "no_throw_in_do_with_catch",
+    "line" : 105,
+    "path" : "Sources/KeychainKit/BiometricAuth.swift",
+    "severity" : "warning",
+    "text" : "'catch' block is unreachable because no errors are thrown in 'do' block"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "no_throw_in_do_with_catch",
+    "line" : 151,
+    "path" : "Sources/KeychainKit/BiometricAuth.swift",
+    "severity" : "warning",
+    "text" : "'catch' block is unreachable because no errors are thrown in 'do' block"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "id" : "no_throw_in_do_with_catch",
+    "line" : 192,
+    "path" : "Sources/KeychainKit/BiometricAuth.swift",
+    "severity" : "warning",
+    "text" : "'catch' block is unreachable because no errors are thrown in 'do' block"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 35,
+    "path" : "Sources/KeychainKit/KeychainQuery.swift",
+    "severity" : "warning",
+    "text" : "'kSecUseOperationPrompt' was deprecated in macOS 11.0: Use kSecUseAuthenticationContext and set LAContext.localizedReason property"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 56,
+    "path" : "Sources/KeychainKit/KeychainQuery.swift",
+    "severity" : "warning",
+    "text" : "'kSecUseOperationPrompt' was deprecated in macOS 11.0: Use kSecUseAuthenticationContext and set LAContext.localizedReason property"
+  }
+]

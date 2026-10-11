@@ -1,0 +1,122 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 10,
+    "path" : "StripeCore/StripeCore/Source/API Bindings/STPAPIClient+FileUpload.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/API Bindings/STPAPIClient+FileUpload.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'StripeCore'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/API Bindings/STPAPIClient.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Analytics/AnalyticsClientV2.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Analytics/STPAnalyticsClient.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Attestation/StripeAttest.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Categories/UIImage+StripeCore.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Connections Bindings/FinancialConnectionsSDKInterface.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/Telemetry/STPTelemetryClient.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/UI/UIActivityIndicatorView+Stripe.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "StripeCore/StripeCore/Source/UI/UIFont+Stripe.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

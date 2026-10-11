@@ -1,0 +1,38 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "expression_unused_result_call",
+    "line" : 251,
+    "path" : "Sources/Cyphera/Cyphera.swift",
+    "severity" : "warning",
+    "text" : "result of call to 'withUnsafeBytes' is unused"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "expression_unused_result_call",
+    "line" : 255,
+    "path" : "Sources/Cyphera/Cyphera.swift",
+    "severity" : "warning",
+    "text" : "result of call to 'withUnsafeBytes' is unused"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "expression_unused_result_call",
+    "line" : 259,
+    "path" : "Sources/Cyphera/Cyphera.swift",
+    "severity" : "warning",
+    "text" : "result of call to 'withUnsafeBytes' is unused"
+  }
+]

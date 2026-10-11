@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 0,
+    "fixIts" : 0,
+    "id" : "non_sendable_keypath_capture",
+    "line" : 0,
+    "path" : "<unknown>",
+    "severity" : "warning",
+    "text" : "cannot form key path that captures non-Sendable type 'KeyPath<SplitViewReducer.Action.AllCasePaths, AnyCasePath<SplitViewReducer.Action, SplitViewReducer.Action.Delegate>>'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  }
+]

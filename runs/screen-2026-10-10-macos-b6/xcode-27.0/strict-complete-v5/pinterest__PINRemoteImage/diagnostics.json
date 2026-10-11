@@ -1,0 +1,147 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 16,
+    "path" : "Source/Classes/Categories/NSData+ImageDetectors.m",
+    "severity" : "warning",
+    "text" : "variable length array folded to constant array as an extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 108,
+    "path" : "Source/Classes/Categories/NSData+ImageDetectors.m",
+    "severity" : "warning",
+    "text" : "variable length array folded to constant array as an extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 133,
+    "path" : "Source/Classes/Categories/NSData+ImageDetectors.m",
+    "severity" : "warning",
+    "text" : "variable length array folded to constant array as an extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 142,
+    "path" : "Source/Classes/Categories/NSData+ImageDetectors.m",
+    "severity" : "warning",
+    "text" : "variable length array folded to constant array as an extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 85,
+    "fixIts" : 0,
+    "group" : "Deprecations",
+    "line" : 49,
+    "path" : "Source/Classes/AnimatedImages/PINAPNGAnimatedImage.m",
+    "severity" : "warning",
+    "text" : "'kUTTypePNG' is deprecated: first deprecated in macOS 12.0 - Use UTTypePNG or UTType.png (swift) instead."
+  },
+  {
+    "attribution" : "external",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 730,
+    "parent" : 4,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/UTCoreTypes.h",
+    "severity" : "note",
+    "text" : "'kUTTypePNG' has been explicitly marked deprecated here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 85,
+    "fixIts" : 0,
+    "group" : "Deprecations",
+    "line" : 47,
+    "path" : "Source/Classes/AnimatedImages/PINGIFAnimatedImage.m",
+    "severity" : "warning",
+    "text" : "'kUTTypeGIF' is deprecated: first deprecated in macOS 12.0 - Use UTTypeGIF or UTType.gif (swift) instead."
+  },
+  {
+    "attribution" : "external",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 729,
+    "parent" : 6,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/UTCoreTypes.h",
+    "severity" : "note",
+    "text" : "'kUTTypeGIF' has been explicitly marked deprecated here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Deprecations",
+    "line" : 1572,
+    "path" : "Source/Classes/PINRemoteImageManager.m",
+    "severity" : "warning",
+    "text" : "'CC_MD5_Init' is deprecated: first deprecated in macOS 10.15 - This function is cryptographically broken and should not be used in security contexts. Clients should migrate to SHA256 (or stronger)."
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 133,
+    "parent" : 8,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/usr/include/CommonCrypto/CommonDigest.h",
+    "severity" : "note",
+    "text" : "'CC_MD5_Init' has been explicitly marked deprecated here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "Deprecations",
+    "line" : 1575,
+    "path" : "Source/Classes/PINRemoteImageManager.m",
+    "severity" : "warning",
+    "text" : "'CC_MD5_Update' is deprecated: first deprecated in macOS 10.15 - This function is cryptographically broken and should not be used in security contexts. Clients should migrate to SHA256 (or stronger)."
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 136,
+    "parent" : 10,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/usr/include/CommonCrypto/CommonDigest.h",
+    "severity" : "note",
+    "text" : "'CC_MD5_Update' has been explicitly marked deprecated here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Deprecations",
+    "line" : 1579,
+    "path" : "Source/Classes/PINRemoteImageManager.m",
+    "severity" : "warning",
+    "text" : "'CC_MD5_Final' is deprecated: first deprecated in macOS 10.15 - This function is cryptographically broken and should not be used in security contexts. Clients should migrate to SHA256 (or stronger)."
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 139,
+    "parent" : 12,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/usr/include/CommonCrypto/CommonDigest.h",
+    "severity" : "note",
+    "text" : "'CC_MD5_Final' has been explicitly marked deprecated here"
+  }
+]

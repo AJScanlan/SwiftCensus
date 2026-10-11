@@ -1,0 +1,44 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 34,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 52,
+    "path" : "Sources/CSocket/ancillary.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'socklen_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "external",
+    "col" : 75,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 673,
+    "parent" : 0,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/usr/include/sys/socket.h",
+    "severity" : "note",
+    "text" : "expanded from macro 'CMSG_SPACE'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 57,
+    "path" : "Sources/CSocket/ancillary.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'socklen_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "external",
+    "col" : 75,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 674,
+    "parent" : 2,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/usr/include/sys/socket.h",
+    "severity" : "note",
+    "text" : "expanded from macro 'CMSG_LEN'"
+  }
+]
