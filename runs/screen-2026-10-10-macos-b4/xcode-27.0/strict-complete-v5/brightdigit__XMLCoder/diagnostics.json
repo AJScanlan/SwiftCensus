@@ -1,0 +1,98 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "req_near_match",
+    "line" : 22,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "warning",
+    "text" : "instance method 'decode' nearly matches defaulted requirement 'decode' of protocol 'SingleValueDecodingContainer'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "protocol_witness_type_conflict",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "note",
+    "text" : "candidate has non-matching type '(Decimal.Type) throws -> Decimal'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "req_near_match_move",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "note",
+    "text" : "move 'decode' to another extension to silence this warning"
+  },
+  {
+    "attribution" : "external",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "requirement_declared_here",
+    "line" : 3,
+    "parent" : 0,
+    "path" : "Swift.SingleValueDecodingContainer.decode",
+    "severity" : "note",
+    "text" : "requirement 'decode' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "req_near_match",
+    "line" : 46,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "warning",
+    "text" : "instance method 'decode' nearly matches defaulted requirement 'decode' of protocol 'SingleValueDecodingContainer'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "protocol_witness_type_conflict",
+    "line" : 46,
+    "parent" : 4,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "note",
+    "text" : "candidate has non-matching type '(String.Type) throws -> Date'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "req_near_match_move",
+    "line" : 46,
+    "parent" : 4,
+    "path" : "Sources/XMLCoder/Decoder/SingleValueDecodingContainer.swift",
+    "severity" : "note",
+    "text" : "move 'decode' to another extension to silence this warning"
+  },
+  {
+    "attribution" : "external",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "requirement_declared_here",
+    "line" : 3,
+    "parent" : 4,
+    "path" : "Swift.SingleValueDecodingContainer.decode",
+    "severity" : "note",
+    "text" : "requirement 'decode' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 266,
+    "path" : "Sources/XMLCoder/Encoder/XMLEncoder.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (any CodingKey) -> XMLEncoder.NodeEncoding?' may introduce data races"
+  }
+]

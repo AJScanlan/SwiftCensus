@@ -1,0 +1,89 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 10,
+    "path" : "BVSwift/BVAnalytics/BVAnalyticsManagerAppState.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "BVSwift/BVAnalytics/BVAnalyticsManagerAppState.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'BVSwift'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "BVSwift/BVAnalytics/Model/BVAnalyticsRemoteLog.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "BVSwift/BVCommon/Utilities/BVUtilities.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "BVSwift/BVConversations/Display/Fields/Types/BVIncentivizedStats.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "BVSwift/BVConversations/Display/Types/BVMultiProductQuery.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "BVSwift/BVConversations/Model/BVPhoto.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 9,
+    "parent" : 0,
+    "path" : "BVSwift/BVRecommendations/BVRecommendationsAnalytics.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

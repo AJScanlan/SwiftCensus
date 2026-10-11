@@ -1,0 +1,67 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 2,
+    "path" : "Sources/FabBar/Internal/Constants.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "Sources/FabBar/Internal/Constants.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'FabBar'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "Sources/FabBar/Internal/FabBarRepresentable.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Sources/FabBar/Internal/GlassTabBarView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Sources/FabBar/Internal/TabBarSegmentedControl.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Sources/FabBar/Internal/TabItemContentView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  }
+]

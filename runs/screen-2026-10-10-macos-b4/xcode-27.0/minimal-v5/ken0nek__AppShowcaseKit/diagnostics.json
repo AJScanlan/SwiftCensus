@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 112,
+    "path" : "Sources/AppShowcaseCore/ShowcaseLoader.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable () -> Date' may introduce data races"
+  }
+]

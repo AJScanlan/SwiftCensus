@@ -1,0 +1,25 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 713,
+    "path" : "Sources/TextureMap/TextureMap.swift",
+    "severity" : "warning",
+    "text" : "'pixelBuffer(texture:colorSpace:)' is deprecated: Moving from a CGImage based approach to a raw bytes approach."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "id" : "note_deprecated_rename",
+    "line" : 713,
+    "parent" : 0,
+    "path" : "Sources/TextureMap/TextureMap.swift",
+    "severity" : "note",
+    "text" : "use 'pixelBuffer(texture:)' instead"
+  }
+]

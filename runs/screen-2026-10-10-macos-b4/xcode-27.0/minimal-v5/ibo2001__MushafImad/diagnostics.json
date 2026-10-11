@@ -1,0 +1,98 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 34,
+    "path" : "Sources/MushafImad/Core/Models/Part.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated static property 'mock' can not be referenced from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "kind_declared_here",
+    "line" : 49,
+    "parent" : 0,
+    "path" : "Sources/MushafImad/Core/Models/Verse.swift",
+    "severity" : "note",
+    "text" : "static property declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 35,
+    "path" : "Sources/MushafImad/Core/Models/Part.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated static property 'mock' can not be referenced from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "kind_declared_here",
+    "line" : 34,
+    "parent" : 2,
+    "path" : "Sources/MushafImad/Core/Models/Page.swift",
+    "severity" : "note",
+    "text" : "static property declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 7,
+    "fixIts" : 1,
+    "group" : "VariableNeverMutated",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/variable-never-mutated",
+    "id" : "variable_never_mutated",
+    "line" : 37,
+    "path" : "Sources/MushafImad/Core/Models/Part.swift",
+    "severity" : "warning",
+    "text" : "variable 'resolvedChapter' was never mutated; consider changing to 'let' constant"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 44,
+    "path" : "Sources/MushafImad/Core/Models/Quarter.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated static property 'mock' can not be referenced from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "kind_declared_here",
+    "line" : 49,
+    "parent" : 5,
+    "path" : "Sources/MushafImad/Core/Models/Verse.swift",
+    "severity" : "note",
+    "text" : "static property declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 45,
+    "path" : "Sources/MushafImad/Core/Models/Quarter.swift",
+    "severity" : "error",
+    "text" : "main actor-isolated static property 'mock' can not be referenced from a nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "kind_declared_here",
+    "line" : 34,
+    "parent" : 7,
+    "path" : "Sources/MushafImad/Core/Models/Page.swift",
+    "severity" : "note",
+    "text" : "static property declared here"
+  }
+]

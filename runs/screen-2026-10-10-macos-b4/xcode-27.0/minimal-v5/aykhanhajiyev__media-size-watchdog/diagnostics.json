@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "conformance_availability_unavailable",
+    "line" : 29,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'URLProtocol' to 'Sendable' is unavailable in macOS; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "conformance_availability_marked_unavailable",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "",
+    "severity" : "note",
+    "text" : "conformance of 'URLProtocol' to 'Sendable' has been explicitly marked unavailable here"
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 22,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 5,
+    "path" : "/var/folders/mm/f9qxbf7s2s7djjs44q1cff2r0000gn/T/swift-generated-sources/@__swiftmacro_10MushafImad0033ReadingProgressTrackerswift_DbGHjfMX431_23_9PredicatefMf_.swift",
+    "severity" : "warning",
+    "text" : "type 'KeyPath<ReadingSession, Int>' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "in_macro_expansion",
+    "line" : 432,
+    "parent" : 0,
+    "path" : "Sources/MushafImad/EyeTracking/ReadingProgressTracker.swift",
+    "severity" : "note",
+    "text" : "in expansion of macro 'Predicate' here"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "redundant_conformance_adhoc",
+    "line" : 21,
+    "path" : "Sources/MushafImad/Core/Extensions/PlatformImage+Extension.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'NSImage' to protocol 'Sendable' was already stated in the type's module 'AppKit'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "declared_protocol_conformance_here",
+    "line" : 2,
+    "parent" : 3,
+    "path" : "AppKit.NSImage",
+    "severity" : "note",
+    "text" : "'NSImage' declares conformance to protocol 'Sendable' here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 7,
+    "fixIts" : 1,
+    "group" : "VariableNeverMutated",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/variable-never-mutated",
+    "id" : "variable_never_mutated",
+    "line" : 37,
+    "path" : "Sources/MushafImad/Core/Models/Part.swift",
+    "severity" : "warning",
+    "text" : "variable 'resolvedChapter' was never mutated; consider changing to 'let' constant"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 433,
+    "path" : "Sources/MushafImad/EyeTracking/ReadingProgressTracker.swift",
+    "severity" : "warning",
+    "text" : "type 'KeyPath<ReadingSession, Date>' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 6,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 444,
+    "path" : "Sources/MushafImad/EyeTracking/ReadingProgressTracker.swift",
+    "severity" : "warning",
+    "text" : "type 'KeyPath<ReadingSession, Date>' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 8,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  }
+]
