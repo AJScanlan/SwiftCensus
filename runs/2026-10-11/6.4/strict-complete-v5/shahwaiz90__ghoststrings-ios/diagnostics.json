@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "sema_no_import",
+    "line" : 2,
+    "path" : "Sources/GhostStrings/GhostStrings.swift",
+    "severity" : "error",
+    "text" : "no such module 'Combine'"
+  }
+]

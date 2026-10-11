@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 29,
+    "path" : ".build/checkouts/SwiftSDL3/Sources/SwiftSDL3/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c",
+    "severity" : "fatal",
+    "text" : "'wayland-util.h' file not found"
+  }
+]

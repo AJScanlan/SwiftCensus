@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "sema_no_import",
+    "line" : 8,
+    "path" : "Sources/SSImageKitEngine/Configurations/EngineConfiguration.swift",
+    "severity" : "error",
+    "text" : "no such module 'CoreGraphics'"
+  }
+]

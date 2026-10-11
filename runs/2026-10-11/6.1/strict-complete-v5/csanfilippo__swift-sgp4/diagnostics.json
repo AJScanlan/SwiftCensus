@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 0,
+    "fixIts" : 0,
+    "id" : "api_pattern_attr_ignored",
+    "line" : 0,
+    "path" : "<unknown>",
+    "severity" : "warning",
+    "text" : "'import_owned' Swift attribute ignored on type 'basic_string': type is not copyable or destructible"
+  }
+]
