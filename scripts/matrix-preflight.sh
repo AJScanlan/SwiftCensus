@@ -30,6 +30,13 @@ git rev-parse --verify --quiet "$FREEZE^{commit}" >/dev/null || fail "$FREEZE is
 [[ -z "$(git status --porcelain -- tools corpus)" ]] || fail "tools/ or corpus/ has uncommitted changes"
 [[ -z "$(git diff --name-only "$FREEZE" HEAD -- tools corpus)" ]] || fail "tools/ or corpus/ changed since $FREEZE"
 
+# The runs use the release binary, and `run.json` records HEAD, not what the binary was built from. Building here
+# (seconds when current) makes the binary match the tree by construction. An mtime check cannot: SwiftPM does not relink
+# an unchanged output, so a checkout or touch leaves a correct binary looking older than its sources.
+BIN=tools/.build/release/census
+swift build -c release --package-path tools >/dev/null 2>&1 || fail "swift build -c release --package-path tools failed"
+[[ -x "$BIN" ]] || fail "$BIN is missing after the release build"
+
 free_kb="$(df -k . | tail -1 | tr -s ' ' | cut -d' ' -f4)"
 (( free_kb >= MIN_FREE_GB * 1024 * 1024 )) || fail "only $((free_kb / 1024 / 1024)) GB free; need $MIN_FREE_GB"
 
@@ -39,8 +46,15 @@ case "$PLATFORM" in
     for pair in "${IMAGES[@]}"; do
       image="${pair%%=*}"
       want="${pair#*=}"
-      # One image per call: on this Docker, `docker image inspect a b` reports bare `swift:` tags as missing.
-      got="$(docker image inspect --format '{{.Id}}' "$image" 2>/dev/null)" || fail "$image is not present (do not pull: ADR 0008)"
+      # One image per call, retried: on this Docker the first inspect of a bare `swift:` tag after a pause can report
+      # "No such image" for an image that is present (as can `docker image inspect a b`).
+      got=""
+      for _ in 1 2 3; do
+        got="$(docker image inspect --format '{{.Id}}' "$image" 2>/dev/null)" && break
+        got=""
+        sleep 1
+      done
+      [[ -n "$got" ]] || fail "$image is not present (do not pull: ADR 0008)"
       [[ "$got" == "$want" ]] || fail "$image is $got; ADR 0008 pins $want"
     done
     ;;
