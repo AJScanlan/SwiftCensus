@@ -1,0 +1,92 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 29,
+    "path" : "Sources/HangulKit/Core/josa.swift",
+    "severity" : "warning",
+    "text" : "static property '로_조사' is not concurrency-safe because non-'Sendable' type '[HangulKit.JosaOption]' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 10,
+    "parent" : 0,
+    "path" : "Sources/HangulKit/Core/josa.swift",
+    "severity" : "note",
+    "text" : "consider making enum 'JosaOption' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 29,
+    "parent" : 0,
+    "path" : "Sources/HangulKit/Core/josa.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property '로_조사' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 29,
+    "parent" : 0,
+    "path" : "Sources/HangulKit/Core/josa.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 171,
+    "path" : "Sources/HangulKit/_internal/HangulKit.swift",
+    "severity" : "warning",
+    "text" : "static property 'curriedCombineCharacter' is not concurrency-safe because non-'Sendable' type '(Character) -> (Character) -> (Character?) -> Character?' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 0,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 0,
+    "parent" : 4,
+    "path" : "<unknown>",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 171,
+    "parent" : 4,
+    "path" : "Sources/HangulKit/_internal/HangulKit.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'curriedCombineCharacter' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 171,
+    "parent" : 4,
+    "path" : "Sources/HangulKit/_internal/HangulKit.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]

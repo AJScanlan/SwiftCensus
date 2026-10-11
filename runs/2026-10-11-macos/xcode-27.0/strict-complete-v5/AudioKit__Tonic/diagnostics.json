@@ -1,0 +1,93 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 310,
+    "path" : "Sources/Tonic/Chord.swift",
+    "severity" : "warning",
+    "text" : "'getAllChordsForNoteSet' is deprecated: Please use getRankedChords() for higher quality chord detection"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 310,
+    "parent" : 0,
+    "path" : "Sources/Tonic/Chord.swift",
+    "severity" : "note",
+    "text" : "use 'getRankedChords' instead"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 7,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'ChordTable' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 6,
+    "parent" : 2,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "note",
+    "text" : "class 'ChordTable' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 7,
+    "parent" : 2,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 7,
+    "parent" : 2,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 71,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "warning",
+    "text" : "'generateAllChordsIncludingEnharmonic()' is deprecated: Please use getRankedChords() for higher quality chord detection"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 71,
+    "parent" : 6,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "note",
+    "text" : "use 'getRankedChords()' instead"
+  }
+]

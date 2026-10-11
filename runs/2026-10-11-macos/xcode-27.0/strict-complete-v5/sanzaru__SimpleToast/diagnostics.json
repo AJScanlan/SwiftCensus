@@ -1,0 +1,14 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 37,
+    "path" : "Sources/SimpleToast/Modifier/SimpleToastSlide.swift",
+    "severity" : "warning",
+    "text" : "'animation' was deprecated in macOS 12.0: Use withAnimation or animation(_:value:) instead."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "corpus_manifest_sha256" : "bca2cc3ebd37ddda89d73d6c35cff47330613abd8155665c758472cd0ac285f4",
+  "host_platform" : "macOS guest (Lima/vz): ProductName:\t\tmacOS; ProductVersion:\t\t27.0.1; BuildVersion:\t\t26A434; Xcode 27.0; Build version 27A266a; swift-driver version: 1.168.6 Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+  "modes" : [
+    "strict-complete-v5",
+    "strict-complete-declared",
+    "minimal-v5"
+  ],
+  "platform" : "macos-spm",
+  "run_id" : "2026-10-11-macos",
+  "schema_version" : 1,
+  "started_at" : "2026-10-11T16:43:26Z",
+  "test_targets_built" : false,
+  "toolchains" : {
+    "xcode-27.0" : "lima:census-macos"
+  },
+  "tools_git_commit" : "8605d85e158b2bb358e269b93948e303dcaa5d64",
+  "tools_git_dirty" : false
+}

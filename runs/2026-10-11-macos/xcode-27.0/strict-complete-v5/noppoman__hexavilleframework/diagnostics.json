@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 326,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/PendingDatagramWritesManager.swift",
+    "severity" : "error",
+    "text" : "type 'MarkedCircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  }
+]

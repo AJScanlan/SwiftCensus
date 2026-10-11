@@ -1,0 +1,141 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 72,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/FrameReader.swift",
+    "severity" : "warning",
+    "text" : "capture of 'coordinateSpace' with non-Sendable type 'CoordinateSpace' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "external",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "sendable_conformance_is_suppressed",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "SwiftUI.CoordinateSpace",
+    "severity" : "note",
+    "text" : "enum 'CoordinateSpace' explicitly suppresses conformance to 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "group" : "AddPreconcurrencyImport",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/add-preconcurrency-import",
+    "id" : "add_predates_concurrency_import",
+    "line" : 8,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/FrameReader.swift",
+    "severity" : "warning",
+    "text" : "add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'SwiftUICore'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 121,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/FrameReader.swift",
+    "severity" : "warning",
+    "text" : "capture of 'coordinateSpace' with non-Sendable type 'CoordinateSpace' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "external",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "sendable_conformance_is_suppressed",
+    "line" : 2,
+    "parent" : 3,
+    "path" : "SwiftUI.CoordinateSpace",
+    "severity" : "note",
+    "text" : "enum 'CoordinateSpace' explicitly suppresses conformance to 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 72,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/OriginReader.swift",
+    "severity" : "warning",
+    "text" : "capture of 'coordinateSpace' with non-Sendable type 'CoordinateSpace' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "external",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "sendable_conformance_is_suppressed",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "SwiftUI.CoordinateSpace",
+    "severity" : "note",
+    "text" : "enum 'CoordinateSpace' explicitly suppresses conformance to 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "group" : "AddPreconcurrencyImport",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/add-preconcurrency-import",
+    "id" : "add_predates_concurrency_import",
+    "line" : 8,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/OriginReader.swift",
+    "severity" : "warning",
+    "text" : "add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'SwiftUICore'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 123,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/OriginReader.swift",
+    "severity" : "warning",
+    "text" : "capture of 'coordinateSpace' with non-Sendable type 'CoordinateSpace' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "external",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "sendable_conformance_is_suppressed",
+    "line" : 2,
+    "parent" : 8,
+    "path" : "SwiftUI.CoordinateSpace",
+    "severity" : "note",
+    "text" : "enum 'CoordinateSpace' explicitly suppresses conformance to 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 174,
+    "path" : "Sources/CoreGraphicsExtensions/Geometry/OriginReader.swift",
+    "severity" : "warning",
+    "text" : "capture of 'coordinateSpace' with non-Sendable type 'CoordinateSpace' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "external",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "sendable_conformance_is_suppressed",
+    "line" : 2,
+    "parent" : 10,
+    "path" : "SwiftUI.CoordinateSpace",
+    "severity" : "note",
+    "text" : "enum 'CoordinateSpace' explicitly suppresses conformance to 'Sendable' protocol"
+  }
+]
