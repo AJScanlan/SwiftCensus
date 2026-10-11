@@ -73,4 +73,72 @@ If SPI's export arrives later, `S-emit` is **not** re-drawn. The export becomes 
 
 ## Results
 
-_Empty until the screen has run. Then filled in factually: N drawn, the denominator table, the emit rate with its denominator, counts per tertile, instabilities, and whether D5 was applied. No interpretation beyond what the numbers support._
+Screen `screen-2026-10-10`, run 2026-10-11 (01:53–05:49Z) on Xcode 27.0 (27A266a, Apple Swift 6.4, swiftlang-6.4.0.34.1), guest macOS 27.0.1 (26A434). Candidates committed at `048b383`; outputs at `e412d5b`..`60d1c2e`; selection at `06fce75`.
+
+**N drawn: 300. D5 was not applied** (47 stable emitters ≥ 45).
+
+### Denominator (`census screen collect --with-verify`)
+
+| status | count |
+|---|---|
+| drawn | 300 |
+| unresolvable | 2 |
+| not_screenable | 97 |
+| &nbsp;&nbsp;build_failed | 97 |
+| clean | 151 |
+| emitter | 47 |
+| unstable | 0 |
+| minimal_failed | 3 |
+| infra_error | 0 |
+| sum | 300 |
+
+`clean` splits as 119 with 0 primary non-note diagnostics under `strict-complete-v5` and 32 with ≥1 diagnostic but `screen_count` 0.
+
+### Emit rate
+
+- `emitter / drawn` = 47 / 300 = **15.7%**.
+- `emitter / (drawn − unresolvable − not_screenable)` = 47 / 201 = **23.4%** (screenable candidates only; `minimal_failed` stays in this denominator).
+
+### Stability
+
+Verify pass `runs/screen-2026-10-10-macos-verify`: 47 emitters × 2 modes = 94 cells. Every emitter's `verify_screen_count` equals its `screen_count`, and no outcome differs. A7 over the 47 stable emitters: 94 cells compared, 94 set-identical. **Unstable: 0.**
+
+### Distribution and selection
+
+Stable-emitter `screen_count`, descending (sum 1312): 174, 151, 133, 105, 89, 70, 60, 55, 54, 54, 45, 42, 41, 34, 24, 17, 15, 15, 13, 12, 11, 11, 8, 8, 7, 7, 7, 6, 5, 5, 5, 3, 3, 3, 3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1.
+
+| tertile | emitters | `screen_count` range | selected |
+|---|---|---|---|
+| head | 16 | 174–17 | 10 |
+| middle | 16 | 15–3 | 10 |
+| tail | 15 | 3–1 | 10 |
+
+The middle/tail cut falls inside the four-way tie at count 3; ties are ordered by URL, so two count-3 packages are `middle` and two are `tail`. `S-emit` = 30, seed `20261010`. Every selected entry's `corpus/resolved/*.resolved` is byte-identical to the screened one.
+
+### Unresolvable
+
+- `Blaizzy/mlx-audio`: no `Package.swift` at the drawn SHA.
+- `mapbox/mapbox-navigation-ios`: a binary target's download returned HTTP 401.
+
+### `minimal_failed`
+
+All three are `built` under `strict-complete-v5` and `build_failed` under `minimal-v5`. The two cells' swiftc invocations differ only in `-strict-concurrency=`. The errors appear only under `minimal-v5`; the same source lines produce no diagnostic under `strict-complete-v5`.
+
+- `ezefranca/BibTeXKit` (complete: 2 primary diagnostics): 2 × `actor_isolated_call_decl` (error), at default argument values (`clipboardWriter: … = BibTeXSystemClipboard().write`, `feedback: … = BibTeXCopyFeedback()`).
+- `ibo2001/MushafImad` (complete: 4): 4 × `actor_isolated_non_self_reference` (error), at default argument values (`verse: Verse = .mock`).
+- `twinkling-reality/opennook` (complete: 3): 1 × `actor_isolated_call_decl` (error) in top-level code in `Examples/ShowcaseNook/main.swift`, plus 1 × `actor_isolated_non_self_reference` (warning).
+
+The status tool's expectation for this status was "~0". A probable mechanism for the first two is that `-strict-concurrency=complete` enables isolated default values (SE-0411) and `minimal` does not. That is **not verified**, and opennook's site is not a default argument. Consequence for D1: `minimal-v5` is not a strict subset of `strict-complete-v5`.
+
+### Observed during the run
+
+- `googleads/swift-package-manager-google-programmatic-access-library-tvos` is `not_screenable` (`build_failed`). Its only error is `NSCocoaErrorDomain Code=513` (a file "couldn't be removed because you don't have permission"), not a compiler diagnostic. It was classified by outcome, not retried as `infra_error`.
+- Of the 97 `not_screenable`, the failures inspected were at dependency scan or link time (`UIKit`/`MobileCoreServices` not found, `.xcframework`s without a macOS slice). They were not individually classified.
+
+### Not verified
+
+- The stability of non-emitters (Known bias 7).
+- The SE-0411 explanation above, and the cause of opennook's error.
+- Whether the Code 513 package would have built on a retry.
+- The per-reason breakdown of the 97 `build_failed` (iOS-only and other).
+- G2 (Linux 6.4 and nightly): it needs the `S-emit` matrix runs, which have not been done.

@@ -10,16 +10,20 @@ Raw per-run output (ROADMAP M1 item 4). Layout per cell:
 | `2026-10-04-rerun` | Identical inputs, re-run for the A7 check. |
 | `2026-10-10-macos` | First macOS run (ADR 0006): Lima guest, Xcode 27.0, one toolchain column, 39 cells. |
 | `2026-10-10-macos-rerun` | Re-run of the above in a fresh guest clone. |
+| `screen-2026-10-10-macos-b1` … `-b6` | The `S-emit` screen (ADR 0007): 300 candidates in six batches of 50, Xcode 27.0, `strict-complete-v5` plus `minimal-v5` where needed. 62 / 63 / 68 / 63 / 63 / 61 cells (380). |
+| `screen-2026-10-10-macos-verify` | Stability pass: the 47 emitters re-run in both modes in a fresh guest clone, 94 cells. |
 
 `census compare runs/2026-10-04 runs/2026-10-04-rerun` → **SET-IDENTICAL** over all 185 cells
 (155 cells with diagnostics compared as multisets; 30 whose equal outcomes carry none).
 `census compare runs/2026-10-10-macos runs/2026-10-10-macos-rerun` → **SET-IDENTICAL** over all 39 cells.
+`census screen collect --with-verify` → A7 over 47 stable emitters: 94 cells compared, 94 set-identical.
+Screen cells are candidates, not corpus entries; their results live in `screens/screen-2026-10-10/results.json`.
 Linux and macOS runs are never compared or summed (F6).
 
 ## What these runs are not
 
-- **Not the M1 exit.** `S-emit` is empty (waiting on the owner's SPI data or a decision to self-screen,
-  ADR 0004 §4), so G2 (did `S-emit` emit?) cannot be evaluated. `S-byproduct` is now measured, on macOS
+- **Not the M1 exit.** `S-emit` now has 30 entries, selected by the macOS screen (ADR 0007), but no
+  matrix run includes them yet, so G2 (as redefined in ADR 0007 D8) cannot be evaluated. `S-byproduct` is now measured, on macOS
   (ADR 0006): LedgerKit 0 diagnostics, GRDB 8 warnings.
 - **Not a result.** Roughly 40% of `S-control` cells are `build_failed`, mostly Apple-only code on
   Linux, and 6.1's wrapped identifiers are undecided (ADR 0005). Do not read frequencies off these.
