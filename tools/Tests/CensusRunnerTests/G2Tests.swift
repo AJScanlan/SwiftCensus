@@ -166,3 +166,23 @@ private func with(_ base: [RunStore.CellKey: RunStore.LoadedCell],
         #expect(try JSONDecoder().decode(G2.Report.self, from: Data(json.utf8)) == r)
     }
 }
+
+@Suite struct G2RenderTests {
+    @Test func endsWithTheVerdictAndMarksTheGatingColumn() {
+        let pass = G2.render(G2.evaluate(manifest: CorpusManifest(packages: population), cells: column(emitting: 15)))
+        #expect(pass.last == "G2 PASS")
+        #expect(pass.contains { $0.hasPrefix("6.4 [gating]: 15/30 emit (50.0%)") })
+        let fail = G2.render(G2.evaluate(manifest: CorpusManifest(packages: population), cells: column(emitting: 14)))
+        #expect(fail.last == "G2 FAIL")
+        let none = G2.render(G2.evaluate(manifest: CorpusManifest(packages: population), cells: [:]))
+        #expect(none.last == "G2 NOT EVALUABLE")
+        #expect(none.contains { $0.hasPrefix("not evaluable: 30 S-emit cells missing on 6.4") })
+    }
+
+    @Test func listsEveryNonEmittingGatingPackageWithItsOutcome() {
+        let cells = with(column(emitting: 29), cell("o/p29", .buildFailed, [diag(severity: .error)]))
+        let lines = G2.render(G2.evaluate(manifest: CorpusManifest(packages: population), cells: cells))
+        #expect(lines.contains("  not emitting on 6.4: o/p29 [tail] build_failed, primary non-note 1"))
+        #expect(lines.filter { $0.hasPrefix("  not emitting") }.count == 1)
+    }
+}

@@ -132,4 +132,37 @@ public enum G2 {
         }
         return c
     }
+
+    /// What `census gate g2` prints. The last line is always the verdict.
+    public static func render(_ r: Report) -> [String] {
+        var out = ["G2 (ADR 0008): gating column \(r.gatingToolchain), fails below \(percent(r.threshold)), "
+            + "population \(r.population)"]
+        for c in r.columns {
+            let tertiles = Tertile.allCases.map { t in
+                let n = c.byTertile[t.rawValue] ?? TertileCount()
+                return "\(t.rawValue) \(n.emits)/\(n.total)"
+            }.joined(separator: ", ")
+            out.append("\(c.toolchain)\(c.toolchain == r.gatingToolchain ? " [gating]" : ""): "
+                + "\(c.emits)/\(r.population) emit (\(percent(fraction(c.emits, r.population)))); "
+                + "any outcome \(c.emitsAnyOutcome)/\(r.population) (non-gating); \(tertiles); "
+                + "missing \(c.missing), infra_error \(c.infraError)")
+        }
+        if let g = r.gating {
+            for p in g.packages where !p.emits {
+                out.append("  not emitting on \(g.toolchain): \(p.packageId) [\(p.tertile?.rawValue ?? "?")] "
+                    + "\(p.outcome?.rawValue ?? "missing"), primary non-note \(p.primaryNonNoteCount)")
+            }
+        }
+        for reason in r.reasons { out.append("not evaluable: \(reason)") }
+        let verdict: String = switch r.verdict {
+        case .pass: "G2 PASS"
+        case .fail: "G2 FAIL"
+        case .notEvaluable: "G2 NOT EVALUABLE"
+        }
+        out.append(verdict)
+        return out
+    }
+
+    static func fraction(_ n: Int, _ d: Int) -> Double { d == 0 ? 0 : Double(n) / Double(d) }
+    static func percent(_ x: Double) -> String { String(format: "%.1f%%", 100 * x) }
 }

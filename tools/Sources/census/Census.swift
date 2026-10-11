@@ -10,7 +10,7 @@ import Yams
 struct Census: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "swift-diagnostic-census instrument.",
-        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self, Reclassify.self, ScreenCommand.self])
+        subcommands: [Validate.self, Select.self, Resolve.self, Run.self, Scan.self, Compare.self, Parse.self, Reclassify.self, ScreenCommand.self, Gate.self])
 }
 
 /// Everything resolves relative to the repository root (the current directory).
