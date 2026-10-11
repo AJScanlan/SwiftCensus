@@ -49,10 +49,24 @@ public enum MatrixRun {
         return cells
     }
 
+    /// Retried: on this Docker the first `image inspect` of a bare tag after a pause can say "No such image" for an image
+    /// that is present (observed 2026-10-11), and one failure here leaves a whole toolchain's cells without `image_id`.
     public static func imageID(_ image: String) async -> String? {
-        let r = try? await Shell.run("docker", ["image", "inspect", "--format", "{{.Id}}", image])
-        guard let r, r.succeeded else { return nil }
-        return r.stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
+        await firstResult(attempts: 3, pause: .seconds(1)) {
+            let r = try? await Shell.run("docker", ["image", "inspect", "--format", "{{.Id}}", image])
+            guard let r, r.succeeded else { return nil }
+            return r.stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+    }
+
+    /// The first non-nil result of up to `attempts` calls, pausing between them.
+    static func firstResult(attempts: Int, pause: Duration = .zero,
+                            _ attempt: () async -> String?) async -> String? {
+        for n in 1...attempts {
+            if let value = await attempt() { return value }
+            if (n < attempts) && (pause > .zero) { try? await Task.sleep(for: pause) }
+        }
+        return nil
     }
 
     /// Executes the plan with bounded parallelism. Existing cells are skipped unless `force`, which

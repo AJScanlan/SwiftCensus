@@ -280,3 +280,26 @@ import Testing
         #expect(try FileManager.default.contentsOfDirectory(atPath: url.deletingLastPathComponent().path) == ["cell.json"])
     }
 }
+
+/// Observed 2026-10-11: on this Docker, the first `docker image inspect <bare tag>` after a pause can report "No such
+/// image" for an image that is present. One failed lookup used to leave every cell of a toolchain with `image_id: nil`.
+@Suite struct ImageIDRetryTests {
+    actor Counter {
+        var calls = 0
+        func next() -> Int { calls += 1; return calls }
+    }
+
+    @Test func aTransientFailureIsRetried() async {
+        let counter = Counter()
+        let id = await MatrixRun.firstResult(attempts: 3) { await counter.next() >= 2 ? "sha256:x" : nil }
+        #expect(id == "sha256:x")
+        #expect(await counter.calls == 2)
+    }
+
+    @Test func givesUpAfterTheLastAttempt() async {
+        let counter = Counter()
+        let id = await MatrixRun.firstResult(attempts: 3) { _ = await counter.next(); return nil }
+        #expect(id == nil)
+        #expect(await counter.calls == 3)
+    }
+}
