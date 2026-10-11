@@ -1,0 +1,48 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated_rename",
+    "line" : 71,
+    "path" : "Sources/Snowdrop/Session/SessionDelegate.swift",
+    "severity" : "warning",
+    "text" : "'SecTrustGetCertificateAtIndex' was deprecated in macOS 12.0: renamed to 'SecTrustCopyCertificateChain(_:)'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 71,
+    "parent" : 0,
+    "path" : "Sources/Snowdrop/Session/SessionDelegate.swift",
+    "severity" : "note",
+    "text" : "use 'SecTrustCopyCertificateChain(_:)' instead"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated_rename",
+    "line" : 85,
+    "path" : "Sources/Snowdrop/Session/SessionDelegate.swift",
+    "severity" : "warning",
+    "text" : "'SecTrustGetCertificateAtIndex' was deprecated in macOS 12.0: renamed to 'SecTrustCopyCertificateChain(_:)'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 85,
+    "parent" : 2,
+    "path" : "Sources/Snowdrop/Session/SessionDelegate.swift",
+    "severity" : "note",
+    "text" : "use 'SecTrustCopyCertificateChain(_:)' instead"
+  }
+]

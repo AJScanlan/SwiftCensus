@@ -1,0 +1,143 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 5,
+    "path" : "Agrume/Agrume.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'UIKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/Agrume.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'Agrume'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 6,
+    "parent" : 0,
+    "path" : "Agrume/AgrumeCell.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/AgrumeDataSource.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/AgrumeImage.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/AgrumeOverlayView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/AgrumePhotoLibraryHelper.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 6,
+    "parent" : 0,
+    "path" : "Agrume/AgrumeView.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/Configuration.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 8,
+    "parent" : 0,
+    "path" : "Agrume/ImageDownloader.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "unresolved_import_location",
+    "line" : 5,
+    "parent" : 0,
+    "path" : "Agrume/UIKit+Agrume.swift",
+    "severity" : "note",
+    "text" : "also imported here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_scan_module_not_found",
+    "line" : 6,
+    "path" : "Agrume/ImageDownloader.swift",
+    "severity" : "error",
+    "text" : "unable to resolve module dependency: 'MobileCoreServices'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "dependency_as_imported_by_main_module",
+    "line" : 6,
+    "parent" : 11,
+    "path" : "Agrume/ImageDownloader.swift",
+    "severity" : "note",
+    "text" : "a dependency of main module 'Agrume'"
+  }
+]

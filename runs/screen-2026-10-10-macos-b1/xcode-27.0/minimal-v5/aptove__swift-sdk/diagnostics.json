@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "use_of_qq_on_non_optional_value",
+    "line" : 323,
+    "path" : "Samples/InteractiveClient/main.swift",
+    "severity" : "warning",
+    "text" : "left side of nil coalescing operator '??' has non-optional type 'String', so the right side is never used"
+  }
+]

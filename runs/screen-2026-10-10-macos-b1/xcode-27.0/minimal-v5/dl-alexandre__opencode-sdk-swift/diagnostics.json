@@ -1,0 +1,98 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 26,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'sessionQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 31,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'messagesQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 36,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'todosQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 59,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'projectQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 64,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'sessionsQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 69,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'configQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 90,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'providersQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 95,
+    "path" : "Sources/opencode-sdk-swift/Resources/batch.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'authQueryItems' in concurrently-executing code; this is an error in the Swift 6 language mode"
+  }
+]

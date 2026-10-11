@@ -1,0 +1,142 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 3,
+    "path" : "Sources/Bridge/lib/ConsumerConfigurationShims.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/ConsumerConfigurationShims.cpp:3:"
+  },
+  {
+    "attribution" : "generated",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 24,
+    "path" : ".build/artifacts/pkg/CxxPulsar/include/pulsar/Client.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/.build/artifacts/pkg/CxxPulsar/include/pulsar/Client.h:24:"
+  },
+  {
+    "attribution" : "generated",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 23,
+    "path" : ".build/artifacts/pkg/CxxPulsar/include/pulsar/Consumer.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/.build/artifacts/pkg/CxxPulsar/include/pulsar/Consumer.h:23:"
+  },
+  {
+    "attribution" : "generated",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 24,
+    "path" : ".build/artifacts/pkg/CxxPulsar/include/pulsar/ConsumerConfiguration.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/.build/artifacts/pkg/CxxPulsar/include/pulsar/ConsumerConfiguration.h:24:"
+  },
+  {
+    "attribution" : "generated",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 211,
+    "path" : ".build/artifacts/pkg/CxxPulsar/include/pulsar/Message.h",
+    "severity" : "error",
+    "text" : "no template named 'optional' in namespace 'std'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 2,
+    "path" : "Sources/Bridge/lib/ConsumerShim.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/ConsumerShim.cpp:2:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 2,
+    "path" : "Sources/Bridge/lib/ListenerShim.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/ListenerShim.cpp:2:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 1,
+    "path" : "Sources/Bridge/lib/LoggerShim.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/LoggerShim.cpp:1:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "path" : "Sources/Bridge/include/LoggerBridge.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/include/LoggerBridge.h:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 1,
+    "path" : "Sources/Bridge/lib/MessageBuilderShims.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/MessageBuilderShims.cpp:1:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 2,
+    "path" : "Sources/Bridge/include/MessageBuilderBridge.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/include/MessageBuilderBridge.h:2:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 3,
+    "path" : "Sources/Bridge/lib/ProducerConfigurationShims.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/ProducerConfigurationShims.cpp:3:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 2,
+    "path" : "Sources/Bridge/lib/ProducerShim.cpp",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Bridge/lib/ProducerShim.cpp:2:"
+  },
+  {
+    "attribution" : "generated",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 22,
+    "path" : ".build/artifacts/pkg/CxxPulsar/include/pulsar/Producer.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/.build/artifacts/pkg/CxxPulsar/include/pulsar/Producer.h:22:"
+  }
+]

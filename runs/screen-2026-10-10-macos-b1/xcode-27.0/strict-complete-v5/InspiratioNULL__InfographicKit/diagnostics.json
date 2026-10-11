@@ -1,0 +1,104 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 131,
+    "path" : "Sources/InfographicKit/InfographicKit.swift",
+    "severity" : "warning",
+    "text" : "static property 'dark' is not concurrency-safe because non-'Sendable' type 'InfographicTheme' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 104,
+    "parent" : 0,
+    "path" : "Sources/InfographicKit/InfographicKit.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'InfographicTheme' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 131,
+    "parent" : 0,
+    "path" : "Sources/InfographicKit/InfographicKit.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'dark' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 131,
+    "parent" : 0,
+    "path" : "Sources/InfographicKit/InfographicKit.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 33,
+    "path" : "Examples/LinkEducationDemo/LinkEducationDemoApp.swift",
+    "severity" : "warning",
+    "text" : "static property 'sections' is not concurrency-safe because non-'Sendable' type '[DemonstrationSection]' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 15,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 4,
+    "path" : "InfographicKit.DemonstrationSection",
+    "severity" : "note",
+    "text" : "struct 'DemonstrationSection' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "group" : "AddPreconcurrencyImport",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/add-preconcurrency-import",
+    "id" : "add_predates_concurrency_import",
+    "line" : 1,
+    "path" : "Examples/LinkEducationDemo/LinkEducationDemoApp.swift",
+    "severity" : "warning",
+    "text" : "add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'InfographicKit'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 33,
+    "parent" : 6,
+    "path" : "Examples/LinkEducationDemo/LinkEducationDemoApp.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'sections' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 33,
+    "parent" : 6,
+    "path" : "Examples/LinkEducationDemo/LinkEducationDemoApp.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]

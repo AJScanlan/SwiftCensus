@@ -1,0 +1,94 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 2,
+    "group" : "TrailingClosureMatching",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/trailing-closure-matching",
+    "id" : "unlabeled_trailing_closure_deprecated",
+    "line" : 53,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "warning",
+    "text" : "backward matching of the unlabeled trailing closure is deprecated; label the argument with 'onCancel' to suppress this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 25,
+    "parent" : 0,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "note",
+    "text" : "'init(onExecute:onCancel:)' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 2,
+    "group" : "TrailingClosureMatching",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/trailing-closure-matching",
+    "id" : "unlabeled_trailing_closure_deprecated",
+    "line" : 64,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "warning",
+    "text" : "backward matching of the unlabeled trailing closure is deprecated; label the argument with 'onCancel' to suppress this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 25,
+    "parent" : 2,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "note",
+    "text" : "'init(onExecute:onCancel:)' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 2,
+    "group" : "TrailingClosureMatching",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/trailing-closure-matching",
+    "id" : "unlabeled_trailing_closure_deprecated",
+    "line" : 69,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "warning",
+    "text" : "backward matching of the unlabeled trailing closure is deprecated; label the argument with 'onCancel' to suppress this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 25,
+    "parent" : 4,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "note",
+    "text" : "'init(onExecute:onCancel:)' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 2,
+    "group" : "TrailingClosureMatching",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/trailing-closure-matching",
+    "id" : "unlabeled_trailing_closure_deprecated",
+    "line" : 78,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "warning",
+    "text" : "backward matching of the unlabeled trailing closure is deprecated; label the argument with 'onCancel' to suppress this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 25,
+    "parent" : 6,
+    "path" : "Sources/A2ATesting/Mocks/MockAgentExecutor.swift",
+    "severity" : "note",
+    "text" : "'init(onExecute:onCancel:)' declared here"
+  }
+]

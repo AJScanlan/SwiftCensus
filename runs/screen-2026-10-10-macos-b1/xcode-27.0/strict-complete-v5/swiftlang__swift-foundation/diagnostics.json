@@ -1,0 +1,91 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 357,
+    "path" : "Sources/FoundationEssentials/AttributedString/AttributedString+Runs.swift",
+    "severity" : "warning",
+    "text" : "'distance(to:)' is deprecated: AttributedString.Runs.Index should not be used as a Strideable and should instead be offset using the API provided by AttributedString.Runs"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 385,
+    "path" : "Sources/FoundationEssentials/AttributedString/AttributedString+Runs.swift",
+    "severity" : "warning",
+    "text" : "'advanced(by:)' is deprecated: AttributedString.Runs.Index should not be used as a Strideable and should instead be offset using the API provided by AttributedString.Runs"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "pbd_never_used",
+    "line" : 211,
+    "path" : "Sources/FoundationEssentials/Formatting/DateComponents+ISO8601FormatStyle.swift",
+    "severity" : "warning",
+    "text" : "initialization of immutable value 'asciiNull' was never used; consider replacing with assignment to '_' or removing it"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 105,
+    "fixIts" : 0,
+    "id" : "passing_noattrfunc_to_attrfunc",
+    "line" : 193,
+    "path" : "Sources/FoundationEssentials/NotificationCenter/MainActorMessage.swift",
+    "severity" : "warning",
+    "text" : "passing non-Sendable parameter 'observer' to function expecting a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 1,
+    "id" : "noescape_parameter",
+    "line" : 180,
+    "parent" : 3,
+    "path" : "Sources/FoundationEssentials/NotificationCenter/MainActorMessage.swift",
+    "severity" : "note",
+    "text" : "parameter 'observer' is implicitly non-Sendable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 105,
+    "fixIts" : 0,
+    "id" : "converting_func_loses_global_actor",
+    "line" : 193,
+    "path" : "Sources/FoundationEssentials/NotificationCenter/MainActorMessage.swift",
+    "severity" : "warning",
+    "text" : "converting function value of type '@MainActor (Message) -> Void' to '@Sendable (Message) -> Void' loses global actor 'MainActor'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 61,
+    "fixIts" : 2,
+    "id" : "trailing_closure_requires_parens",
+    "line" : 515,
+    "path" : "Sources/FoundationEssentials/PropertyList/XMLPlistScanner.swift",
+    "severity" : "warning",
+    "text" : "trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "group" : "VariableNeverMutated",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/variable-never-mutated",
+    "id" : "variable_never_mutated",
+    "line" : 516,
+    "path" : "Sources/FoundationInternationalization/Formatting/ListFormatterImpl.swift",
+    "severity" : "warning",
+    "text" : "variable 'item' was never mutated; consider changing to 'let' constant"
+  }
+]

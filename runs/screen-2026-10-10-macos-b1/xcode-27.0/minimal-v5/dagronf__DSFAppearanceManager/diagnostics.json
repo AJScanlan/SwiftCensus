@@ -1,0 +1,69 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "debug_description_in_string_interpolation_segment",
+    "line" : 125,
+    "path" : "Sources/DSFAppearanceManager/DSFAppearanceManager.swift",
+    "severity" : "warning",
+    "text" : "string interpolation produces a debug description for an optional value; did you mean to make this explicit?"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 1,
+    "id" : "default_optional_parameter",
+    "line" : 125,
+    "parent" : 0,
+    "path" : "Sources/DSFAppearanceManager/DSFAppearanceManager.swift",
+    "severity" : "note",
+    "text" : "use a default value parameter to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 1,
+    "id" : "default_optional_to_any",
+    "line" : 125,
+    "parent" : 0,
+    "path" : "Sources/DSFAppearanceManager/DSFAppearanceManager.swift",
+    "severity" : "note",
+    "text" : "provide a default value to avoid this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 2,
+    "id" : "silence_debug_description_in_interpolation_segment_call",
+    "line" : 125,
+    "parent" : 0,
+    "path" : "Sources/DSFAppearanceManager/DSFAppearanceManager.swift",
+    "severity" : "note",
+    "text" : "use 'String(describing:)' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 43,
+    "path" : "Sources/DSFAppearanceManager/NSWindow+Appearance.swift",
+    "severity" : "warning",
+    "text" : "'current' was deprecated in macOS 12.0: Use -performAsCurrentDrawingAppearance: to temporarily set the drawing appearance, or +currentDrawingAppearance to access the currently drawing appearance."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 44,
+    "path" : "Sources/DSFAppearanceManager/NSWindow+Appearance.swift",
+    "severity" : "warning",
+    "text" : "'current' was deprecated in macOS 12.0: Use -performAsCurrentDrawingAppearance: to temporarily set the drawing appearance, or +currentDrawingAppearance to access the currently drawing appearance."
+  }
+]

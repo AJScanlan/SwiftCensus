@@ -1,0 +1,292 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 22,
+    "fixIts" : 1,
+    "id" : "standalone_dollar_identifier",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'$' is not an identifier; use backticks to escape it"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 33,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 61,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 61,
+    "fixIts" : 1,
+    "id" : "standalone_dollar_identifier",
+    "line" : 68,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'$' is not an identifier; use backticks to escape it"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 22,
+    "fixIts" : 1,
+    "id" : "standalone_dollar_identifier",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'$' is not an identifier; use backticks to escape it"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 33,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 1,
+    "id" : "computed_property_missing_type",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "computed property must have an explicit type"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 34,
+    "fixIts" : 1,
+    "id" : "let_cannot_be_computed_property",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'let' declarations cannot be computed properties"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 40,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 40,
+    "fixIts" : 1,
+    "id" : "standalone_dollar_identifier",
+    "line" : 87,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'$' is not an identifier; use backticks to escape it"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 22,
+    "fixIts" : 1,
+    "id" : "standalone_dollar_identifier",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'$' is not an identifier; use backticks to escape it"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 1,
+    "id" : "expected_separator",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected ',' separator"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "invalid_postfix_operator",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "operator with postfix spacing cannot start a subexpression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 33,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 36,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 1,
+    "id" : "computed_property_missing_type",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "computed property must have an explicit type"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 34,
+    "fixIts" : 1,
+    "id" : "let_cannot_be_computed_property",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "'let' declarations cannot be computed properties"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 40,
+    "fixIts" : 1,
+    "id" : "statement_same_line_without_semi",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "consecutive statements on a line must be separated by ';'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "expected_expr",
+    "line" : 101,
+    "path" : ".build/checkouts/swift-cardano-chain/Sources/SwiftCardanoChain/Utilities/AdaHandleUtils.swift",
+    "severity" : "error",
+    "text" : "expected expression"
+  }
+]

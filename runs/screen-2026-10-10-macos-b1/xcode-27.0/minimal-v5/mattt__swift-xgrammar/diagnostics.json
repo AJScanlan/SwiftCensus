@@ -1,0 +1,1083 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 8,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/compiled_grammar.cc:8:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 18,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar_impl.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/compiled_grammar_impl.h:18:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 86,
+    "path" : "Sources/Cxgrammar/cpp/grammar_impl.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 8,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/compiled_grammar.cc:8:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 18,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar_impl.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/compiled_grammar_impl.h:18:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/earley_parser.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/earley_parser.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 10,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar.cc:10:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.h:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 19,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_compiler.cc:19:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 20,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_matcher.cc:20:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 16,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_parser.cc:16:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/grammar_printer.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_printer.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "parent" : 2,
+    "path" : "Sources/Cxgrammar/cpp/structural_tag.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/structural_tag.cc:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 65,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 154,
+    "path" : "Sources/Cxgrammar/cpp/grammar_impl.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 10,
+    "parent" : 14,
+    "path" : "Sources/Cxgrammar/cpp/grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar.cc:10:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 22,
+    "parent" : 14,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_compiler.cc:22:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "parent" : 14,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "parent" : 14,
+    "path" : "Sources/Cxgrammar/cpp/structural_tag.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/structural_tag.cc:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 34,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 58,
+    "path" : "Sources/Cxgrammar/cpp/compiled_grammar.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "path" : "Sources/Cxgrammar/cpp/earley_parser.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/earley_parser.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 207,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1086,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1090,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1237,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1240,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1372,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1375,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1464,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1494,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 58,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 320,
+    "parent" : 31,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "note",
+    "text" : "in instantiation of member function 'xgrammar::FSMImplBase<std::vector<std::vector<xgrammar::FSMEdge>>>::NumStates' requested here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 74,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 79,
+    "path" : "Sources/Cxgrammar/cpp/support/union_find_set.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Semantic Issue",
+    "line" : 1055,
+    "parent" : 33,
+    "path" : "Sources/Cxgrammar/cpp/fsm.cc",
+    "severity" : "note",
+    "text" : "in instantiation of member function 'xgrammar::UnionFindSet<int>::Count' requested here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 77,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 358,
+    "path" : "Sources/Cxgrammar/cpp/fsm_builder.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 53,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 394,
+    "path" : "Sources/Cxgrammar/cpp/fsm_builder.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 408,
+    "path" : "Sources/Cxgrammar/cpp/fsm_builder.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 55,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 435,
+    "path" : "Sources/Cxgrammar/cpp/fsm_builder.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 10,
+    "path" : "Sources/Cxgrammar/cpp/grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar.cc:10:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.h",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.h:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 75,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 73,
+    "path" : "Sources/Cxgrammar/cpp/grammar_builder.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 10,
+    "parent" : 41,
+    "path" : "Sources/Cxgrammar/cpp/grammar.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar.cc:10:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 22,
+    "parent" : 41,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_compiler.cc:22:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "parent" : 41,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "parent" : 41,
+    "path" : "Sources/Cxgrammar/cpp/structural_tag.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/structural_tag.cc:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 233,
+    "path" : "Sources/Cxgrammar/cpp/grammar_builder.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 19,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_compiler.cc:19:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 131,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 205,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'decltype(__x.base() - __y.base())' (aka 'long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 212,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'decltype(__x.base() - __y.base())' (aka 'long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 230,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'decltype(__x.base() - __y.base())' (aka 'long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 430,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'decltype(__x.base() - __y.base())' (aka 'long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 83,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 830,
+    "path" : "Sources/Cxgrammar/cpp/grammar_compiler.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "path" : "Sources/Cxgrammar/cpp/grammar_functor.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_functor.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 20,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_matcher.cc:20:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 21,
+    "path" : "Sources/Cxgrammar/cpp/support/int_set.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 22,
+    "path" : "Sources/Cxgrammar/cpp/support/int_set.h",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 101,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 102,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 150,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 151,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 547,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 586,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 34,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 719,
+    "path" : "Sources/Cxgrammar/cpp/grammar_matcher.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'decltype(__x.base() - __y.base())' (aka 'long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 16,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_parser.cc:16:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 895,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 895,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 69,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1058,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 80,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1062,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 66,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1068,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1073,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 80,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1078,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1089,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1098,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 76,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1104,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1116,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 60,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1125,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 76,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1131,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 77,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1140,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1148,
+    "path" : "Sources/Cxgrammar/cpp/grammar_parser.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 6,
+    "path" : "Sources/Cxgrammar/cpp/grammar_printer.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/grammar_printer.cc:6:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 94,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1146,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 94,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1168,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 94,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1202,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 92,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1223,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 94,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1249,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 92,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1275,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 94,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1349,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 92,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1390,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 76,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2248,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 71,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2264,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2263,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2297,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2294,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 2464,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 81,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 3189,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 81,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 3190,
+    "path" : "Sources/Cxgrammar/cpp/json_schema_converter.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "group" : "",
+    "line" : 14,
+    "path" : "Sources/Cxgrammar/cpp/structural_tag.cc",
+    "severity" : "note",
+    "text" : "in file included from /Users/aj.guest/pkg/Sources/Cxgrammar/cpp/structural_tag.cc:14:"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 79,
+    "path" : "Sources/Cxgrammar/cpp/testing.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 87,
+    "path" : "Sources/Cxgrammar/cpp/testing.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 94,
+    "path" : "Sources/Cxgrammar/cpp/testing.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 110,
+    "path" : "Sources/Cxgrammar/cpp/testing.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'const int64_t' (aka 'const long long') to 'int32_t' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 291,
+    "path" : "Sources/Cxgrammar/cpp/tokenizer_info.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 308,
+    "path" : "Sources/Cxgrammar/cpp/tokenizer_info.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 72,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 315,
+    "path" : "Sources/Cxgrammar/cpp/tokenizer_info.cc",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'value_type' (aka 'int')"
+  }
+]
