@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "fzswiftutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/flocked/FZSwiftUtils.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d669dabaee35520adbbcfb80691eda2793c8e941"
+      }
+    }
+  ],
+  "version" : 2
+}

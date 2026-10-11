@@ -36,14 +36,16 @@ packages:
 - id: AJScanlan/LedgerKit
   platforms:
   - macos-spm
-  selection: 'root of the byproduct graph: the code the instrument is pointed at; main HEAD on 2026-10-04; Linux: imports FoundationModels, an Apple-only framework (A12: macOS-only, blocked on F3 machine)'
+  selection: 'root of the byproduct graph: the code the instrument is pointed at; main HEAD on 2026-10-04; Linux: imports
+    FoundationModels, an Apple-only framework (A12: macOS-only, blocked on F3 machine)'
   sha: fa91db071714c0e6c69a3f0727001514f7d09312
   stratum: S-byproduct
   url: https://github.com/AJScanlan/LedgerKit
 - id: groue/GRDB.swift
   platforms:
   - macos-spm
-  selection: 'LedgerKit''s only dependency: revision pinned in LedgerKit/Package.resolved (v7.11.1); Linux: needs system libsqlite3 headers, absent from the Linux toolchain image (A12: macOS-only, blocked on F3 machine)'
+  selection: 'LedgerKit''s only dependency: revision pinned in LedgerKit/Package.resolved (v7.11.1); Linux: needs system libsqlite3
+    headers, absent from the Linux toolchain image (A12: macOS-only, blocked on F3 machine)'
   sha: b83108d10f42680d78f23fe4d4d80fc88dab3212
   stratum: S-byproduct
   url: https://github.com/groue/GRDB.swift
@@ -61,7 +63,8 @@ packages:
   - macos-spm
   selection: seed=20261004 draw-position=24 PackageList@4dc1035a98457e87f4d2c5649a33cd43ee6b80e8 HEAD of main on 2026-10-04
   sha: 86db5f7c89d35911e44d16be9eeadddc40653b34
-  skip_reason: 'unresolvable: dependency https://github.com/Lancelotbronner/swift-bits cannot be cloned (credentials required or repo removed)'
+  skip_reason: 'unresolvable: dependency https://github.com/Lancelotbronner/swift-bits cannot be cloned (credentials required
+    or repo removed)'
   stratum: S-control
   url: https://github.com/Lancelotbronner/swift-opentdd-grf
 - id: Recouse/EventSource
@@ -288,4 +291,304 @@ packages:
   sha: 486e229d2d9def7ff0cf62e79492fabb3842249f
   stratum: S-control
   url: https://github.com/zendesk/sdk_guide_kit_ios
+- id: AlTavares/Ciao
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 5
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 5; screened SHA (ADR 0007)
+  sha: 53c2186c75962158b32f121707922b33ddbb214e
+  stratum: S-emit
+  url: https://github.com/AlTavares/Ciao
+- id: Appracatappra/SwiftletData
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 17
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 17; screened SHA (ADR 0007)
+  sha: e7b7d0b0d8ae7627af9ed426e92e7f990a9213b0
+  stratum: S-emit
+  url: https://github.com/Appracatappra/SwiftletData
+- id: AudioKit/Tonic
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: f8af4074c76a5b4a689122ef3c4b294bb7866d30
+  stratum: S-emit
+  url: https://github.com/AudioKit/Tonic
+- id: DeclarativeHub/ReactiveKit
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 54
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 54; screened SHA (ADR 0007)
+  sha: 5c61e0869cfaf8f9fcd17afecb8e6c721d153186
+  stratum: S-emit
+  url: https://github.com/DeclarativeHub/ReactiveKit
+- id: EmergeTools/Pow
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 89
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 89; screened SHA (ADR 0007)
+  sha: 1b4b1dda28c50b95f0872927ee2226fe8b58950e
+  stratum: S-emit
+  url: https://github.com/EmergeTools/Pow
+- id: InspiratioNULL/InfographicKit
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 3
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 3; screened SHA (ADR 0007)
+  sha: 0479ce8c132e7f85ae2a3a287ee9e456e847a126
+  stratum: S-emit
+  url: https://github.com/InspiratioNULL/InfographicKit
+- id: MLSDev/LoadableViews
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 7
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 7; screened SHA (ADR 0007)
+  sha: 579c17534a56e99b50c9ca8efc2f858df4e6aff5
+  stratum: S-emit
+  url: https://github.com/MLSDev/LoadableViews
+- id: Quick/Nimble
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 151
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 151; screened SHA (ADR 0007)
+  sha: 727f75d91a0f7501d08d938966d17e6728b76a2a
+  stratum: S-emit
+  url: https://github.com/Quick/Nimble
+- id: RCCoop/RCGPX
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: 93fc5a5a96a07f353d0fb45d323e8274b7fce7b7
+  stratum: S-emit
+  url: https://github.com/RCCoop/RCGPX
+- id: ShaftUI/Shaft
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 105
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 105; screened SHA (ADR 0007)
+  sha: ea52999447248fcb91096392dc95e2f1afece8ef
+  stratum: S-emit
+  url: https://github.com/ShaftUI/Shaft
+- id: SimformSolutionsPvtLtd/SSImageKit
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 60
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 60; screened SHA (ADR 0007)
+  sha: c8c4044d00d141e428a1680b12b5cde37349147a
+  stratum: S-emit
+  url: https://github.com/SimformSolutionsPvtLtd/SSImageKit
+- id: blackjacx/SHDateFormatter
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 2
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 2; screened SHA (ADR 0007)
+  sha: ca2e011acc769b2231c0293819bb7521b7ff7997
+  stratum: S-emit
+  url: https://github.com/blackjacx/SHDateFormatter
+- id: dagronf/DSFAppearanceManager
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 13
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 13; screened SHA (ADR 0007)
+  sha: 415373c9d11f945bbd26ca2bb02664048c632720
+  stratum: S-emit
+  url: https://github.com/dagronf/DSFAppearanceManager
+- id: dankinsoid/VDFlow
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 15
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 15; screened SHA (ADR 0007)
+  sha: 090e84029078d42a7f88eee7ddc2d664b685cbb6
+  stratum: S-emit
+  url: https://github.com/dankinsoid/VDFlow
+- id: dev-hamin-kim/HangulKit
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 2
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 2; screened SHA (ADR 0007)
+  sha: 36421e5acfd3f87bb51ebafdc367d576a126005b
+  stratum: S-emit
+  url: https://github.com/dev-hamin-kim/HangulKit
+- id: dl-alexandre/opencode-sdk-swift
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: dc59af9e52759e8bf590addd6f3008332e34fd21
+  stratum: S-emit
+  url: https://github.com/dl-alexandre/opencode-sdk-swift
+- id: flocked/FZQuicklook
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 45
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 45; screened SHA (ADR 0007)
+  sha: b05a9318dcea32c69b2cf51966cbcbd665743816
+  stratum: S-emit
+  url: https://github.com/flocked/FZQuicklook
+- id: heestand-xyz/CoreGraphicsExtensions
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 7
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 7; screened SHA (ADR 0007)
+  sha: 13d3b721dc456d583a27be2def8b4d353f252dcc
+  stratum: S-emit
+  url: https://github.com/heestand-xyz/CoreGraphicsExtensions
+- id: iankoex/AudioVisualService
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: ba75d6cc7113c2cc35ac87425a69c495e2acc8b0
+  stratum: S-emit
+  url: https://github.com/iankoex/AudioVisualService
+- id: luizmb/FP
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 42
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 42; screened SHA (ADR 0007)
+  sha: 948dabce308fe0205c1da2bbcc3ccaa22f68eb22
+  stratum: S-emit
+  url: https://github.com/luizmb/FP
+- id: maartene/InkSwift
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 3
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 3; screened SHA (ADR 0007)
+  sha: cd471e30b43546f3cf662d515d05444bbcffebd2
+  stratum: S-emit
+  url: https://github.com/maartene/InkSwift
+- id: mapbox/mapbox-speech-swift
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 7
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 7; screened SHA (ADR 0007)
+  sha: 2a9ce0a7c8447e5c53c7ee112f1ead750e47b0d3
+  stratum: S-emit
+  url: https://github.com/mapbox/mapbox-speech-swift
+- id: mindbody/Conduit
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 70
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 70; screened SHA (ADR 0007)
+  sha: f0513a2c40f7e0b29e89cc0088a2d6280d759a99
+  stratum: S-emit
+  url: https://github.com/mindbody/Conduit
+- id: s2mr/L10nLint
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 15
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 15; screened SHA (ADR 0007)
+  sha: 3dd0a0cc061bb2240e05875c55f81f3ae5154f76
+  stratum: S-emit
+  url: https://github.com/s2mr/L10nLint
+- id: sbooth/Geodesic
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: eec6694589e6fd3cf2dbf4d4a319c58eedd54a01
+  stratum: S-emit
+  url: https://github.com/sbooth/Geodesic
+- id: segmentio/Sovran-Swift
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 5
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 5; screened SHA (ADR 0007)
+  sha: 47f4fe247f4db9c57a5e3a571fcdc7243c34c98a
+  stratum: S-emit
+  url: https://github.com/segmentio/Sovran-Swift
+- id: shahwaiz90/ghoststrings-ios
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 8
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 middle-tertile of 47 stable emitters; screen screen-2026-10-10 count 8; screened SHA (ADR 0007)
+  sha: 6f1dcff89f677ebae5676913773aa038091792ab
+  stratum: S-emit
+  url: https://github.com/shahwaiz90/ghoststrings-ios
+- id: swiftlang/example-package-figlet
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 1
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 1; screened SHA (ADR 0007)
+  sha: 013bf57c64e9f6eeb8096e66c54bb94d421ef02e
+  stratum: S-emit
+  url: https://github.com/swiftlang/example-package-figlet
+- id: weppos/uddf-swift
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 2
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 tail-tertile of 47 stable emitters; screen screen-2026-10-10 count 2; screened SHA (ADR 0007)
+  sha: 938738e57b6f826a6a422e716ef7397cb326eeb7
+  stratum: S-emit
+  url: https://github.com/weppos/uddf-swift
+- id: yandex/vgsl
+  platforms:
+  - linux-spm
+  - macos-spm
+  screen_count_at_selection: 24
+  screen_id: screen-2026-10-10
+  selection: seed=20261010 head-tertile of 47 stable emitters; screen screen-2026-10-10 count 24; screened SHA (ADR 0007)
+  sha: 2d628f1259c62ee99e5f09ec975ef3200935fad1
+  stratum: S-emit
+  url: https://github.com/yandex/vgsl
 schema_version: 1
