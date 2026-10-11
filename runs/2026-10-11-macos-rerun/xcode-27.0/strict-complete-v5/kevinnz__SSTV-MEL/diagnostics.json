@@ -1,0 +1,47 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 170,
+    "path" : "Sources/SSTVCore/SSTV/DecodingOptions.swift",
+    "severity" : "warning",
+    "text" : "static property 'default' is not concurrency-safe because non-'Sendable' type 'DecodingOptions' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 42,
+    "parent" : 0,
+    "path" : "Sources/SSTVCore/SSTV/DecodingOptions.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'DecodingOptions' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 170,
+    "parent" : 0,
+    "path" : "Sources/SSTVCore/SSTV/DecodingOptions.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'default' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 170,
+    "parent" : 0,
+    "path" : "Sources/SSTVCore/SSTV/DecodingOptions.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]

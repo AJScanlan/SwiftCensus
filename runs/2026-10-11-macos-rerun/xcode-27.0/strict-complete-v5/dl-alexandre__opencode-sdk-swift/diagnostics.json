@@ -1,0 +1,25 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 46,
+    "path" : "Sources/opencode-sdk-swift/Core/Request.swift",
+    "severity" : "warning",
+    "text" : "capture of 'encodeMethod' with non-Sendable type '(any Encoder) throws -> ()' in a '@Sendable' closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 46,
+    "parent" : 0,
+    "path" : "Sources/opencode-sdk-swift/Core/Request.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  }
+]

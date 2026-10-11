@@ -1,0 +1,68 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 12,
+    "path" : "Sources/UDDF/Serialization/UDDFParser.swift",
+    "severity" : "warning",
+    "text" : "static property 'iso8601Formatter' is not concurrency-safe because non-'Sendable' type 'ISO8601DateFormatter' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 80,
+    "parent" : 0,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSISO8601DateFormatter.h",
+    "severity" : "note",
+    "text" : "class 'ISO8601DateFormatter' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 12,
+    "parent" : 0,
+    "path" : "Sources/UDDF/Serialization/UDDFParser.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'iso8601Formatter' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 12,
+    "parent" : 0,
+    "path" : "Sources/UDDF/Serialization/UDDFParser.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 12,
+    "path" : "Sources/UDDF/Validation/ValidationError.swift",
+    "severity" : "warning",
+    "text" : "stored property 'severity' of 'Sendable'-conforming struct 'ValidationError' has non-Sendable type 'ValidationError.Severity'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 6,
+    "parent" : 4,
+    "path" : "Sources/UDDF/Validation/ValidationError.swift",
+    "severity" : "note",
+    "text" : "consider making enum 'Severity' conform to the 'Sendable' protocol"
+  }
+]

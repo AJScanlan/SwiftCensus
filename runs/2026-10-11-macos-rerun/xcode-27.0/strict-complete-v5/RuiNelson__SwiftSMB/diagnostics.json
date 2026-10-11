@@ -1,0 +1,262 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 687,
+    "path" : "libsmb2/lib/asn1-ber.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 70,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 3057,
+    "path" : "libsmb2/lib/../libdcerpc/dcerpc.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 3302,
+    "path" : "libsmb2/lib/../libdcerpc/dcerpc.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 3305,
+    "path" : "libsmb2/lib/../libdcerpc/dcerpc.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 342,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 353,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 958,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 984,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 53,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1023,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 51,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1081,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 69,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1116,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 92,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1169,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 1354,
+    "path" : "libsmb2/lib/ntlmssp.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 542,
+    "path" : "libsmb2/lib/smb2-cmd-create.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 530,
+    "path" : "libsmb2/lib/smb2-cmd-ioctl.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 246,
+    "path" : "libsmb2/lib/smb2-cmd-oplock-break.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 303,
+    "path" : "libsmb2/lib/smb2-cmd-oplock-break.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 567,
+    "path" : "libsmb2/lib/smb2-cmd-query-directory.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 58,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 190,
+    "path" : "libsmb2/lib/smb2-data-file-info.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 36,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 511,
+    "path" : "libsmb2/lib/smb2-data-file-info.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 545,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 634,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 764,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 767,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 814,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 817,
+    "path" : "libsmb2/lib/socket.c",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  }
+]
