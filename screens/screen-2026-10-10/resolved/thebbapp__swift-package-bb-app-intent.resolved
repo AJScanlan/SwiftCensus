@@ -1,0 +1,24 @@
+{
+  "originHash" : "df623005f08c01521de676856510033549628787ac20e15cbac671ef6fb47950",
+  "pins" : [
+    {
+      "identity" : "swift-package-bb-app-author-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-author-schema.git",
+      "state" : {
+        "revision" : "d0ea37a3eb32e7ee373b7dd8b9f20abfe4390e78",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-task",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-task.git",
+      "state" : {
+        "revision" : "7756bf43db50302c684fcb878bd266bdc58a1d27",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

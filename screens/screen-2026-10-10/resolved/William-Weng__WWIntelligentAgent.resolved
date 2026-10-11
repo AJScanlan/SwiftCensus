@@ -1,0 +1,15 @@
+{
+  "originHash" : "bc3bfadc76595eefcdf33416048e92b45a0ce19652f97c380a754211d8a325dc",
+  "pins" : [
+    {
+      "identity" : "wwsqlite3manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSQLite3Manager",
+      "state" : {
+        "revision" : "3692e6158ced08c2b9d7611e9e267ac478d45331",
+        "version" : "2.4.4"
+      }
+    }
+  ],
+  "version" : 3
+}

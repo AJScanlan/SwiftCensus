@@ -1,0 +1,24 @@
+{
+  "originHash" : "6a49ec2647220c43180dd98e3a17bb89a546abd8442b7a6c6e35341dc73fc763",
+  "pins" : [
+    {
+      "identity" : "defaultskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markbattistella/DefaultsKit",
+      "state" : {
+        "revision" : "5aa70dc78dda37e465cb014d545c6f2109e2962f",
+        "version" : "26.9.12"
+      }
+    },
+    {
+      "identity" : "simplelogger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markbattistella/SimpleLogger",
+      "state" : {
+        "revision" : "722ecaae04ed9756f8f6be3f203150756932a810",
+        "version" : "26.5.26"
+      }
+    }
+  ],
+  "version" : 3
+}

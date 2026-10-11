@@ -1,0 +1,2088 @@
+{
+  "Adobels/UIViewKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:18:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Adyen/adyen-ios" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T01:57:25Z",
+    "sha256" : "7e421353e16c437bdf849f74d8b8bde14bcd3c94c4416ceb32f66fb23cb9e937",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "AgoraIO/AgoraLite_iOS" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:13:32Z",
+    "sha256" : "cf73ca9d69d4f496daca3b7d0b531b505f48de70a83994d226f6c9410b5793bf",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "Aikyuichi/SQLiteStore" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:00Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "AlTavares/Ciao" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:22:00Z",
+    "sha256" : "91eaf6655918331ed9ccccc74d767d6eae48d64d7fd292116c66aad02af85994",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AltiAntonov/SafeDecoding" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:03:45Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "AndyHeardApps/SwiftNetworking" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:08:53Z",
+    "sha256" : "60ce1df2661294cbc955f81155505e282188d06f1478acc0ccb68ce00e5d8eea",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AppliedRecognition/Face-Recognition-ArcFace-Apple" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:18:31Z",
+    "sha256" : "bbe2b11d50ef94ee64fc7efe9b3b851db2f9d39211b9fa8ecce9cb5c419e7266",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AppliedRecognition/Ver-ID-3-Serialization-Apple" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:16:53Z",
+    "sha256" : "37c207338e30f1f701327f0c0e3778ba14d3dea844af5b602fd73793f055be3e",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AppliedRecognition/Ver-ID-Common-Types-Apple" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:01:26Z",
+    "sha256" : "065ba09eeb869cf030ee0f2f044e270d0937e37970592e3df0699af4bc87d18b",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Appracatappra/CircularProgressGauge" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:27:02Z",
+    "sha256" : "2196078a3a6e0c43cf09b2a04059d968ca4efb092dcade9a8db2f60b9b967c63",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Appracatappra/SoundManager" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:02:38Z",
+    "sha256" : "f61926480c91714ddbf8716acce68b9f3718f306f3a7c68761af019af535bc5e",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Appracatappra/SwiftletData" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:29:49Z",
+    "sha256" : "4fcde5fc94bd75623f6fc3c93ae51afaba9e9862086dbebcfb0b96a9083d7120",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Appracatappra/SwiftletUtilities" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:00:11Z",
+    "sha256" : "76977a2e28520126f190ac7fbd0a86ca56b85560247afc684c6651b661596aed",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "AudioKit/Tonic" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:25Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "BCSuite/Forging" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:21:01Z",
+    "sha256" : "c1166647ae056f487874bcbb946985d885e9af5dd231639e2601f4b60a2619d8",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "CleanCocoa/TextBuffer" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:47Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "CocoaLumberjack/CocoaLumberjack" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:22:03Z",
+    "sha256" : "e917c6ef0dd7211faca7c0c0912f9b4721e66947c2aa28cbf0920cc3775f85d2",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "CommandersAct/iOSV5" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "CorvidLabs/swift-retry" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:07:25Z",
+    "sha256" : "a3b44dcb2e0c8abc13c82fb021632525c50932be6e13529dce053bb0a6cea28d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "CostinDragos/ContextualRotation" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:24:40Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "DeclarativeHub/ReactiveKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:01:43Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "EmergeTools/Pow" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T01:57:02Z",
+    "sha256" : "4f9628bc3a2d4aea6bb653c794f5173b78f0a520d5f52218059058e7561dd01d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "ErsanQ/DeviceKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:44Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ErsanQ/HapticKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:18:13Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Esri/arcgis-maps-sdk-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:26:32Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "FabrizioBrancati/Queuer" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:03:33Z",
+    "sha256" : "f6bbde4aec7568acd5bda43f64316f32b9c20794600f557b20a2056e413246bf",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "FelixHerrmann/swift-multipart-formdata" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:24:05Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "FlineDev/LinksKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:17Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Flizpay/flizpay-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:34Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "GRimAce11/Strata" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:08:09Z",
+    "sha256" : "2636e399f29e367832239de9f8a30228c7d82737ba4579dd46c685002535d185",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "InspiratioNULL/InfographicKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:57:08Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "JanGorman/Agrume" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:53:37Z",
+    "sha256" : "ff91424830c99a1888548395bb89dcd84483a0e925fe99c9177d09b67884b3f6",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Janneman84/BoostedLifecycleMethods" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:39Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Janneman84/LeakedViewControllerDetector" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Jiropole/SwiftEDR" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:11:04Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "KalpeshTalkar/Tessera" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:14Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Kingpin-Apps/swift-cardano-wallet" : {
+    "pin_count" : 62,
+    "resolved_at" : "2026-10-11T01:54:43Z",
+    "sha256" : "7176f348c9f8a77ef5fdc4c226dc62b0e59855a130e7963e25b3d35b3a114648",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Kyle-Ye/ScreenShieldKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:27:17Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Lakr233/openssl-spm" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:24:58Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Livsy90/SkavokNetworking" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:03:42Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Luminoid/Sophon" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:01:18Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "MFranceschi6/swift-xml-coder" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:07:20Z",
+    "sha256" : "64648774a711d330f8a8baddf182d100f0ff1cf2716031685a25060f99f973a7",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "MLSDev/LoadableViews" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:47Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "MahdiBM/enumerator-macro" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:05:21Z",
+    "sha256" : "aac7240019748fc4e139b908a73f862e661b5783d503be19e7de5ced1e76d854",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "MindscapeHQ/raygun4apple" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:03:30Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "MrKai77/DynamicNotchKit" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:25:08Z",
+    "sha256" : "92f324ab93b7394580536d1a16c5e55ba1b85ea1aa0a0e372d226f99ad703593",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Neuro-ID/neuroid-ios-sdk" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:09:14Z",
+    "sha256" : "605a569230b15fab7a15a0201beadcaa8501e934974fa6975329f7d60c627fee",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "NikSativa/CombineExt" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:41Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "OpenSwiftUIProject/DarwinPrivateFrameworks" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:00:09Z",
+    "sha256" : "d4b4ce6a0e8a6cc6209a19b3333c0d2d85b2e15e21bd550ffe7c87761a8ffc69",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "Proof-of-Human-Network/sdk-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:19Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "PureSwift/Socket" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:24:11Z",
+    "sha256" : "694be9d33a99be1464966c4a0644d59c201ebcd1292ac6c5827f0178d069a2b3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "Quick/Nimble" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:07:28Z",
+    "sha256" : "e13a8bc45e6f4414af2e1242dd04e8d9fb2dd6dfa0af1cbdc1d76deef3317f56",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "RCCoop/RCGPX" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:13:40Z",
+    "sha256" : "b8a231ac6ed3eff9bbbe54e15aeadc74d1a191a523aeedcdbdd57bca54742578",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "RougeWare/Swift-Collection-Tools" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:23:42Z",
+    "sha256" : "3b5362ff94c70d15b3d36306a1f2085223036941c5764dca902662c3e0b7f408",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "RougeWare/Swift-Function-Tools" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:21Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "SDWebImage/libwebp-Xcode" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:23:57Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "SUMSUB/IdensicMobileSDK-iOS-Core" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:20Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "SelligentMarketingCloud/MobileSDK-iOS" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:55:00Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ShaftUI/Shaft" : {
+    "pin_count" : 12,
+    "resolved_at" : "2026-10-11T02:06:32Z",
+    "sha256" : "af9a8fc468b1f575bef11448521d7b58558e17fe2886fdcb984bb560e4df4d65",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "SilverPineSoftware/UUSwiftCore" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:00:01Z",
+    "sha256" : "44e1af2c3e4d8cef846fd2fdb335c6c7b3f961463d6216367afb244a72f20b8b",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "SilverPineSoftware/UUSwiftUX" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:01:41Z",
+    "sha256" : "fdb4f02128c9dafccd9cded419b96bf4d9ea08e9a302ce5398e4ce8f80ce8b66",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "SimformSolutionsPvtLtd/SSImageKit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:22:33Z",
+    "sha256" : "7d906d8b9e540b51bde25989baddb8ea3a6e7f42549729295106863e7675a469",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "StanfordBDHG/ResearchKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:31Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "StanfordSpezi/SpeziAccount" : {
+    "pin_count" : 21,
+    "resolved_at" : "2026-10-11T02:02:05Z",
+    "sha256" : "d2729683f4a920ac1e74918724eacc546bed6ad4446d434ced3fd3313b051773",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "StanfordSpezi/SpeziConsent" : {
+    "pin_count" : 20,
+    "resolved_at" : "2026-10-11T02:14:22Z",
+    "sha256" : "b8d5cd12444eaeaf18469bb0c23644e38e32932772302207eb10979403009798",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "StanfordSpezi/SpeziDevices" : {
+    "pin_count" : 19,
+    "resolved_at" : "2026-10-11T02:16:21Z",
+    "sha256" : "fed1d76b1852179d63ad093a529977c7f927f90732d0f0a72f255f83bc6f0ef3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "SumPositive/AZCalc" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:16Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "SwiftStructure/CaseConverter" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:53:41Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "SwiftyContacts/SwiftyContacts" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:23:59Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "The-Wand/Any" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:09:01Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "Victory-Apps/a2a-swift" : {
+    "pin_count" : 29,
+    "resolved_at" : "2026-10-11T01:54:18Z",
+    "sha256" : "250ca91d1e4d6dec131eeee7cdd8a5f65d23d114380e177aa63ff5948217681c",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "WendellXY/CodableKit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:02:56Z",
+    "sha256" : "82d4dd81e467a3f35f6e8adc54658568aa8be9a4a28d52dd0b2df71fd67d3ae5",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "William-Weng/WWIntelligentAgent" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:02:48Z",
+    "sha256" : "469ef9a8ebf3cadd7b3f78b1d6d01113ec2948b0b656c445bb7b74313cd726f2",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "William-Weng/WWSQLite3Manager" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:27:51Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "William-Weng/WWSystemStatus" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:22:47Z",
+    "sha256" : "243a1b59f2eb5e45b10f1ba582c5f6fcd7e3c89774411b92d516c151e16340c5",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "William-Weng/WWWebImage" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:27:15Z",
+    "sha256" : "bb9aa89616999aa6cd370fc927a4f7f1682aede5f53fef5e234e64e33d58ee04",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "ZipArchive/ZipArchive" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:38Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "acuteimmersive/openimmersivelib" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:22:45Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "adam-fowler/aws-signer-v4" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:10:16Z",
+    "sha256" : "d91a401ec4646316dbfd7ed99ebd68a71d5a01c69886f5bebc7bf8c1da70fa0d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "adobe/aepsdk-edgeidentity-ios" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:02:25Z",
+    "sha256" : "019f220d5997ec2a25fbe44c7fc2f30938b50df219ccb65ca4fccc7aa95ee33d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "adobe/aepsdk-optimize-ios" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:21:23Z",
+    "sha256" : "3204ec913ee4dd14e67862094c8b00598a96efd56b438e4b89efcf9f3a234037",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "alexanderwe/SemanticVersioningKit" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:28:29Z",
+    "sha256" : "75af953404ea687f9464a1ed9ce398a77c282071e2e8348f555892b177c32aad",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "alexey1312/baton" : {
+    "pin_count" : 13,
+    "resolved_at" : "2026-10-11T01:56:29Z",
+    "sha256" : "76ce7dc870772b766ed60c600055c1c3898bcbe2a0aaad86fb14208e85a0a099",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "alexlerikos/Projector" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:01Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "amir-magdy-of-wizardlabz/kiahk" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:45Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "amirsaam/elementary-pines" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:02:45Z",
+    "sha256" : "40fff6005b5e4ca074b5c2496c2502a6c3b155a388408dd8589e2ac52f4d6774",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "amplitude/Amplitude-iOS" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:28:50Z",
+    "sha256" : "9473b6041f96f94d5d1c4367ce3b47645f3a9fb88b2d6c38646d740f5e98f08b",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "apparata/markin" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:36Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "apple/coreai-models" : {
+    "pin_count" : 31,
+    "resolved_at" : "2026-10-11T02:01:15Z",
+    "sha256" : "70cfc863afd446a3643110642daaa5fc8afe82f99986d63aea0bf9421a0aff7d",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "apple/swift-binary-parsing" : {
+    "pin_count" : 8,
+    "resolved_at" : "2026-10-11T02:22:22Z",
+    "sha256" : "d9a25c9db988763c1da833fc447842cc4a4197fc5fa31aeeaf1f82167612cba2",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "apple/swift-collections-benchmark" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:08:04Z",
+    "sha256" : "2c96920936ceb430d5ae59a8d82867736ec4d4e8f2fdb36ba7ed271ba865d48e",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "aptove/swift-sdk" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T01:55:03Z",
+    "sha256" : "cdd80d05bdf018711b23ab737ae41cd3c39bfec4653d35cc137520b6bd2d86c0",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "artembobkin/ImmersiveMap" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:55:38Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "atacan/AssemblyAI" : {
+    "pin_count" : 28,
+    "resolved_at" : "2026-10-11T02:00:39Z",
+    "sha256" : "5085dec4f21e75ac1505dc83b64d1f2aaaac5b5636a147f75dd761b3f538d286",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "atacan/TelegramBotAPI" : {
+    "pin_count" : 23,
+    "resolved_at" : "2026-10-11T02:28:43Z",
+    "sha256" : "1326b2303167ef85de68e042f0e967efad663c4258c8df0a0f261b556b943f65",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "atacan/swift-string-similarity" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:25:27Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "aykhanhajiyev/media-size-watchdog" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:25Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "bazaarvoice/bv-ios-swift-sdk" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:54Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "bidmachine/BidMachine-SPM" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:00:21Z",
+    "sha256" : "8905352d8eb212f62b69db453202f8e0d22ebc16a792105d65ddbe2878bf0af4",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "blackjacx/SHDateFormatter" : {
+    "pin_count" : 7,
+    "resolved_at" : "2026-10-11T02:06:43Z",
+    "sha256" : "6e8864279715182982ecd937c96f6906d09604ceed18337af7851b75480906ca",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "boxlinknet/kwtsms-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:23:39Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "bradhowes/PriorityQueue" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:00:05Z",
+    "sha256" : "1247bb77ac19639d9bb9c6270e82318b5c1a5396bd753a39223f020c844a1834",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "bradhowes/SF2Lib" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:29:26Z",
+    "sha256" : "4fdbdd699e3ba883d9f04f0ad9bee95b1307c2fe86445087e5fd523b6722186d",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "bradhowes/brh-splitview" : {
+    "pin_count" : 16,
+    "resolved_at" : "2026-10-11T02:28:12Z",
+    "sha256" : "41ed7d31445e2ac93c27386b5d52ea95cc82f9f4c062e684cda750826738868e",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "braintree/braintree_ios" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:29:22Z",
+    "sha256" : "bfb768381f55cc8e290d19c2afef292b108817f400d3cc6c43cf46728afeb883",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "brightdigit/SyndiKit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:53:40Z",
+    "sha256" : "5c8dc231698749834df141374697dd62b655fa3499a7ac0c167738afe4f9fa9a",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "brightdigit/XMLCoder" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:46Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "cesarferreira/SwiftEventBus" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:09:02Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ciaranrobrien/SwiftUIFrameReader" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:28:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ciaranrobrien/SwiftUIScrollOffset" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:07:05Z",
+    "sha256" : "5914403db41b42dd9641a86c0aaca1c646aeee5651e61217a47ad4473e3bf46e",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "codeandtheory/ct-analytics-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:54Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "couchdeveloper/EffectComponents" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:17:59Z",
+    "sha256" : "fe8ec938eb3dbdd810d0ac4986d4b3b54a447f52ddd2a2ea51e557ca036fedd5",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "csjones/lefthook-plugin" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:55Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "cyphera-labs/cyphera-swift" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:25:04Z",
+    "sha256" : "1bb277dc23085df2324c908279a9ecfc71d3e55dfdd24017ebf2cfa525fdd3ad",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "dagronf/DSFAppearanceManager" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:53:55Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "dankinsoid/VDFlow" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:57:31Z",
+    "sha256" : "428e950613fff4d86ba7fd29e9a8c3ded615672f89b50b72a928b2de5ac2b1c3",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "dev-hamin-kim/HangulKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:11Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "dl-alexandre/opencode-sdk-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:57:07Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "dodobrands/DBThreadSafe-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:14Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "elegantchaos/Versionator" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T01:54:53Z",
+    "sha256" : "a86dcedeae9d1399be19252f0e7aa72ebf17d933d002fe676b21719ed04f69fe",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "elvisperlika/notion-kit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:14:24Z",
+    "sha256" : "1162fb4feb8f6754786faa67074fd360af1ab3e00ee986d89caf44371e69d189",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "emartech/ios-emarsys-sdk" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:54:21Z",
+    "sha256" : "f87292f86b793324833783d7157e56fa8994b6f2a2de055242a3c2d2ed8a4b6f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "ezefranca/BibTeXKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:10:33Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ferdous-mahmud/SwiftUICarousel" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:09:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "flexlixrup/pulsar-client-swift" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T01:55:34Z",
+    "sha256" : "5b897ae59de287022a5e15999884df525b8cc19a65b6ea6c7ee4fcb71d2abb6d",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "flocked/FZQuicklook" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:17:33Z",
+    "sha256" : "5be60d071266e83c41a088bdf4abd50abbcca92a0da83358459183d98859980f",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "frazer-rbsn/swift-json-canvas" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:02:10Z",
+    "sha256" : "57945ff0102adab95d444cb21da871fd9db962b4761afcbec1aaf86a8507fb81",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "futuredapp/FuturedKit" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:19:50Z",
+    "sha256" : "286cb61c602dfb771ac119054467ce9449d00f1dce3d3ea6c0899f49b2d7db1d",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "ghsiss/TrafficAuthV2XClient" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:23:47Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "givip/telegrammer" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:18:06Z",
+    "sha256" : "ab6e109ebd0d41bc8429a4036c133693434ac3eb9ca13affe904dae693f4de27",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "google/GTMAppAuth" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:08:42Z",
+    "sha256" : "e0dcd08efa554a3cf8888733b1018a066b75c4782578b28e65d3a3972a221758",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "google/flatbuffers" : {
+    "pin_count" : 20,
+    "resolved_at" : "2026-10-11T02:05:43Z",
+    "sha256" : "bb69ce0b9287ee32eb1d1d5bca681a4a30b876a1f5c0c3c0076677582e6eedb8",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleads/swift-package-manager-google-programmatic-access-library-tvos" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:25Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-apps-script-type" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:24:03Z",
+    "sha256" : "8d294b0c608256fcc1da022554233f0bf872b7ee72bdf46717a18359ca772857",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-beyondcorp-clientconnectorservices-v1" : {
+    "pin_count" : 32,
+    "resolved_at" : "2026-10-11T02:19:05Z",
+    "sha256" : "b26ff3f981974fb690ddbeede20addff6a975e18e8a6ae7b0d1887e443bbad8e",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-dataform-v1" : {
+    "pin_count" : 32,
+    "resolved_at" : "2026-10-11T01:56:55Z",
+    "sha256" : "603086f1c57712a5654b9648642d976ffcebc0182e70ddfc55e0ef40f0665ed3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-datastream-logging-v1" : {
+    "pin_count" : 31,
+    "resolved_at" : "2026-10-11T02:24:39Z",
+    "sha256" : "726d060af18831d02f1c0fc09d547b730d7d320a54b3eb162c7f2d86740c43db",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-location" : {
+    "pin_count" : 28,
+    "resolved_at" : "2026-10-11T02:20:28Z",
+    "sha256" : "56e96794aca22ce9c5ddb9d73537d7c90d26c1212bda63516a96c5ddfa7a5c4a",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-locationfinder-v1" : {
+    "pin_count" : 29,
+    "resolved_at" : "2026-10-11T01:58:01Z",
+    "sha256" : "96a853968b66d003f459def3f69668b5564c9fc991d1c77a6389ac1cf71970d3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-cloud-redis-v1" : {
+    "pin_count" : 31,
+    "resolved_at" : "2026-10-11T02:06:11Z",
+    "sha256" : "e4a0768cd584c0a25443e840f68e059feaba465b4d35ca068024c8dda9fd0dfd",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "googleapis/swift-google-rpc" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T01:54:56Z",
+    "sha256" : "d263bf033333cf34230280816d4844f685d12cc9204e0bbff5cc884b74eb05ea",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "gpambrozio/GitWorkbench" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:06Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "gradyzhuo/swift-ddd-kit" : {
+    "pin_count" : 33,
+    "resolved_at" : "2026-10-11T02:23:23Z",
+    "sha256" : "af85441fea6a798588acae34d9551b5c1bafe5ea2e2c325f553f2867276010b1",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "hackiftekhar/IQKeyboardManager" : {
+    "pin_count" : 7,
+    "resolved_at" : "2026-10-11T02:02:36Z",
+    "sha256" : "b8f02bde69ca9110adebc741e797c63b6a41e58a5bc6694ce5d9bab57af76746",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "hackiftekhar/IQTextView" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:30:12Z",
+    "sha256" : "99714c96bb9996a5572d73ea62178ca0956877dff5bc6756ea35a0eae80b877b",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "happn-app/XibLoc" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:21:57Z",
+    "sha256" : "d864895e201a8562cf3df1ef9bed3faa3edf08c8eb2beccb673fdd82605c1409",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "hayek/PopGestureRecognizerSwiftUI" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:20:02Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "heckj/CameraControlARView" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:30:07Z",
+    "sha256" : "ac8f19e3acc1d4bf3a487a459970456c644591b4eba8e58d7eb76b9d86e36a7f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "heestand-xyz/CoreGraphicsExtensions" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:41Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "heestand-xyz/TextureMap" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:22Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "hidden-spectrum/swift-translate" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:02:18Z",
+    "sha256" : "417db8ed302be0f460f7ff031a1b460b7034a13cc0f226e1cfd0e38966fd1a64",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "hmlongco/Factory" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:13:50Z",
+    "sha256" : "0cd6e1304c104b9fd1f8a7b8c4e77492fb4f3d0a354771a026968b8f021fcc8a",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "hromni/SwiftAPIClient" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:35Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "hylo-lang/Swifty-LLVM" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:20Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "iankoex/AudioVisualService" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:30:08Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ibo2001/MushafImad" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:15:09Z",
+    "sha256" : "5fd28754539f8a67f3c118d92cf46c4f9b38a310e105a4bab4fbfe59f85c8a26",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "imclaren/SwiftKeyExchange" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:41Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "indextrown/AutoCodable" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:19:56Z",
+    "sha256" : "58151b21b88b726089f65795044c77459b5c370bc0852a26f23c2ddf8d6a3913",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "jacky-xbb/PDF2MDKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:50Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "jaywcjlove/swift-path-to" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:01:28Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "jcmosc/swift-sexp" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:20:49Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "jeremiahjordanisaacson/copilot-sdk-supercharged" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:22:44Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "johnrbent/Rearrange" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:57Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "joogps/Glur" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:39Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "josshad/Signaling" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-11T02:27:12Z",
+    "sha256" : "da5660409b53d88f1a4b459122eeaeb940606292d333d9e6502f7fc032def351",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "kateinoigakukun/swift-indexstore" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:01:22Z",
+    "sha256" : "d6a076c37d71dc384149af3e5dc434708cde6b32f18cc7125177bb81b9fb747a",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "ken0nek/AppShowcaseKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:48Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "klaviyo/klaviyo-swift-sdk" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T01:53:31Z",
+    "sha256" : "625e4362d5babb3c39bab640f59d8fbfc4f5c5c04ea6235662ab6010a296c271",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "kudit/Device" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:15:28Z",
+    "sha256" : "5a17442865507935d7bbe148d4220f594c471b04bfb52bfadfc6da8049922872",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "kylebrowning/vapor-sse" : {
+    "pin_count" : 29,
+    "resolved_at" : "2026-10-11T02:08:20Z",
+    "sha256" : "792de0eb4f3fba2e748aed56c277872798f9cff3cd4a508f6f43793481c82620",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "kylehughes/swift-async-result" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:30:29Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "libtmux/libtmux-swift" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:17:40Z",
+    "sha256" : "b774ddc6d707cd3a9daf5561fc285c22ce367cbbd4905f6493b6b8cc3f1d0aef",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "lintuxt/swift-cli-kit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:37Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "luizmb/FP" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:15:18Z",
+    "sha256" : "eebc281c0017c33b62e5bb85511208fac4830bc9cefefbc2e6e6f289a581a9d8",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "luizmb/Hourglass" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:08:46Z",
+    "sha256" : "2072223507718d27b0c78f3ef9b094b3a53ea8e0d91b9cd1aec9002903c9de77",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "maartene/InkSwift" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:20:00Z",
+    "sha256" : "9e20fa38c76ee5dbf960189842450944b49a9b44fa90cbd2af76909a82dcfbdb",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "maniramezan/UserDefaultMacro" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:30:02Z",
+    "sha256" : "03a686d9104457ce526fe141dbd86c5bf8bcd2e0820956c914f5de24d486cf4f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "mannd/QTcPackage" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:58:22Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mapbox/Fingertips" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:11Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mapbox/mapbox-speech-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:24:07Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mappls-api/mappls-api-core-ios-distribution" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:20:53Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "marciliojrs/aurora" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:22Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "markbattistella/BezelKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:06:58Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "markbattistella/NotificationManager" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:11:02Z",
+    "sha256" : "87a99892c34647b466d6bb7c27e30d3dd7d3896c29d72f4cf8f47419101a75b9",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "markbattistella/TriggerKit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:54:57Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mattt/swift-xgrammar" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:58:03Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mesqueeb/MapSugar" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:56:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "mesqueeb/SwiftSound" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:03:52Z",
+    "sha256" : "934e80545c75970f4176a4b744228bbc64463a8718d4c0ff6a74ad6ceac24229",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "mgacy/swift-lambda-extras" : {
+    "pin_count" : 8,
+    "resolved_at" : "2026-10-11T02:13:58Z",
+    "sha256" : "9439efdcc6444490a81488f4bf8d30b76100bec2e26c11536b5217d1943d9afb",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "mindbody/Conduit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:58:06Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "modern-swift-dev/roundtrip-swift" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:07:12Z",
+    "sha256" : "abb2878b7af62746cb1b1e2313138d168f01d1689e18297900f633126dbcd1d9",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "moozzyk/SignalR-Client-Swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:20:55Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "moslienko/InAppMaster" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:37Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "namhoangdev31/ExploreSwiftUI" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:01:17Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "naviapps/preset-kit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:08:36Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "neothXT/Snowdrop" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:54:50Z",
+    "sha256" : "2c64fdc9e40a5122584452588d51f6106dab6c6f6c1f8a85fe34d14c4092cbe3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "nerdzlab/NerdzValidation" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:21Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "nerzh/everscale-client-swift" : {
+    "pin_count" : 7,
+    "resolved_at" : "2026-10-11T02:25:16Z",
+    "sha256" : "442c709c6b671eb462b3d5aad054d36d960cdf3c114d62b9771c63cb80712f39",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "netreconlab/parse-server-swift" : {
+    "pin_count" : 30,
+    "resolved_at" : "2026-10-11T02:21:52Z",
+    "sha256" : "f18126d15e5f3b8b5cd798432dab78e7c04d9e70888468fcbf9b685a4335107d",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "nikolay-dementiev/DMAction" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:35Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ofgokce/Zerk" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:07:35Z",
+    "sha256" : "b89d669d2cb3ba481179f13cadf85e0835f6592e18e8fb6ba1f6bf1ec230b4b2",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "ohitslaurence/swift-ai-sdk" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:16:24Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "onefootprint/Swift-Onboarding-Components" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T01:56:08Z",
+    "sha256" : "2c46d41be931a0a7afaf7adc215bea118cb0392f0655b5bde16ae988b3fe5ee3",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "orchetect/swift-ascii" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:43Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "orchetect/swift-pdf-processor" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-11T02:21:11Z",
+    "sha256" : "d90898dbf0567f2bb3b8a5b89b1bf94de088904320d531a63d583141d0a06443",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "orlandos-nl/Citadel" : {
+    "pin_count" : 10,
+    "resolved_at" : "2026-10-11T02:07:55Z",
+    "sha256" : "f5669a7f6e470c21fa0a61c4b5660defc66e1f9681d434998eae57427eea4941",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "pedronahum/MetalHLO" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:14:35Z",
+    "sha256" : "247fd4c2ebeebaf8905d8f1e379f436a46e01b0353d0b2ed2375be18396a8760",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "perfectlysoft/perfect-mysql" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:57:04Z",
+    "sha256" : "32bce7a712cfc8a60175384c0ed3613d7370f200175ebd728e21a1519754a2a9",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "perfectlysoft/perfect-sqlite" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:16:31Z",
+    "sha256" : "7db1b6017a573e890381ba634e4a303241ca22917c8a58a0c6f716c5ba920c38",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "philiprehberger/swift-keychain-kit" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:25:26Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "pinterest/PINRemoteImage" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:28:20Z",
+    "sha256" : "fc228c343dd696e8ab9ec8a5b6eb9821e57cabe9cd842fbff9ac7decace95c3f",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "pm-dev/swift-graphql-codegen" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:00:46Z",
+    "sha256" : "e848bfbbd44d05b5696b66409af367c010ae470f1f89e536209fdd33bc152a89",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "powersync-ja/powersync-swift" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-11T02:11:00Z",
+    "sha256" : "d4f2fd0f0a382e911fd997b75450bc3be41495f0576cc7575b3defc421fdb79f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "pubnub/swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:24:00Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "quran/quran-ios" : {
+    "pin_count" : 14,
+    "resolved_at" : "2026-10-11T02:26:59Z",
+    "sha256" : "547ec7f8711d65aa648b5fcafeff1516f6a76508e82772ef9d80437d8a1f245a",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "regulaforensics/DocumentReaderOCRRFID-Swift-Package" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:25:24Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "regulaforensics/FaceSDK-Swift-Package" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:22:07Z",
+    "sha256" : "dc63dd7bfb3e4cc7d7ec0bb224ae850fc36299714040e6bc43d695c568aa3feb",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "rhx/SwiftPango" : {
+    "pin_count" : 10,
+    "resolved_at" : "2026-10-11T02:27:48Z",
+    "sha256" : "7c179d60ee1fe63e8b9f4d7a399d762e79d8365bc01087a3e86e6e68f2f68637",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "rryam/VecturaKit" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:58:32Z",
+    "sha256" : "b878d27feef2bb112a628826d2592e40779d48e648c56743ec6d82fe30a7c0d1",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "rudderlabs/rudder-sdk-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:03:48Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ryanashcraft/FabBar" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:57Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ryanellis42675/gpt-images-25" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:18:09Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "ryanfrancesconi/spfk-metadata" : {
+    "pin_count" : 19,
+    "resolved_at" : "2026-10-11T02:10:30Z",
+    "sha256" : "8388512fa490338e4daf1620f7b9bc12977f4242abb0cd6f681da07f100e40e4",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "ryanlintott/LookingGlassUI" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:19Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "s2mr/L10nLint" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:01:00Z",
+    "sha256" : "2fb954640f69736cfbcce9b43b3d169ef53c263867528eb88f7fb666af21cf8b",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "saifmukhtar/kinetic-embed" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:40Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "samsonjs/NotificationSmuggler" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:37Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sbooth/CXXSharedMutex" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:54:20Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sbooth/Geodesic" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:15:31Z",
+    "sha256" : "c7acdff531fcc261e4759a11c080fdae43e3382ecce934ae2f36e0c7503261d6",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "segmentio/Sovran-Swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:43Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "serpapi/serpapi-swift" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:17:45Z",
+    "sha256" : "1a87c8dadfa98174575ef4d7b8371da3e11e461e15afbd96c2f1ece1316f1c86",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "shahwaiz90/ghoststrings-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:02:12Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "shareup/dispatch-timer" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:13:35Z",
+    "sha256" : "3984398806c8207ef3351883bb68fd5b06e41c0c82a8c8df4e39a41e54c87209",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "sideeffect-io/AsyncExtensions" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:23:27Z",
+    "sha256" : "a1195a865e6369d94cfb71ff10de714b98734d5ebe4f422181ef30ca4d583f7f",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "sigilgreenhouse/pico-async-observable" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:20Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sindresorhus/Percentage" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:15Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sinoru/swift-property-list" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:02:41Z",
+    "sha256" : "3eae9734cece64c7d4b56787eeaa4e56e3d51124e366206a0601d1038b8878c3",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "sirily11/swift-jsonschema-form" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T02:00:54Z",
+    "sha256" : "1646868c97da4f83c6a0fb010a50ba58cfbbd45c0ded788f14558e4a4731ecca",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "skedgo/tripkit-ios" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:29:33Z",
+    "sha256" : "92c6b5197c322743027dfd72a97479d55cfdc25f15102fdcdf53958ca46c57a4",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "slepp/requisite-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:58:04Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "slidoapp/Appcast" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:57:05Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sloik/ExTests" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:25:00Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "sorunokoe/SwiftMapper" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:58:29Z",
+    "sha256" : "78bf4e8a4b433dcbbbd1f55f5cb5ebe12fd5be3c6a8cd0549c94507485ebb5dc",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "southkin/EthicalListView" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:06:55Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "square/Blueprint" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:18:11Z",
+    "sha256" : "48b314a674070aa0e9c2f43c43073ebb6df501fc34de00ea1126430bc8716ccc",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "stack/Restructure" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T01:58:20Z",
+    "sha256" : "b45210d387216ee9c10166c1e581610d5e7a0e6fca4e5884e15373b53cf80d50",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "stackotter/SwiftJavaLang" : {
+    "pin_count" : 8,
+    "resolved_at" : "2026-10-11T02:06:54Z",
+    "sha256" : "2ec800ea2264af8def4a1f8e3e92a8abcc3bf3d1b8899675016b016eee43c58d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "stackotter/SwiftKotlin" : {
+    "pin_count" : 9,
+    "resolved_at" : "2026-10-11T01:59:16Z",
+    "sha256" : "5b502e4e14b029e0769d575d227b97b725b61588fe490bdefa6e1482c153964c",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "stackotter/swift-java" : {
+    "pin_count" : 13,
+    "resolved_at" : "2026-10-11T02:17:05Z",
+    "sha256" : "7a25bd13122e86238a57c389f2f7d11c95e52feffdf741f3cd1dc4d6bde6fabe",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "std-uritemplate/std-uritemplate-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:56Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "steipete/Swiftdansi" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:23:52Z",
+    "sha256" : "d9af46d5bf512422b0074b293019fa1b2923c73a6f895b9aaaa8f2888f610bda",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "stensoosaar/tws-api-swift" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-11T02:23:37Z",
+    "sha256" : "6778999900b03dc98a597156b111cd1bb6e163e2d3db4abbe695182d04c7654c",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "stripe/stripe-ios" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:09Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swhitty/swift-mutex" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:29Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swift-atoms/swift-ownership" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:27:21Z",
+    "sha256" : "75b8ed5d40bc2e00c1634a5067d6873688ca7735f33c70e25bc84360b0c780af",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swift-compositions/swift-testing-performance" : {
+    "pin_count" : 16,
+    "resolved_at" : "2026-10-11T02:30:28Z",
+    "sha256" : "773f4e8e356a634bb3f2236feb2625cc504ec928a198e3fad7f5f2e17d811951",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swift-ietf/swift-rfc-5321" : {
+    "pin_count" : 56,
+    "resolved_at" : "2026-10-11T02:04:46Z",
+    "sha256" : "77b9f4ef3eed402ae2bc3225be013c19d55de355c46e63e28b259175b969801f",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swift-ietf/swift-rfc-791" : {
+    "pin_count" : 52,
+    "resolved_at" : "2026-10-11T02:10:04Z",
+    "sha256" : "f17bb33675e3ecfd2510882bd9bc8eeef4c9683bd8e95c19a5fce8590188091d",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swift-libp2p/swift-cid" : {
+    "pin_count" : 6,
+    "resolved_at" : "2026-10-11T02:17:28Z",
+    "sha256" : "f40b547aef0bc9a4e49852622d91e4a3e189637ebebc27874ebf74e1f5b5369b",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swiftlang/example-package-figlet" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:13:43Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swiftlang/swift-foundation" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T01:58:51Z",
+    "sha256" : "e48ac470260088dcd912b3a64d87ff649f21a4827c230e0fbf39c05f0d823732",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swiftlang/swift-playdate-examples" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:56Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swiftlang/swift-subprocess" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:17:51Z",
+    "sha256" : "a9e23cc62c1e5761fd0d578b470e1c340e680f70e661e4ab0688e09d2c15f271",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "swiftlang/swift-toolchain-sqlite" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:03:44Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "swifweb/web" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:17:17Z",
+    "sha256" : "fbe85f2bcc47bf6042befa7ff65223f9d118c20f62604e59879f43fbc50169c6",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "t089/swift-vips" : {
+    "pin_count" : 3,
+    "resolved_at" : "2026-10-11T01:58:11Z",
+    "sha256" : "783529a32b8b84a5000f519066624d8c71f32c71a902f2f91495101de48bdcab",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "takeshishimada/Lockman" : {
+    "pin_count" : 20,
+    "resolved_at" : "2026-10-11T02:05:15Z",
+    "sha256" : "9abee63634d29cefeb518345ae95b115fb6bc23abca7433629373e95dec38ded",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "tbxark/swift-telegram-bot-api" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:07Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "teunlao/swift-ai-sdk" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:06:36Z",
+    "sha256" : "98ecacdc3ccd61c5ebbdcd896cf3213bd98f5d51bf24eb1014273329e0bebd75",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "thebbapp/swift-package-bb-app-author-schema" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:33Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "thebbapp/swift-package-bb-app-intent" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:13:24Z",
+    "sha256" : "7bc49526863d2daaff4c348b237f1db06ec874f5d94b6ec4cb17c267d7f9c7b0",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "thebbapp/swift-package-bb-app-relative-date" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:28:14Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "thebbapp/swift-package-bb-app-status-bar" : {
+    "pin_count" : 13,
+    "resolved_at" : "2026-10-11T02:08:58Z",
+    "sha256" : "a60ed1cd051154ae1c9d503742054ffad3a4fd667965508a0e483f4b0a29b7cc",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "thelastbackspace/swift-strip-json-comments" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:23:43Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "timi2506/WelcomeView" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:59Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "tomasf/NavLibSwift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:15:24Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "toupper/Wink" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:18:32Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "tree-sitter-grammars/tree-sitter-xml" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:01:39Z",
+    "sha256" : "0bde18417f881b033d47b8a5476d00bfcd97c3052a19261f24bade59f44528f9",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "tuist/ZIPFoundation" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:21:14Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "twinkling-reality/opennook" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:07:02Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "twostraws/CodeScanner" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:22:34Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "unionst/swift-chat" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:29:45Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "usabilla/usabilla-u4a-ios-swift-sdk" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:17:13Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "vapor/postgres-kit" : {
+    "pin_count" : 17,
+    "resolved_at" : "2026-10-11T02:20:48Z",
+    "sha256" : "a4d5d602e5ee5dbb54de6d03cd9b4114e507c850c09a56fb99d2579984057388",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "vapor/postgres-nio" : {
+    "pin_count" : 12,
+    "resolved_at" : "2026-10-11T02:08:33Z",
+    "sha256" : "1223a67a0723a4c3ef454f92b2eecabd318f7c9ca9f733eb1065efe61f788450",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "vilimets/AsyncBLE-Swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:18:07Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "vivekptnk/ProximaKit" : {
+    "pin_count" : 2,
+    "resolved_at" : "2026-10-11T02:07:40Z",
+    "sha256" : "f6bbde4aec7568acd5bda43f64316f32b9c20794600f557b20a2056e413246bf",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "weppos/uddf-swift" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:57:35Z",
+    "sha256" : "2f39df1bd2a3fe4ac7dce33020c4cc1457ae99dcb61562073c4ce186c2ac13d0",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "winddpan/CodableWrapper" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T01:56:14Z",
+    "sha256" : "7f1ccf0f6e884f4025c674ba161bdf641a7650cdcab33a69a6e27a1cce03c861",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  },
+  "worldcoin/idkit-swift" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T01:53:52Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "yandex/vgsl" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:20:30Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "yliu-hashed/shimmers-hdl" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:03:41Z",
+    "sha256" : "7116b409a8f3595404ab6d7981763fafe5ff4d2325813269ee8036072cc1854e",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "yockow/swiftranges" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:00:13Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "yvente/swift-remove-markdown" : {
+    "pin_count" : 0,
+    "resolved_at" : "2026-10-11T02:10:32Z",
+    "sha256" : "90798d0becbb33b4f42aa0e8ea7bd7a8cc2a8c752fc94417b6fd6b2f7b844a8f",
+    "source" : "none",
+    "toolchain" : "6.4"
+  },
+  "zendesk/chat_sdk_ios" : {
+    "pin_count" : 5,
+    "resolved_at" : "2026-10-11T02:03:27Z",
+    "sha256" : "6aea8dbaf7baf5071b714cc66cb8af0990ab3855b0bf7b9bf6c12a7b85562121",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "zendesk/messagingapi_sdk_ios" : {
+    "pin_count" : 1,
+    "resolved_at" : "2026-10-11T02:18:36Z",
+    "sha256" : "999290c15585f0c53531ed64c44077d4bb13f5a76d9dc6de0843e74deabb0e3b",
+    "source" : "generated",
+    "toolchain" : "6.4"
+  },
+  "zunda-pixel/appattest-swift" : {
+    "pin_count" : 4,
+    "resolved_at" : "2026-10-11T02:01:32Z",
+    "sha256" : "83fb92d8c58501ade946ac223afb712d770ee80070e609d598b0ab74d6410b2a",
+    "source" : "upstream",
+    "toolchain" : "6.4"
+  }
+}

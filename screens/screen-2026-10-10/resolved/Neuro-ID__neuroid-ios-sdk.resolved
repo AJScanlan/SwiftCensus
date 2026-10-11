@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "bda9ed57d72988a3a2ada33d824583541f86eac6",
+        "version" : "5.12.2"
+      }
+    },
+    {
+      "identity" : "fingerprint-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fingerprintjs/fingerprint-ios",
+      "state" : {
+        "revision" : "3a12909c4672d1a67454866fcf9aa69f48dcb31e",
+        "version" : "4.1.0"
+      }
+    },
+    {
+      "identity" : "jsonschema.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/JSONSchema.swift",
+      "state" : {
+        "revision" : "d14de4b2d9205068c9db89c00d097ca43c897000",
+        "version" : "0.6.0"
+      }
+    },
+    {
+      "identity" : "jsonschemavalidation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dashpay/JSONSchemaValidation",
+      "state" : {
+        "revision" : "3b752520a969288702e987f3c9bfb3601aa2d720",
+        "version" : "2.0.7"
+      }
+    },
+    {
+      "identity" : "pathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/PathKit.git",
+      "state" : {
+        "revision" : "3bfd2737b700b9a36565a8c94f4ad2b050a5e574",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "spectre",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kylef/Spectre.git",
+      "state" : {
+        "revision" : "26cc5e9ae0947092c7139ef7ba612e34646086c7",
+        "version" : "0.10.1"
+      }
+    }
+  ],
+  "version" : 2
+}

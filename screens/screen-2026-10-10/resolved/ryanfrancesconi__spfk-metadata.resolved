@@ -1,0 +1,177 @@
+{
+  "originHash" : "d77d991fc8b1d7a0f4ff73175cee40e9992ab6cd14032dd44deaf56e9e03315a",
+  "pins" : [
+    {
+      "identity" : "aexml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tadija/AEXML",
+      "state" : {
+        "revision" : "db806756c989760b35108146381535aec231092b",
+        "version" : "4.7.0"
+      }
+    },
+    {
+      "identity" : "spfk-audio-base",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-audio-base",
+      "state" : {
+        "revision" : "fc92a59ae0d7aa0a45c688f1f9db608b80ae2018",
+        "version" : "1.18.0"
+      }
+    },
+    {
+      "identity" : "spfk-base",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-base",
+      "state" : {
+        "revision" : "32904f95648975a94606620a33c49ad0c1e30553",
+        "version" : "1.12.0"
+      }
+    },
+    {
+      "identity" : "spfk-filesystem",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-filesystem",
+      "state" : {
+        "revision" : "af591948f63e3d28de7f8119ea2c1eefc0b177f1",
+        "version" : "1.11.0"
+      }
+    },
+    {
+      "identity" : "spfk-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-image",
+      "state" : {
+        "revision" : "6ef329e40db59be4b0009f445c1ba87407976bf1",
+        "version" : "0.3.1"
+      }
+    },
+    {
+      "identity" : "spfk-matroska",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-matroska",
+      "state" : {
+        "revision" : "f2509da519db42f0ff159135e83422bdb5d56597",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "spfk-metadata-base",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-metadata-base",
+      "state" : {
+        "revision" : "bdbb7c58e9625448264051e5808772fa289f9701",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "spfk-mkvparser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-mkvparser",
+      "state" : {
+        "revision" : "d95750bcceb6a34618d7f2be7030829bf7ddfcb2",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "spfk-taglib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-taglib",
+      "state" : {
+        "revision" : "ec02b5ca3143c9eb9241f8e32966b99e6e8e8c69",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "spfk-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-testing",
+      "state" : {
+        "revision" : "0955553eff4aed610cf3aa675451d4f670569376",
+        "version" : "1.13.0"
+      }
+    },
+    {
+      "identity" : "spfk-utils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-utils",
+      "state" : {
+        "revision" : "5746fd13a2a3f59f6e3c7a07dc1b23a6cac704ef",
+        "version" : "1.26.0"
+      }
+    },
+    {
+      "identity" : "spfk-video",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ryanfrancesconi/spfk-video",
+      "state" : {
+        "revision" : "573245adc3c61772284819642388e6fc9862df15",
+        "version" : "1.14.0"
+      }
+    },
+    {
+      "identity" : "swift-async-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-async-algorithms",
+      "state" : {
+        "revision" : "13713a4ffdee8abd929f92568ee9462a46ae26e0",
+        "version" : "1.1.7"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "revision" : "3b69cedbaa49957e97c092ae400bb57602ef941f",
+        "version" : "1.7.2"
+      }
+    },
+    {
+      "identity" : "swift-data-parsing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-data-parsing",
+      "state" : {
+        "revision" : "b5c4d0455151c30069bb435e86a7cafa937c6e47",
+        "version" : "0.1.2"
+      }
+    },
+    {
+      "identity" : "swift-extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-extensions",
+      "state" : {
+        "revision" : "5e63f81b48e264fbd45b687883dab9dc2faf3d71",
+        "version" : "2.3.2"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "swift-timecode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-timecode",
+      "state" : {
+        "revision" : "63a152cea4817e094a7be22e82414f60a77baae0",
+        "version" : "3.1.4"
+      }
+    },
+    {
+      "identity" : "swift-xattr",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jozefizso/swift-xattr",
+      "state" : {
+        "revision" : "1cd1e6bc9aecdcce31c66e2d2d5561ecd7ead83a",
+        "version" : "3.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

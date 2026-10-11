@@ -1,0 +1,42 @@
+{
+  "originHash" : "9dbc7e0232a7b941456957acd2707eb4db055611060e830754cc5f73d6818518",
+  "pins" : [
+    {
+      "identity" : "fingerprintjs-pro-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/fingerprintjs/fingerprintjs-pro-ios",
+      "state" : {
+        "revision" : "96b9db53b186004f7b9b9584d3a9ffdc44b7fbb6",
+        "version" : "2.10.0"
+      }
+    },
+    {
+      "identity" : "kmp-nativecoroutines",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rickclephas/KMP-NativeCoroutines.git",
+      "state" : {
+        "revision" : "fce8c8d25b874b2038be81bb3ba5cc51af1a976f",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "moneykit-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moneykit/moneykit-ios",
+      "state" : {
+        "revision" : "112fb07f1296605e1dfc91d7bdc5af76786520f0",
+        "version" : "1.11.2"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "132aea4f236ccadc51590b38af0357a331d51fa2",
+        "version" : "6.10.2"
+      }
+    }
+  ],
+  "version" : 3
+}

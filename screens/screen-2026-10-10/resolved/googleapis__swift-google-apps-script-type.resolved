@@ -1,0 +1,24 @@
+{
+  "originHash" : "2dd1f0297da743886d3083c88172117087a5fe40fab3230e5336fb7d28cb47ab",
+  "pins" : [
+    {
+      "identity" : "swift-extras-base64",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-extras/swift-extras-base64",
+      "state" : {
+        "revision" : "c803790ffc55c4b4f297f52ee6fbd5b0b3d046ef",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swift-google-wkt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleapis/swift-google-wkt",
+      "state" : {
+        "revision" : "0053238ec44d170dce901347484a98d4221606a6",
+        "version" : "0.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}

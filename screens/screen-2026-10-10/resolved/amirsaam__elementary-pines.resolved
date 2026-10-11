@@ -1,0 +1,33 @@
+{
+  "originHash" : "0c1b29b75789260a2bb968d0f909cc7222fe167483529281d09a4535e25cada3",
+  "pins" : [
+    {
+      "identity" : "elementary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elementary-swift/elementary.git",
+      "state" : {
+        "revision" : "9a66ebc5f8a2586f2a94893fc6e22d833c8e2ae5",
+        "version" : "0.8.2"
+      }
+    },
+    {
+      "identity" : "elementary-alpine",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amirsaam/elementary-alpine.git",
+      "state" : {
+        "revision" : "0029d38aa857d98a00ab48cf45867eaabb600d47",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "elementary-tailwind",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amirsaam/elementary-tailwind.git",
+      "state" : {
+        "revision" : "44eede9b225eafc87562463849fbf0eea357e0f7",
+        "version" : "0.3.700"
+      }
+    }
+  ],
+  "version" : 3
+}

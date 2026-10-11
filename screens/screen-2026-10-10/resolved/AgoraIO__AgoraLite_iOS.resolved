@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AgoraInfra_iOS",
+        "repositoryURL": "https://github.com/AgoraIO/AgoraInfra_iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "4dfb30919815b1d4f2abb9e2cfbff345cfe5e493",
+          "version": "1.3.16"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

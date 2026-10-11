@@ -1,0 +1,123 @@
+{
+  "originHash" : "0ee0338275b2774ba7a2506067fe894908859be94494ba4ba90dc31cd11934a6",
+  "pins" : [
+    {
+      "identity" : "swift-package-bb-app-auth-provider-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-auth-provider-schema.git",
+      "state" : {
+        "revision" : "f991dc387cfa1817f2c1124f4b7a13929fb0c162",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-author-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-author-schema.git",
+      "state" : {
+        "revision" : "d0ea37a3eb32e7ee373b7dd8b9f20abfe4390e78",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-content-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-content-schema.git",
+      "state" : {
+        "revision" : "484c95ce8c1ec8fc7c79778e04f550e3ea049fbd",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-content-source-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-content-source-schema.git",
+      "state" : {
+        "revision" : "7028bb5dddf86e44cde2f0aced08baebdb1d4a3d",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-edit-comment-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-edit-comment-schema.git",
+      "state" : {
+        "revision" : "6377cbdfc0e24b3540f9184fb7bcb90475e79caf",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-edit-post-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-edit-post-schema.git",
+      "state" : {
+        "revision" : "7713634e43e65a9f125090dec708387b4391dce2",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-http-client",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-http-client.git",
+      "state" : {
+        "revision" : "166ada6d45726d5dcdf525f54dc94359503f9322",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-intent",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-intent.git",
+      "state" : {
+        "revision" : "f707edf289dceb2dfcc2e65485ed51e83d08821e",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-new-comment-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-new-comment-schema.git",
+      "state" : {
+        "revision" : "7cc278959f18d94bd00d0e98a61a2c521fb02489",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-new-post-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-new-post-schema.git",
+      "state" : {
+        "revision" : "776c48326fbfd8ed1dafaf6d91869847481eb6aa",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-search-schema",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-search-schema.git",
+      "state" : {
+        "revision" : "c229969e80121fd4fce3bf9321cd18aaafe14c1f",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-state",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-state.git",
+      "state" : {
+        "revision" : "f14410a6d83ad49dd6c936937170b88c68058f35",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swift-package-bb-app-task",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebbapp/swift-package-bb-app-task.git",
+      "state" : {
+        "revision" : "7756bf43db50302c684fcb878bd266bdc58a1d27",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

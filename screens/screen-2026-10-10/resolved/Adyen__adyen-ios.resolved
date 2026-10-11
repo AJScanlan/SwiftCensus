@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "adyen-3ds2-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Adyen/adyen-3ds2-ios",
+      "state" : {
+        "revision" : "00862adbc079d0be943666a4ad2523deb31f9546",
+        "version" : "2.4.4"
+      }
+    },
+    {
+      "identity" : "adyen-authentication-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Adyen/adyen-authentication-ios",
+      "state" : {
+        "revision" : "e23e06009c3494834396fbddae1fc79451f57de3",
+        "version" : "3.2.0"
+      }
+    },
+    {
+      "identity" : "adyen-networking-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Adyen/adyen-networking-ios",
+      "state" : {
+        "revision" : "d4477117bb74dd27d2129e3af82536815dacbc5d",
+        "version" : "3.1.0"
+      }
+    },
+    {
+      "identity" : "adyen-wechatpay-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Adyen/adyen-wechatpay-ios",
+      "state" : {
+        "revision" : "1127f793854d8624dbe6741d5c42be39dadd4f93",
+        "version" : "2.2.0"
+      }
+    },
+    {
+      "identity" : "cash-app-pay-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cashapp/cash-app-pay-ios-sdk",
+      "state" : {
+        "revision" : "25f526aec9b2535d0dc4485280bbf6c7d39e3424",
+        "version" : "0.6.2"
+      }
+    },
+    {
+      "identity" : "swiftgenplugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftGen/SwiftGenPlugin.git",
+      "state" : {
+        "revision" : "879b85a470cacd70c19e22eb7e11a3aed66f4068",
+        "version" : "6.6.2"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,51 @@
+{
+  "originHash" : "91b40b2a142d100e7e3f81824af1669b043900e7b2a5c551f58bf7b80bee2be9",
+  "pins" : [
+    {
+      "identity" : "bitbytedata",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tsolomko/BitByteData",
+      "state" : {
+        "revision" : "e1a5443be67daf0833cbb5f4fa3a06a265ca3105",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "swcompression",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tsolomko/SWCompression",
+      "state" : {
+        "revision" : "03a68e67991815a267e28174a0a01fbe0cff937b",
+        "version" : "4.9.1"
+      }
+    },
+    {
+      "identity" : "swift-extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-extensions",
+      "state" : {
+        "revision" : "1499d7db834512a203b9fb7954da5a3ba3f625d7",
+        "version" : "3.0.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "050f1a346fbbac0ca2cfb15a95274f7bd1cf0ccf",
+        "version" : "604.0.0"
+      }
+    },
+    {
+      "identity" : "swift-testing-extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-testing-extensions.git",
+      "state" : {
+        "revision" : "c1b993130a86fcfec084ad0e466011c684e62819",
+        "version" : "0.3.1"
+      }
+    }
+  ],
+  "version" : 3
+}

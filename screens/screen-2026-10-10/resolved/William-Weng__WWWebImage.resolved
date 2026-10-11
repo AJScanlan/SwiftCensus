@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "wwcachemanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWCacheManager",
+      "state" : {
+        "revision" : "f1cb47f9ecf8bd4c323432a1145f4b5628bb7bab",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

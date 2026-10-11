@@ -1,0 +1,15 @@
+{
+  "originHash" : "4fb59b7ead59543fa195b1851f4c3f85603bf3b57b784015c324bedaf2e504f4",
+  "pins" : [
+    {
+      "identity" : "uuswifttestcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SilverPineSoftware/UUSwiftTestCore.git",
+      "state" : {
+        "revision" : "1563c80ed71b57662a9bdf9af96f8e6267605f6b",
+        "version" : "0.0.5"
+      }
+    }
+  ],
+  "version" : 3
+}

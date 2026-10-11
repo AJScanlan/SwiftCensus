@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RegulaCommon",
+        "repositoryURL": "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git",
+        "state": {
+          "branch": null,
+          "revision": "9d00e4f73ad1376855c0897e5babf299d8a59aa1",
+          "version": "9.8.2929-rc"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

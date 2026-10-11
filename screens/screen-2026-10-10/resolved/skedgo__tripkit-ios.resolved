@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "geomonitor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/skedgo/GeoMonitor.git",
+      "state" : {
+        "revision" : "170e4fdbabd291880de4017a1e396969930d82b7",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "c152c1915f60c51e4afa0752656993ee5b3c63db",
+        "version" : "8.8.1"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "132aea4f236ccadc51590b38af0357a331d51fa2",
+        "version" : "6.10.2"
+      }
+    },
+    {
+      "identity" : "tgcardviewcontroller",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/skedgo/TGCardViewController.git",
+      "state" : {
+        "revision" : "776cc3bfe19f6c2debf8f0eff2e82c17980ade99",
+        "version" : "2.4.2"
+      }
+    }
+  ],
+  "version" : 2
+}

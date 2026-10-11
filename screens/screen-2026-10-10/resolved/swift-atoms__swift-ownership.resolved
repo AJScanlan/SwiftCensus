@@ -1,0 +1,24 @@
+{
+  "originHash" : "7ab82eb90c1e7d49ea241abba419bf1e002b8b127337db448e9ec4452894c0f0",
+  "pins" : [
+    {
+      "identity" : "swift-carrier",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-atoms/swift-carrier.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ee19248afc7356a1054343158999db350f3ff9c4"
+      }
+    },
+    {
+      "identity" : "swift-tagged",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-atoms/swift-tagged.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6e00f0292c3bad3df1a654ab6454a7d9de4caa60"
+      }
+    }
+  ],
+  "version" : 3
+}

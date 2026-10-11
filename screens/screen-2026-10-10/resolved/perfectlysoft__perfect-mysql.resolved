@@ -1,0 +1,15 @@
+{
+  "originHash" : "942fc5151ecbd435371dd040c934f112356f8efe136e966b9810751646582e0f",
+  "pins" : [
+    {
+      "identity" : "perfect-crud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PerfectlySoft/Perfect-CRUD.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0f32267a0ec2168dcfea314c9f47f4b1fbf581b7"
+      }
+    }
+  ],
+  "version" : 3
+}

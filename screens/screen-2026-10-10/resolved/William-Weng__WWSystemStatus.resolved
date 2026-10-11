@@ -1,0 +1,15 @@
+{
+  "originHash" : "c4195f5b9f88b04397a884fb05a894ce2316f312be3a90ae40ca4b1ef381f4a9",
+  "pins" : [
+    {
+      "identity" : "wwnetworkclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWNetworkClient.git",
+      "state" : {
+        "revision" : "620061d06deedbfa5834ae47ad4b2a178ec9d514",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 3
+}

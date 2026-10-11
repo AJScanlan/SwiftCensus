@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ZendeskSDKConfigurationsSDK",
+        "repositoryURL": "https://github.com/zendesk/sdkconfigurations_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "18de371f71f6a92b34f63013fe2fbe46caf0811e",
+          "version": "4.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

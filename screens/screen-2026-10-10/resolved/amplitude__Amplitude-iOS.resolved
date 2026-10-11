@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "analytics-connector-ios",
+        "repositoryURL": "https://github.com/amplitude/analytics-connector-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "6d1a5b9666192861342b70ea0b2274180a5e1d4f",
+          "version": "1.3.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

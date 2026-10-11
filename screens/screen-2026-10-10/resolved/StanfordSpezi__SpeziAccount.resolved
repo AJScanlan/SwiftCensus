@@ -1,0 +1,195 @@
+{
+  "originHash" : "7aecf96f5a24ebe70c4bdb931476e42a788e00d6b9a6e58840d10d54809207b6",
+  "pins" : [
+    {
+      "identity" : "networkimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/NetworkImage",
+      "state" : {
+        "revision" : "2849f5323265386e200484b0d0f896e73c3411b9",
+        "version" : "6.0.1"
+      }
+    },
+    {
+      "identity" : "phonenumberkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/PhoneNumberKit",
+      "state" : {
+        "revision" : "169ab10234347fb19b37441f2867ace896a284b0",
+        "version" : "4.3.0"
+      }
+    },
+    {
+      "identity" : "spezi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordSpezi/Spezi.git",
+      "state" : {
+        "revision" : "1941c2d564f88c8f077c63d3bbbefd1dbe32764c",
+        "version" : "1.10.2"
+      }
+    },
+    {
+      "identity" : "spezifoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordSpezi/SpeziFoundation.git",
+      "state" : {
+        "revision" : "09b0a95cef41e42e494f74f395d83a4dc9c6d159",
+        "version" : "2.7.7"
+      }
+    },
+    {
+      "identity" : "spezistorage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordSpezi/SpeziStorage.git",
+      "state" : {
+        "revision" : "79ce6a23f61d38b175b8ee681cc74d7fc93fb8cb",
+        "version" : "2.1.4"
+      }
+    },
+    {
+      "identity" : "speziviews",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordSpezi/SpeziViews.git",
+      "state" : {
+        "revision" : "236fd063407aaba2a34f3f61b3034dd3a01f22c5",
+        "version" : "1.12.14"
+      }
+    },
+    {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms.git",
+      "state" : {
+        "revision" : "87e50f483c54e6efd60e885f7f5aa946cee68023",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "swift-atomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-atomics.git",
+      "state" : {
+        "revision" : "0442cb5a3f98ab802acb777929fdb446bda11a34",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-cmark",
+      "state" : {
+        "revision" : "08ddb528923cc1a6527e02b7a1aee9e516ca749a",
+        "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "3b69cedbaa49957e97c092ae400bb57602ef941f",
+        "version" : "1.7.2"
+      }
+    },
+    {
+      "identity" : "swift-custom-dump",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-custom-dump",
+      "state" : {
+        "revision" : "4fb9e7cbb4b8f5a7354005db39447f570d6b3e19",
+        "version" : "1.7.3"
+      }
+    },
+    {
+      "identity" : "swift-issue-reporting",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-issue-reporting",
+      "state" : {
+        "revision" : "75b000cea2ca6d7527a57e1b9cc0bdf21a9abe9f",
+        "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log",
+      "state" : {
+        "revision" : "4038b6a4f74a1426f47eb1dd5b4bb5628a15d597",
+        "version" : "1.16.1"
+      }
+    },
+    {
+      "identity" : "swift-markdown-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/swift-markdown-ui.git",
+      "state" : {
+        "revision" : "5f613358148239d0292c0cef674a3c2314737f9e",
+        "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics.git",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "revision" : "28e5de025e3fd98991791bfbf83023ab3708da03",
+        "version" : "1.19.6"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+        "version" : "602.0.0"
+      }
+    },
+    {
+      "identity" : "threadlocal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/ThreadLocal.git",
+      "state" : {
+        "revision" : "44d3c09da5fbdba0cdb50cb84781dc7d35659887",
+        "version" : "0.1.3"
+      }
+    },
+    {
+      "identity" : "xctestextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/XCTestExtensions.git",
+      "state" : {
+        "revision" : "d860cb6fde3ff5a0fb65f06575f1f8cd7f8a5fb5",
+        "version" : "1.2.6"
+      }
+    },
+    {
+      "identity" : "xctruntimeassertions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/XCTRuntimeAssertions.git",
+      "state" : {
+        "revision" : "ba5753f59905b80fd98d0da0f552f4e5d5c0488e",
+        "version" : "2.2.0"
+      }
+    },
+    {
+      "identity" : "zstd",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/zstd.git",
+      "state" : {
+        "revision" : "ae9f20ca2716f2605822ca375995b7d876389b64",
+        "version" : "1.5.8-beta.1"
+      }
+    }
+  ],
+  "version" : 3
+}

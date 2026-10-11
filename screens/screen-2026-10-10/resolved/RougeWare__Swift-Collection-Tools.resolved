@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FunctionTools",
+        "repositoryURL": "https://github.com/RougeWare/Swift-Function-Tools.git",
+        "state": {
+          "branch": null,
+          "revision": "ff75055b60271137f709963c4495613cb3d30587",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

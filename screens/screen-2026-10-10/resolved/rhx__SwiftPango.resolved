@@ -1,0 +1,95 @@
+{
+  "pins" : [
+    {
+      "identity" : "gir2swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/gir2swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e2b894e3ba0197d7c2ebe1cde62e5c1faa404b75"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "6a52f3251125d74daf04fcbd5e6f08a75d074382",
+        "version" : "1.8.2"
+      }
+    },
+    {
+      "identity" : "swift-docc-plugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-docc-plugin",
+      "state" : {
+        "revision" : "647c708be89f834fa6a6d4945442793a77ddf5b6",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "swift-docc-symbolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-docc-symbolkit",
+      "state" : {
+        "revision" : "b45d1f2ed151d057b54504d653e0da5552844e34",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftgio",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/SwiftGIO.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9a2ee26f08383d489988a837006992323b005bec"
+      }
+    },
+    {
+      "identity" : "swiftglib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/SwiftGLib.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "895fb2790b0ff43f3e6a233308fb70e980618ccf"
+      }
+    },
+    {
+      "identity" : "swiftgobject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/SwiftGObject.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0277c770af19a0c7be7710cb017c33ad81a30857"
+      }
+    },
+    {
+      "identity" : "swiftharfbuzz",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/SwiftHarfBuzz.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2e81bc12795c121e0483e586d67665bc5a692d64"
+      }
+    },
+    {
+      "identity" : "swiftlibxml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rhx/SwiftLibXML.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "35dea8fe9a65a8971eb5fde906fd41b07d855d6a"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
+        "version" : "4.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}
