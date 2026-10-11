@@ -1,0 +1,123 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 4,
+    "path" : "Sources/MediaSizeWatchdog/MediaSizeWatchdog.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'MediaSizeWatchdog' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 3,
+    "parent" : 0,
+    "path" : "Sources/MediaSizeWatchdog/MediaSizeWatchdog.swift",
+    "severity" : "note",
+    "text" : "class 'MediaSizeWatchdog' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 4,
+    "parent" : 0,
+    "path" : "Sources/MediaSizeWatchdog/MediaSizeWatchdog.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 4,
+    "parent" : 0,
+    "path" : "Sources/MediaSizeWatchdog/MediaSizeWatchdog.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_mutable_state_decl",
+    "line" : 32,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "warning",
+    "text" : "static property 'reporter' is not concurrency-safe because it is nonisolated global shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "shared_state_make_immutable",
+    "line" : 32,
+    "parent" : 4,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "note",
+    "text" : "convert 'reporter' to a 'let' constant to make 'Sendable' shared state immutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 32,
+    "parent" : 4,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'reporter' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 32,
+    "parent" : 4,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "concurrent_value_class_mutable_property",
+    "line" : 34,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "warning",
+    "text" : "stored property 'dataTask' of 'Sendable'-conforming class 'URLSessionMediaURLProtocol' is mutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "conformance_availability_unavailable",
+    "line" : 29,
+    "path" : "Sources/MediaSizeWatchdog/URLSessionMediaAdapter.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'URLProtocol' to 'Sendable' is unavailable in macOS; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "conformance_availability_marked_unavailable",
+    "line" : 1,
+    "parent" : 9,
+    "path" : "",
+    "severity" : "note",
+    "text" : "conformance of 'URLProtocol' to 'Sendable' has been explicitly marked unavailable here"
+  }
+]

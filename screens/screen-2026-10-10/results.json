@@ -1,0 +1,2909 @@
+[
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "klaviyo/klaviyo-swift-sdk",
+    "reason" : "build_failed",
+    "sha" : "effec593519f2a93afeaa231570818ac5e2364e9",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 2,
+    "package_id" : "JanGorman/Agrume",
+    "reason" : "build_failed",
+    "sha" : "7f62ae1da1b19d6e498bf26e3ed8519f5fd4569b",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 101,
+    "package_id" : "brightdigit/SyndiKit",
+    "reason" : "build_failed",
+    "sha" : "f047249dfdcb11c6ae574003a31fe74864e9f5ee",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "SwiftStructure/CaseConverter",
+    "screen_count" : 0,
+    "sha" : "bdae9e4a9459119242d09dfc8358ce494fa19d81",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "worldcoin/idkit-swift",
+    "screen_count" : 0,
+    "sha" : "91791171642583bfee33d4282f13a35a6793172f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 16,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 3,
+    "package_id" : "dagronf/DSFAppearanceManager",
+    "screen_count" : 13,
+    "sha" : "415373c9d11f945bbd26ca2bb02664048c632720",
+    "status" : "emitter",
+    "verify_screen_count" : 13
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 4,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 4,
+    "package_id" : "Victory-Apps/a2a-swift",
+    "screen_count" : 0,
+    "sha" : "2dbdef6a394844798da547b2ccb2fe2066433662",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sbooth/CXXSharedMutex",
+    "screen_count" : 0,
+    "sha" : "0ff213878225cdcbe28bf4dc556d5f2c7dfa58b1",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "emartech/ios-emarsys-sdk",
+    "reason" : "build_failed",
+    "sha" : "a9932228e05569feb919f7e8ed0e2b8490728a93",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Kingpin-Apps/swift-cardano-wallet",
+    "reason" : "build_failed",
+    "sha" : "02b08a9ecb6df528c5807f03d396f4f3e162403f",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "neothXT/Snowdrop",
+    "screen_count" : 0,
+    "sha" : "20436537734212a6bba0e437e553ab1464af6324",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "elegantchaos/Versionator",
+    "screen_count" : 0,
+    "sha" : "84089f2c55c1e26ce92278d68e2080db331db972",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-rpc",
+    "screen_count" : 0,
+    "sha" : "905c33c97b04e90c5a0af274b431cbe11e4027a3",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "markbattistella/TriggerKit",
+    "screen_count" : 0,
+    "sha" : "d23c85e8c7610dd36757cc17f23e70f7ac0515d6",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "SelligentMarketingCloud/MobileSDK-iOS",
+    "reason" : "build_failed",
+    "sha" : "28be89d8f6eea8416c9a41f26f8e871c5dcaf838",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 6,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "aptove/swift-sdk",
+    "screen_count" : 5,
+    "sha" : "6e7e67c8e650997e5a6eca670e01dcec338b815b",
+    "status" : "emitter",
+    "verify_screen_count" : 5
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "flexlixrup/pulsar-client-swift",
+    "reason" : "build_failed",
+    "sha" : "d5294d84538095e5ac14fb575752a1445ff9235c",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "artembobkin/ImmersiveMap",
+    "reason" : "build_failed",
+    "sha" : "deef641cadc387e59c99ab0df098194ab0619e04",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "onefootprint/Swift-Onboarding-Components",
+    "reason" : "build_failed",
+    "sha" : "6fc16e28cce43cf22e61143299eb3b5de43862f5",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "winddpan/CodableWrapper",
+    "screen_count" : 0,
+    "sha" : "ac2c2668e288157c492ef55b6e59fd3fe5b00295",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "mesqueeb/MapSugar",
+    "screen_count" : 0,
+    "sha" : "014454cf992bc93e946a650deae2d50ebd93035f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "alexey1312/baton",
+    "reason" : "build_failed",
+    "sha" : "c5f1f41cfae3811856aeac2d9d7534204cce3cdd",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-dataform-v1",
+    "reason" : "build_failed",
+    "sha" : "37c3c4432c5905b91675f45babc527e4e1ad4df1",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 90,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "EmergeTools/Pow",
+    "screen_count" : 89,
+    "sha" : "1b4b1dda28c50b95f0872927ee2226fe8b58950e",
+    "status" : "emitter",
+    "verify_screen_count" : 89
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "perfectlysoft/perfect-mysql",
+    "reason" : "build_failed",
+    "sha" : "79b730b7a8252647c4adbd3cdaabd0d734b89011",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "slidoapp/Appcast",
+    "screen_count" : 0,
+    "sha" : "9871effb8f3c5cf7820200f112f1a1055d7a786c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 8,
+    "package_id" : "dl-alexandre/opencode-sdk-swift",
+    "screen_count" : 1,
+    "sha" : "dc59af9e52759e8bf590addd6f3008332e34fd21",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "InspiratioNULL/InfographicKit",
+    "screen_count" : 3,
+    "sha" : "0479ce8c132e7f85ae2a3a287ee9e456e847a126",
+    "status" : "emitter",
+    "verify_screen_count" : 3
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Adyen/adyen-ios",
+    "reason" : "build_failed",
+    "sha" : "5238e50d27b1ea869e1c26c633bce878f6d9a307",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 15,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "dankinsoid/VDFlow",
+    "screen_count" : 15,
+    "sha" : "090e84029078d42a7f88eee7ddc2d664b685cbb6",
+    "status" : "emitter",
+    "verify_screen_count" : 15
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "weppos/uddf-swift",
+    "screen_count" : 2,
+    "sha" : "938738e57b6f826a6a422e716ef7397cb326eeb7",
+    "status" : "emitter",
+    "verify_screen_count" : 2
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-locationfinder-v1",
+    "reason" : "build_failed",
+    "sha" : "a33fd3e98f69334876c946cca4b605a70353bfe3",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 74,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 74,
+    "package_id" : "mattt/swift-xgrammar",
+    "screen_count" : 0,
+    "sha" : "e0f2de361aa4891dbca5113629bc90ab8e5c3888",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "slepp/requisite-swift",
+    "screen_count" : 0,
+    "sha" : "c7ba0b9b9ba5ca83f0bfc2486df66cf5be06836d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 84,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 14,
+    "package_id" : "mindbody/Conduit",
+    "screen_count" : 70,
+    "sha" : "f0513a2c40f7e0b29e89cc0088a2d6280d759a99",
+    "status" : "emitter",
+    "verify_screen_count" : 70
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "t089/swift-vips",
+    "reason" : "build_failed",
+    "sha" : "cbe1ad8915d4d5edae13537ca61693e21d8991e1",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "stack/Restructure",
+    "screen_count" : 0,
+    "sha" : "5e2c65c1a6018d46bae578a60989699e7ce2e475",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "mannd/QTcPackage",
+    "reason" : "build_failed",
+    "sha" : "30414ee6a4b664bc68d2993a6291eb20427087f8",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sorunokoe/SwiftMapper",
+    "screen_count" : 0,
+    "sha" : "8e45b05bdf9522d1c731ee543c0ce124f04cebe5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "rryam/VecturaKit",
+    "screen_count" : 0,
+    "sha" : "3f5c22fff3f87145042ac6fc044237e319e07675",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 7,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 7,
+    "package_id" : "swiftlang/swift-foundation",
+    "screen_count" : 0,
+    "sha" : "aadd9259be076a86a7e7918b938751d69dfe1198",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "stackotter/SwiftKotlin",
+    "screen_count" : 0,
+    "sha" : "88a9bb94d156ef95d177bc6a65580dfacdda4b13",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "package_id" : "mapbox/mapbox-navigation-ios",
+    "reason" : "mapbox/mapbox-navigation-ios: dependency resolution failed:\nshots/ios/packages/324.34.0-SNAPSHOT-10-07--01-49.git-9b0b11d/MapboxNavigationNative.xcframework.zip, https://api.mapbox.com/downloads/v2/mobile-maps-ios-binary/snapshots/ios/11.34.0-SNAPSHOT-10-07--01-49.git-9b0b11d/MapboxMaps.xcframework.zip, https://api.mapbox.com/downloads/v2/mapbox-common/snapshots/ios/packages/24.34.0-SNAPSHOT-10-07--01-49.git-9b0b11d/MapboxCommon.zip, https://api.mapbox.com/downloads/v2/navsdk-cpp-base/snapshots/ios/0.34.0-SNAPSHOT-10-07--01-49.git-9b0b11d/MapboxNavSdkBase.xcframework.zip (2 KB / 2 KB)\nerror: failed downloading 'https://api.mapbox.com/downloads/v2/navsdk-cpp-base/snapshots/ios/0.34.0-SNAPSHOT-10-07--01-49.git-9b0b11d/MapboxNavSdkBase.xcframework.zip' which is required by binary target 'MapboxNavSdkBase': badResponseStatusCode(401)\nerror: fatalError\n",
+    "sha" : "d174b2aeac21537a7c67069d9136233914517890",
+    "status" : "unresolvable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "SilverPineSoftware/UUSwiftCore",
+    "screen_count" : 0,
+    "sha" : "71abef434c7ebddeda99329db9fc1943c1361e6e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "bradhowes/PriorityQueue",
+    "screen_count" : 0,
+    "sha" : "1338b72f13fd3f5c7f13ae6589eeb51bb952f477",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "OpenSwiftUIProject/DarwinPrivateFrameworks",
+    "reason" : "build_failed",
+    "sha" : "b00ecca4c7e77ab24da8c25d81f3d413db6fdcb5",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Appracatappra/SwiftletUtilities",
+    "screen_count" : 0,
+    "sha" : "95308eb0de42186e1e9d33bddaa78b090c16ef84",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "yockow/swiftranges",
+    "screen_count" : 0,
+    "sha" : "92499e84419a8161150fca86a29feb8931b43cb6",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "dodobrands/DBThreadSafe-ios",
+    "screen_count" : 0,
+    "sha" : "0b822c3ed3c398d045bf44b52897b40c670e5858",
+    "status" : "clean"
+  },
+  {
+    "batch" : 1,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Janneman84/LeakedViewControllerDetector",
+    "screen_count" : 0,
+    "sha" : "e5200a479ec003f8621773aca55b8e2cd3f59ebc",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "bidmachine/BidMachine-SPM",
+    "reason" : "build_failed",
+    "sha" : "abe2bcd7034a47d727513a73a8234702aa24b57d",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleads/swift-package-manager-google-programmatic-access-library-tvos",
+    "reason" : "build_failed",
+    "sha" : "80aa720b58af8d8a66e056ae9331cbdf3ba2d92b",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 26,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 26,
+    "package_id" : "atacan/AssemblyAI",
+    "screen_count" : 0,
+    "sha" : "ed31d2fbb08b69633e7d1bcc31bc4cf8eacc8718",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "NikSativa/CombineExt",
+    "screen_count" : 0,
+    "sha" : "a7542eb0bccbaa92b5490446ca69afa31c943b6b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 5,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "segmentio/Sovran-Swift",
+    "screen_count" : 5,
+    "sha" : "47f4fe247f4db9c57a5e3a571fcdc7243c34c98a",
+    "status" : "emitter",
+    "verify_screen_count" : 5
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "pm-dev/swift-graphql-codegen",
+    "screen_count" : 0,
+    "sha" : "bfd697529b28de54fce33f54780c95e32183427d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "jacky-xbb/PDF2MDKit",
+    "screen_count" : 0,
+    "sha" : "7a202f5dc8db51967ce8d05f3cdfd7befd350aa3",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 14,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 14,
+    "package_id" : "sirily11/swift-jsonschema-form",
+    "screen_count" : 0,
+    "sha" : "5d6531aec8e2df8ca3613981f7318c9479ef8483",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "swiftlang/swift-playdate-examples",
+    "reason" : "build_failed",
+    "sha" : "04c822229cc61bc7b15ad4b3c0771dac069db2e1",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 15,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "s2mr/L10nLint",
+    "screen_count" : 15,
+    "sha" : "3dd0a0cc061bb2240e05875c55f81f3ae5154f76",
+    "status" : "emitter",
+    "verify_screen_count" : 15
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "apple/coreai-models",
+    "reason" : "build_failed",
+    "sha" : "52dbd93cb913c4327539ae0b80749e3ba9649538",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 7,
+    "package_id" : "namhoangdev31/ExploreSwiftUI",
+    "reason" : "build_failed",
+    "sha" : "d47dbb7b7df24b36c31bcad364de94adfd120264",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 11,
+    "package_id" : "Luminoid/Sophon",
+    "reason" : "build_failed",
+    "sha" : "fe795c9fb3b65a3c9a8dc7aaf6d6a4782192c011",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 35,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "kateinoigakukun/swift-indexstore",
+    "screen_count" : 34,
+    "sha" : "26d3af186fb38ec3a96c8a9a3172b7ccc3565524",
+    "status" : "emitter",
+    "verify_screen_count" : 34
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "AppliedRecognition/Ver-ID-Common-Types-Apple",
+    "reason" : "build_failed",
+    "sha" : "79028470ece922969d461262e59c0f7f99ce6515",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "jaywcjlove/swift-path-to",
+    "screen_count" : 0,
+    "sha" : "0947df4c5d79c77507bd3ad38477b052df79998b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "zunda-pixel/appattest-swift",
+    "screen_count" : 0,
+    "sha" : "df0d85a46f091c4b0affb6d1ee1e9b4cfc75ad1e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "tree-sitter-grammars/tree-sitter-xml",
+    "screen_count" : 0,
+    "sha" : "5000ae8f22d11fbe93939b05c1e37cf21117162d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "SilverPineSoftware/UUSwiftUX",
+    "reason" : "build_failed",
+    "sha" : "c8ebe62dd7a677dc16e98318270db5c71aac85d2",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 60,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 6,
+    "package_id" : "DeclarativeHub/ReactiveKit",
+    "screen_count" : 54,
+    "sha" : "5c61e0869cfaf8f9fcd17afecb8e6c721d153186",
+    "status" : "emitter",
+    "verify_screen_count" : 54
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "StanfordSpezi/SpeziAccount",
+    "reason" : "build_failed",
+    "sha" : "35c6e6fd04dbc0f91577398d2299be127e10f84b",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "frazer-rbsn/swift-json-canvas",
+    "screen_count" : 0,
+    "sha" : "3c9eb55b3b775b5e5fb48ac77b699ca872a3fcde",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "dev-hamin-kim/HangulKit",
+    "screen_count" : 2,
+    "sha" : "36421e5acfd3f87bb51ebafdc367d576a126005b",
+    "status" : "emitter",
+    "verify_screen_count" : 2
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 8,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "shahwaiz90/ghoststrings-ios",
+    "screen_count" : 8,
+    "sha" : "6f1dcff89f677ebae5676913773aa038091792ab",
+    "status" : "emitter",
+    "verify_screen_count" : 8
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "KalpeshTalkar/Tessera",
+    "reason" : "build_failed",
+    "sha" : "525240a878344857a134b4c8cc18ae297e6d2cab",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "hidden-spectrum/swift-translate",
+    "screen_count" : 0,
+    "sha" : "d1e2bec164ce75c3d9a2ac18e0a8e4ee6dca62bd",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 6,
+    "package_id" : "ryanlintott/LookingGlassUI",
+    "reason" : "build_failed",
+    "sha" : "4ee892f3ce496bf515863d2cb8f633a171938989",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "adobe/aepsdk-edgeidentity-ios",
+    "reason" : "build_failed",
+    "sha" : "58a195da219be3dab74824954e56d09dabaa8085",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "StanfordBDHG/ResearchKit",
+    "reason" : "build_failed",
+    "sha" : "d1d523e9e738b7ad9c97ca6101aada1c041ea9da",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "hackiftekhar/IQKeyboardManager",
+    "reason" : "build_failed",
+    "sha" : "0972dd6eded87c930fb6ad36b3c5ecd620f06894",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Appracatappra/SoundManager",
+    "screen_count" : 0,
+    "sha" : "6bb1651d29ec084edc94a1816f20c517882bcc45",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sinoru/swift-property-list",
+    "screen_count" : 0,
+    "sha" : "1f0dd3a6b9564e31048e9b7de51a623175f5962d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "amirsaam/elementary-pines",
+    "screen_count" : 0,
+    "sha" : "e266e814a562be016ae1989cb1aaa7c34cd70c1e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "William-Weng/WWIntelligentAgent",
+    "reason" : "build_failed",
+    "sha" : "92a69f8b4934c4abe5b8835225448975f9555088",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "WendellXY/CodableKit",
+    "screen_count" : 0,
+    "sha" : "304f8a8e07ecbe1f7e8259683e8a592ba316c229",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "johnrbent/Rearrange",
+    "screen_count" : 0,
+    "sha" : "f459af18b74f1792a263d4ad599dae076856bfb4",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "zendesk/chat_sdk_ios",
+    "reason" : "build_failed",
+    "sha" : "8ca4e594b0e13ebad7a552e0843ab0e7971516d0",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "MindscapeHQ/raygun4apple",
+    "screen_count" : 0,
+    "sha" : "2068d478f21ed1dec98f90bb60de07f4b708067c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "FabrizioBrancati/Queuer",
+    "screen_count" : 0,
+    "sha" : "9ae00b0da125f127f1bbf2e92d8e1fbb0994427e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 4,
+    "package_id" : "yliu-hashed/shimmers-hdl",
+    "reason" : "build_failed",
+    "sha" : "18039791292ddb7609ab8f3bb344b9b903139af8",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Livsy90/SkavokNetworking",
+    "screen_count" : 0,
+    "sha" : "df65f7a5b1f9475fed04a50c43e5f592b69cf16b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 144,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 144,
+    "package_id" : "swiftlang/swift-toolchain-sqlite",
+    "screen_count" : 0,
+    "sha" : "2725e5fc3939167eaf6658e0060e06603e82365d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "AltiAntonov/SafeDecoding",
+    "screen_count" : 0,
+    "sha" : "fd7a7ebe11431ad0663723c0cc740690ff019af5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "rudderlabs/rudder-sdk-ios",
+    "reason" : "build_failed",
+    "sha" : "dd6f62abd5fd46090e4f03aab1466449bf790174",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 3,
+    "package_id" : "mesqueeb/SwiftSound",
+    "reason" : "build_failed",
+    "sha" : "837586507ab58af917156e27e87f40289f99ff58",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "swift-ietf/swift-rfc-5321",
+    "screen_count" : 0,
+    "sha" : "8fcfffe318131fd5d1d941d08f73e1d1ceb60a2e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 8,
+    "package_id" : "takeshishimada/Lockman",
+    "reason" : "build_failed",
+    "sha" : "15b2660b229bdc75d6dba5122150a01f2a5d9933",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "MahdiBM/enumerator-macro",
+    "screen_count" : 0,
+    "sha" : "bb4a4c0755e4bd95ee1646b946d3e74bcd7a3611",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "google/flatbuffers",
+    "screen_count" : 0,
+    "sha" : "b8431fbcd7a5c71817f314e18b332c0648554efa",
+    "status" : "clean"
+  },
+  {
+    "batch" : 2,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-redis-v1",
+    "reason" : "build_failed",
+    "sha" : "c09cf71489b55fb5441588cfce1eef32addddd2e",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 117,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 12,
+    "package_id" : "ShaftUI/Shaft",
+    "screen_count" : 105,
+    "sha" : "ea52999447248fcb91096392dc95e2f1afece8ef",
+    "status" : "emitter",
+    "verify_screen_count" : 105
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 5,
+    "package_id" : "teunlao/swift-ai-sdk",
+    "reason" : "build_failed",
+    "sha" : "c82deb28c16799b10a19cf301ae6bbf76d1406b5",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "blackjacx/SHDateFormatter",
+    "screen_count" : 2,
+    "sha" : "ca2e011acc769b2231c0293819bb7521b7ff7997",
+    "status" : "emitter",
+    "verify_screen_count" : 2
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 81,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 81,
+    "package_id" : "stackotter/SwiftJavaLang",
+    "screen_count" : 0,
+    "sha" : "1b7320afd8d40a669422ee61d5335ae6d647dce5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "southkin/EthicalListView",
+    "screen_count" : 0,
+    "sha" : "8abb6b6756f033bee02fc30434500b42c984a4b3",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "markbattistella/BezelKit",
+    "screen_count" : 0,
+    "sha" : "39dbbae7f5368943067800151581d52af8dc30a0",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 4,
+    "package_id" : "Aikyuichi/SQLiteStore",
+    "reason" : "build_failed",
+    "sha" : "8552ec44fe8ab72ca649ff6d924fbabd65f51b5f",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "build_failed",
+    "minimal_primary_diagnostics" : 3,
+    "package_id" : "twinkling-reality/opennook",
+    "reason" : "build_failed",
+    "sha" : "2b50b5c3a99df8914e25e199d29bf7aa505f7a59",
+    "status" : "minimal_failed"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ciaranrobrien/SwiftUIScrollOffset",
+    "screen_count" : 0,
+    "sha" : "cfa31ff216e77d50b44cec8eeaf8f11d1a22035a",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "tbxark/swift-telegram-bot-api",
+    "screen_count" : 0,
+    "sha" : "4ecd1377709728794ab881d944c2575cbff2f9c1",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "modern-swift-dev/roundtrip-swift",
+    "screen_count" : 0,
+    "sha" : "fe829ca4ed0d81b73c977067f3e247257fc97ffc",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "MFranceschi6/swift-xml-coder",
+    "screen_count" : 0,
+    "sha" : "666369ce56816599eb686d69d865d9b841ce1f24",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "CorvidLabs/swift-retry",
+    "screen_count" : 0,
+    "sha" : "78115a52d51c6b8f8611c0ab9ac317abcf181410",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 163,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 12,
+    "package_id" : "Quick/Nimble",
+    "screen_count" : 151,
+    "sha" : "727f75d91a0f7501d08d938966d17e6728b76a2a",
+    "status" : "emitter",
+    "verify_screen_count" : 151
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "ofgokce/Zerk",
+    "screen_count" : 0,
+    "sha" : "97658482f419450ef6f5d0048eb8fd44d1d6350a",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "vivekptnk/ProximaKit",
+    "screen_count" : 0,
+    "sha" : "9074a52e28baa4fb3abbb971bbc4b43ad8a24a65",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 7,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "heestand-xyz/CoreGraphicsExtensions",
+    "screen_count" : 7,
+    "sha" : "13d3b721dc456d583a27be2def8b4d353f252dcc",
+    "status" : "emitter",
+    "verify_screen_count" : 7
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "orchetect/swift-ascii",
+    "screen_count" : 0,
+    "sha" : "e4d7ae8e52aca79d06608cdf079a8bab85f01210",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "amir-magdy-of-wizardlabz/kiahk",
+    "screen_count" : 0,
+    "sha" : "5046c85d2beda1d97bb847658e065f534ff2490d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 210,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 36,
+    "package_id" : "orlandos-nl/Citadel",
+    "screen_count" : 174,
+    "sha" : "ae8562f895de06ccb86fdb1cbb65fd99c8976e12",
+    "status" : "emitter",
+    "verify_screen_count" : 174
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "alexlerikos/Projector",
+    "reason" : "build_failed",
+    "sha" : "50438f0092c37ef2455b5d76d84378499770fe6c",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "apple/swift-collections-benchmark",
+    "screen_count" : 0,
+    "sha" : "e9e8df493e3d8f9285103415176e52966c37a764",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "gpambrozio/GitWorkbench",
+    "screen_count" : 0,
+    "sha" : "e6405e0fa88983b56b14defe9f4e75aab6b68fa0",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 6,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 6,
+    "package_id" : "GRimAce11/Strata",
+    "screen_count" : 0,
+    "sha" : "992e15d7a085c1c20424faa8d463548a0113e50f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "kylebrowning/vapor-sse",
+    "screen_count" : 0,
+    "sha" : "8a1bbe35d46ea84a46b55b960a3f2676b34b6296",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 8,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 8,
+    "package_id" : "vapor/postgres-nio",
+    "screen_count" : 0,
+    "sha" : "464a1376283b3db7ed57049bc786e2c9cd3f6b1c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "Flizpay/flizpay-ios",
+    "reason" : "build_failed",
+    "sha" : "832e3be9718ce0bb1a03a8c5371f02413af07cd9",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "naviapps/preset-kit",
+    "screen_count" : 0,
+    "sha" : "a630406e9ab70f05777b29a051ceadbf73a6ecd8",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 41,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "moslienko/InAppMaster",
+    "screen_count" : 41,
+    "sha" : "51447154a984588bf15730488154d98ec9516d11",
+    "status" : "emitter",
+    "verify_screen_count" : 41
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "Janneman84/BoostedLifecycleMethods",
+    "reason" : "build_failed",
+    "sha" : "9e679662613b0d9ae3581b84e76e494e30fe608c",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 6,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "google/GTMAppAuth",
+    "screen_count" : 6,
+    "sha" : "57094cd46bc8700d3a887e2a429f42b6e8ea3f0b",
+    "status" : "emitter",
+    "verify_screen_count" : 6
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "luizmb/Hourglass",
+    "screen_count" : 0,
+    "sha" : "c122a98281bdd61a1c231c111fe643e49a6eaa9c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "AndyHeardApps/SwiftNetworking",
+    "screen_count" : 0,
+    "sha" : "d0d641723185d865becee8780739c981578f0237",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "thebbapp/swift-package-bb-app-status-bar",
+    "screen_count" : 0,
+    "sha" : "d165c981b81ef7baf470241793e4d590c65430a6",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "The-Wand/Any",
+    "screen_count" : 0,
+    "sha" : "04a0012a916ed2258e3e359803f2cd12f5f4ed6f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 11,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "cesarferreira/SwiftEventBus",
+    "screen_count" : 11,
+    "sha" : "588722d006bf04dd4e9feec4853cc9d1cc25b656",
+    "status" : "emitter",
+    "verify_screen_count" : 11
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Neuro-ID/neuroid-ios-sdk",
+    "reason" : "build_failed",
+    "sha" : "d7fd158bb081ea445a7ba459844bdcc59079571b",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 2,
+    "package_id" : "ferdous-mahmud/SwiftUICarousel",
+    "reason" : "build_failed",
+    "sha" : "138418094b0b9268b7aac72e281773260050ccb8",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "swift-ietf/swift-rfc-791",
+    "screen_count" : 0,
+    "sha" : "fce5188f772da717242089a65149e7403a3d7868",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "adam-fowler/aws-signer-v4",
+    "screen_count" : 0,
+    "sha" : "457a4563817123bbbd7015adc59e7587189637ef",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ryanfrancesconi/spfk-metadata",
+    "reason" : "build_failed",
+    "sha" : "392e0d2c8e8371797d5a4c3a0cc7b82e526c43b7",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "yvente/swift-remove-markdown",
+    "screen_count" : 0,
+    "sha" : "08ee264f472d532d1420886db7782608d7b802a2",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "build_failed",
+    "minimal_primary_diagnostics" : 4,
+    "package_id" : "ezefranca/BibTeXKit",
+    "reason" : "build_failed",
+    "sha" : "9d86aef9934451f57f18bd1c053889b147edcdab",
+    "status" : "minimal_failed"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "powersync-ja/powersync-swift",
+    "screen_count" : 0,
+    "sha" : "e6d57d6acb76369b6cd3b459834615a8f90b544e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "markbattistella/NotificationManager",
+    "screen_count" : 0,
+    "sha" : "0ca86fa72d18afbdae36ce0d6b430c0bedd090e2",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Jiropole/SwiftEDR",
+    "reason" : "build_failed",
+    "sha" : "810b44fa40a60cda2f9aac79cfa05cd97e2061be",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "CommandersAct/iOSV5",
+    "reason" : "build_failed",
+    "sha" : "8a3d06fd4133f3b4a8534bf872250c75eb70a861",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "SumPositive/AZCalc",
+    "screen_count" : 2,
+    "sha" : "59fad575609785ca3ccc76dc83215eb836b6012b",
+    "status" : "emitter",
+    "verify_screen_count" : 2
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "FlineDev/LinksKit",
+    "screen_count" : 0,
+    "sha" : "e0ffbd207dffc398675406f72e716064c852312e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 3,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 3,
+    "package_id" : "Proof-of-Human-Network/sdk-ios",
+    "reason" : "build_failed",
+    "sha" : "a8fd32373cbecb25429a5ac4c1383ee43e68cb62",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sigilgreenhouse/pico-async-observable",
+    "screen_count" : 0,
+    "sha" : "5a1ff0ff41e8246aeacfe38cea171fe6abdd0c2a",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "nerdzlab/NerdzValidation",
+    "screen_count" : 0,
+    "sha" : "0e7f03b6459ba5d440b5525fa9b1291c26dfdeca",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "thebbapp/swift-package-bb-app-intent",
+    "screen_count" : 0,
+    "sha" : "f707edf289dceb2dfcc2e65485ed51e83d08821e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 4,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "aykhanhajiyev/media-size-watchdog",
+    "screen_count" : 3,
+    "sha" : "ea09b614280f595a6580fb368a7aba00b7bd7ce8",
+    "status" : "emitter",
+    "verify_screen_count" : 3
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "AgoraIO/AgoraLite_iOS",
+    "reason" : "build_failed",
+    "sha" : "4a46aa5f5d0030b642acf7d5e061ec3adc9c939f",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "shareup/dispatch-timer",
+    "screen_count" : 0,
+    "sha" : "9b03fa83669f6e01ee2135af8ab9105cc2b9b744",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "apparata/markin",
+    "screen_count" : 0,
+    "sha" : "338699cd72ff2d845356f150c59e82bdca15bacc",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "samsonjs/NotificationSmuggler",
+    "screen_count" : 0,
+    "sha" : "645c1a049ee96f225f36342e3b72a41c30a2e502",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "RCCoop/RCGPX",
+    "screen_count" : 1,
+    "sha" : "93fc5a5a96a07f353d0fb45d323e8274b7fce7b7",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "imclaren/SwiftKeyExchange",
+    "screen_count" : 0,
+    "sha" : "dbbc4a4df3942eec5eeb9a4007b719d18e490f67",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "swiftlang/example-package-figlet",
+    "screen_count" : 1,
+    "sha" : "013bf57c64e9f6eeb8096e66c54bb94d421ef02e",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ErsanQ/DeviceKit",
+    "screen_count" : 0,
+    "sha" : "2df3ff15d3b282a1ad3d5ba036f9c895c91d19f4",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 3,
+    "package_id" : "brightdigit/XMLCoder",
+    "screen_count" : 0,
+    "sha" : "141f4dd46f67c72b771235834d758c74382c71a9",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "hmlongco/Factory",
+    "screen_count" : 0,
+    "sha" : "39d340fbfc4eb79a8981e9166083cda011a6b3f8",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "mgacy/swift-lambda-extras",
+    "screen_count" : 0,
+    "sha" : "82f7d217861eba4c11b52575fdc894cb82799177",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "StanfordSpezi/SpeziConsent",
+    "reason" : "build_failed",
+    "sha" : "8c37a69bb8bc7884f36831015652513c2fb87241",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "elvisperlika/notion-kit",
+    "screen_count" : 0,
+    "sha" : "c8d91603be60c7d4810effe8ee0c23f172c08bf7",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "pedronahum/MetalHLO",
+    "reason" : "build_failed",
+    "sha" : "44b3a04be0095296f9be95ce060e93045b69c367",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 4,
+    "minimal_outcome" : "build_failed",
+    "minimal_primary_diagnostics" : 5,
+    "package_id" : "ibo2001/MushafImad",
+    "reason" : "build_failed",
+    "sha" : "c9d0665bcb98f1af77e06def155e1964dc7bb218",
+    "status" : "minimal_failed"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "mapbox/Fingertips",
+    "reason" : "build_failed",
+    "sha" : "cc0a7da404725606107e1743bc668951ae1eda74",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 133,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 91,
+    "package_id" : "luizmb/FP",
+    "screen_count" : 42,
+    "sha" : "948dabce308fe0205c1da2bbcc3ccaa22f68eb22",
+    "status" : "emitter",
+    "verify_screen_count" : 42
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 3,
+    "package_id" : "hylo-lang/Swifty-LLVM",
+    "reason" : "build_failed",
+    "sha" : "0cab6b5b628a0485226b899fa3a0abc37d603bb4",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "RougeWare/Swift-Function-Tools",
+    "screen_count" : 0,
+    "sha" : "ff75055b60271137f709963c4495613cb3d30587",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "marciliojrs/aurora",
+    "screen_count" : 0,
+    "sha" : "0d1497b206ef77017760d9c819eafa191f4b00c5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "tomasf/NavLibSwift",
+    "screen_count" : 0,
+    "sha" : "a8753146a840acdb0f9bf290430c7d7bdacf0825",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "kudit/Device",
+    "screen_count" : 1,
+    "sha" : "387404b10f25acaf1e8ac3afa4f3b9acfdd1e4c7",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "sbooth/Geodesic",
+    "screen_count" : 1,
+    "sha" : "eec6694589e6fd3cf2dbf4d4a319c58eedd54a01",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "thebbapp/swift-package-bb-app-author-schema",
+    "screen_count" : 0,
+    "sha" : "d0ea37a3eb32e7ee373b7dd8b9f20abfe4390e78",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "StanfordSpezi/SpeziDevices",
+    "reason" : "build_failed",
+    "sha" : "b0758b5d38786b3c750c92abcc9732a9601389d6",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ohitslaurence/swift-ai-sdk",
+    "screen_count" : 0,
+    "sha" : "06dc4f18b25297f3171bca5366ae0b7f38b769e2",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "perfectlysoft/perfect-sqlite",
+    "screen_count" : 0,
+    "sha" : "94aa59d58902e3d2cd6068be0cd58fd215da6871",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "AppliedRecognition/Ver-ID-3-Serialization-Apple",
+    "reason" : "build_failed",
+    "sha" : "9196879adffc9cdfd3372af12319b7bb73f04e9a",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 60,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 5,
+    "package_id" : "stackotter/swift-java",
+    "screen_count" : 55,
+    "sha" : "3b0c88364860b54c111b466369755a1be34b7146",
+    "status" : "emitter",
+    "verify_screen_count" : 55
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "usabilla/usabilla-u4a-ios-swift-sdk",
+    "reason" : "build_failed",
+    "sha" : "76916a8de9fcf9c81f44b30e088bf93b5f476eb0",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 75,
+    "package_id" : "swifweb/web",
+    "reason" : "build_failed",
+    "sha" : "92ae621c0c7c90c305c5abbedc62bb4db39664b8",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "SUMSUB/IdensicMobileSDK-iOS-Core",
+    "reason" : "build_failed",
+    "sha" : "846eae199f9e2ea7cdc27b34f7ba9e0ed44dffb7",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "heestand-xyz/TextureMap",
+    "screen_count" : 0,
+    "sha" : "037f028bbc44dff9eff151b2f58a18fad1af159b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "swift-libp2p/swift-cid",
+    "screen_count" : 0,
+    "sha" : "279f85fb23f143c411e9f432d5227e26e958161b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "swhitty/swift-mutex",
+    "screen_count" : 0,
+    "sha" : "d9c4906095b48fb5d0177d73590f984bf726a17d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 45,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "flocked/FZQuicklook",
+    "screen_count" : 45,
+    "sha" : "b05a9318dcea32c69b2cf51966cbcbd665743816",
+    "status" : "emitter",
+    "verify_screen_count" : 45
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "nikolay-dementiev/DMAction",
+    "screen_count" : 0,
+    "sha" : "10bced08770c2db7f5957cdef7de22b48b66cb90",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "libtmux/libtmux-swift",
+    "screen_count" : 0,
+    "sha" : "63551afeae8ea3d272e5262208b87735888daf5f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "serpapi/serpapi-swift",
+    "screen_count" : 0,
+    "sha" : "ee0c50b91195c0a44bd340628a999aae5e97a2e5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 7,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "MLSDev/LoadableViews",
+    "screen_count" : 7,
+    "sha" : "579c17534a56e99b50c9ca8efc2f858df4e6aff5",
+    "status" : "emitter",
+    "verify_screen_count" : 7
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "ken0nek/AppShowcaseKit",
+    "screen_count" : 0,
+    "sha" : "a7ff857d43385a9c58e0665f46118815b55882db",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "swiftlang/swift-subprocess",
+    "screen_count" : 0,
+    "sha" : "55d30558b8b12c0343793421328fe81a4919c776",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "bazaarvoice/bv-ios-swift-sdk",
+    "reason" : "build_failed",
+    "sha" : "3488d717a6eb11ee8b5c9b33524b6067bf8974f3",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "std-uritemplate/std-uritemplate-swift",
+    "screen_count" : 0,
+    "sha" : "eab67b98f0ebf3ecbea32b03e5e2e971df310ad9",
+    "status" : "clean"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "ryanashcraft/FabBar",
+    "reason" : "build_failed",
+    "sha" : "4f05fc7815fc676683807574fec4a826f49588da",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 4,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "couchdeveloper/EffectComponents",
+    "screen_count" : 0,
+    "sha" : "8b63ae533d75c8bd3a03ff47a89254b0ebe43e7b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 141,
+    "package_id" : "givip/telegrammer",
+    "reason" : "build_failed",
+    "sha" : "459176871f1f52e34b1d20b22cdb4ee02cc98a30",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 23,
+    "package_id" : "vilimets/AsyncBLE-Swift",
+    "reason" : "build_failed",
+    "sha" : "230b65ef91650acf2441ec36221e20297c1c7df9",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ryanellis42675/gpt-images-25",
+    "screen_count" : 0,
+    "sha" : "1a1a08b9f394de4fd759361112a9114b373be593",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "square/Blueprint",
+    "reason" : "build_failed",
+    "sha" : "bbd01588a073ed8d916371e30e3609d9523c3f6a",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ErsanQ/HapticKit",
+    "screen_count" : 0,
+    "sha" : "0e65cb72d4441393420d9623b4fd17b7d33aa1d5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "Adobels/UIViewKit",
+    "reason" : "build_failed",
+    "sha" : "6b7882699c76d9e56f5c5b04edff1e8a785ca629",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "AppliedRecognition/Face-Recognition-ArcFace-Apple",
+    "reason" : "build_failed",
+    "sha" : "c9322246731b22ec8ae674fc7f83c9028109d755",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "toupper/Wink",
+    "reason" : "build_failed",
+    "sha" : "91138e55abb1a95b83823d63f16b3073a2df51bf",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "zendesk/messagingapi_sdk_ios",
+    "reason" : "build_failed",
+    "sha" : "b6ffc31a76f2aacf378888ce1b878d72e0cdd2c0",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-beyondcorp-clientconnectorservices-v1",
+    "reason" : "build_failed",
+    "sha" : "af7c517fbdd035f03631e848c7bb3bc3a1849ea6",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "futuredapp/FuturedKit",
+    "reason" : "build_failed",
+    "sha" : "8363828479f6b1d7f08f8b7ed991288af1d299e2",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "indextrown/AutoCodable",
+    "screen_count" : 0,
+    "sha" : "b3fa51137f8851ad7bc8decaee311d797e9ca8bf",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "maartene/InkSwift",
+    "screen_count" : 3,
+    "sha" : "cd471e30b43546f3cf662d515d05444bbcffebd2",
+    "status" : "emitter",
+    "verify_screen_count" : 3
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "hayek/PopGestureRecognizerSwiftUI",
+    "reason" : "build_failed",
+    "sha" : "ca74d8683fd4f62453c670bb7a5d419e2b7a5934",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-location",
+    "reason" : "build_failed",
+    "sha" : "9180b9325554563bf4814525dc2af930be2cb712",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 25,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "yandex/vgsl",
+    "screen_count" : 24,
+    "sha" : "2d628f1259c62ee99e5f09ec975ef3200935fad1",
+    "status" : "emitter",
+    "verify_screen_count" : 24
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "vapor/postgres-kit",
+    "screen_count" : 0,
+    "sha" : "139b0c4712d97eaec09d97afd592d394cdb9dbde",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "jcmosc/swift-sexp",
+    "screen_count" : 0,
+    "sha" : "9b86036edc8ce9b870acba04941d2239d71cd3c0",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "mappls-api/mappls-api-core-ios-distribution",
+    "reason" : "build_failed",
+    "sha" : "c0930b327405bde2f75bd3f241a590da414b00c0",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 54,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "moozzyk/SignalR-Client-Swift",
+    "screen_count" : 54,
+    "sha" : "a5aca80a4de24cc59bb51a1a9c7242960422b9b3",
+    "status" : "emitter",
+    "verify_screen_count" : 54
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "BCSuite/Forging",
+    "reason" : "build_failed",
+    "sha" : "ff473161aa191ae62fd70827d81552cb17520240",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "orchetect/swift-pdf-processor",
+    "screen_count" : 0,
+    "sha" : "8bfc6369d7b5e648f8b1d718fe57feb9d81e949a",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "tuist/ZIPFoundation",
+    "screen_count" : 2,
+    "sha" : "dfdbf2b3c96f220d4af7bbabc2cd38671f0bd06d",
+    "status" : "emitter",
+    "verify_screen_count" : 2
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sindresorhus/Percentage",
+    "screen_count" : 0,
+    "sha" : "97b5a24cf067dd7c045fae3d1cdb68e8b9556281",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "adobe/aepsdk-optimize-ios",
+    "reason" : "build_failed",
+    "sha" : "871e9f5e918e7b4af8717b2d13b7f5a3ccd596f1",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "AudioKit/Tonic",
+    "screen_count" : 1,
+    "sha" : "f8af4074c76a5b4a689122ef3c4b294bb7866d30",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 28,
+    "package_id" : "saifmukhtar/kinetic-embed",
+    "reason" : "build_failed",
+    "sha" : "7c46e7499f0d7105e5a3d1747e9f0a5e6a5b1cf0",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "netreconlab/parse-server-swift",
+    "screen_count" : 0,
+    "sha" : "2e745fd8c9d1ce69722b34d1498f62fba640e59d",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "codeandtheory/ct-analytics-ios",
+    "screen_count" : 0,
+    "sha" : "c5134a770d891251f1870938aa53d0b1e43d42c0",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 28,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 17,
+    "package_id" : "happn-app/XibLoc",
+    "screen_count" : 11,
+    "sha" : "66e12f5379c5fd365f2be96afae58bf134a5d9b6",
+    "status" : "emitter",
+    "verify_screen_count" : 11
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "timi2506/WelcomeView",
+    "screen_count" : 0,
+    "sha" : "8871c5e83cb112c5b5ca2137d32ad81de08a611c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 6,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "AlTavares/Ciao",
+    "screen_count" : 5,
+    "sha" : "53c2186c75962158b32f121707922b33ddbb214e",
+    "status" : "emitter",
+    "verify_screen_count" : 5
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "CocoaLumberjack/CocoaLumberjack",
+    "screen_count" : 0,
+    "sha" : "b75d3c3198a2930b4491b04fd47cb504b359c750",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "regulaforensics/FaceSDK-Swift-Package",
+    "reason" : "build_failed",
+    "sha" : "2d36d692fd64f56b6758460f11cc9f4768f83d93",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 12,
+    "package_id" : "apple/swift-binary-parsing",
+    "reason" : "build_failed",
+    "sha" : "16460852b0cbee87cb8c3029caf63232cc0cc9a1",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "package_id" : "Blaizzy/mlx-audio",
+    "reason" : "Blaizzy/mlx-audio: dependency resolution failed:\nerror: Could not find Package.swift in this directory or any of its parent directories.\n",
+    "sha" : "e66ad2ff4eb96ce1149000187b30370cbcd707aa",
+    "status" : "unresolvable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 63,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 3,
+    "package_id" : "SimformSolutionsPvtLtd/SSImageKit",
+    "screen_count" : 60,
+    "sha" : "c8c4044d00d141e428a1680b12b5cde37349147a",
+    "status" : "emitter",
+    "verify_screen_count" : 60
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "twostraws/CodeScanner",
+    "screen_count" : 0,
+    "sha" : "5a921d49b5535a819610f2e2a2dff3ddf8a1ea9c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 5,
+    "package_id" : "jeremiahjordanisaacson/copilot-sdk-supercharged",
+    "reason" : "build_failed",
+    "sha" : "dd34489d54addfa020a7ec5b7c5c8b61c6b99f8c",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 31,
+    "package_id" : "acuteimmersive/openimmersivelib",
+    "reason" : "build_failed",
+    "sha" : "670e0bc6701095d0b2aa5b80d0b8258763b57632",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "William-Weng/WWSystemStatus",
+    "reason" : "build_failed",
+    "sha" : "7a7f49e6b9c75c025d8fb6290ce811d9b3c60126",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "gradyzhuo/swift-ddd-kit",
+    "screen_count" : 0,
+    "sha" : "795df679853ec97e8224d2fac319427479010b2c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 12,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "sideeffect-io/AsyncExtensions",
+    "screen_count" : 12,
+    "sha" : "20d9524142a07b4b54d314480054e2bb4c91b63e",
+    "status" : "emitter",
+    "verify_screen_count" : 12
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "stensoosaar/tws-api-swift",
+    "screen_count" : 0,
+    "sha" : "b818061b896403eb88be62cf7529a93882a9f860",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 8,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "boxlinknet/kwtsms-swift",
+    "screen_count" : 8,
+    "sha" : "86075613b084f370bc4c9910b83227d79fe0a40a",
+    "status" : "emitter",
+    "verify_screen_count" : 8
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "RougeWare/Swift-Collection-Tools",
+    "screen_count" : 0,
+    "sha" : "84330a040a57296eb6a4d0c801294689dab80166",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "thelastbackspace/swift-strip-json-comments",
+    "screen_count" : 0,
+    "sha" : "88d26f7234d940c1f976e60646cba83c348fc567",
+    "status" : "clean"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ghsiss/TrafficAuthV2XClient",
+    "reason" : "build_failed",
+    "sha" : "e36be878a7abc2eed3c96f54603114547f744903",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 15,
+    "package_id" : "steipete/Swiftdansi",
+    "reason" : "build_failed",
+    "sha" : "44daf7a25bc1996a635afb037b1b8139443a034a",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 5,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "SDWebImage/libwebp-Xcode",
+    "screen_count" : 0,
+    "sha" : "2b5256c29ff4e20f2a0d5ee863b62b1a22144434",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "SwiftyContacts/SwiftyContacts",
+    "screen_count" : 3,
+    "sha" : "6671f40607f5a8c65e40fed90517967003ec11de",
+    "status" : "emitter",
+    "verify_screen_count" : 3
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 211,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 78,
+    "package_id" : "pubnub/swift",
+    "screen_count" : 133,
+    "sha" : "cddc5c38d44b9218c8a6ab80dcc593e91abf331e",
+    "status" : "emitter",
+    "verify_screen_count" : 133
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-apps-script-type",
+    "screen_count" : 0,
+    "sha" : "bd45c7424d790287e9aa8123e91f4eddbb7398fa",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "FelixHerrmann/swift-multipart-formdata",
+    "screen_count" : 0,
+    "sha" : "4e726a522025896d41a5706c92d5c6a1fce13e09",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 7,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 0,
+    "package_id" : "mapbox/mapbox-speech-swift",
+    "screen_count" : 7,
+    "sha" : "2a9ce0a7c8447e5c53c7ee112f1ead750e47b0d3",
+    "status" : "emitter",
+    "verify_screen_count" : 7
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "PureSwift/Socket",
+    "screen_count" : 0,
+    "sha" : "87047eaac3fb3012747d6d7b512edad0bc921311",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "googleapis/swift-google-cloud-datastream-logging-v1",
+    "reason" : "build_failed",
+    "sha" : "37acd2cf62d2d908eb4a50d32c0e07a9902edc58",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "CostinDragos/ContextualRotation",
+    "reason" : "build_failed",
+    "sha" : "ae1034498235c5ef36e16d27d9eda0b3651943d5",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Lakr233/openssl-spm",
+    "screen_count" : 0,
+    "sha" : "4efe1d7be89862bda6b469be8d606667c771380e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "sloik/ExTests",
+    "screen_count" : 0,
+    "sha" : "9994ae7ffb73b9c0f46897d980a4f21f3ed99454",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 3,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 3,
+    "package_id" : "cyphera-labs/cyphera-swift",
+    "screen_count" : 0,
+    "sha" : "1e174629b11c81753cbf43dd1007e17821ff0ad2",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "MrKai77/DynamicNotchKit",
+    "screen_count" : 0,
+    "sha" : "cd0b3e52d537db115ad3a9d89601f20e0bee8d27",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "nerzh/everscale-client-swift",
+    "screen_count" : 0,
+    "sha" : "0d54a50ed7d759f4b158d2492398dad541fe018e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "regulaforensics/DocumentReaderOCRRFID-Swift-Package",
+    "reason" : "build_failed",
+    "sha" : "0fa45506685dc3ccaaeb3300974d06bac8c7b6ae",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 5,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 5,
+    "package_id" : "philiprehberger/swift-keychain-kit",
+    "screen_count" : 0,
+    "sha" : "994c08cac35f771b3f8eb6ec891c74b785bed67a",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "atacan/swift-string-similarity",
+    "screen_count" : 0,
+    "sha" : "fa60a54c53807bc9db97593a405e0fcbbc6bd40f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Esri/arcgis-maps-sdk-swift",
+    "reason" : "build_failed",
+    "sha" : "fbd6c04e9c5b94af6556488de1e770bacf44fc3a",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "quran/quran-ios",
+    "reason" : "build_failed",
+    "sha" : "f9f923eb4cec4358b04a281da112d135efd53a20",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 1,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 1,
+    "package_id" : "Appracatappra/CircularProgressGauge",
+    "screen_count" : 0,
+    "sha" : "ad4d0531839795eb26536fb371c9126f4dcc068c",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "josshad/Signaling",
+    "screen_count" : 0,
+    "sha" : "c0b42b3bdc3bb8029d919b4eb55484af2062527f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "William-Weng/WWWebImage",
+    "reason" : "build_failed",
+    "sha" : "d984fe1b2b7788b929140363902d6cd8cd8e3731",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "Kyle-Ye/ScreenShieldKit",
+    "screen_count" : 0,
+    "sha" : "c1efd0cf6c534121c39e7359f7671b67283c3dd5",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "swift-atoms/swift-ownership",
+    "screen_count" : 0,
+    "sha" : "f8702ec8ac91f13677fe3126ec05217cc8116869",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "rhx/SwiftPango",
+    "reason" : "build_failed",
+    "sha" : "924b36f358e6e5dca87df163cc0227b945be3c01",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "William-Weng/WWSQLite3Manager",
+    "reason" : "build_failed",
+    "sha" : "3692e6158ced08c2b9d7611e9e267ac478d45331",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "bradhowes/brh-splitview",
+    "screen_count" : 0,
+    "sha" : "2c30dc1bcb50e5ba3d4b36d42e111c077a3620c3",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "thebbapp/swift-package-bb-app-relative-date",
+    "screen_count" : 0,
+    "sha" : "f92fb66745ebca0b2301e05f843bc94f643ecd0b",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ciaranrobrien/SwiftUIFrameReader",
+    "screen_count" : 0,
+    "sha" : "63016291ed58ac9baaf4dc4655186978b4730e84",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 9,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 9,
+    "package_id" : "pinterest/PINRemoteImage",
+    "screen_count" : 0,
+    "sha" : "f16af5e8bbb7541e7faeb741e09bc548a663f2b4",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "alexanderwe/SemanticVersioningKit",
+    "screen_count" : 0,
+    "sha" : "df2b85c65c3a28efea0cb853acba57041c5c9faa",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "atacan/TelegramBotAPI",
+    "screen_count" : 0,
+    "sha" : "aaca2e49476e03deb95269d26753800f09941798",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "amplitude/Amplitude-iOS",
+    "screen_count" : 0,
+    "sha" : "26724a616e1c0a2539e2ad23d07bd39373765212",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 1,
+    "package_id" : "stripe/stripe-ios",
+    "reason" : "build_failed",
+    "sha" : "430531df0a0aa26dcc6777fb1898877041dc793e",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "braintree/braintree_ios",
+    "reason" : "build_failed",
+    "sha" : "3e5bca8b4a27f199f69337028280c5fe44f29bab",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "bradhowes/SF2Lib",
+    "screen_count" : 0,
+    "sha" : "d9217744e128138095f335badb34786050d8f16f",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "skedgo/tripkit-ios",
+    "reason" : "build_failed",
+    "sha" : "4d924f9347e455228919c16b7d68018b43309802",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 2,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 2,
+    "package_id" : "hromni/SwiftAPIClient",
+    "screen_count" : 0,
+    "sha" : "008e74bca67de6fb132d06684df2706b0e5c8919",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "lintuxt/swift-cli-kit",
+    "screen_count" : 0,
+    "sha" : "621fbd8baaf3872c7662b86778f52d7982e709bb",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "ZipArchive/ZipArchive",
+    "screen_count" : 0,
+    "sha" : "acc61be58181e635ae77718e66530b4ee7dea4be",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "joogps/Glur",
+    "reason" : "build_failed",
+    "sha" : "ba4f05d3c9a608ec773b9305f2af6089390de68a",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "unionst/swift-chat",
+    "reason" : "build_failed",
+    "sha" : "4bbe30e53e3c8e4e34a618c3f8a0df1ea7122463",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "CleanCocoa/TextBuffer",
+    "screen_count" : 0,
+    "sha" : "3dfbfc13fe4e7f898a3b7c3d13d3eb1451eb8386",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 21,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 4,
+    "package_id" : "Appracatappra/SwiftletData",
+    "screen_count" : 17,
+    "sha" : "e7b7d0b0d8ae7627af9ed426e92e7f990a9213b0",
+    "status" : "emitter",
+    "verify_screen_count" : 17
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "csjones/lefthook-plugin",
+    "screen_count" : 0,
+    "sha" : "f8e0d9097eb0c5242b70fe5b16d6fec54674858e",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "maniramezan/UserDefaultMacro",
+    "screen_count" : 0,
+    "sha" : "42c0ceee9a39ed7fbeb6c5cee8de4a479846a0c8",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "heckj/CameraControlARView",
+    "screen_count" : 0,
+    "sha" : "7161ec652b1612e9113d7f8047dbfbbbc13fbcc0",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 5,
+    "minimal_outcome" : "built",
+    "minimal_primary_diagnostics" : 4,
+    "package_id" : "iankoex/AudioVisualService",
+    "screen_count" : 1,
+    "sha" : "ba75d6cc7113c2cc35ac87425a69c495e2acc8b0",
+    "status" : "emitter",
+    "verify_screen_count" : 1
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "build_failed",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "hackiftekhar/IQTextView",
+    "reason" : "build_failed",
+    "sha" : "a22900744a1ef2d08b4949de5eb82a794a6bde98",
+    "status" : "not_screenable"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "swift-compositions/swift-testing-performance",
+    "screen_count" : 0,
+    "sha" : "621a9b3e3e4e5acd31b09ac61d2a950b5e89e240",
+    "status" : "clean"
+  },
+  {
+    "batch" : 6,
+    "complete_outcome" : "built",
+    "complete_primary_diagnostics" : 0,
+    "package_id" : "kylehughes/swift-async-result",
+    "screen_count" : 0,
+    "sha" : "99313d55d9cff4f9450f409838907b5f12be41d0",
+    "status" : "clean"
+  }
+]

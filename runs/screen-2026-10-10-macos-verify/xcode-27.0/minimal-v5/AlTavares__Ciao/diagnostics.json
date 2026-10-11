@@ -1,0 +1,23 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "extension_retroactive_conformance",
+    "line" : 32,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "warning",
+    "text" : "extension declares a conformance of imported type 'Dictionary' to imported protocol 'Error'; this will not behave correctly if the owners of 'Swift' introduce this conformance in the future"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "extension_retroactive_conformance_silence",
+    "line" : 32,
+    "parent" : 0,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "note",
+    "text" : "add '@retroactive' to silence this warning"
+  }
+]

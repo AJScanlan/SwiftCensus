@@ -1,0 +1,87 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "pbd_never_used",
+    "line" : 21,
+    "path" : "Sources/AudioVisualService/Utilities/AudioTapProcessor.swift",
+    "severity" : "warning",
+    "text" : "initialization of variable 'callbacks' was never used; consider replacing with assignment to '_' or removing it"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "concurrent_value_class_mutable_property",
+    "line" : 2,
+    "path" : "/var/folders/mm/f9qxbf7s2s7djjs44q1cff2r0000gn/T/swift-generated-sources/@__swiftmacro_18AudioVisualServiceAAC6player18ObservationTrackedfMp_.swift",
+    "severity" : "warning",
+    "text" : "stored property '_player' of 'Sendable'-conforming class 'AudioVisualService' is mutable; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "in_macro_expansion",
+    "line" : 1,
+    "parent" : 1,
+    "path" : "/var/folders/mm/f9qxbf7s2s7djjs44q1cff2r0000gn/T/swift-generated-sources/@__swiftmacro_18AudioVisualServiceAAC6player10ObservablefMr_.swift",
+    "severity" : "note",
+    "text" : "in expansion of macro 'ObservationTracked' on property 'player' here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "concurrent_value_class_mutable_property",
+    "line" : 54,
+    "path" : "Sources/AudioVisualService/CacheManager/CacheManager.swift",
+    "severity" : "warning",
+    "text" : "stored property 'cachedCodableURLResponse' of 'Sendable'-conforming class 'CacheManager' is mutable; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "async_unavailable_decl",
+    "line" : 80,
+    "path" : "Sources/AudioVisualService/CacheManager/CacheManager+Helpers.swift",
+    "severity" : "warning",
+    "text" : "instance method 'makeIterator' is unavailable from asynchronous contexts; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 59,
+    "path" : "Sources/AudioVisualService/ResourceLoaderDelegate/ResourceLoader.swift",
+    "severity" : "warning",
+    "text" : "actor-isolated instance method 'invalidate()' can not be referenced from a nonisolated context; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 67,
+    "parent" : 5,
+    "path" : "Sources/AudioVisualService/ResourceLoaderDelegate/ResourceLoader.swift",
+    "severity" : "note",
+    "text" : "calls to instance method 'invalidate()' from outside of its actor context are implicitly asynchronous"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 1,
+    "id" : "mark_deinit_isolated_to_access",
+    "line" : 58,
+    "parent" : 5,
+    "path" : "Sources/AudioVisualService/ResourceLoaderDelegate/ResourceLoader.swift",
+    "severity" : "note",
+    "text" : "add 'isolated' to run isolated to 'ResourceLoader', which may be later than 'nonisolated deinit'"
+  }
+]

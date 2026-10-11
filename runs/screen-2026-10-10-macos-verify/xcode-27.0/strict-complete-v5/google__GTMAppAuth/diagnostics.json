@@ -1,0 +1,105 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 291,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "warning",
+    "text" : "capture of 'args' with non-Sendable type 'AuthorizationArguments' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 437,
+    "parent" : 0,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'AuthorizationArguments' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 293,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "warning",
+    "text" : "capture of 'self' with non-Sendable type 'AuthSession' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 32,
+    "parent" : 2,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "note",
+    "text" : "class 'AuthSession' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 291,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'args' in concurrently-executing code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 64,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 293,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'args' in concurrently-executing code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "concurrent_access_of_local_capture",
+    "line" : 299,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "warning",
+    "text" : "reference to captured var 'args' in concurrently-executing code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 293,
+    "path" : "GTMAppAuth/Sources/KeychainStore/KeychainStore.swift",
+    "severity" : "warning",
+    "text" : "associated value 'failedToCreateResponseStringFromAuthSession' of 'Sendable'-conforming enum 'Error' has non-Sendable type 'AuthSession'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 32,
+    "parent" : 7,
+    "path" : "GTMAppAuth/Sources/AuthSession.swift",
+    "severity" : "note",
+    "text" : "class 'AuthSession' does not conform to the 'Sendable' protocol"
+  }
+]

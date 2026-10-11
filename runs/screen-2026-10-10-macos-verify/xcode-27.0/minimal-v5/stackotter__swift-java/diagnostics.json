@@ -1,0 +1,56 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "group" : "ModuleSelfImport",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/module-self-import",
+    "id" : "sema_import_current_module_with_file",
+    "line" : 3,
+    "path" : "Sources/SwiftRuntimeFunctions/generated/SwiftJavaError+SwiftJava.swift",
+    "severity" : "warning",
+    "text" : "file 'SwiftJavaError+SwiftJava.swift' is part of module 'SwiftRuntimeFunctions'; ignoring import"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "group" : "ModuleSelfImport",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/module-self-import",
+    "id" : "sema_import_current_module_with_file",
+    "line" : 3,
+    "path" : "Sources/SwiftRuntimeFunctions/generated/SwiftRuntimeFunctionsModule+SwiftJava.swift",
+    "severity" : "warning",
+    "text" : "file 'SwiftRuntimeFunctionsModule+SwiftJava.swift' is part of module 'SwiftRuntimeFunctions'; ignoring import"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 2,
+    "fixIts" : 0,
+    "id" : "reserved_runtime_symbol_name",
+    "line" : 23,
+    "path" : "Sources/SwiftRuntimeFunctions/SwiftRuntimeFunctions.swift",
+    "severity" : "warning",
+    "text" : "symbol name 'swift_retain' is reserved for the Swift runtime and cannot be directly referenced without causing unpredictable behavior; this will become an error"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 2,
+    "fixIts" : 0,
+    "id" : "reserved_runtime_symbol_name",
+    "line" : 26,
+    "path" : "Sources/SwiftRuntimeFunctions/SwiftRuntimeFunctions.swift",
+    "severity" : "warning",
+    "text" : "symbol name 'swift_release' is reserved for the Swift runtime and cannot be directly referenced without causing unpredictable behavior; this will become an error"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 2,
+    "fixIts" : 0,
+    "id" : "reserved_runtime_symbol_name",
+    "line" : 32,
+    "path" : "Sources/SwiftRuntimeFunctions/SwiftRuntimeFunctions.swift",
+    "severity" : "warning",
+    "text" : "symbol name 'swift_isUniquelyReferenced' is reserved for the Swift runtime and cannot be directly referenced without causing unpredictable behavior; this will become an error"
+  }
+]

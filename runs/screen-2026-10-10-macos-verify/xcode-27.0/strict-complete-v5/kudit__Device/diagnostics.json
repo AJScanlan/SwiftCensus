@@ -1,0 +1,36 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 32,
+    "path" : "Sources/Device.swift",
+    "severity" : "warning",
+    "text" : "static property 'dependencies' is not concurrency-safe because non-'Sendable' type '[any Module.Type]' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 32,
+    "parent" : 0,
+    "path" : "Sources/Device.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'dependencies' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 32,
+    "parent" : 0,
+    "path" : "Sources/Device.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]

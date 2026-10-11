@@ -1,0 +1,50 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 696,
+    "path" : "Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+    "severity" : "warning",
+    "text" : "capture of 'baseType' with non-Sendable type 'T.Type' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 126,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 773,
+    "path" : "Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+    "severity" : "warning",
+    "text" : "capture of 'baseType' with non-Sendable type 'T.Type' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 841,
+    "path" : "Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+    "severity" : "warning",
+    "text" : "capture of 'type' with non-Sendable type 'T.Type' in a '@Sendable' closure"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 59,
+    "fixIts" : 0,
+    "group" : "SendableClosureCaptures",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures",
+    "id" : "non_sendable_capture",
+    "line" : 904,
+    "path" : "Sources/SwiftletData/SharedCode/ActionDataProviders/ADiCloudProvider.swift",
+    "severity" : "warning",
+    "text" : "capture of 'type' with non-Sendable type 'T.Type' in a '@Sendable' closure"
+  }
+]

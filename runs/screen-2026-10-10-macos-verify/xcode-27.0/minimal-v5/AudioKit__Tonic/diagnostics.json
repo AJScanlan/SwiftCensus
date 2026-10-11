@@ -1,0 +1,48 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 310,
+    "path" : "Sources/Tonic/Chord.swift",
+    "severity" : "warning",
+    "text" : "'getAllChordsForNoteSet' is deprecated: Please use getRankedChords() for higher quality chord detection"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 310,
+    "parent" : 0,
+    "path" : "Sources/Tonic/Chord.swift",
+    "severity" : "note",
+    "text" : "use 'getRankedChords' instead"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 71,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "warning",
+    "text" : "'generateAllChordsIncludingEnharmonic()' is deprecated: Please use getRankedChords() for higher quality chord detection"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 62,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 71,
+    "parent" : 2,
+    "path" : "Sources/Tonic/ChordTable.swift",
+    "severity" : "note",
+    "text" : "use 'getRankedChords()' instead"
+  }
+]

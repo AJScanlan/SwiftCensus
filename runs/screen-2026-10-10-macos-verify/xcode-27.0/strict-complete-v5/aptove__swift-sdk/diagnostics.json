@@ -1,0 +1,94 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "SendableMetatypes",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-metatypes",
+    "id" : "non_sendable_metatype_capture",
+    "line" : 128,
+    "path" : "Sources/ACP/PaginatedResponse.swift",
+    "severity" : "warning",
+    "text" : "capture of non-Sendable type 'Request.Type' in an isolated closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "group" : "SendableMetatypes",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-metatypes",
+    "id" : "non_sendable_metatype_capture",
+    "line" : 133,
+    "path" : "Sources/ACP/PaginatedResponse.swift",
+    "severity" : "warning",
+    "text" : "capture of non-Sendable type 'Response.Type' in an isolated closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "group" : "SendingRisksDataRace",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race",
+    "id" : "regionbasedisolation_type_send_yields_race",
+    "line" : 129,
+    "path" : "Sources/ACP/PaginatedResponse.swift",
+    "severity" : "warning",
+    "text" : "sending value of non-Sendable type 'Request' risks causing data races; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "regionbasedisolation_typed_sendneversendable_via_arg_callee",
+    "line" : 129,
+    "parent" : 2,
+    "path" : "Sources/ACP/PaginatedResponse.swift",
+    "severity" : "note",
+    "text" : "sending value of non-Sendable type 'Request' to actor-isolated instance method 'sendRequest(method:params:timeoutSeconds:)' risks causing races in between code in the current isolation context and actor-isolated uses"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 86,
+    "fixIts" : 0,
+    "id" : "regionbasedisolation_isolated_conformance_introduced",
+    "line" : 129,
+    "parent" : 2,
+    "path" : "Sources/ACP/PaginatedResponse.swift",
+    "severity" : "note",
+    "text" : "isolated conformance to protocol 'Encodable' can be introduced here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "group" : "SendableMetatypes",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-metatypes",
+    "id" : "non_sendable_metatype_capture",
+    "line" : 187,
+    "path" : "Sources/ACP/ProtocolExtensions.swift",
+    "severity" : "warning",
+    "text" : "capture of non-Sendable type 'P.Type' in an isolated closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "SendableMetatypes",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sendable-metatypes",
+    "id" : "non_sendable_metatype_capture",
+    "line" : 197,
+    "path" : "Sources/ACP/ProtocolExtensions.swift",
+    "severity" : "warning",
+    "text" : "capture of non-Sendable type 'R.Type' in an isolated closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 1,
+    "id" : "use_of_qq_on_non_optional_value",
+    "line" : 323,
+    "path" : "Samples/InteractiveClient/main.swift",
+    "severity" : "warning",
+    "text" : "left side of nil coalescing operator '??' has non-optional type 'String', so the right side is never used"
+  }
+]

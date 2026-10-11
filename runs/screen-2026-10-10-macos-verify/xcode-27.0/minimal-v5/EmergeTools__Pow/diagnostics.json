@@ -1,0 +1,25 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated_rename",
+    "line" : 105,
+    "path" : "Sources/Pow/Infrastructure/MathUtilities.swift",
+    "severity" : "warning",
+    "text" : "'fabs' is deprecated: renamed to 'abs'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 1,
+    "id" : "note_deprecated_rename",
+    "line" : 105,
+    "parent" : 0,
+    "path" : "Sources/Pow/Infrastructure/MathUtilities.swift",
+    "severity" : "note",
+    "text" : "use 'abs' instead"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "group" : "ImplicitStrongCapture",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/implicit-strong-capture",
+    "id" : "implicit_weak_to_strong_capture",
+    "line" : 28,
+    "path" : "VGSLNetworking/AsyncResourceRequester.swift",
+    "severity" : "warning",
+    "text" : "'weak' ownership of capture 'self' differs from implicitly-captured strong reference in outer scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_loc",
+    "line" : 27,
+    "parent" : 0,
+    "path" : "VGSLNetworking/AsyncResourceRequester.swift",
+    "severity" : "note",
+    "text" : "'self' implicitly strongly captured here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "id" : "implicit_weak_to_strong_capture_add_capture_list_item",
+    "line" : 27,
+    "parent" : 0,
+    "path" : "VGSLNetworking/AsyncResourceRequester.swift",
+    "severity" : "note",
+    "text" : "add 'self' as a capture list item to silence"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "implicit_weak_to_strong_capture_assign_to_silence",
+    "line" : 28,
+    "parent" : 0,
+    "path" : "VGSLNetworking/AsyncResourceRequester.swift",
+    "severity" : "note",
+    "text" : "explicitly assign the capture list item to silence"
+  }
+]

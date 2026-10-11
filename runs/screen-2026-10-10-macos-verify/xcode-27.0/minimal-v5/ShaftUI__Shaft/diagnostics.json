@@ -1,0 +1,146 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 110,
+    "path" : "Sources/CSkia/utils.cpp",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 110,
+    "path" : "Sources/CSkia/utils.cpp",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 200,
+    "path" : "Sources/CSkia/utils.cpp",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 45,
+    "fixIts" : 0,
+    "group" : "Value Conversion Issue",
+    "line" : 232,
+    "path" : "Sources/CSkia/utils.cpp",
+    "severity" : "warning",
+    "text" : "implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_default_generic_parameter_inferrable_from_another_parameter",
+    "line" : 625,
+    "path" : "Sources/Shaft/Core/Geometry.swift",
+    "severity" : "warning",
+    "text" : "cannot use default expression for inference of 'TRadius<T>' because it is inferrable from parameters #0, #1; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_final_class_cannot_conform_to_self_same_type",
+    "line" : 69,
+    "path" : "Sources/Shaft/Widgets/Focus/Focus.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'Focus' cannot safely conform to protocol 'StatefulWidget', which requires that 'Self.StateType' inherit from 'State<Self>'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_default_generic_parameter_inferrable_from_another_parameter",
+    "line" : 624,
+    "path" : "Sources/Shaft/Core/Geometry.swift",
+    "severity" : "warning",
+    "text" : "cannot use default expression for inference of 'TRadius<T>' because it is inferrable from parameters #0, #1; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 20,
+    "fixIts" : 2,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "pbd_never_used_stmtcond",
+    "line" : 393,
+    "path" : "Sources/Shaft/Rendering/RenderParagraph.swift",
+    "severity" : "warning",
+    "text" : "value 'overflowShader' was defined but never used; consider replacing with boolean test"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "unreachable_case",
+    "line" : 165,
+    "path" : "Sources/Shaft/Rendering/RenderWrap.swift",
+    "severity" : "warning",
+    "text" : "default will never be executed"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "unreachable_code",
+    "line" : 393,
+    "path" : "Sources/Shaft/Widgets/Scroll/Scrollable.swift",
+    "severity" : "warning",
+    "text" : "will never be executed"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "unreachable_code_branch",
+    "line" : 393,
+    "parent" : 9,
+    "path" : "Sources/Shaft/Widgets/Scroll/Scrollable.swift",
+    "severity" : "note",
+    "text" : "condition always evaluates to false"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "unreachable_code",
+    "line" : 395,
+    "path" : "Sources/Shaft/Widgets/Scroll/Scrollable.swift",
+    "severity" : "warning",
+    "text" : "will never be executed"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "unreachable_code_branch",
+    "line" : 395,
+    "parent" : 11,
+    "path" : "Sources/Shaft/Widgets/Scroll/Scrollable.swift",
+    "severity" : "note",
+    "text" : "condition always evaluates to false"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "unreachable_code_after_stmt",
+    "line" : 43,
+    "path" : "Sources/ShaftSetup/ShaftSetup.swift",
+    "severity" : "warning",
+    "text" : "code after 'return' will never be executed"
+  }
+]
