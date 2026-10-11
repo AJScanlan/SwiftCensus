@@ -1,0 +1,56 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "group" : "IsolatedConformances",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/isolated-conformances",
+    "id" : "isolated_conformance_may_cross_isolation",
+    "line" : 40,
+    "path" : "Sources/AISDKProviderUtils/ConvertAsyncIteratorToReadableStream.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'Iterator' to protocol 'AsyncIteratorProtocol' may be isolated and cannot be passed to actor-isolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "group" : "IsolatedConformances",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/isolated-conformances",
+    "id" : "isolated_conformance_may_cross_isolation",
+    "line" : 42,
+    "path" : "Sources/AISDKProviderUtils/ConvertAsyncIteratorToReadableStream.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'Iterator' to protocol 'AsyncIteratorProtocol' may be isolated and cannot be passed to actor-isolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 7,
+    "fixIts" : 0,
+    "id" : "no_throw_in_do_with_catch",
+    "line" : 43,
+    "path" : "Sources/AISDKProviderUtils/SplitDataUrl.swift",
+    "severity" : "warning",
+    "text" : "'catch' block is unreachable because no errors are thrown in 'do' block"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 223,
+    "path" : "Sources/OpenAICompatibleProvider/OpenAICompatibleError.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (JSONValue) throws -> String' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 55,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 93,
+    "path" : "Sources/OpenAIProvider/Transcription/OpenAITranscriptionModel.swift",
+    "severity" : "error",
+    "text" : "converting non-Sendable function value to '@Sendable (OpenAIWebSocketRequest) throws -> any OpenAIWebSocketConnection' may introduce data races"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 52,
+    "path" : "Examples/ActivityNook/main.swift",
+    "severity" : "warning",
+    "text" : "'init(id:displayName:icon:accent:hotkey:backgroundPolicy:)' is deprecated: accent is never read. Drop it, and give a module its own accent with its configuration's chromeTheme."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 56,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 377,
+    "path" : "Sources/NookKit/App/Widgets/NookBoard.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@MainActor @Sendable () -> Void' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "selector_construction_suggest",
+    "line" : 58,
+    "path" : "Sources/NookKit/System/NookEditMenu.swift",
+    "severity" : "warning",
+    "text" : "use '#selector' instead of explicitly constructing a 'Selector'"
+  }
+]

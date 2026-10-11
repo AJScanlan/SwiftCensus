@@ -1,0 +1,22 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 97,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 83,
+    "path" : "Sources/PowerSync/Protocol/db/CrudTransaction.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (any SqlCursor) throws -> CrudEntry' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 414,
+    "path" : "Sources/PowerSync/Protocol/PowerSyncDatabaseProtocol.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (any SqlCursor) throws -> CrudEntry' may introduce data races"
+  }
+]

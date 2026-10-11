@@ -1,0 +1,43 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "condition_optional_element_pattern_not_valid_type",
+    "line" : 401,
+    "path" : "Sources/POHKit/DAIClient.swift",
+    "severity" : "error",
+    "text" : "initializer for conditional binding must have Optional type, not 'String'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "throwing_operator_without_try",
+    "line" : 440,
+    "path" : "Sources/POHKit/Models.swift",
+    "severity" : "error",
+    "text" : "operator can throw but expression is not marked with 'try'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "because_rethrows_argument_throws",
+    "line" : 440,
+    "parent" : 1,
+    "path" : "Sources/POHKit/Models.swift",
+    "severity" : "note",
+    "text" : "call is to 'rethrows' function, but argument function can throw"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 8,
+    "path" : "Sources/POHKit/DAIError.swift",
+    "severity" : "warning",
+    "text" : "associated value 'httpError(statusCode:message:body:)' of 'Sendable'-conforming enum 'DAIError' contains non-Sendable type 'Any'"
+  }
+]

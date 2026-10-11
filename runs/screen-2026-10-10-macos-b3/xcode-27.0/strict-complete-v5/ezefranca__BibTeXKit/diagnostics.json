@@ -1,0 +1,43 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 0,
+    "fixIts" : 0,
+    "id" : "non_sendable_keypath_capture",
+    "line" : 0,
+    "path" : "<unknown>",
+    "severity" : "warning",
+    "text" : "cannot form key path that captures non-Sendable type 'KeyPath<AttributeScopes.SwiftUIAttributes, AttributeScopes.SwiftUIAttributes.FontAttribute>'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 0,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 78,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 432,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@MainActor @Sendable (String) throws -> Void' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 433,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (Duration) async throws -> Void' may introduce data races"
+  }
+]

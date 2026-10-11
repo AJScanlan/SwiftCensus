@@ -1,0 +1,812 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/AbstractMethodError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'AbstractMethodError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ArithmeticException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ArithmeticException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ArrayIndexOutOfBoundsException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ArrayIndexOutOfBoundsException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ArrayStoreException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ArrayStoreException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/AssertionError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'AssertionError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/BootstrapMethodError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'BootstrapMethodError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ClassCastException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ClassCastException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ClassCircularityError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ClassCircularityError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ClassFormatError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ClassFormatError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ClassNotFoundException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ClassNotFoundException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/CloneNotSupportedException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'CloneNotSupportedException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/EnumConstantNotPresentException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'EnumConstantNotPresentException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ExceptionInInitializerError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ExceptionInInitializerError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalAccessError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalAccessError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalAccessException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalAccessException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalArgumentException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalArgumentException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalMonitorStateException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalMonitorStateException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalStateException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalStateException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IllegalThreadStateException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IllegalThreadStateException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IncompatibleClassChangeError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IncompatibleClassChangeError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/IndexOutOfBoundsException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IndexOutOfBoundsException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/InstantiationError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InstantiationError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/InstantiationException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InstantiationException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/InternalError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InternalError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/InterruptedException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InterruptedException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/LinkageError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'LinkageError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NegativeArraySizeException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NegativeArraySizeException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NoClassDefFoundError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoClassDefFoundError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NoSuchFieldError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoSuchFieldError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NoSuchFieldException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoSuchFieldException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NoSuchMethodError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoSuchMethodError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NoSuchMethodException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoSuchMethodException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NullPointerException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NullPointerException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/NumberFormatException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NumberFormatException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/OutOfMemoryError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'OutOfMemoryError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ReflectiveOperationException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ReflectiveOperationException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/SecurityException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'SecurityException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/StackOverflowError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'StackOverflowError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/StringIndexOutOfBoundsException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'StringIndexOutOfBoundsException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/ThreadDeath.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ThreadDeath' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/TypeNotPresentException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'TypeNotPresentException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/UnknownError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnknownError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/UnsatisfiedLinkError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnsatisfiedLinkError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/UnsupportedClassVersionError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnsupportedClassVersionError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/UnsupportedOperationException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnsupportedOperationException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/VerifyError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'VerifyError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaLang/VirtualMachineError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'VirtualMachineError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/CharConversionException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'CharConversionException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/EOFException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'EOFException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/FileNotFoundException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'FileNotFoundException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/IOError.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IOError' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/IOException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'IOException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/InterruptedIOException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InterruptedIOException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/InvalidClassException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InvalidClassException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/InvalidObjectException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'InvalidObjectException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/NotActiveException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NotActiveException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/NotSerializableException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NotSerializableException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/ObjectStreamException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ObjectStreamException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/OptionalDataException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'OptionalDataException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/StreamCorruptedException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'StreamCorruptedException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/SyncFailedException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'SyncFailedException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/UTFDataFormatException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UTFDataFormatException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/UncheckedIOException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UncheckedIOException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/UnsupportedEncodingException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnsupportedEncodingException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 7,
+    "path" : "Sources/JavaIO/WriteAbortedException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'WriteAbortedException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaNet/BindException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'BindException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaNet/ConnectException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ConnectException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/HttpRetryException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'HttpRetryException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/MalformedURLException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'MalformedURLException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaNet/NoRouteToHostException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'NoRouteToHostException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaNet/PortUnreachableException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'PortUnreachableException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/ProtocolException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ProtocolException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/SocketException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'SocketException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/SocketTimeoutException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'SocketTimeoutException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaNet/URISyntaxException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'URISyntaxException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/UnknownHostException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnknownHostException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 8,
+    "path" : "Sources/JavaNet/UnknownServiceException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnknownServiceException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaTime/DateTimeException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'DateTimeException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaTime/DateTimeParseException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'DateTimeParseException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaTime/UnsupportedTemporalTypeException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'UnsupportedTemporalTypeException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "concurrent_value_nonfinal_class",
+    "line" : 6,
+    "path" : "Sources/JavaTime/ZoneRulesException.swift",
+    "severity" : "warning",
+    "text" : "non-final class 'ZoneRulesException' cannot conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  }
+]

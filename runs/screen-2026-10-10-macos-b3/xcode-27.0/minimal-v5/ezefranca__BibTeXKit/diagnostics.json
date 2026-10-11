@@ -1,0 +1,68 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 78,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 432,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@MainActor @Sendable (String) throws -> Void' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 54,
+    "fixIts" : 0,
+    "group" : "ActorIsolatedCall",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call",
+    "id" : "actor_isolated_call_decl",
+    "line" : 432,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "error",
+    "text" : "call to main actor-isolated initializer 'init(pasteboard:)' in a synchronous nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 386,
+    "parent" : 1,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "note",
+    "text" : "calls to initializer 'init(pasteboard:)' from outside of its actor context are implicitly asynchronous"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 57,
+    "fixIts" : 0,
+    "id" : "converting_noattrfunc_to_type",
+    "line" : 433,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "warning",
+    "text" : "converting non-Sendable function value to '@Sendable (Duration) async throws -> Void' may introduce data races"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 40,
+    "fixIts" : 0,
+    "group" : "ActorIsolatedCall",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call",
+    "id" : "actor_isolated_call_decl",
+    "line" : 510,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "error",
+    "text" : "call to main actor-isolated initializer 'init(feedbackDuration:clipboardWriter:sleeper:)' in a synchronous nonisolated context"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 430,
+    "parent" : 4,
+    "path" : "Sources/BibTeXKit/Views/BibTeXView.swift",
+    "severity" : "note",
+    "text" : "calls to initializer 'init(feedbackDuration:clipboardWriter:sleeper:)' from outside of its actor context are implicitly asynchronous"
+  }
+]

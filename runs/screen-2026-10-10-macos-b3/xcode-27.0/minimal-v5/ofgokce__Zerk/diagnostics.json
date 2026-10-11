@@ -1,0 +1,14 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 44,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 189,
+    "path" : "Sources/Zerk/Interjection/ZerkInterjector.swift",
+    "severity" : "warning",
+    "text" : "'withValue(_:operation:isolation:file:line:)' is deprecated: Prefer the 'nonisolated(nonsending)' overload with stricter execution on caller context semantics: withValue(_:operation:file:line:)"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "pbd_never_used",
+    "line" : 20,
+    "path" : "Snippets/PostgresClient.swift",
+    "severity" : "warning",
+    "text" : "initialization of immutable value 'client' was never used; consider replacing with assignment to '_' or removing it"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "expression_unused_result_call",
+    "line" : 472,
+    "path" : "Sources/PostgresNIO/Connection/PostgresConnection.swift",
+    "severity" : "warning",
+    "text" : "result of call to 'cancel()' is unused"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "conformance_availability_only_version_newer",
+    "line" : 26,
+    "path" : "Sources/PostgresNIO/Utilities/PostgresJSONDecoder.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'JSONDecoder' to 'Sendable' is only available in macOS 13.0 or newer"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "availability_add_attribute",
+    "line" : 26,
+    "parent" : 2,
+    "path" : "Sources/PostgresNIO/Utilities/PostgresJSONDecoder.swift",
+    "severity" : "note",
+    "text" : "add '@available' attribute to enclosing extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "conformance_availability_only_version_newer",
+    "line" : 23,
+    "path" : "Sources/PostgresNIO/Utilities/PostgresJSONEncoder.swift",
+    "severity" : "warning",
+    "text" : "conformance of 'JSONEncoder' to 'Sendable' is only available in macOS 13.0 or newer"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "availability_add_attribute",
+    "line" : 23,
+    "parent" : 4,
+    "path" : "Sources/PostgresNIO/Utilities/PostgresJSONEncoder.swift",
+    "severity" : "note",
+    "text" : "add '@available' attribute to enclosing extension"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "id" : "cannot_default_generic_parameter_inferrable_from_another_parameter",
+    "line" : 32,
+    "path" : "Sources/ConnectionPoolModule/ConnectionRequest.swift",
+    "severity" : "warning",
+    "text" : "cannot use default expression for inference of 'ConnectionIDGenerator' because it is inferrable from parameters #1, #5; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "cannot_default_generic_parameter_inferrable_from_another_parameter",
+    "line" : 35,
+    "path" : "Sources/ConnectionPoolModule/ConnectionRequest.swift",
+    "severity" : "warning",
+    "text" : "cannot use default expression for inference of 'Clock' because it is inferrable from parameters #4, #5; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "resilience_decl_unavailable",
+    "line" : 17,
+    "path" : "Sources/ConnectionPoolModule/ConnectionRequest.swift",
+    "severity" : "warning",
+    "text" : "setter for property 'continuation' is private and cannot be referenced from an '@inlinable' function; this will be an error in a future Swift language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "id" : "resilience_decl_declared_here",
+    "line" : 9,
+    "parent" : 8,
+    "path" : "Sources/ConnectionPoolModule/ConnectionRequest.swift",
+    "severity" : "note",
+    "text" : "setter for property 'continuation' is not '@usableFromInline' or public"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 1,
+    "group" : "NoUsage",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-usage",
+    "id" : "variable_never_used",
+    "line" : 469,
+    "path" : "Sources/ConnectionPoolModule/PoolStateMachine.swift",
+    "severity" : "warning",
+    "text" : "immutable value 'context' was never used; consider replacing with '_' or removing it"
+  }
+]

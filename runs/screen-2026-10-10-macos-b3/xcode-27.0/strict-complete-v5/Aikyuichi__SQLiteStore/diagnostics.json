@@ -1,0 +1,123 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "availability_decl_only_in",
+    "line" : 22,
+    "path" : "Sources/SQLiteStore/Database.swift",
+    "severity" : "error",
+    "text" : "'sqlite3_changes64' is only available in macOS 12.3 or newer"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "availability_guard_with_version_check",
+    "line" : 22,
+    "parent" : 0,
+    "path" : "Sources/SQLiteStore/Database.swift",
+    "severity" : "note",
+    "text" : "add 'if #available' version check"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "availability_add_attribute",
+    "line" : 20,
+    "parent" : 0,
+    "path" : "Sources/SQLiteStore/Database.swift",
+    "severity" : "note",
+    "text" : "add '@available' attribute to enclosing property"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 1,
+    "id" : "availability_add_attribute",
+    "line" : 13,
+    "parent" : 0,
+    "path" : "Sources/SQLiteStore/Database.swift",
+    "severity" : "note",
+    "text" : "add '@available' attribute to enclosing class"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "group" : "VariableNeverMutated",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/variable-never-mutated",
+    "id" : "variable_never_mutated",
+    "line" : 277,
+    "path" : "Sources/SQLiteStore/Database.swift",
+    "severity" : "warning",
+    "text" : "variable 'message' was never mutated; consider changing to 'let' constant"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 13,
+    "path" : "Sources/SQLiteStore/DbStore.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'DbStore' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 7,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 12,
+    "parent" : 5,
+    "path" : "Sources/SQLiteStore/DbStore.swift",
+    "severity" : "note",
+    "text" : "class 'DbStore' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 13,
+    "parent" : 5,
+    "path" : "Sources/SQLiteStore/DbStore.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 13,
+    "parent" : 5,
+    "path" : "Sources/SQLiteStore/DbStore.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 14,
+    "path" : "Sources/SQLiteStore/SQLiteError.swift",
+    "severity" : "warning",
+    "text" : "stored property 'code' of 'Sendable'-conforming struct 'SQLiteError' has non-Sendable type 'SQLiteCode'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 35,
+    "parent" : 9,
+    "path" : "Sources/SQLiteStore/SQLiteError.swift",
+    "severity" : "note",
+    "text" : "consider making enum 'SQLiteCode' conform to the 'Sendable' protocol"
+  }
+]

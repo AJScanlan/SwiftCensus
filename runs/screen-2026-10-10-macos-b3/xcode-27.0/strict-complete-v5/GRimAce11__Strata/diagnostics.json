@@ -1,0 +1,72 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 1,
+    "group" : "UnusedImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access",
+    "id" : "remove_public_import",
+    "line" : 1,
+    "path" : "Examples/PostsDemo/Sources/PostsDemo/PostsMigrationPlan.swift",
+    "severity" : "warning",
+    "text" : "public import of 'Foundation' was not used in public declarations or inlinable code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 1,
+    "group" : "UnusedImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access",
+    "id" : "remove_public_import",
+    "line" : 2,
+    "path" : "Examples/PostsDemo/Sources/PostsDemo/PostsMigrationPlan.swift",
+    "severity" : "warning",
+    "text" : "public import of 'SwiftData' was not used in public declarations or inlinable code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 1,
+    "group" : "UnusedImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access",
+    "id" : "remove_public_import",
+    "line" : 1,
+    "path" : "Sources/StrataInspect/Diff/SchemaDiff.swift",
+    "severity" : "warning",
+    "text" : "public import of 'StrataCore' was not used in public declarations or inlinable code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 1,
+    "group" : "UnusedImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access",
+    "id" : "remove_public_import",
+    "line" : 3,
+    "path" : "Sources/StrataInspect/Diff/SchemaDiff.swift",
+    "severity" : "warning",
+    "text" : "public import of 'Foundation' was not used in public declarations or inlinable code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 1,
+    "group" : "UnusedImportAccess",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access",
+    "id" : "remove_public_import",
+    "line" : 1,
+    "path" : "Sources/StrataTesting/CapturableObservable.swift",
+    "severity" : "warning",
+    "text" : "public import of 'Foundation' was not used in public declarations or inlinable code"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 0,
+    "id" : "unreachable_case",
+    "line" : 238,
+    "path" : "Sources/StrataCLI/Strata.swift",
+    "severity" : "warning",
+    "text" : "default will never be executed"
+  }
+]

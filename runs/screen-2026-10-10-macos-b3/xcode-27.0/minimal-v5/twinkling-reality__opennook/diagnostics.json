@@ -1,0 +1,56 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 73,
+    "fixIts" : 0,
+    "id" : "actor_isolated_non_self_reference",
+    "line" : 27,
+    "path" : "Sources/NookKit/System/NookEditMenu.swift",
+    "severity" : "warning",
+    "text" : "main actor-isolated class property 'shared' can not be referenced from a nonisolated context"
+  },
+  {
+    "attribution" : "external",
+    "col" : 61,
+    "fixIts" : 0,
+    "id" : "kind_declared_here",
+    "line" : 198,
+    "parent" : 0,
+    "path" : "/Applications/Xcode-27.0.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h",
+    "severity" : "note",
+    "text" : "class property declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "selector_construction_suggest",
+    "line" : 58,
+    "path" : "Sources/NookKit/System/NookEditMenu.swift",
+    "severity" : "warning",
+    "text" : "use '#selector' instead of explicitly constructing a 'Selector'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "group" : "ActorIsolatedCall",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call",
+    "id" : "actor_isolated_call_decl",
+    "line" : 85,
+    "path" : "Examples/ShowcaseNook/main.swift",
+    "severity" : "error",
+    "text" : "call to main actor-isolated static method 'watching(fileAt:debounce:)' in a synchronous nonisolated context"
+  },
+  {
+    "attribution" : "external",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "actor_isolated_sync_func",
+    "line" : 2,
+    "parent" : 3,
+    "path" : "NookKit.NookThemeSource.watching",
+    "severity" : "note",
+    "text" : "calls to static method 'watching(fileAt:debounce:)' from outside of its actor context are implicitly asynchronous"
+  }
+]

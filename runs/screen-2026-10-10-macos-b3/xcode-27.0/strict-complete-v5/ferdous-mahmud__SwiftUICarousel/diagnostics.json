@@ -1,0 +1,35 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "group" : "DeprecatedDeclaration",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration",
+    "id" : "availability_deprecated",
+    "line" : 53,
+    "path" : "Sources/SwiftUICarousel/SwiftUICarousel.swift",
+    "severity" : "warning",
+    "text" : "'animation' was deprecated in macOS 12.0: Use withAnimation or animation(_:value:) instead."
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 58,
+    "path" : "Sources/SwiftUICarousel/SwiftUICarousel.swift",
+    "severity" : "error",
+    "text" : "'page(indexDisplayMode:)' is unavailable in macOS"
+  },
+  {
+    "attribution" : "external",
+    "col" : 71,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 1,
+    "path" : "SwiftUI.TabViewStyle.page",
+    "severity" : "note",
+    "text" : "'page(indexDisplayMode:)' has been explicitly marked unavailable here"
+  }
+]

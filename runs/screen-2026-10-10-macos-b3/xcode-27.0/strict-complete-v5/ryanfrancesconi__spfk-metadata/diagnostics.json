@@ -1,0 +1,52 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 48,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 22,
+    "path" : ".build/checkouts/spfk-audio-base/Sources/SPFKAudioBase/Definitions/Bpm+TempoString.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 52,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 22,
+    "path" : ".build/checkouts/spfk-audio-base/Sources/SPFKAudioBase/Definitions/Bpm+TempoString.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 78,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 22,
+    "path" : ".build/checkouts/spfk-audio-base/Sources/SPFKAudioBase/Definitions/Bpm+TempoString.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 48,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 27,
+    "path" : ".build/checkouts/spfk-audio-base/Sources/SPFKAudioBase/Definitions/Bpm+TempoString.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 56,
+    "fixIts" : 0,
+    "id" : "expected_expr_in_expr_list",
+    "line" : 27,
+    "path" : ".build/checkouts/spfk-audio-base/Sources/SPFKAudioBase/Definitions/Bpm+TempoString.swift",
+    "severity" : "error",
+    "text" : "expected expression in list of expressions"
+  }
+]
