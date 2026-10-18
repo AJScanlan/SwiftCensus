@@ -27,6 +27,14 @@ artifact, not the goal.
 - **Prefer deleting scope to deferring it.** An item moved to "later" is scope this
   project is carrying.
 - **No unreviewed generated prose** in `entries/*/NOTES.md`. Drafting is fine.
+- **Results are never reinterpreted after they are seen.** Gates and rules are pre-registered in an ADR
+  before the runs they judge. A failed check stays on record as failed; a rule changed after a result
+  is tested on fresh runs, never re-scored on the data that failed it.
+- **A gate states its power before it is pre-registered:** the share of its population the gating
+  measurement can observe (ADR 0009).
+- **Freeze `tools/` before a matrix run, and get the code review before the freeze.** A fix after the
+  freeze forces re-running both passes.
+- **Check every number in a write-up against the run data before committing it.**
 
 ## Do not propose these — they were considered and rejected
 
@@ -147,6 +155,27 @@ diagnostic printed twice under the `swift` style.
   alongside (A12). Record both in the run manifest. Never decided per-package.
 - **F7** Record the fully resolved frontend invocation, toolchain string, Xcode
   build number and target triple in every run record.
+
+## Running the matrix (learned the hard way)
+
+- `swift build --package-path tools` / `swift test --package-path tools` — test output has four
+  "Test run with N tests" lines (one per target); the total is their sum, not the last line.
+- Runs use `tools/.build/release/census`. Run `scripts/matrix-preflight.sh linux|macos <freeze-commit>`
+  before every run; it rebuilds the release binary and checks the pinned images, guest digest and tree.
+- `census run` resumes when the same command is re-issued (cells with `cell.json` are skipped). Never
+  `--force`. Retry one cell by deleting its directory.
+- Docker Desktop and the macOS guest do not fit in 16 GiB together: quit Docker before any macOS run.
+  A Linux pass takes ~1.5 h (335 cells); a macOS pass ~2.4 h (69 cells).
+- `docker image inspect swift:6.x` (bare tag) intermittently says "No such image" for a present image,
+  and multi-argument `inspect` does too. Inspect one image per call; never trust a single lookup.
+- SwiftPM does not relink an unchanged output, so mtime "is the binary stale?" checks give false
+  positives. Rebuild instead.
+- Swift parses `if a < b, c > d` as a generic argument list; parenthesise comparisons in conditions.
+- A failed build's diagnostics depend on parallel scheduling and are not reproducible. They are never
+  a frequency source (ADR 0010).
+- Most packages do not build on Linux (41% of a uniform draw on 6.4). Never gate a stratum selected on
+  macOS on a Linux result (ADR 0009).
+- `work/` (source cache, ~7 GB) is gitignored. In a worktree, symlink it from the main checkout.
 
 ## Structure notes
 
