@@ -32,7 +32,9 @@ Linux and macOS runs are never compared or summed (F6).
 ## What these runs are not
 
 - **Not the M1 exit.** The `2026-10-11` pairs were meant to be (ADR 0008), but neither is set-identical: one
-  `build_failed` cell differs in each. **G2 fails**: 8 of 30 `S-emit` entries emit on Linux 6.4 (21 of the 22 that do not
+  `build_failed` cell differs in each, because a failed build's diagnostics depend on parallel scheduling. ADR 0010
+  makes failed builds a non-source of frequencies, restates A7 accordingly, and requires a **fresh** pair per platform for
+  the M1 exit (not yet run); these pairs are not re-scored under the new rule. **G2 fails**: 8 of 30 `S-emit` entries emit on Linux 6.4 (21 of the 22 that do not
   are `build_failed` on Linux). See ADR 0008 Results; the selector investigation and the Linux column's scope are
   ADR 0009 (G2 stays failed). `S-byproduct` is measured on macOS (ADR 0006): LedgerKit 0
   diagnostics, GRDB 8 warnings.
