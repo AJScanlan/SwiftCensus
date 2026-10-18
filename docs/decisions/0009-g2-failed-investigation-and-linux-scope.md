@@ -1,6 +1,6 @@
 # ADR 0009 — G2 failed: the investigation, and the Linux column's scope
 
-**Status:** **proposed (2026-10-18)**, for owner acceptance. Written **after** the G2 result was seen; nothing here is pre-registered, and nothing here changes that result.
+**Status:** **accepted by the owner (2026-10-18)**. Written **after** the G2 result was seen; nothing here is pre-registered, and nothing here changes that result.
 **Date:** 2026-10-18
 **Milestone:** M1 (exit)
 **Responds to:** ADR 0008 Results (G2 FAIL); ADR 0007 D8 ("below 50% on Linux 6.4 fails G2, and the selector is investigated before M2")

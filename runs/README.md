@@ -33,7 +33,8 @@ Linux and macOS runs are never compared or summed (F6).
 
 - **Not the M1 exit.** The `2026-10-11` pairs were meant to be (ADR 0008), but neither is set-identical: one
   `build_failed` cell differs in each. **G2 fails**: 8 of 30 `S-emit` entries emit on Linux 6.4 (21 of the 22 that do not
-  are `build_failed` on Linux). See ADR 0008 Results. `S-byproduct` is measured on macOS (ADR 0006): LedgerKit 0
+  are `build_failed` on Linux). See ADR 0008 Results; the selector investigation and the Linux column's scope are
+  ADR 0009 (G2 stays failed). `S-byproduct` is measured on macOS (ADR 0006): LedgerKit 0
   diagnostics, GRDB 8 warnings.
 - **Not a result.** Roughly 40% of `S-control` cells are `build_failed`, mostly Apple-only code on
   Linux, and 6.1's wrapped identifiers are undecided (ADR 0005). Do not read frequencies off these.
