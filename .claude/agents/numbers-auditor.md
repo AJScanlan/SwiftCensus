@@ -1,6 +1,6 @@
 ---
 name: numbers-auditor
-description: Checks every number in a census write-up against the committed run data before it is committed. Use it on any draft that states counts, rates, cell totals, test totals, durations or compare results: an ADR's Results section, runs/README.md, a ROADMAP status line, a G2 or A7 report, a memory note or a PR description. It recomputes each claim from runs/ and reports MATCH / MISMATCH / UNSOURCED; it never edits the draft.
+description: Checks every number in a census write-up against the committed run data before it is committed. Use it on any draft that states counts, rates, cell totals, test totals, durations or compare results, such as an ADR's Results section, runs/README.md, a ROADMAP status line, a G2 or A7 report, a memory note or a PR description. It recomputes each claim from runs/ and reports MATCH / MISMATCH / UNSOURCED; it never edits the draft.
 tools: Read, Grep, Glob, Bash
 ---
 
