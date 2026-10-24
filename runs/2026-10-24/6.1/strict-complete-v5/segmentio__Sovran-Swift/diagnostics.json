@@ -1,0 +1,130 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 206,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "warning",
+    "text" : "static property 'nextSubscriptionID' is not concurrency-safe because it is nonisolated global shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "shared_state_make_immutable",
+    "line" : 206,
+    "parent" : 0,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "note",
+    "text" : "convert 'nextSubscriptionID' to a 'let' constant to make 'Sendable' shared state immutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 206,
+    "parent" : 0,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'nextSubscriptionID' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 206,
+    "parent" : 0,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 12,
+    "path" : "Sources/Sovran/Testing.swift",
+    "severity" : "warning",
+    "text" : "var 'isUnitTesting' is not concurrency-safe because it is nonisolated global shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 1,
+    "id" : "shared_state_make_immutable",
+    "line" : 12,
+    "parent" : 4,
+    "path" : "Sources/Sovran/Testing.swift",
+    "severity" : "note",
+    "text" : "convert 'isUnitTesting' to a 'let' constant to make 'Sendable' shared state immutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 12,
+    "parent" : 4,
+    "path" : "Sources/Sovran/Testing.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make var 'isUnitTesting' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 14,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 12,
+    "parent" : 4,
+    "path" : "Sources/Sovran/Testing.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 258,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "warning",
+    "text" : "capture of 'handler' with non-sendable type 'Handler<T>' (aka '(T) -> ()') in a '@Sendable' closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "nonsendable_function_type",
+    "line" : 258,
+    "parent" : 8,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "note",
+    "text" : "a function type must be marked '@Sendable' to conform to 'Sendable'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 258,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "warning",
+    "text" : "capture of 'state' with non-sendable type 'T' in a '@Sendable' closure; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_sendable_conformance",
+    "line" : 251,
+    "parent" : 10,
+    "path" : "Sources/Sovran/Store.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'T' conform to the 'Sendable' protocol"
+  }
+]
