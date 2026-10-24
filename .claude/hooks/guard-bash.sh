@@ -6,6 +6,10 @@ set -euo pipefail
 c="$(jq -r '.tool_input.command // empty')"
 [[ -n "$c" ]] || exit 0
 
+# Normalise before matching: join backslash-newline continuations (the plans write `census run` that way), make every
+# other newline a command separator, and drop quotes so `"--force"` matches. A heuristic, not a shell parser.
+c="$(printf '%s' "$c" | sed -e ':a' -e '/\\$/N; s/\\\n/ /; ta' | tr '\n' ';' | tr -d "'\"")"
+
 deny() { echo "Blocked by .claude/hooks/guard-bash.sh: $1" >&2; exit 2; }
 has() { grep -qE "$1" <<<"$c"; }
 

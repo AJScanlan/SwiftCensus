@@ -13,20 +13,26 @@ input="$(cat)"
 f="$(jq -r '.tool_input.file_path // .tool_input.notebook_path // empty' <<<"$input")"
 [[ -n "$f" ]] || exit 0
 
-# Relative to the repo holding the file. Worktrees live inside the main checkout, so $CLAUDE_PROJECT_DIR is not enough.
-d="$(dirname "$f")"
-while [[ ! -d "$d" ]]; do d="$(dirname "$d")"; done
-root="$(git -C "$d" rev-parse --show-toplevel 2>/dev/null || true)"
-[[ -n "$root" ]] || exit 0
-rel="${f#"$root"/}"
-
-block() { echo "Blocked by .claude/hooks/guard-pinned.sh: $rel $1" >&2; exit 2; }
-
 ask() {
   jq -n --arg r "$1" \
     '{hookSpecificOutput: {hookEventName: "PreToolUse", permissionDecision: "ask", permissionDecisionReason: $r}}'
   exit 0
 }
+
+# Relative to the repo holding the file. Worktrees live inside the main checkout, so $CLAUDE_PROJECT_DIR is not enough.
+# Resolve the deepest existing directory physically, so `tools/../runs/x` and symlinked directories match as what they
+# are. A `.` or `..` left in the part that does not exist yet cannot be resolved: ask.
+d="$(dirname "$f")"
+while [[ ! -d "$d" ]]; do d="$(dirname "$d")"; done
+rest="${f#"$d"}"
+[[ "/$rest/" != *"/../"* && "/$rest/" != *"/./"* ]] || ask "Path $f has . or .. in a part that does not exist yet."
+d="$(cd -P "$d" && pwd -P)"
+f="$d$rest"
+root="$(git -C "$d" rev-parse --show-toplevel 2>/dev/null || true)"
+[[ -n "$root" ]] || exit 0
+rel="${f#"$root"/}"
+
+block() { echo "Blocked by .claude/hooks/guard-pinned.sh: $rel $1" >&2; exit 2; }
 
 case "$rel" in
   runs/README.md | corpus/README.md | screens/*.md) ;;
@@ -41,9 +47,12 @@ case "$rel" in
     tool="$(jq -r '.tool_name' <<<"$input")"
     [[ "$tool" == "Edit" ]] || ask "Rewrites ADR $rel. Text above '## Results' is pre-registered and is not edited after results are seen. Confirm with the owner."
     old="$(jq -r '.tool_input.old_string // empty' <<<"$input")"
-    if grep -q '^## Results' "$f"; then
+    if [[ -n "$old" ]] && grep -q '^## Results' "$f"; then
+      # Inside Results only if the text occurs below the heading and nowhere above it. Text spanning the heading
+      # occurs in neither part, so it asks.
       pre="$(awk '/^## Results/ { exit } { print }' "$f")"
-      [[ "$pre" == *"$old"* ]] || exit 0 # the edit is inside Results
+      post="$(awk 'seen { print } /^## Results/ { seen = 1 }' "$f")"
+      [[ "$post" == *"$old"* && "$pre" != *"$old"* ]] && exit 0
     fi
     ask "Edits ADR $rel above '## Results' (or an ADR without Results). That text is the decision record and, where pre-registered, is not edited after results are seen. Confirm with the owner." ;;
 esac
