@@ -207,6 +207,36 @@ import Testing
     @Test func aMovedLineIsADifference() {
         let r = RunComparison.compare(run(cell("p", [rec("x", line: 1)])), run(cell("p", [rec("x", line: 2)])))
         #expect(!r.isSetIdentical && r.differing.count == 1)
+        #expect(r.failedBuildDiffering.isEmpty)
+    }
+
+    // ADR 0010 rule 2: a failed build's diagnostics depend on scheduling, so they are reported, never gating.
+    @Test func failedBuildPairWithDifferingDiagnosticsIsSetIdenticalButReported() {
+        let r = RunComparison.compare(run(cell("p", outcome: .buildFailed, [rec("x", line: 1)])),
+                                      run(cell("p", outcome: .buildFailed, [rec("x", line: 2)])))
+        #expect(r.isSetIdentical)
+        #expect(r.failedBuildDiffering.map(\.key.packageId) == ["p"])
+        #expect(r.differing.isEmpty && r.identical == 0)
+    }
+
+    @Test func failedBuildWithDiagnosticsOnOneSideOnlyIsReported() {
+        let a = run(cell("p", outcome: .buildFailed, [rec("x")]), cell("q", [rec("y")]))
+        let b = run(cell("p", outcome: .buildFailed, []), cell("q", [rec("y")]))
+        let r = RunComparison.compare(a, b)
+        #expect(r.isSetIdentical && r.failedBuildDiffering.count == 1 && r.identical == 1)
+        #expect(r.cellsCompared == r.identical + r.differing.count + r.failedBuildDiffering.count
+            + r.outcomeMismatches.count + r.noDiagnosticCells)
+    }
+
+    @Test func builtVersusBuildFailedIsAnOutcomeMismatch() {
+        let r = RunComparison.compare(run(cell("p", [rec("x")])), run(cell("p", outcome: .buildFailed, [rec("x")])))
+        #expect(!r.isSetIdentical && r.outcomeMismatches.count == 1 && r.failedBuildDiffering.isEmpty)
+    }
+
+    @Test func identicalFailedBuildsAreIdenticalAndNotReported() {
+        let a = run(cell("p", outcome: .buildFailed, [rec("x")]))
+        let r = RunComparison.compare(a, a)
+        #expect(r.isSetIdentical && r.identical == 1 && r.failedBuildDiffering.isEmpty)
     }
 
     @Test func missingCellsAndOutcomeChangesAreNeverSilentlyIgnored() {

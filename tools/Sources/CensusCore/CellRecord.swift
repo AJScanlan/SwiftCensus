@@ -4,7 +4,8 @@ import Foundation
 public enum CellOutcome: String, Codable, Sendable {
     /// Build exited 0.
     case built
-    /// Build exited non-zero after resolving; diagnostics were still captured and are still data.
+    /// Build exited non-zero after resolving. Its diagnostics are captured and committed, but are not a frequency
+    /// source (ADR 0010 rule 1).
     case buildFailed = "build_failed"
     /// Dependency resolution failed (e.g. the vendored `Package.resolved` could not be honoured).
     case resolveFailed = "resolve_failed"

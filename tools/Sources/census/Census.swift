@@ -295,7 +295,8 @@ struct Compare: AsyncParsableCommand {
 /// An A7 report as `census compare` prints it; shared with `census screen reproduce`.
 func printComparison(_ report: RunComparison.Report, left: String, right: String) {
     print("cells compared: \(report.cellsCompared); set-identical: \(report.identical); "
-        + "no-diagnostic outcomes (equal): \(report.noDiagnosticCells)")
+        + "no-diagnostic outcomes (equal): \(report.noDiagnosticCells); "
+        + "failed-build differs (not gating): \(report.failedBuildDiffering.count)")
     for k in report.onlyInLeft { print("only in \(left): \(k)") }
     for k in report.onlyInRight { print("only in \(right): \(k)") }
     for m in report.outcomeMismatches { print("OUTCOME DIFFERS \(m.key): \(m.left.rawValue) vs \(m.right.rawValue)") }
@@ -304,7 +305,17 @@ func printComparison(_ report: RunComparison.Report, left: String, right: String
         for k in d.difference.onlyInLeft.prefix(5) { print("  only left : \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
         for k in d.difference.onlyInRight.prefix(5) { print("  only right: \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
     }
+    for d in report.failedBuildDiffering {
+        print(failedBuildLine(d))
+        for k in d.difference.onlyInLeft.prefix(5) { print("  only left : \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
+        for k in d.difference.onlyInRight.prefix(5) { print("  only right: \(k.id) \(k.path):\(k.line):\(k.col) \(k.severity.rawValue)") }
+    }
     print(report.isSetIdentical ? "SET-IDENTICAL" : "NOT SET-IDENTICAL")
+}
+
+/// A `build_failed` cell whose multisets differ: reported, never gating (ADR 0010 rule 2).
+func failedBuildLine(_ d: RunComparison.CellDifference) -> String {
+    "FAILED-BUILD DIFFERS (not gating, ADR 0010) \(d.key): -\(d.difference.onlyInLeft.count) +\(d.difference.onlyInRight.count)"
 }
 
 struct Parse: AsyncParsableCommand {

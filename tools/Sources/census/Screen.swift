@@ -226,6 +226,7 @@ extension ScreenCommand {
                 print("A7 over \(stable.count) stable emitters: \(report.cellsCompared) cells compared, \(report.identical) set-identical")
                 for m in report.outcomeMismatches { print("OUTCOME DIFFERS \(m.key): \(m.left.rawValue) vs \(m.right.rawValue)") }
                 for d in report.differing { print("MULTISET DIFFERS \(d.key): -\(d.difference.onlyInLeft.count) +\(d.difference.onlyInRight.count)") }
+                for d in report.failedBuildDiffering { print(failedBuildLine(d)) }
                 for k in report.onlyInLeft + report.onlyInRight { print("MISSING IN ONE PASS \(k)") }
                 setIdentical = report.isSetIdentical
             }

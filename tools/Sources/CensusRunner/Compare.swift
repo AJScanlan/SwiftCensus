@@ -1,8 +1,9 @@
 import CensusCore
 import Foundation
 
-/// The A7 check: re-running on identical inputs must produce a set-identical normalised
-/// diagnostic multiset. This compares two committed runs cell by cell.
+/// The A7 check, as restated by ADR 0010 rule 2: two runs on identical inputs have the same cells, equal outcomes
+/// everywhere, and an equal normalised diagnostic multiset in every `built` cell. This compares two committed runs
+/// cell by cell.
 public enum RunComparison {
     public struct CellDifference: Sendable {
         public var key: RunStore.CellKey
@@ -13,6 +14,9 @@ public enum RunComparison {
         public var cellsCompared = 0
         public var identical = 0
         public var differing: [CellDifference] = []
+        /// `build_failed` on both sides with differing multisets. Reported, never gating (ADR 0010 rule 2): a failed
+        /// build's diagnostics are whatever had run when it stopped, which depends on parallel scheduling.
+        public var failedBuildDiffering: [CellDifference] = []
         /// Cells that ended with a different outcome. Not comparable, and not silently ignored.
         public var outcomeMismatches: [(key: RunStore.CellKey, left: CellOutcome, right: CellOutcome)] = []
         public var onlyInLeft: [RunStore.CellKey] = []
@@ -45,7 +49,13 @@ public enum RunComparison {
                 continue
             }
             let diff = NormalisedMultiset(records: l.diagnostics).difference(NormalisedMultiset(records: r.diagnostics))
-            if diff.isEmpty { report.identical += 1 } else { report.differing.append(.init(key: key, difference: diff)) }
+            if diff.isEmpty {
+                report.identical += 1
+            } else if l.record.outcome == .buildFailed {
+                report.failedBuildDiffering.append(.init(key: key, difference: diff))
+            } else {
+                report.differing.append(.init(key: key, difference: diff))
+            }
         }
         return report
     }
