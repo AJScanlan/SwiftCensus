@@ -1,0 +1,32 @@
+[
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "note_from_clang",
+    "line" : 1,
+    "path" : "<module-includes>",
+    "severity" : "note",
+    "text" : "in file included from <module-includes>:1:"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "error_from_clang",
+    "line" : 3,
+    "path" : ".build/checkouts/JXKit/Sources/CJSCore/include/jscore_c.h",
+    "severity" : "error",
+    "text" : "'webkitgtk-4.1/JavaScriptCore/JavaScript.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "clang_cannot_build_module",
+    "line" : 5,
+    "path" : ".build/checkouts/JXKit/Sources/JXKit/JXContext.swift",
+    "severity" : "error",
+    "text" : "could not build C module 'CJSCore'"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 106,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/CircularBuffer.swift",
+    "severity" : "error",
+    "text" : "type 'CircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "witness_unavailable",
+    "line" : 106,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/CircularBuffer.swift",
+    "severity" : "error",
+    "text" : "unavailable subscript 'subscript(_:)' was used to satisfy a requirement of protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 3,
+    "parent" : 1,
+    "path" : "Swift.MutableCollection.subscript",
+    "severity" : "note",
+    "text" : "'subscript(_:)' declared here"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "kind_declname_declared_here",
+    "line" : 2,
+    "parent" : 1,
+    "path" : "Swift.MutableCollection.subscript",
+    "severity" : "note",
+    "text" : "requirement 'subscript(_:)' declared here"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 132,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/MarkedCircularBuffer.swift",
+    "severity" : "error",
+    "text" : "type 'MarkedCircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "witness_unavailable",
+    "line" : 132,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/MarkedCircularBuffer.swift",
+    "severity" : "error",
+    "text" : "unavailable subscript 'subscript(_:)' was used to satisfy a requirement of protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 3,
+    "parent" : 5,
+    "path" : "Swift.MutableCollection.subscript",
+    "severity" : "note",
+    "text" : "'subscript(_:)' declared here"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "kind_declname_declared_here",
+    "line" : 2,
+    "parent" : 5,
+    "path" : "Swift.MutableCollection.subscript",
+    "severity" : "note",
+    "text" : "requirement 'subscript(_:)' declared here"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 40,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 121,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/MarkedCircularBuffer.swift",
+    "severity" : "error",
+    "text" : "type 'CircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 326,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/PendingDatagramWritesManager.swift",
+    "severity" : "error",
+    "text" : "type 'MarkedCircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "type_does_not_conform",
+    "line" : 134,
+    "path" : ".build/checkouts/swift-nio/Sources/NIO/PendingWritesManager.swift",
+    "severity" : "error",
+    "text" : "type 'MarkedCircularBuffer<Element>' does not conform to protocol 'MutableCollection'"
+  }
+]

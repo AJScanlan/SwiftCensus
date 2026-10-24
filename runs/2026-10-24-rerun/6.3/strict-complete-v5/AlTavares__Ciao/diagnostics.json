@@ -1,0 +1,475 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 12,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 15,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 49,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 48,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 65,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 81,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowserDelegate' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 84,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 75,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 84,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 89,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 94,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 99,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 39,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 104,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 77,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 104,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 13,
+    "path" : "Sources/Ciao/CiaoBrowserEvent.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 14,
+    "path" : "Sources/Ciao/CiaoBrowserEvent.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 15,
+    "path" : "Sources/Ciao/CiaoBrowserEvent.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 11,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 15,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 90,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 18,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "id" : "extension_retroactive_conformance",
+    "line" : 32,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "warning",
+    "text" : "extension declares a conformance of imported type 'Dictionary' to imported protocol 'Error'; this will not behave correctly if the owners of 'Swift' introduce this conformance in the future"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 1,
+    "id" : "extension_retroactive_conformance_silence",
+    "line" : 32,
+    "parent" : 18,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "note",
+    "text" : "add '@retroactive' to silence this warning"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 35,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceDelegate' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 36,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 35,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 38,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 52,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 43,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 46,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 48,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 21,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 12,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 42,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 37,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 63,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetServiceDelegate' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 66,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 71,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 38,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 76,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_mutable_state_decl",
+    "line" : 34,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "warning",
+    "text" : "var 'LoggerLevel' is not concurrency-safe because it is nonisolated global shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "shared_state_make_immutable",
+    "line" : 34,
+    "parent" : 31,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "convert 'LoggerLevel' to a 'let' constant to make 'Sendable' shared state immutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 34,
+    "parent" : 31,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make var 'LoggerLevel' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 34,
+    "parent" : 31,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_mutable_state_decl",
+    "line" : 37,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "warning",
+    "text" : "static property 'dateFormat' is not concurrency-safe because it is nonisolated global shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "shared_state_make_immutable",
+    "line" : 37,
+    "parent" : 35,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "convert 'dateFormat' to a 'let' constant to make 'Sendable' shared state immutable"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 37,
+    "parent" : 35,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'dateFormat' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 37,
+    "parent" : 35,
+    "path" : "Sources/Ciao/Logger.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 11,
+    "path" : "Sources/Ciao/NetServiceExtension.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'NetService' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 31,
+    "path" : "Sources/Ciao/CiaoBrowser.swift",
+    "severity" : "error",
+    "text" : "cannot find 'NetServiceBrowser' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "unbound_generic_parameter",
+    "line" : 40,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "generic parameter 'Success' could not be inferred"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "unbound_generic_parameter_explicit_fix",
+    "line" : 40,
+    "parent" : 41,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "note",
+    "text" : "explicitly specify the generic arguments to fix this issue"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "unbound_generic_parameter",
+    "line" : 45,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "error",
+    "text" : "generic parameter 'Failure' could not be inferred"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "unbound_generic_parameter_explicit_fix",
+    "line" : 45,
+    "parent" : 43,
+    "path" : "Sources/Ciao/CiaoResolver.swift",
+    "severity" : "note",
+    "text" : "explicitly specify the generic arguments to fix this issue"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 22,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 36,
+    "path" : "Sources/Ciao/CiaoServer.swift",
+    "severity" : "error",
+    "text" : "cannot find 'NetService' in scope"
+  }
+]

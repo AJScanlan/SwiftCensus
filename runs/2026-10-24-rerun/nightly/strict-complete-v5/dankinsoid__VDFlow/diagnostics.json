@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "sema_no_import",
+    "line" : 1,
+    "path" : "Sources/VDFlow/Focus.swift",
+    "severity" : "error",
+    "text" : "no such module 'SwiftUI'"
+  }
+]

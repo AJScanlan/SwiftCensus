@@ -1,0 +1,216 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "nonisolated_non_sendable",
+    "line" : 7,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "warning",
+    "text" : "'nonisolated' can not be applied to variable with non-'Sendable' type 'URLSession' (aka 'AnyObject'); this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 7,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'URLSession' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 1,
+    "path" : "Foundation.URLSession",
+    "severity" : "note",
+    "text" : "'URLSession' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'URLSession' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 3,
+    "path" : "Foundation.URLSession",
+    "severity" : "note",
+    "text" : "'URLSession' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "cannot_convert_initializer_value_anyobject",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "value of type '_' expected to be instance of class or class-constrained type"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "could_not_find_type_member",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "type 'URLSession' (aka 'AnyObject') has no member 'shared'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 154,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 62,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'URLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 8,
+    "path" : "Foundation.URLResponse",
+    "severity" : "note",
+    "text" : "'URLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 53,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 64,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "value of type 'URLSession' (aka 'AnyObject') has no member 'data'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 43,
+    "fixIts" : 0,
+    "id" : "conditional_downcast_coercion",
+    "line" : 74,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "warning",
+    "text" : "conditional cast from 'URLResponse' (aka 'AnyObject') to 'HTTPURLResponse' (aka 'AnyObject') always succeeds"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 47,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 74,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'HTTPURLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 12,
+    "path" : "Foundation.HTTPURLResponse",
+    "severity" : "note",
+    "text" : "'HTTPURLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 49,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 78,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'statusCode'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 74,
+    "fixIts" : 0,
+    "id" : "could_not_find_value_member",
+    "line" : 79,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "value of type 'HTTPURLResponse' (aka 'AnyObject') has no member 'statusCode'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 26,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 170,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "cannot find 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 29,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 25,
+    "path" : "Sources/opencode-sdk-swift/Resources/event.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 0,
+    "id" : "cannot_find_in_scope",
+    "line" : 26,
+    "path" : "Sources/opencode-sdk-swift/Resources/event.swift",
+    "severity" : "error",
+    "text" : "cannot find 'URLRequest' in scope"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 70,
+    "fixIts" : 0,
+    "id" : "cannot_infer_base_of_unresolved_member",
+    "line" : 26,
+    "path" : "Sources/opencode-sdk-swift/Resources/event.swift",
+    "severity" : "error",
+    "text" : "cannot infer contextual base in reference to member 'infinity'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 50,
+    "fixIts" : 0,
+    "id" : "could_not_find_type_member",
+    "line" : 35,
+    "path" : "Sources/opencode-sdk-swift/Resources/event.swift",
+    "severity" : "error",
+    "text" : "type 'URLSession' (aka 'AnyObject') has no member 'shared'"
+  }
+]

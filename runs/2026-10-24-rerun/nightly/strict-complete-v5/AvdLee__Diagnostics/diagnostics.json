@@ -1,0 +1,12 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 1,
+    "path" : ".build/checkouts/ExceptionCatcher/Sources/Internal/include/ExceptionCatcher.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  }
+]

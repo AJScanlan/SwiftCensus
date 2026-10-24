@@ -1,0 +1,72 @@
+[
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 8,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/Invocation.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 9,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/MethodSignature.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 8,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/NSObject+ExceptionCatcher.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 8,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/ObjectProxy.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 9,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/SHFFITypeContext.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 9,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/SHMethodSignature.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "Lexical or Preprocessor Issue",
+    "line" : 9,
+    "path" : ".build/checkouts/FZSwiftUtils/Sources/FZSwiftUtils+ObjC/include/SHObjectiveCUtilities.h",
+    "severity" : "fatal",
+    "text" : "'Foundation/Foundation.h' file not found"
+  }
+]

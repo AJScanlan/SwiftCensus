@@ -1,0 +1,45 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "error_in_future_swift_version",
+    "line" : 96,
+    "path" : "Sources/Figlet/Font.swift",
+    "severity" : "warning",
+    "text" : "static property 'EmptyChar' is not concurrency-safe because non-'Sendable' type 'Figlet.Char' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 19,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 94,
+    "parent" : 0,
+    "path" : "Sources/Figlet/Font.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'Char' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 96,
+    "parent" : 0,
+    "path" : "Sources/Figlet/Font.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'EmptyChar' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 96,
+    "parent" : 0,
+    "path" : "Sources/Figlet/Font.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 5,
+    "fixIts" : 0,
+    "id" : "nonisolated_non_sendable",
+    "line" : 7,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "warning",
+    "text" : "'nonisolated' can not be applied to variable with non-'Sendable' type 'URLSession' (aka 'AnyObject'); this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 41,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 7,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'URLSession' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 1,
+    "path" : "Foundation.URLSession",
+    "severity" : "note",
+    "text" : "'URLSession' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "'URLSession' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 3,
+    "path" : "Foundation.URLSession",
+    "severity" : "note",
+    "text" : "'URLSession' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "could_not_find_type_member",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "type 'URLSession' (aka 'AnyObject') has no member 'shared'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 32,
+    "fixIts" : 0,
+    "id" : "cannot_convert_initializer_value_anyobject",
+    "line" : 13,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "value of type '_' expected to be instance of class or class-constrained type"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 17,
+    "fixIts" : 0,
+    "id" : "cannot_find_type_in_scope",
+    "line" : 154,
+    "path" : "Sources/opencode-sdk-swift/Core/Client.swift",
+    "severity" : "error",
+    "text" : "cannot find type 'URLRequest' in scope"
+  }
+]

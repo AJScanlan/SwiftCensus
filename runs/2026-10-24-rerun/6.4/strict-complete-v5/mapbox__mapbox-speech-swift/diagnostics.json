@@ -1,0 +1,174 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 25,
+    "fixIts" : 0,
+    "id" : "init_candidate_inaccessible",
+    "line" : 41,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'ProcessInfo' initializer is inaccessible due to 'internal' protection level"
+  },
+  {
+    "attribution" : "external",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "decl_declared_here",
+    "line" : 2,
+    "parent" : 0,
+    "path" : "FoundationEssentials.ProcessInfo.init",
+    "severity" : "note",
+    "text" : "'init()' declared here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 88,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "static property 'shared' is not concurrency-safe because non-'Sendable' type 'SpeechSynthesizer' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 78,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "class 'SpeechSynthesizer' does not conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 88,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'shared' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 23,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 88,
+    "parent" : 2,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 124,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 150,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLSessionDataTask' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 6,
+    "path" : "Foundation.URLSessionDataTask",
+    "severity" : "note",
+    "text" : "'URLSessionDataTask' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 158,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 174,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLSessionDataTask' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 8,
+    "path" : "Foundation.URLSessionDataTask",
+    "severity" : "note",
+    "text" : "'URLSessionDataTask' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 77,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 240,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 10,
+    "path" : "Foundation.URLResponse",
+    "severity" : "note",
+    "text" : "'URLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 28,
+    "fixIts" : 0,
+    "id" : "availability_decl_unavailable",
+    "line" : 257,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "'URLResponse' is unavailable: This type has moved to the FoundationNetworking module. Import that module to use it."
+  },
+  {
+    "attribution" : "external",
+    "col" : 18,
+    "fixIts" : 0,
+    "id" : "availability_marked_unavailable",
+    "line" : 2,
+    "parent" : 12,
+    "path" : "Foundation.URLResponse",
+    "severity" : "note",
+    "text" : "'URLResponse' has been explicitly marked unavailable here"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 257,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "warning",
+    "text" : "associated value 'unknown(response:underlying:code:message:)' of 'Sendable'-conforming enum 'SpeechError' contains non-Sendable type 'AnyObject'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 1,
+    "fixIts" : 0,
+    "group" : "NominalTypes",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/nominal-types",
+    "id" : "non_nominal_extension",
+    "line" : 299,
+    "path" : "Sources/MapboxSpeech/MapboxSpeech.swift",
+    "severity" : "error",
+    "text" : "non-nominal type 'HTTPURLResponse' (aka 'AnyObject') cannot be extended"
+  }
+]

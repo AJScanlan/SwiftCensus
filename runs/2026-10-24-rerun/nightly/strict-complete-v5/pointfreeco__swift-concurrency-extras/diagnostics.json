@@ -1,0 +1,84 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 11,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 100,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_conformance",
+    "line" : 8,
+    "parent" : 0,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 100,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_conformance",
+    "line" : 8,
+    "parent" : 2,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 27,
+    "fixIts" : 0,
+    "id" : "non_sendable_type",
+    "line" : 107,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "warning",
+    "text" : "type 'Value' does not conform to the 'Sendable' protocol; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 33,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_conformance",
+    "line" : 8,
+    "parent" : 4,
+    "path" : "Sources/ConcurrencyExtras/LockIsolated.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Value' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 0,
+    "line" : 31,
+    "path" : ".build/checkouts/swift-docc-plugin/Plugins/Swift-DocC Convert/Symbolic Links/SharedPackagePluginExtensions/PackageExtensions.swift",
+    "severity" : "warning",
+    "text" : "switch covers known cases, but 'TargetDependency' may have additional unknown values; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "transitive",
+    "col" : 17,
+    "fixIts" : 1,
+    "line" : 31,
+    "parent" : 6,
+    "path" : ".build/checkouts/swift-docc-plugin/Plugins/Swift-DocC Convert/Symbolic Links/SharedPackagePluginExtensions/PackageExtensions.swift",
+    "severity" : "note",
+    "text" : "handle unknown values using \"@unknown default\""
+  }
+]
