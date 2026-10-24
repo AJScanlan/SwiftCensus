@@ -59,6 +59,8 @@ func writeRunManifest(runId: String, paths: Paths, store: RunStore, toolchains: 
 /// guest up is thrown as `GuestBootError`; anything thrown by `body` is rethrown unchanged.
 func withMacGuest(runId: String, paths: Paths, store: RunStore, timeoutMinutes: Int,
                   _ body: (MacCellRunner) async throws -> Void) async throws {
+    // Before cloning: a refused run boots no guest and writes no run.json (spec 2026-10-18 §1.2).
+    let digest = try GuestVM.requireRestoreImageDigest()
     let vm = GuestVM(runId: runId)
     print("cloning \(GuestVM.goldenName) -> \(vm.instance)")
     do {
@@ -75,7 +77,7 @@ func withMacGuest(runId: String, paths: Paths, store: RunStore, timeoutMinutes: 
             hostPlatform: "macOS guest (Lima/vz): " + guestInfo.replacingOccurrences(of: "\n", with: "; "))
         let runner = MacCellRunner(
             vm: vm, sources: paths.sources, resolvedDirectory: paths.resolved, store: store,
-            scratch: paths.scratch, timeout: TimeInterval(timeoutMinutes * 60), imageID: GuestVM.restoreImageDigest())
+            scratch: paths.scratch, timeout: TimeInterval(timeoutMinutes * 60), imageID: digest)
         try await body(runner)
     } catch {
         await vm.destroy()
@@ -244,12 +246,14 @@ struct Run: AsyncParsableCommand {
             return
         }
 
-        try await writeRunManifest(runId: runId, paths: paths, store: store, toolchains: toolchains, platform: target,
-                                   hostPlatform: "\(ProcessInfo.processInfo.operatingSystemVersionString) (container runtime)")
         let runner = CellRunner(
             sources: paths.sources, resolvedDirectory: paths.resolved, store: store, scratch: paths.scratch,
             limits: CellLimits(cpus: cpus, memoryGB: memoryGb, timeout: TimeInterval(timeoutMinutes * 60)), runId: runId)
-        try await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force) { print($0); fflush(stdout) }
+        // run.json only once the image IDs resolve: a refused run leaves no record for a re-issued one to inherit.
+        try await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force, beforeFirstCell: {
+            try await writeRunManifest(runId: runId, paths: paths, store: store, toolchains: toolchains, platform: target,
+                                       hostPlatform: "\(ProcessInfo.processInfo.operatingSystemVersionString) (container runtime)")
+        }) { print($0); fflush(stdout) }
     }
 }
 

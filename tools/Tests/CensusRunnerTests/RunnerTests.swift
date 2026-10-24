@@ -426,6 +426,35 @@ import Testing
         #expect(await runner.calls.args.isEmpty)
     }
 
+    // A refused run must leave no run.json behind: re-issuing it would keep the refused attempt's record (F7).
+    @Test func beforeFirstCellIsNotCalledWhenTheRunRefuses() async {
+        let runner = FakeRunner(store: tempStore())
+        await #expect(throws: MatrixRun.UnresolvedImageError.self) {
+            try await MatrixRun.execute(cells: twoCells(), runner: runner, jobs: 1, force: false,
+                                        imageID: { _ in nil }, beforeFirstCell: { await runner.calls.record("hook") }) { _ in }
+        }
+        #expect(await runner.calls.args.isEmpty)
+    }
+
+    @Test func beforeFirstCellRunsOnceBeforeAnyCell() async throws {
+        let runner = FakeRunner(store: tempStore())
+        try await MatrixRun.execute(cells: twoCells(), runner: runner, jobs: 2, force: false,
+                                    imageID: { _ in "sha256:x" }, beforeFirstCell: { await runner.calls.record("hook") }) { _ in }
+        #expect(await runner.calls.args == ["hook", "a/a", "a/a"])
+    }
+
+    @Test func aMissingGuestTemplateRefusesBeforeTheGuestBoots() {
+        #expect(throws: MatrixRun.UnresolvedImageError.self) {
+            try GuestVM.requireRestoreImageDigest(template: "/nonexistent/census-macos.yaml")
+        }
+    }
+
+    @Test func thePinnedGuestDigestResolves() throws {
+        let template = FileManager.default.temporaryDirectory.appendingPathComponent("census-\(UUID()).yaml")
+        try Data("images:\n- digest: \"sha256:abc\"\n".utf8).write(to: template)
+        #expect(try GuestVM.requireRestoreImageDigest(template: template.path) == "ipsw-sha256:abc")
+    }
+
     @Test func executeWithNothingPendingLooksUpNothing() async throws {
         let store = tempStore()
         for c in twoCells() {

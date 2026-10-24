@@ -119,10 +119,12 @@ public enum MatrixRun {
 
     /// Executes the plan with bounded parallelism. Existing cells are skipped unless `force`, which
     /// makes an interrupted run resumable. Every pending cell's image ID is resolved first: if any is unresolved, it
-    /// throws `UnresolvedImageError` before a single cell is built.
+    /// throws `UnresolvedImageError` before a single cell is built. `beforeFirstCell` runs once, after the IDs resolve
+    /// and before any cell, so a refused run leaves nothing it wrote there (e.g. `run.json`) behind.
     public static func execute(
         cells: [PlannedCell], runner: any CellExecuting, jobs: Int, force: Bool,
         imageID resolveImageID: @escaping @Sendable (String) async -> String? = { await MatrixRun.imageID($0) },
+        beforeFirstCell: () async throws -> Void = {},
         progress: @escaping @Sendable (String) -> Void
     ) async throws {
         let pending = cells.filter {
@@ -135,6 +137,7 @@ public enum MatrixRun {
             if let id = await resolveImageID(t) { imageIDs[t] = id } else { unresolved.append(t) }
         }
         guard unresolved.isEmpty else { throw UnresolvedImageError(images: unresolved) }
+        try await beforeFirstCell()
 
         let counter = Counter()
         await withTaskGroup(of: Void.self) { group in

@@ -17,6 +17,15 @@ public struct GuestVM: Sendable {
     public static let moduleCache = "/Users/aj.guest/modcache"
 
     /// The restore image's SHA-256, read from the pinned Lima template, as the guest's identity in each record.
+    /// `restoreImageDigest`, or `MatrixRun.UnresolvedImageError` naming the guest: checked before a guest is cloned, so
+    /// a refused macOS run boots nothing and writes no `run.json` (spec 2026-10-18 §1.2).
+    public static func requireRestoreImageDigest(template: String = "tools/vm/census-macos.yaml") throws -> String {
+        guard let digest = restoreImageDigest(template: template) else {
+            throw MatrixRun.UnresolvedImageError(images: ["lima:\(goldenName) (no digest in \(template))"])
+        }
+        return digest
+    }
+
     public static func restoreImageDigest(template: String = "tools/vm/census-macos.yaml") -> String? {
         guard let text = try? String(contentsOfFile: template, encoding: .utf8) else { return nil }
         for line in text.split(separator: "\n") where line.contains("digest:") {
