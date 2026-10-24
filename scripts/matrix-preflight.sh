@@ -72,8 +72,10 @@ case "$PLATFORM" in
         sleep 1
       done
       if [[ -z "$got" ]]; then
+        # `|| true`: under `set -e`/`pipefail` a failed listing (or SIGPIPE after awk's early exit) would otherwise end
+        # the script silently; an empty result falls through to the named failure below.
         got="$(docker images --no-trunc --format '{{.Repository}}:{{.Tag}} {{.ID}}' 2>/dev/null |
-          awk -v want="$image" '$1 == want { print $2; exit }')"
+          awk -v want="$image" '$1 == want { print $2; exit }')" || true
       fi
       [[ -n "$got" ]] || fail "$image is not present (do not pull: ADR 0008)"
       [[ "$got" == "$want" ]] || fail "$image is $got; ADR 0008 pins $want"
