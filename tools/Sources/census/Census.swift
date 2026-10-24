@@ -238,7 +238,7 @@ struct Run: AsyncParsableCommand {
 
         if target == .macosSPM {
             try await withMacGuest(runId: runId, paths: paths, store: store, timeoutMinutes: timeoutMinutes) { runner in
-                await MatrixRun.execute(cells: cells, runner: runner, jobs: 1, force: force,
+                try await MatrixRun.execute(cells: cells, runner: runner, jobs: 1, force: force,
                                         imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
             }
             return
@@ -249,7 +249,7 @@ struct Run: AsyncParsableCommand {
         let runner = CellRunner(
             sources: paths.sources, resolvedDirectory: paths.resolved, store: store, scratch: paths.scratch,
             limits: CellLimits(cpus: cpus, memoryGB: memoryGb, timeout: TimeInterval(timeoutMinutes * 60)), runId: runId)
-        await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force) { print($0); fflush(stdout) }
+        try await MatrixRun.execute(cells: cells, runner: runner, jobs: jobs, force: force) { print($0); fflush(stdout) }
     }
 }
 

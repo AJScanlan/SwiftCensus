@@ -49,14 +49,62 @@ public enum MatrixRun {
         return cells
     }
 
-    /// Retried: on this Docker the first `image inspect` of a bare tag after a pause can say "No such image" for an image
-    /// that is present (observed 2026-10-11), and one failure here leaves a whole toolchain's cells without `image_id`.
+    /// A run refused before any cell is built: these images have no ID, and a cell without `image_id` cannot be tied to
+    /// what it ran on (P3; spec 2026-10-18 §1.2).
+    public struct UnresolvedImageError: Error, CustomStringConvertible {
+        public var images: [String]
+        public var description: String {
+            "no image ID for \(images.joined(separator: ", ")): refusing to start the run (P3; spec 2026-10-18 §1.2)"
+        }
+    }
+
+    /// Docker Hub's canonical form of a reference without a registry host: `swift:6.4` → `docker.io/library/swift:6.4`,
+    /// `swiftlang/swift:x` → `docker.io/swiftlang/swift:x`. A reference that names a host is returned unchanged.
+    public static func qualifiedReference(_ image: String) -> String {
+        guard let slash = image.firstIndex(of: "/") else { return "docker.io/library/" + image }
+        let first = image[..<slash]
+        if first.contains(".") || first.contains(":") || first == "localhost" { return image }
+        return "docker.io/" + image
+    }
+
+    /// The ID on the line of `docker images --format "{{.Repository}}:{{.Tag}} {{.ID}}"` output that names exactly
+    /// `image`. `<none>` tags never match.
+    static func imageID(inListing listing: String, for image: String) -> String? {
+        let want = qualifiedReference(image)
+        for line in listing.split(separator: "\n") {
+            guard let space = line.lastIndex(of: " ") else { continue }
+            let reference = line[..<space].trimmingCharacters(in: .whitespaces)
+            let id = line[line.index(after: space)...].trimmingCharacters(in: .whitespaces)
+            if reference.hasSuffix(":<none>") || id.isEmpty { continue }
+            if qualifiedReference(reference) == want { return id }
+        }
+        return nil
+    }
+
+    /// `inspect` of the qualified reference, retried; then the listing, retried. Nil only if both fail.
+    static func resolveImageID(_ image: String, attempts: Int = 3, pause: Duration = .seconds(1),
+                               inspect: (String) async -> String?, listing: () async -> String?) async -> String? {
+        let reference = qualifiedReference(image)
+        if let id = await firstResult(attempts: attempts, pause: pause, { await inspect(reference) }) { return id }
+        return await firstResult(attempts: attempts, pause: pause) {
+            guard let text = await listing() else { return nil }
+            return imageID(inListing: text, for: image)
+        }
+    }
+
+    /// The local image ID of `image`. On this Docker, `image inspect` of a bare `swift:` tag intermittently says "No such
+    /// image" for an image that is present, sometimes for longer than a short retry (2026-10-11: 268 cells of
+    /// `2026-10-11-rerun` got no `image_id`). The fully qualified reference and the listing did not fail in probes.
     public static func imageID(_ image: String) async -> String? {
-        await firstResult(attempts: 3, pause: .seconds(1)) {
-            let r = try? await Shell.run("docker", ["image", "inspect", "--format", "{{.Id}}", image])
+        await resolveImageID(image, inspect: { reference in
+            let r = try? await Shell.run("docker", ["image", "inspect", "--format", "{{.Id}}", reference])
             guard let r, r.succeeded else { return nil }
             return r.stdoutString.trimmingCharacters(in: .whitespacesAndNewlines)
-        }
+        }, listing: {
+            let r = try? await Shell.run("docker", ["images", "--no-trunc", "--format", "{{.Repository}}:{{.Tag}} {{.ID}}"])
+            guard let r, r.succeeded else { return nil }
+            return r.stdoutString
+        })
     }
 
     /// The first non-nil result of up to `attempts` calls, pausing between them.
@@ -70,18 +118,23 @@ public enum MatrixRun {
     }
 
     /// Executes the plan with bounded parallelism. Existing cells are skipped unless `force`, which
-    /// makes an interrupted run resumable.
+    /// makes an interrupted run resumable. Every pending cell's image ID is resolved first: if any is unresolved, it
+    /// throws `UnresolvedImageError` before a single cell is built.
     public static func execute(
         cells: [PlannedCell], runner: any CellExecuting, jobs: Int, force: Bool,
         imageID resolveImageID: @escaping @Sendable (String) async -> String? = { await MatrixRun.imageID($0) },
         progress: @escaping @Sendable (String) -> Void
-    ) async {
+    ) async throws {
         let pending = cells.filter {
             force || !runner.store.hasCell(toolchain: $0.toolchain.name, mode: $0.mode, slug: $0.package.slug)
         }
         progress("\(pending.count) cells to run (\(cells.count - pending.count) already present)")
-        var imageIDs: [String: String?] = [:]
-        for t in Set(pending.map(\.toolchain.image)) { imageIDs[t] = await resolveImageID(t) }
+        var imageIDs: [String: String] = [:]
+        var unresolved: [String] = []
+        for t in Set(pending.map(\.toolchain.image)).sorted() {
+            if let id = await resolveImageID(t) { imageIDs[t] = id } else { unresolved.append(t) }
+        }
+        guard unresolved.isEmpty else { throw UnresolvedImageError(images: unresolved) }
 
         let counter = Counter()
         await withTaskGroup(of: Void.self) { group in
@@ -90,7 +143,7 @@ public enum MatrixRun {
             func launch() {
                 guard let cell = iterator.next() else { return }
                 running += 1
-                let id = imageIDs[cell.toolchain.image] ?? nil
+                let id = imageIDs[cell.toolchain.image]
                 group.addTask {
                     let record = await runner.run(package: cell.package, toolchain: cell.toolchain,
                                                   mode: cell.mode, imageID: id)

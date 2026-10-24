@@ -26,6 +26,20 @@ MIN_FREE_GB=40
 
 fail() { echo "preflight FAILED: $*" >&2; exit 1; }
 
+# Docker Hub's canonical form, as MatrixRun.qualifiedReference: `swift:6.4` -> `docker.io/library/swift:6.4`,
+# `swiftlang/swift:x` -> `docker.io/swiftlang/swift:x`; a reference naming a registry host is unchanged.
+qualify() {
+  case "$1" in
+    */*)
+      first="${1%%/*}"
+      case "$first" in
+        *.* | *:* | localhost) echo "$1" ;;
+        *) echo "docker.io/$1" ;;
+      esac ;;
+    *) echo "docker.io/library/$1" ;;
+  esac
+}
+
 git rev-parse --verify --quiet "$FREEZE^{commit}" >/dev/null || fail "$FREEZE is not a commit"
 [[ -z "$(git status --porcelain -- tools corpus)" ]] || fail "tools/ or corpus/ has uncommitted changes"
 [[ -z "$(git diff --name-only "$FREEZE" HEAD -- tools corpus)" ]] || fail "tools/ or corpus/ changed since $FREEZE"
@@ -33,8 +47,10 @@ git rev-parse --verify --quiet "$FREEZE^{commit}" >/dev/null || fail "$FREEZE is
 # The runs use the release binary, and `run.json` records HEAD, not what the binary was built from. Building here
 # (seconds when current) makes the binary match the tree by construction. An mtime check cannot: SwiftPM does not relink
 # an unchanged output, so a checkout or touch leaves a correct binary looking older than its sources.
+# `xcrun swift`, not PATH's `swift`: a swiftly default (6.0.3 here, 2026-10-24) cannot read the Xcode 27 SDK, and the
+# release binaries of every committed run were built by Xcode's SwiftPM.
 BIN=tools/.build/release/census
-swift build -c release --package-path tools >/dev/null 2>&1 || fail "swift build -c release --package-path tools failed"
+xcrun swift build -c release --package-path tools >/dev/null 2>&1 || fail "xcrun swift build -c release --package-path tools failed"
 [[ -x "$BIN" ]] || fail "$BIN is missing after the release build"
 
 free_kb="$(df -k . | tail -1 | tr -s ' ' | cut -d' ' -f4)"
@@ -46,14 +62,19 @@ case "$PLATFORM" in
     for pair in "${IMAGES[@]}"; do
       image="${pair%%=*}"
       want="${pair#*=}"
-      # One image per call, retried: on this Docker the first inspect of a bare `swift:` tag after a pause can report
-      # "No such image" for an image that is present (as can `docker image inspect a b`).
+      # Resolved as `census run` resolves it (MatrixRun.imageID, spec 2026-10-18 §1.2): one image per call, through the
+      # qualified reference, retried, then the listing. A bare `swift:` tag can report "No such image" for an image that
+      # is present (as can `docker image inspect a b`).
       got=""
       for _ in 1 2 3; do
-        got="$(docker image inspect --format '{{.Id}}' "$image" 2>/dev/null)" && break
+        got="$(docker image inspect --format '{{.Id}}' "$(qualify "$image")" 2>/dev/null)" && break
         got=""
         sleep 1
       done
+      if [[ -z "$got" ]]; then
+        got="$(docker images --no-trunc --format '{{.Repository}}:{{.Tag}} {{.ID}}' 2>/dev/null |
+          awk -v want="$image" '$1 == want { print $2; exit }')"
+      fi
       [[ -n "$got" ]] || fail "$image is not present (do not pull: ADR 0008)"
       [[ "$got" == "$want" ]] || fail "$image is $got; ADR 0008 pins $want"
     done

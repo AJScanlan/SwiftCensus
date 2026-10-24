@@ -333,3 +333,111 @@ import Testing
         #expect(await counter.calls == 3)
     }
 }
+
+/// Spec 2026-10-18 §1.2: bare `swift:` tags intermittently fail `docker image inspect`, so the lookup goes through the
+/// fully qualified reference, falls back to the `docker images` listing, and refuses the run when both fail (P3).
+@Suite struct ImageResolutionTests {
+    actor Calls {
+        var args: [String] = []
+        func record(_ s: String) { args.append(s) }
+    }
+
+    @Test func bareNamesQualifyToDockerHub() {
+        #expect(MatrixRun.qualifiedReference("swift:6.4") == "docker.io/library/swift:6.4")
+        #expect(MatrixRun.qualifiedReference("swiftlang/swift:nightly-main-jammy") == "docker.io/swiftlang/swift:nightly-main-jammy")
+        #expect(MatrixRun.qualifiedReference("docker.io/library/swift:6.4") == "docker.io/library/swift:6.4")
+        #expect(MatrixRun.qualifiedReference("localhost:5050/a/b:1") == "localhost:5050/a/b:1")
+        #expect(MatrixRun.qualifiedReference("ghcr.io/a/b:1") == "ghcr.io/a/b:1")
+    }
+
+    @Test func listingMatchesOnlyTheExactReference() {
+        let listing = """
+        swift:6.4-jammy sha256:aaa
+        swift:6.4 sha256:bbb
+        swift:<none> sha256:ccc
+        localhost:5050/swift:6.4 sha256:ddd
+        swiftlang/swift:nightly-main-jammy sha256:eee
+        """
+        #expect(MatrixRun.imageID(inListing: listing, for: "swift:6.4") == "sha256:bbb")
+        #expect(MatrixRun.imageID(inListing: listing, for: "docker.io/library/swift:6.4") == "sha256:bbb")
+        #expect(MatrixRun.imageID(inListing: listing, for: "swiftlang/swift:nightly-main-jammy") == "sha256:eee")
+        #expect(MatrixRun.imageID(inListing: listing, for: "swift:6.3") == nil)
+    }
+
+    @Test func inspectSuccessSkipsTheListing() async {
+        let listed = Calls()
+        let id = await MatrixRun.resolveImageID("swift:6.1", pause: .zero, inspect: { _ in "sha256:x" },
+                                                listing: { await listed.record("list"); return nil })
+        #expect(id == "sha256:x")
+        #expect(await listed.args.isEmpty)
+    }
+
+    @Test func inspectsTheQualifiedReference() async {
+        let inspected = Calls()
+        _ = await MatrixRun.resolveImageID("swift:6.1", pause: .zero,
+                                           inspect: { await inspected.record($0); return "sha256:x" }, listing: { nil })
+        #expect(await inspected.args == ["docker.io/library/swift:6.1"])
+    }
+
+    @Test func inspectFailingFallsBackToTheListing() async {
+        let inspected = Calls()
+        let id = await MatrixRun.resolveImageID("swift:6.1", attempts: 3, pause: .zero,
+                                                inspect: { await inspected.record($0); return nil },
+                                                listing: { "swift:6.1 sha256:y" })
+        #expect(id == "sha256:y")
+        #expect(await inspected.args.count == 3)
+    }
+
+    @Test func bothPathsFailingResolvesNothing() async {
+        let id = await MatrixRun.resolveImageID("swift:6.1", attempts: 2, pause: .zero,
+                                                inspect: { _ in nil }, listing: { nil })
+        #expect(id == nil)
+    }
+
+    struct FakeRunner: CellExecuting {
+        let store: RunStore
+        let calls = Calls()
+        func run(package: CorpusPackage, toolchain: Toolchain, mode: Mode, imageID: String?) async -> CellRecord {
+            await calls.record(package.id)
+            return CellRecord(packageId: package.id, sha: package.sha, stratum: package.stratum, toolchain: toolchain.name,
+                              mode: mode, platform: .linuxSPM, outcome: .built, exitCode: 0, startedAt: "",
+                              durationSeconds: 0, invocation: [], image: toolchain.image)
+        }
+    }
+
+    func twoCells() -> [PlannedCell] {
+        let p = CorpusPackage(id: "a/a", url: "https://github.com/a/a", sha: String(repeating: "a", count: 40),
+                              stratum: .emit, platforms: [.linuxSPM], selection: "test")
+        return [PlannedCell(package: p, toolchain: Toolchain(name: "6.3", image: "swift:6.3"), mode: .strictCompleteV5),
+                PlannedCell(package: p, toolchain: Toolchain(name: "6.4", image: "swift:6.4"), mode: .strictCompleteV5)]
+    }
+
+    func tempStore() -> RunStore {
+        RunStore(root: FileManager.default.temporaryDirectory.appendingPathComponent("census-test-\(UUID())"))
+    }
+
+    @Test func executeRefusesBeforeAnyCellWhenAnImageIsUnresolved() async throws {
+        let runner = FakeRunner(store: tempStore())
+        let error = await #expect(throws: MatrixRun.UnresolvedImageError.self) {
+            try await MatrixRun.execute(cells: twoCells(), runner: runner, jobs: 1, force: false,
+                                        imageID: { $0 == "swift:6.4" ? nil : "sha256:x" }) { _ in }
+        }
+        #expect(error?.images == ["swift:6.4"])
+        #expect(await runner.calls.args.isEmpty)
+    }
+
+    @Test func executeWithNothingPendingLooksUpNothing() async throws {
+        let store = tempStore()
+        for c in twoCells() {
+            let dir = store.cellDirectory(toolchain: c.toolchain.name, mode: c.mode, slug: c.package.slug)
+            try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+            try Data().write(to: dir.appendingPathComponent("cell.json"))
+        }
+        let runner = FakeRunner(store: store)
+        let resolved = Calls()
+        try await MatrixRun.execute(cells: twoCells(), runner: runner, jobs: 1, force: false,
+                                    imageID: { await resolved.record($0); return nil }) { _ in }
+        #expect(await resolved.args.isEmpty)
+        #expect(await runner.calls.args.isEmpty)
+    }
+}

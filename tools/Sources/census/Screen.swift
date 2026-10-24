@@ -158,11 +158,11 @@ extension ScreenCommand {
                 try FileManager.default.createDirectory(at: paths.scratch, withIntermediateDirectories: true)
                 do {
                     try await withMacGuest(runId: runId, paths: paths, store: store, timeoutMinutes: timeoutMinutes) { runner in
-                        await MatrixRun.execute(cells: Screen.cells(buildable, mode: .strictCompleteV5), runner: runner, jobs: 1,
+                        try await MatrixRun.execute(cells: Screen.cells(buildable, mode: .strictCompleteV5), runner: runner, jobs: 1,
                                                 force: false, imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
                         // Early exit (§5.2 step 4): no primary diagnostic under complete means count 0, no second build.
                         let minimal = try pendingMinimal()
-                        await MatrixRun.execute(cells: Screen.cells(minimal, mode: .minimalV5), runner: runner, jobs: 1,
+                        try await MatrixRun.execute(cells: Screen.cells(minimal, mode: .minimalV5), runner: runner, jobs: 1,
                                                 force: false, imageID: { _ in GuestVM.restoreImageDigest() }) { print($0); fflush(stdout) }
                     }
                 } catch let boot as GuestBootError {
