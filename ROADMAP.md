@@ -486,7 +486,7 @@ recording the route decision and the answers to items 2–6.
 **Exit (per A7):** one full run over all three strata, results committed, and a
 re-run producing a set-identical normalised diagnostic multiset.
 
-**Status (2026-10-18):** not met. On 2026-10-11 one `build_failed` cell per pair differed (ADR 0008 Results). ADR 0010 restates A7 (failed builds are not a frequency source) and requires fresh pairs, not yet run. G2 (ADR 0007 D8): FAIL, 8/30; investigated in ADR 0009 (selector kept, Linux never gates a macOS-selected stratum).
+**Status (2026-10-24):** met. The fresh pairs `2026-10-24`/`-rerun` (Linux) and `2026-10-24-macos`/`-macos-rerun` are both set-identical under A7 as restated by ADR 0010 (failed builds are not a frequency source). The Linux pair has two failed-build differences, not gating; screen reproduction is 30/30 (ADR 0010 Results). On 2026-10-11 one `build_failed` cell per pair differed (ADR 0008 Results); those pairs stay failed and were not re-scored. G2 (ADR 0007 D8): FAIL, 8/30; investigated in ADR 0009 (selector kept, Linux never gates a macOS-selected stratum).
 
 **Compute note:** SPEC §4.2's budget assumed ~30 packages × 5 toolchains on one Mac
 mini overnight. ~65 packages × 5 toolchains is a wider matrix; run Linux-capable

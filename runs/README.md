@@ -16,6 +16,10 @@ Raw per-run output (ROADMAP M1 item 4). Layout per cell:
 | `2026-10-11-rerun` | Identical inputs, re-run for the A7 check. Its 268 `swift:6.1`–`6.4` cells have no `image_id` (ADR 0008 Results). |
 | `2026-10-11-macos` | M1-exit macOS run (ADR 0008): full corpus, Xcode 27.0, 69 cells. |
 | `2026-10-11-macos-rerun` | Re-run of the above in a fresh guest clone. |
+| `2026-10-24` | M1-exit Linux run under restated A7 (ADR 0010): full corpus, 5 toolchains, 335 cells, tools frozen at `3ff5965`. |
+| `2026-10-24-rerun` | Identical inputs, re-run for the A7 check. |
+| `2026-10-24-macos` | M1-exit macOS run (ADR 0010): full corpus, Xcode 27.0, 69 cells. |
+| `2026-10-24-macos-rerun` | Re-run of the above in a fresh guest clone. |
 
 `census compare runs/2026-10-04 runs/2026-10-04-rerun` → **SET-IDENTICAL** over all 185 cells
 (155 cells with diagnostics compared as multisets; 30 whose equal outcomes carry none).
@@ -26,15 +30,21 @@ Raw per-run output (ROADMAP M1 item 4). Layout per cell:
 `census compare runs/2026-10-11-macos runs/2026-10-11-macos-rerun` → **NOT SET-IDENTICAL**: 1 of 69 cells differs
 (`customerio/customerio-ios`, `build_failed` on both passes).
 `census screen reproduce screen-2026-10-10 runs/2026-10-11-macos` → **SET-IDENTICAL** over the 30 `S-emit` cells.
+`census compare runs/2026-10-24 runs/2026-10-24-rerun` → **SET-IDENTICAL** under restated A7 (ADR 0010): 335 cells, 297
+identical, 36 equal no-diagnostic outcomes, 2 failed-build differences, not gating (`6.4` and `nightly` `Quick/Nimble`).
+`census compare runs/2026-10-24-macos runs/2026-10-24-macos-rerun` → **SET-IDENTICAL** over all 69 cells.
+`census screen reproduce screen-2026-10-10 runs/2026-10-24-macos` → **SET-IDENTICAL** over the 30 `S-emit` cells.
 Screen cells are candidates, not corpus entries; their results live in `screens/screen-2026-10-10/results.json`.
 Linux and macOS runs are never compared or summed (F6).
 
 ## What these runs are not
 
-- **Not the M1 exit.** The `2026-10-11` pairs were meant to be (ADR 0008), but neither is set-identical: one
+- **The `2026-10-11` pairs are not the M1 exit.** They were meant to be (ADR 0008), but neither is set-identical: one
   `build_failed` cell differs in each, because a failed build's diagnostics depend on parallel scheduling. ADR 0010
   makes failed builds a non-source of frequencies, restates A7 accordingly, and requires a **fresh** pair per platform for
-  the M1 exit (not yet run); these pairs are not re-scored under the new rule. **G2 fails**: 8 of 30 `S-emit` entries emit on Linux 6.4 (21 of the 22 that do not
+  the M1 exit; these pairs are not re-scored under the new rule. **The M1 exit is the `2026-10-24` pairs** (ADR 0010
+  Results): both are set-identical under the restated rule. The Linux pair passes only because its two differing cells
+  are `build_failed`. **G2 fails**: 8 of 30 `S-emit` entries emit on Linux 6.4 (21 of the 22 that do not
   are `build_failed` on Linux). See ADR 0008 Results; the selector investigation and the Linux column's scope are
   ADR 0009 (G2 stays failed). `S-byproduct` is measured on macOS (ADR 0006): LedgerKit 0
   diagnostics, GRDB 8 warnings.
