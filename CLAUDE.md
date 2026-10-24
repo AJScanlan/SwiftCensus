@@ -158,14 +158,15 @@ diagnostic printed twice under the `swift` style.
 
 ## Running the matrix (learned the hard way)
 
-- `swift build --package-path tools` / `swift test --package-path tools` — test output has four
-  "Test run with N tests" lines (one per target); the total is their sum, not the last line.
+- `xcrun swift build --package-path tools` / `xcrun swift test --package-path tools`, never bare `swift`: a swiftly
+  default on PATH cannot build against the Xcode 27 SDK. Test output has four "Test run with N tests" lines (one per
+  target); the total is their sum, not the last line.
 - Runs use `tools/.build/release/census`. Run `scripts/matrix-preflight.sh linux|macos <freeze-commit>`
   before every run; it rebuilds the release binary and checks the pinned images, guest digest and tree.
 - `census run` resumes when the same command is re-issued (cells with `cell.json` are skipped). Never
   `--force`. Retry one cell by deleting its directory.
 - Docker Desktop and the macOS guest do not fit in 16 GiB together: quit Docker before any macOS run.
-  A Linux pass takes ~1.5 h (335 cells); a macOS pass ~2.4 h (69 cells).
+  A Linux pass takes ~75 min (335 cells); a macOS pass ~40 min of cells plus guest boot (69 cells; 2026-10-24).
 - `docker image inspect swift:6.x` (bare tag) intermittently says "No such image" for a present image,
   and multi-argument `inspect` does too. Inspect one image per call; never trust a single lookup.
 - SwiftPM does not relink an unchanged output, so mtime "is the binary stale?" checks give false
@@ -185,6 +186,10 @@ diagnostic printed twice under the `swift` style.
   another tool). The hooks catch mistakes; they are not a boundary.
 - A commit message naming a blocked command trips the Bash guard: commit with `git commit -F <file>`.
 - After editing a hook, run `.claude/hooks/test-hooks.sh` (exits 1 on any failing case).
+- The agents exist only in sessions started where `.claude/agents/` is. Otherwise run a general-purpose agent with the
+  agent file's body as its complete instructions (and `model: opus` for `freeze-reviewer`).
+- Worktree-isolated sessions refuse compound shell (loops, `$(…)` around git/find, heredocs): use one plain command per
+  call, literal values (read `work/<campaign>/FREEZE` once), Edit for appends, and scratch scripts for loops.
 
 ## Structure notes
 
