@@ -1,0 +1,128 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "implicit_non_sendable_capture",
+    "line" : 62,
+    "path" : "Sources/Parsing/Conversions/Enum.swift",
+    "severity" : "warning",
+    "text" : "implicit capture of 'initializer' requires that 'Enum' conforms to 'Sendable'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 31,
+    "fixIts" : 1,
+    "id" : "add_generic_parameter_conformance",
+    "line" : 59,
+    "parent" : 0,
+    "path" : "Sources/Parsing/Conversions/Enum.swift",
+    "severity" : "note",
+    "text" : "consider making generic parameter 'Enum' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 5,
+    "path" : "Sources/Parsing/ParsingError.swift",
+    "severity" : "warning",
+    "text" : "associated value 'failed' of 'Sendable'-conforming enum 'ParsingError' contains non-Sendable type 'ParsingError.Context'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 116,
+    "parent" : 2,
+    "path" : "Sources/Parsing/ParsingError.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'Context' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 6,
+    "path" : "Sources/Parsing/ParsingError.swift",
+    "severity" : "warning",
+    "text" : "associated value 'manyFailed' of 'Sendable'-conforming enum 'ParsingError' contains non-Sendable type 'ParsingError.Context'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 116,
+    "parent" : 4,
+    "path" : "Sources/Parsing/ParsingError.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'Context' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 3,
+    "path" : "Sources/Parsing/PrintingError.swift",
+    "severity" : "warning",
+    "text" : "associated value 'failed' of 'Sendable'-conforming enum 'PrintingError' has non-Sendable type 'PrintingError.Context'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 64,
+    "parent" : 6,
+    "path" : "Sources/Parsing/PrintingError.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'Context' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 8,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 4,
+    "path" : "Sources/Parsing/PrintingError.swift",
+    "severity" : "warning",
+    "text" : "associated value 'manyFailed' of 'Sendable'-conforming enum 'PrintingError' contains non-Sendable type 'PrintingError.Context'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 10,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 64,
+    "parent" : 8,
+    "path" : "Sources/Parsing/PrintingError.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'Context' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "external",
+    "col" : 0,
+    "fixIts" : 0,
+    "id" : "non_sendable_keypath_capture",
+    "line" : 0,
+    "path" : "<unknown>",
+    "severity" : "warning",
+    "text" : "cannot form key path that captures non-Sendable type 'KeyPath<JSONValue.Output.AllCasePaths, AnyCasePath<JSONValue.Output, [JSONValue.Output]>>'; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "external",
+    "col" : 14,
+    "fixIts" : 0,
+    "id" : "non_sendable_nominal",
+    "line" : 1,
+    "parent" : 10,
+    "path" : "Swift.KeyPath",
+    "severity" : "note",
+    "text" : "generic class 'KeyPath' does not conform to the 'Sendable' protocol"
+  }
+]
