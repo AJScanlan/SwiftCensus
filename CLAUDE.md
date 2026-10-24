@@ -177,6 +177,15 @@ diagnostic printed twice under the `swift` style.
   macOS on a Linux result (ADR 0009).
 - `work/` (source cache, ~7 GB) is gitignored. In a worktree, symlink it from the main checkout.
 
+## Claude Code tooling (`.claude/`)
+
+- The pre-freeze review is the `freeze-reviewer` agent, not a generic reviewer. Freeze only on `FREEZE: go`.
+- Run the `numbers-auditor` agent on any write-up with numbers from runs before committing it.
+- A hook block or ADR prompt is a project rule firing. Stop and ask; do not route around it (`sed -i`, redirects,
+  another tool). The hooks catch mistakes; they are not a boundary.
+- A commit message naming a blocked command trips the Bash guard: commit with `git commit -F <file>`.
+- After editing a hook, run `.claude/hooks/test-hooks.sh` (exits 1 on any failing case).
+
 ## Structure notes
 
 - `DiagParse` carries golden-file tests from its first commit — it is the component
