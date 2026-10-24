@@ -1,0 +1,48 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "group" : "NoUseUnstructuredThrowingTask",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/no-use-throwing-unstructured-task",
+    "id" : "expression_unused_throwing_unstructured_task",
+    "line" : 29,
+    "path" : "Sources/Expression.swift",
+    "severity" : "warning",
+    "text" : "unstructured throwing task created by 'init(name:priority:operation:)' is not used, which may accidentally ignore errors thrown inside the task"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 9,
+    "fixIts" : 0,
+    "id" : "expression_unused_throwing_unstructured_task_silence",
+    "line" : 29,
+    "parent" : 0,
+    "path" : "Sources/Expression.swift",
+    "severity" : "note",
+    "text" : "to silence this warning, handle the error inside the task, or store/discard the task value explicitly"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "group" : "SendingRisksDataRace",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race",
+    "id" : "regionbasedisolation_named_send_yields_race",
+    "line" : 27,
+    "path" : "Sources/Expression.swift",
+    "severity" : "warning",
+    "text" : "sending 'expression' risks causing data races; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 30,
+    "fixIts" : 0,
+    "id" : "regionbasedisolation_named_isolated_closure_yields_race",
+    "line" : 27,
+    "parent" : 2,
+    "path" : "Sources/Expression.swift",
+    "severity" : "note",
+    "text" : "'expression' is captured by a main actor-isolated closure. main actor-isolated uses in closure may race against code in the current isolation context"
+  }
+]

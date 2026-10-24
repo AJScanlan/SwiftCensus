@@ -1,0 +1,113 @@
+[
+  {
+    "attribution" : "primary",
+    "col" : 16,
+    "fixIts" : 0,
+    "id" : "non_concurrent_type_member",
+    "line" : 28,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Error/CompileError.swift",
+    "severity" : "warning",
+    "text" : "stored property 'kind' of 'Sendable'-conforming struct 'CompileError' has non-Sendable type 'CompileErrorKind'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 13,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 8,
+    "parent" : 0,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Error/CompileError.swift",
+    "severity" : "note",
+    "text" : "consider making enum 'CompileErrorKind' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 691,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "warning",
+    "text" : "static property 'emptyContext' is not concurrency-safe because non-'Sendable' type 'RuntimeObjectEmitter.LoweringContext' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 12,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 346,
+    "parent" : 2,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'LoweringContext' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 691,
+    "parent" : 2,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'emptyContext' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 691,
+    "parent" : 2,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 0,
+    "group" : "MutableGlobalVariable",
+    "groupURL" : "https://docs.swift.org/compiler/documentation/diagnostics/mutable-global-variable",
+    "id" : "shared_immutable_state_decl",
+    "line" : 1296,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "warning",
+    "text" : "static property 'zeroPosition' is not concurrency-safe because non-'Sendable' type 'SourcePosition' may have shared mutable state; this is an error in the Swift 6 language mode"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 15,
+    "fixIts" : 1,
+    "id" : "add_nominal_sendable_conformance",
+    "line" : 11,
+    "parent" : 6,
+    "path" : "Sources/SwiftInkRuntime/Compiler/AST/CompilerAST.swift",
+    "severity" : "note",
+    "text" : "consider making struct 'SourcePosition' conform to the 'Sendable' protocol"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "add_globalactor_to_decl",
+    "line" : 1296,
+    "parent" : 6,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "note",
+    "text" : "add '@MainActor' to make static property 'zeroPosition' part of global actor 'MainActor'"
+  },
+  {
+    "attribution" : "primary",
+    "col" : 24,
+    "fixIts" : 1,
+    "id" : "shared_state_nonisolated_unsafe",
+    "line" : 1296,
+    "parent" : 6,
+    "path" : "Sources/SwiftInkRuntime/Compiler/Codegen/RuntimeObjectEmitter.swift",
+    "severity" : "note",
+    "text" : "disable concurrency-safety checks if accesses are protected by an external synchronization mechanism"
+  }
+]
